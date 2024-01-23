@@ -25,5 +25,24 @@ public class sym {
 	
 	public static final int EOF = 14;
 	public static final int VOID = 15;
+	
+	public static final int NAMESPACE = 16;
+	public static final int BOOLEAN = 17;
+	public static final int CONST = 18;
+	public static final int READ = 19;
+	public static final int NEW = 20;
+	public static final int DOUBLEPLUS = 21;
+	public static final int DOUBLEMINUS = 22;
+	public static final int MUL = 23;
+	public static final int DIV = 24;
+	public static final int PERCENT = 25;
+	public static final int LBRACKET = 26;
+	public static final int RBRACKET = 27;
+	public static final int CHARACTER = 28;
+	public static final int DOUBLECOLON = 29;
+	public static final int MINUS = 30;
+
+
+	// namespace, true|false, const, read, new, ++, --, *, /, %, [, ], char, ::
 
 }

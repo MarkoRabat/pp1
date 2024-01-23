@@ -39,25 +39,40 @@ import java_cup.runtime.Symbol;
 "\r\n" {}
 "\f"   {}
 
-"program" { return new_symbol(sym.PROG, yytext());   }
-"print"   { return new_symbol(sym.PRINT, yytext());  }
-"return"  { return new_symbol(sym.RETURN, yytext()); }
-"void"    { return new_symbol(sym.VOID, yytext());   }
-"+" 	  { return new_symbol(sym.PLUS, yytext());   }
-"=" 	  { return new_symbol(sym.EQUAL, yytext());  }
-";" 	  { return new_symbol(sym.SEMI, yytext());   }
-"," 	  { return new_symbol(sym.COMMA, yytext());  }
-"(" 	  { return new_symbol(sym.LPAREN, yytext()); }
-")" 	  { return new_symbol(sym.RPAREN, yytext()); }
-"{" 	  { return new_symbol(sym.LBRACE, yytext()); }
-"}" 	  { return new_symbol(sym.RBRACE, yytext()); }
+"program"   { return new_symbol(sym.PROG, yytext());        }
+"namespace" { return new_symbol(sym.NAMESPACE, yytext());   }
+"print"     { return new_symbol(sym.PRINT, yytext());       }
+"read"      { return new_symbol(sym.READ, yytext());        }
+"return"    { return new_symbol(sym.RETURN, yytext()); 	    }
+"const"     { return new_symbol(sym.CONST, yytext());        }
+"void"      { return new_symbol(sym.VOID, yytext());        }
+"new"       { return new_symbol(sym.NEW, yytext());         }
+"++" 	    { return new_symbol(sym.DOUBLEPLUS, yytext());  }
+"--" 	    { return new_symbol(sym.DOUBLEMINUS, yytext()); }
+"*" 	    { return new_symbol(sym.MUL, yytext());         }
+"/" 	    { return new_symbol(sym.DIV, yytext());         }
+"%" 	    { return new_symbol(sym.PERCENT, yytext());     }
+"+" 	    { return new_symbol(sym.PLUS, yytext());        }
+"-" 	    { return new_symbol(sym.MINUS, yytext());        }
+"=" 	    { return new_symbol(sym.EQUAL, yytext());       }
+";" 	    { return new_symbol(sym.SEMI, yytext());        }
+"," 	    { return new_symbol(sym.COMMA, yytext());       }
+"(" 	    { return new_symbol(sym.LPAREN, yytext());      }
+")" 	    { return new_symbol(sym.RPAREN, yytext());      }
+"[" 	    { return new_symbol(sym.LBRACKET, yytext());    }
+"]" 	    { return new_symbol(sym.RBRACKET, yytext());    }
+"{" 	    { return new_symbol(sym.LBRACE, yytext());      }
+"}" 	    { return new_symbol(sym.RBRACE, yytext());      }
+"::" 	    { return new_symbol(sym.DOUBLECOLON, yytext()); }
 
 "//" 	    	 { yybegin(COMMENT);                 }
 <COMMENT> . 	 { yybegin(COMMENT); 				 }
 <COMMENT> "\r\n" { yybegin(YYINITIAL);				 }
 
-[0-9]+ { return new_symbol(sym.NUMBER, Integer.parseInt(yytext()));     }
-([a-z]|[A-Z])[a-z|A-Z|0-9|_]* { return new_symbol(sym.IDENT, yytext()); }
+[0-9]+ 				    { return new_symbol(sym.NUMBER, Integer.parseInt(yytext())); }
+"true"|"false" 		    { return new_symbol(sym.BOOLEAN, yytext());              	 }
+"\'"[a-zA-Z0-9_]"\'"	{ return new_symbol(sym.CHARACTER, yytext());                }
+[a-zA-Z][a-zA-Z0-9_]*   { return new_symbol(sym.IDENT, yytext());         		     }
 
 . { System.err.println("Leksicka greska (" + yytext() + ") u liniji " + (yyline + 1)); }
 
