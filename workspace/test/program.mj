@@ -1,12 +1,13 @@
 program MJProgram
 	int x; int y;
-	int k[];
 {
-	void main() bool t1, t2; {
-		k = new int[5];
-		k[1] = 5;
-		x = k[1];
-		x = 5;
-		print(x);
+	void main() {
+	
+		print(1);
+		
+		x = y + 5 + ;
+
+		print(2);
+		
 	}
 }

@@ -1,0 +1,117 @@
+INFO  19:41:52,417 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  19:41:52,446 - #2 program
+INFO  19:41:52,446 - #30 MJProgram
+INFO  19:41:52,446 - #30 int
+INFO  19:41:52,448 - #30 x
+INFO  19:41:52,449 - #5 ;
+INFO  19:41:52,449 - #30 int
+INFO  19:41:52,450 - #30 y
+INFO  19:41:52,450 - #5 ;
+INFO  19:41:52,450 - #3 {
+INFO  19:41:52,450 - #18 void
+INFO  19:41:52,451 - #30 main
+INFO  19:41:52,451 - #6 (
+INFO  19:41:52,452 - #7 )
+INFO  19:41:52,452 - #3 {
+INFO  19:41:52,452 - #19 print
+INFO  19:41:52,453 - #6 (
+INFO  19:41:52,453 - #29 1
+INFO  19:41:52,453 - #7 )
+INFO  19:41:52,454 - #5 ;
+INFO  19:41:52,454 - #30 x
+INFO  19:41:52,454 - #8 =
+INFO  19:41:52,455 - #30 y
+INFO  19:41:52,455 - #17 +
+INFO  19:41:52,456 - #29 5
+INFO  19:41:52,457 - #5 ;
+INFO  19:41:52,458 - #19 print
+INFO  19:41:52,458 - #6 (
+INFO  19:41:52,458 - #29 2
+INFO  19:41:52,458 - #7 )
+INFO  19:41:52,459 - #5 ;
+INFO  19:41:52,459 - #4 }
+INFO  19:41:52,459 - #4 }
+INFO  19:41:52,461 - ProgramDerived1(
+ MJProgram
+  VarDeclListDerived1(
+    VarDeclListDerived1(
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      VarDeclaration(
+        TypeDerived1(
+         int
+        ) [TypeDerived1]
+       x
+      ) [VarDeclaration]
+    ) [VarDeclListDerived1]
+    VarDeclaration(
+      TypeDerived1(
+       int
+      ) [TypeDerived1]
+     y
+    ) [VarDeclaration]
+  ) [VarDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+     main
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived2(
+            ) [StatementListDerived2]
+            PrintStmt(
+              ExprDerived2(
+                TermDerived1(
+                  FactorDerived1(
+                   1
+                  ) [FactorDerived1]
+                ) [TermDerived1]
+              ) [ExprDerived2]
+            ) [PrintStmt]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            DesignatorDerived1(
+             x
+            ) [DesignatorDerived1]
+            ExprDerived1(
+              ExprDerived2(
+                TermDerived1(
+                  FactorDerived2(
+                    DesignatorDerived1(
+                     y
+                    ) [DesignatorDerived1]
+                  ) [FactorDerived2]
+                ) [TermDerived1]
+              ) [ExprDerived2]
+              AddopDerived1(
+              ) [AddopDerived1]
+              TermDerived1(
+                FactorDerived1(
+                 5
+                ) [FactorDerived1]
+              ) [TermDerived1]
+            ) [ExprDerived1]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        PrintStmt(
+          ExprDerived2(
+            TermDerived1(
+              FactorDerived1(
+               2
+              ) [FactorDerived1]
+            ) [TermDerived1]
+          ) [ExprDerived2]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [ProgramDerived1]
+INFO  19:41:52,462 - ====================================
+INFO  19:41:52,466 - Prepoznata naredba print!
+INFO  19:41:52,466 - Prepoznata naredba print!
+INFO  19:41:52,466 -  Broj print naredbi = 2
+INFO  19:41:52,466 -  Deklarisanih promenljivih ima = 2

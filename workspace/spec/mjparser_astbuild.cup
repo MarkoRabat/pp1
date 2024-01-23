@@ -1,0 +1,103 @@
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+	
+	// slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+	
+	public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+		done_parsing();
+		report_error(message, info);
+	}
+	
+	public void syntax_error(Symbol curr_token) {
+		report_error("\nSintaksna greska", curr_token);
+	}
+	
+	public void unrecovered_syntax_error(Symbol curr_token) throws java.lang.Exception {
+		report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", curr_token);
+	}
+	
+	public void report_error(String message, Object info) {
+		StringBuilder msg = new StringBuilder(message);
+		if (info instanceof Symbol)
+			msg.append(" na liniji ").append(((Symbol)info).left);
+		log.error(msg.toString());
+	}
+
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null)
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN;
+terminal DOUBLEMINUS, DOUBLECOLON, READ, NEW, MUL, COMMA, DOUBLEPLUS;
+terminal PLUS, VOID, PRINT, CHARACTER, BOOLEAN, DIV, MINUS, PERCENT;
+terminal LBRACKET, CONST, RBRACKET, NAMESPACE;
+terminal Integer NUMBER;
+terminal String IDENT;
+
+nonterminal Program Program;
+nonterminal VarDeclList VarDeclList;
+nonterminal MethodDeclList MethodDeclList;
+nonterminal VarDecl VarDecl;
+nonterminal Type Type;
+nonterminal MethodDecl MethodDecl;
+nonterminal StatementList StatementList;
+nonterminal Statement Statement;
+nonterminal Designator Designator;
+nonterminal Expr Expr;
+nonterminal Term Term;
+nonterminal Addop Addop;
+nonterminal Factor Factor;
+
+Program ::= PROG IDENT:I1 VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new ProgramDerived1(I1, V2, M3); RESULT.setLine(I1left); :};
+
+VarDeclList ::= VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclListDerived1(V1, V2); RESULT.setLine(V1left); :}
+			| {: RESULT=new VarDeclListDerived2(); :} /* epsilon */;
+
+VarDecl ::= (VarDeclaration) Type:varType IDENT:varName SEMI {: RESULT=new VarDeclaration(varType, varName); RESULT.setLine(varTypeleft); :};
+
+Type ::= IDENT:typeName {: RESULT=new TypeDerived1(typeName); RESULT.setLine(typeNameleft); :};
+
+MethodDeclList ::= MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclListDerived1(M1, M2); RESULT.setLine(M1left); :}
+				| {: RESULT=new MethodDeclListDerived2(); :} /* epsilon */;
+
+MethodDecl ::= VOID IDENT:I1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDeclDerived1(I1, V2, S3); RESULT.setLine(I1left); :};
+
+StatementList ::= StatementList:S1 Statement:S2 {: RESULT=new StatementListDerived1(S1, S2); RESULT.setLine(S1left); :}
+				| {: RESULT=new StatementListDerived2(); :} /* epsilon */;
+
+Statement ::= Designator:dest EQUAL Expr:e SEMI {: RESULT=new StatementDerived1(dest, e); RESULT.setLine(destleft); :}
+			| error SEMI:l
+			{:
+				parser.report_error(
+					"Izvrsen oporavak do ; u liniji "
+					+ lleft, null
+				);
+			:} {: RESULT=new StatementDerived2(); :}
+			| (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
+			| RETURN SEMI {: RESULT=new StatementDerived3(); :};
+
+Expr ::= Expr:E1 Addop:A2 Term:T3 {: RESULT=new ExprDerived1(E1, A2, T3); RESULT.setLine(E1left); :}
+		| Term:T1 {: RESULT=new ExprDerived2(T1); RESULT.setLine(T1left); :};
+
+Term ::= Factor:t {: RESULT=new TermDerived1(t); RESULT.setLine(tleft); :};
+
+Factor ::= NUMBER:N1 {: RESULT=new FactorDerived1(N1); RESULT.setLine(N1left); :}
+		| Designator:d {: RESULT=new FactorDerived2(d); RESULT.setLine(dleft); :};
+
+Designator ::= IDENT:name {: RESULT=new DesignatorDerived1(name); RESULT.setLine(nameleft); :};
+
+Addop ::= PLUS {: RESULT=new AddopDerived1(); :};

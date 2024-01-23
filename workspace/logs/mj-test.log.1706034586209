@@ -1,0 +1,85 @@
+INFO  19:27:52,703 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  19:27:52,733 - #2 program
+INFO  19:27:52,733 - #30 MJProgram
+INFO  19:27:52,733 - #30 int
+INFO  19:27:52,735 - #30 x
+INFO  19:27:52,736 - #5 ;
+INFO  19:27:52,736 - #30 int
+INFO  19:27:52,737 - #30 y
+INFO  19:27:52,737 - #5 ;
+INFO  19:27:52,737 - #3 {
+INFO  19:27:52,737 - #18 void
+INFO  19:27:52,739 - #30 main
+INFO  19:27:52,739 - #6 (
+INFO  19:27:52,739 - #7 )
+INFO  19:27:52,739 - #3 {
+INFO  19:27:52,739 - #19 print
+INFO  19:27:52,741 - #6 (
+INFO  19:27:52,741 - #29 1
+INFO  19:27:52,741 - #7 )
+INFO  19:27:52,742 - #5 ;
+INFO  19:27:52,742 - #19 print
+INFO  19:27:52,743 - #6 (
+INFO  19:27:52,743 - #29 2
+INFO  19:27:52,743 - #7 )
+INFO  19:27:52,743 - #5 ;
+INFO  19:27:52,743 - #4 }
+INFO  19:27:52,744 - #4 }
+INFO  19:27:52,745 - ProgramDerived1(
+ MJProgram
+  VarDeclListDerived1(
+    VarDeclListDerived1(
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      VarDeclDerived1(
+        TypeDerived1(
+         int
+        ) [TypeDerived1]
+       x
+      ) [VarDeclDerived1]
+    ) [VarDeclListDerived1]
+    VarDeclDerived1(
+      TypeDerived1(
+       int
+      ) [TypeDerived1]
+     y
+    ) [VarDeclDerived1]
+  ) [VarDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+     main
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          PrintStmt(
+            ExprDerived2(
+              TermDerived1(
+                FactorDerived1(
+                 1
+                ) [FactorDerived1]
+              ) [TermDerived1]
+            ) [ExprDerived2]
+          ) [PrintStmt]
+        ) [StatementListDerived1]
+        PrintStmt(
+          ExprDerived2(
+            TermDerived1(
+              FactorDerived1(
+               2
+              ) [FactorDerived1]
+            ) [TermDerived1]
+          ) [ExprDerived2]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [ProgramDerived1]
+INFO  19:27:52,746 - ====================================
+INFO  19:27:52,749 - Prepoznata naredba print!
+INFO  19:27:52,749 - Prepoznata naredba print!
+INFO  19:27:52,749 -  Print calls count = 2

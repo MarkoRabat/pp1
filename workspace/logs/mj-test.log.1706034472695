@@ -1,0 +1,51 @@
+INFO  19:26:48,305 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  19:26:48,333 - #2 program
+INFO  19:26:48,333 - #30 MJProgram
+INFO  19:26:48,333 - #30 int
+INFO  19:26:48,335 - #30 x
+INFO  19:26:48,336 - #5 ;
+INFO  19:26:48,336 - #30 int
+INFO  19:26:48,337 - #30 y
+INFO  19:26:48,337 - #5 ;
+INFO  19:26:48,337 - #3 {
+INFO  19:26:48,337 - #18 void
+INFO  19:26:48,340 - #30 main
+INFO  19:26:48,340 - #6 (
+INFO  19:26:48,340 - #7 )
+INFO  19:26:48,340 - #3 {
+INFO  19:26:48,340 - #4 }
+INFO  19:26:48,341 - #4 }
+INFO  19:26:48,342 - ProgramDerived1(
+ MJProgram
+  VarDeclListDerived1(
+    VarDeclListDerived1(
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      VarDeclDerived1(
+        TypeDerived1(
+         int
+        ) [TypeDerived1]
+       x
+      ) [VarDeclDerived1]
+    ) [VarDeclListDerived1]
+    VarDeclDerived1(
+      TypeDerived1(
+       int
+      ) [TypeDerived1]
+     y
+    ) [VarDeclDerived1]
+  ) [VarDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+     main
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [ProgramDerived1]
+INFO  19:26:48,343 - ====================================
+INFO  19:26:48,346 -  Print calls count = 0
