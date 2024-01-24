@@ -69,8 +69,8 @@ MethodDecl ::= VOID IDENT LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE;
 StatementList ::= StatementList Statement
 				| /* epsilon */;
 
-Statement ::= SimpleDesignator:dest EQUAL Expr:e SEMI
-			| ArrayDesignator:dest EQUAL Expr:e SEMI
+Statement ::= SimpleDesignator EQUAL Expr:e SEMI
+			| ArrayDesignator EQUAL Expr:e SEMI
 			| error SEMI:l
 			{:
 				parser.report_error(
@@ -78,10 +78,18 @@ Statement ::= SimpleDesignator:dest EQUAL Expr:e SEMI
 					+ lleft, null
 				);
 			:}
+			| SimpleDesignator DOUBLEPLUS SEMI
+			| ArrayDesignator DOUBLEPLUS SEMI
+			| SimpleDesignator DOUBLEMINUS SEMI
+			| ArrayDesignator DOUBLEMINUS SEMI
+			| READ LPAREN SimpleDesignator RPAREN SEMI
+			| READ LPAREN ArrayDesignator RPAREN SEMI
 			| (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
+			| (PrintOnWith) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI
 			| RETURN SEMI;
 
 Expr ::= Expr Addop Term
+		| MINUS Term
 		| Term;
 
 Term ::= Term:t Mulop Factor:te
