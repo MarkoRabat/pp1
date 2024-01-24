@@ -51,9 +51,7 @@ terminal String IDENT;
 nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
 nonterminal StatementList, Statement, Mulop, DeclList, Initializator;
 nonterminal SimpleDesignator, ArrayDesignator, Expr, Term, Addop, Factor;
-
-nonterminal Identifier, EndIdentifier, ConstDeclList, ConstIdentifier;
-nonterminal ConstEndIdentifier;
+nonterminal Identifier, ConstDeclList, ConstIdentifier;
 
 Program ::= PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
 
@@ -71,7 +69,7 @@ VarDecl ::= (VarDeclaration) Type:varType DeclList SEMI
 		:};
 
 DeclList ::= Identifier COMMA DeclList
-			| EndIdentifier;
+			| Identifier;
 
 Identifier ::= IDENT
 			| IDENT LBRACKET RBRACKET
@@ -79,43 +77,22 @@ Identifier ::= IDENT
 			| error
 			{:
 				parser.report_error(
-					"Izvrsen oporavak do , u deklaraciji promenljivih"
-					, null
+					"Izvrsen oporavak do ,(|;) u deklaraciji promenljivih",
+					null
 				);
 			:};
 
-EndIdentifier ::= IDENT
-				| IDENT LBRACKET RBRACKET
-				| IDENT EQUAL Initializator
-				| error
-				{:
-					parser.report_error(
-						"Izvrsen oporavak do ; u deklaraciji promenljivih"
-						, null
-					);
-				:};
-
 ConstDeclList ::= ConstIdentifier COMMA ConstDeclList
-			| ConstEndIdentifier;
+				| ConstIdentifier;
 
 ConstIdentifier ::= IDENT EQUAL Initializator
 				| error
 				{:
 					parser.report_error(
-						"Izvrsen oporavak do , u deklaraciji promenljivih"
-						, null
+						"Izvrsen oporavak do ,(|;) u deklaraciji promenljivih",
+						null
 					);
 				:};
-
-ConstEndIdentifier ::= IDENT EQUAL Initializator
-				| error
-				{:
-					parser.report_error(
-						"Izvrsen oporavak do ; u deklaraciji promenljivih"
-						, null
-					);
-				:};
-				
 			
 Initializator ::= NUMBER;
 

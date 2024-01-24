@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/0/2024 23:13:33
+// 24/0/2024 23:18:27
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -13,7 +13,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Mulop Mulop) { }
     public void visit(ConstIdentifier ConstIdentifier) { }
     public void visit(Expr Expr) { }
-    public void visit(ConstEndIdentifier ConstEndIdentifier) { }
     public void visit(Type Type) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(SimpleDesignator SimpleDesignator) { }
@@ -28,7 +27,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Term Term) { }
     public void visit(StatementList StatementList) { }
     public void visit(Program Program) { }
-    public void visit(EndIdentifier EndIdentifier) { }
     public void visit(AddopDerived2 AddopDerived2) { visit(); }
     public void visit(AddopDerived1 AddopDerived1) { visit(); }
     public void visit(MulopDerived3 MulopDerived3) { visit(); }
@@ -65,16 +63,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodDeclListDerived1 MethodDeclListDerived1) { visit(); }
     public void visit(TypeDerived1 TypeDerived1) { visit(); }
     public void visit(InitializatorDerived1 InitializatorDerived1) { visit(); }
-    public void visit(ConstEndIdentifierDerived2 ConstEndIdentifierDerived2) { visit(); }
-    public void visit(ConstEndIdentifierDerived1 ConstEndIdentifierDerived1) { visit(); }
     public void visit(ConstIdentifierDerived2 ConstIdentifierDerived2) { visit(); }
     public void visit(ConstIdentifierDerived1 ConstIdentifierDerived1) { visit(); }
     public void visit(ConstDeclListDerived2 ConstDeclListDerived2) { visit(); }
     public void visit(ConstDeclListDerived1 ConstDeclListDerived1) { visit(); }
-    public void visit(EndIdentifierDerived4 EndIdentifierDerived4) { visit(); }
-    public void visit(EndIdentifierDerived3 EndIdentifierDerived3) { visit(); }
-    public void visit(EndIdentifierDerived2 EndIdentifierDerived2) { visit(); }
-    public void visit(EndIdentifierDerived1 EndIdentifierDerived1) { visit(); }
     public void visit(IdentifierDerived4 IdentifierDerived4) { visit(); }
     public void visit(IdentifierDerived3 IdentifierDerived3) { visit(); }
     public void visit(IdentifierDerived2 IdentifierDerived2) { visit(); }

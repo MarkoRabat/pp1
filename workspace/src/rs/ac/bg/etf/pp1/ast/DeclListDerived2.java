@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/0/2024 23:13:33
+// 24/0/2024 23:18:27
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class DeclListDerived2 extends DeclList {
 
-    private EndIdentifier EndIdentifier;
+    private Identifier Identifier;
 
-    public DeclListDerived2 (EndIdentifier EndIdentifier) {
-        this.EndIdentifier=EndIdentifier;
-        if(EndIdentifier!=null) EndIdentifier.setParent(this);
+    public DeclListDerived2 (Identifier Identifier) {
+        this.Identifier=Identifier;
+        if(Identifier!=null) Identifier.setParent(this);
     }
 
-    public EndIdentifier getEndIdentifier() {
-        return EndIdentifier;
+    public Identifier getIdentifier() {
+        return Identifier;
     }
 
-    public void setEndIdentifier(EndIdentifier EndIdentifier) {
-        this.EndIdentifier=EndIdentifier;
+    public void setIdentifier(Identifier Identifier) {
+        this.Identifier=Identifier;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class DeclListDerived2 extends DeclList {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(EndIdentifier!=null) EndIdentifier.accept(visitor);
+        if(Identifier!=null) Identifier.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(EndIdentifier!=null) EndIdentifier.traverseTopDown(visitor);
+        if(Identifier!=null) Identifier.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(EndIdentifier!=null) EndIdentifier.traverseBottomUp(visitor);
+        if(Identifier!=null) Identifier.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class DeclListDerived2 extends DeclList {
         buffer.append(tab);
         buffer.append("DeclListDerived2(\n");
 
-        if(EndIdentifier!=null)
-            buffer.append(EndIdentifier.toString("  "+tab));
+        if(Identifier!=null)
+            buffer.append(Identifier.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

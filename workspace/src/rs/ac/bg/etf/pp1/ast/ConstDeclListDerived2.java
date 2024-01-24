@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/0/2024 23:13:33
+// 24/0/2024 23:18:27
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ConstDeclListDerived2 extends ConstDeclList {
 
-    private ConstEndIdentifier ConstEndIdentifier;
+    private ConstIdentifier ConstIdentifier;
 
-    public ConstDeclListDerived2 (ConstEndIdentifier ConstEndIdentifier) {
-        this.ConstEndIdentifier=ConstEndIdentifier;
-        if(ConstEndIdentifier!=null) ConstEndIdentifier.setParent(this);
+    public ConstDeclListDerived2 (ConstIdentifier ConstIdentifier) {
+        this.ConstIdentifier=ConstIdentifier;
+        if(ConstIdentifier!=null) ConstIdentifier.setParent(this);
     }
 
-    public ConstEndIdentifier getConstEndIdentifier() {
-        return ConstEndIdentifier;
+    public ConstIdentifier getConstIdentifier() {
+        return ConstIdentifier;
     }
 
-    public void setConstEndIdentifier(ConstEndIdentifier ConstEndIdentifier) {
-        this.ConstEndIdentifier=ConstEndIdentifier;
+    public void setConstIdentifier(ConstIdentifier ConstIdentifier) {
+        this.ConstIdentifier=ConstIdentifier;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class ConstDeclListDerived2 extends ConstDeclList {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(ConstEndIdentifier!=null) ConstEndIdentifier.accept(visitor);
+        if(ConstIdentifier!=null) ConstIdentifier.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(ConstEndIdentifier!=null) ConstEndIdentifier.traverseTopDown(visitor);
+        if(ConstIdentifier!=null) ConstIdentifier.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(ConstEndIdentifier!=null) ConstEndIdentifier.traverseBottomUp(visitor);
+        if(ConstIdentifier!=null) ConstIdentifier.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class ConstDeclListDerived2 extends ConstDeclList {
         buffer.append(tab);
         buffer.append("ConstDeclListDerived2(\n");
 
-        if(ConstEndIdentifier!=null)
-            buffer.append(ConstEndIdentifier.toString("  "+tab));
+        if(ConstIdentifier!=null)
+            buffer.append(ConstIdentifier.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
