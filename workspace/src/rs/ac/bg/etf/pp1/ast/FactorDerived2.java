@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/0/2024 19:46:17
+// 24/0/2024 19:30:41
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class FactorDerived2 extends Factor {
 
-    private Designator Designator;
+    private SimpleDesignator SimpleDesignator;
 
-    public FactorDerived2 (Designator Designator) {
-        this.Designator=Designator;
-        if(Designator!=null) Designator.setParent(this);
+    public FactorDerived2 (SimpleDesignator SimpleDesignator) {
+        this.SimpleDesignator=SimpleDesignator;
+        if(SimpleDesignator!=null) SimpleDesignator.setParent(this);
     }
 
-    public Designator getDesignator() {
-        return Designator;
+    public SimpleDesignator getSimpleDesignator() {
+        return SimpleDesignator;
     }
 
-    public void setDesignator(Designator Designator) {
-        this.Designator=Designator;
+    public void setSimpleDesignator(SimpleDesignator SimpleDesignator) {
+        this.SimpleDesignator=SimpleDesignator;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class FactorDerived2 extends Factor {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Designator!=null) Designator.accept(visitor);
+        if(SimpleDesignator!=null) SimpleDesignator.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Designator!=null) Designator.traverseTopDown(visitor);
+        if(SimpleDesignator!=null) SimpleDesignator.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Designator!=null) Designator.traverseBottomUp(visitor);
+        if(SimpleDesignator!=null) SimpleDesignator.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class FactorDerived2 extends Factor {
         buffer.append(tab);
         buffer.append("FactorDerived2(\n");
 
-        if(Designator!=null)
-            buffer.append(Designator.toString("  "+tab));
+        if(SimpleDesignator!=null)
+            buffer.append(SimpleDesignator.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

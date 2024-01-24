@@ -56,7 +56,9 @@ nonterminal Type Type;
 nonterminal MethodDecl MethodDecl;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
-nonterminal Designator Designator;
+nonterminal Mulop Mulop;
+nonterminal SimpleDesignator SimpleDesignator;
+nonterminal ArrayDesignator ArrayDesignator;
 nonterminal Expr Expr;
 nonterminal Term Term;
 nonterminal Addop Addop;
@@ -79,25 +81,34 @@ MethodDecl ::= VOID IDENT:I1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S
 StatementList ::= StatementList:S1 Statement:S2 {: RESULT=new StatementListDerived1(S1, S2); RESULT.setLine(S1left); :}
 				| {: RESULT=new StatementListDerived2(); :} /* epsilon */;
 
-Statement ::= Designator:dest EQUAL Expr:e SEMI {: RESULT=new StatementDerived1(dest, e); RESULT.setLine(destleft); :}
+Statement ::= SimpleDesignator:dest EQUAL Expr:e SEMI {: RESULT=new StatementDerived1(dest, e); RESULT.setLine(destleft); :}
+			| ArrayDesignator:dest EQUAL Expr:e SEMI {: RESULT=new StatementDerived2(dest, e); RESULT.setLine(destleft); :}
 			| error SEMI:l
 			{:
 				parser.report_error(
 					"Izvrsen oporavak do ; u liniji "
 					+ lleft, null
 				);
-			:} {: RESULT=new StatementDerived2(); :}
+			:} {: RESULT=new StatementDerived3(); :}
 			| (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
-			| RETURN SEMI {: RESULT=new StatementDerived3(); :};
+			| RETURN SEMI {: RESULT=new StatementDerived4(); :};
 
 Expr ::= Expr:E1 Addop:A2 Term:T3 {: RESULT=new ExprDerived1(E1, A2, T3); RESULT.setLine(E1left); :}
 		| Term:T1 {: RESULT=new ExprDerived2(T1); RESULT.setLine(T1left); :};
 
-Term ::= Factor:t {: RESULT=new TermDerived1(t); RESULT.setLine(tleft); :};
+Term ::= Term:t Mulop:M1 Factor:te {: RESULT=new TermDerived1(t, M1, te); RESULT.setLine(tleft); :}
+		| Factor:t {: RESULT=new TermDerived2(t); RESULT.setLine(tleft); :};
 
 Factor ::= NUMBER:N1 {: RESULT=new FactorDerived1(N1); RESULT.setLine(N1left); :}
-		| Designator:d {: RESULT=new FactorDerived2(d); RESULT.setLine(dleft); :};
+		| SimpleDesignator:d {: RESULT=new FactorDerived2(d); RESULT.setLine(dleft); :}
+		| ArrayDesignator:d {: RESULT=new FactorDerived3(d); RESULT.setLine(dleft); :};
 
-Designator ::= IDENT:name {: RESULT=new DesignatorDerived1(name); RESULT.setLine(nameleft); :};
+SimpleDesignator ::= IDENT:name {: RESULT=new SimpleDesignatorDerived1(name); RESULT.setLine(nameleft); :}
+					| IDENT:namesp DOUBLECOLON IDENT:name {: RESULT=new SimpleDesignatorDerived2(namesp, name); RESULT.setLine(namespleft); :};
 
-Addop ::= PLUS {: RESULT=new AddopDerived1(); :};
+ArrayDesignator ::= IDENT:name LBRACKET Expr:E1 RBRACKET {: RESULT=new ArrayDesignatorDerived1(name, E1); RESULT.setLine(nameleft); :}
+				| IDENT:namesp DOUBLECOLON IDENT:name LBRACKET Expr:E1 RBRACKET {: RESULT=new ArrayDesignatorDerived2(namesp, name, E1); RESULT.setLine(namespleft); :};
+
+Mulop ::= MUL {: RESULT=new MulopDerived1(); :} | DIV {: RESULT=new MulopDerived2(); :} | PERCENT {: RESULT=new MulopDerived3(); :};
+
+Addop ::= PLUS {: RESULT=new AddopDerived1(); :} | MINUS {: RESULT=new AddopDerived2(); :};

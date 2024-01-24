@@ -49,8 +49,8 @@ terminal Integer NUMBER;
 terminal String IDENT;
 
 nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
-nonterminal StatementList, Statement;
-nonterminal Designator, Expr, Term, Addop, Factor;
+nonterminal StatementList, Statement, Mulop;
+nonterminal SimpleDesignator, ArrayDesignator, Expr, Term, Addop, Factor;
 
 Program ::= PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
 
@@ -69,7 +69,8 @@ MethodDecl ::= VOID IDENT LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE;
 StatementList ::= StatementList Statement
 				| /* epsilon */;
 
-Statement ::= Designator:dest EQUAL Expr:e SEMI
+Statement ::= SimpleDesignator:dest EQUAL Expr:e SEMI
+			| ArrayDesignator:dest EQUAL Expr:e SEMI
 			| error SEMI:l
 			{:
 				parser.report_error(
@@ -83,11 +84,19 @@ Statement ::= Designator:dest EQUAL Expr:e SEMI
 Expr ::= Expr Addop Term
 		| Term;
 
-Term ::= Factor:t;
+Term ::= Term:t Mulop Factor:te
+		| Factor:t;
 
 Factor ::= NUMBER
-		| Designator:d;
+		| SimpleDesignator:d
+		| ArrayDesignator:d;
 
-Designator ::= IDENT:name;
+SimpleDesignator ::= IDENT:name
+					| IDENT:namesp DOUBLECOLON IDENT:name;
 
-Addop ::= PLUS;
+ArrayDesignator ::= IDENT:name LBRACKET Expr RBRACKET
+				| IDENT:namesp DOUBLECOLON IDENT:name LBRACKET Expr RBRACKET;
+
+Mulop ::= MUL | DIV | PERCENT;
+
+Addop ::= PLUS | MINUS;

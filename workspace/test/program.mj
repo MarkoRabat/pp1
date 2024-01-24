@@ -5,7 +5,12 @@ program MJProgram
 	
 		print(1);
 		
-		x = y + 5 + ;
+		x = y + 5 + z[3];
+		x1[8] = y2[5] * 5 + z[3] / k[19] % t[k % u];
+		namesp::x = namesp2::y + 5 + namesp3::z[3];
+		namesp::x1[8] = namesp2::y2[5] * 5 + namesp4::z[3]
+		/ namespp::k[19] % t[ab4ra::k % t::u - t[5]
+			- t1::k[naspe::k[17] / k[8] % sk::k[d / d] * 17] * k / k];
 
 		print(2);
 		

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/0/2024 19:46:17
+// 24/0/2024 19:30:41
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,24 +11,36 @@ public interface Visitor {
     public void visit(Program Program);
     public void visit(Expr Expr);
     public void visit(VarDeclList VarDeclList);
-    public void visit(Designator Designator);
     public void visit(StatementList StatementList);
+    public void visit(ArrayDesignator ArrayDesignator);
     public void visit(MethodDecl MethodDecl);
     public void visit(VarDecl VarDecl);
     public void visit(Addop Addop);
     public void visit(Statement Statement);
     public void visit(Term Term);
     public void visit(Factor Factor);
+    public void visit(SimpleDesignator SimpleDesignator);
+    public void visit(Mulop Mulop);
     public void visit(MethodDeclList MethodDeclList);
+    public void visit(AddopDerived2 AddopDerived2);
     public void visit(AddopDerived1 AddopDerived1);
-    public void visit(DesignatorDerived1 DesignatorDerived1);
+    public void visit(MulopDerived3 MulopDerived3);
+    public void visit(MulopDerived2 MulopDerived2);
+    public void visit(MulopDerived1 MulopDerived1);
+    public void visit(ArrayDesignatorDerived2 ArrayDesignatorDerived2);
+    public void visit(ArrayDesignatorDerived1 ArrayDesignatorDerived1);
+    public void visit(SimpleDesignatorDerived2 SimpleDesignatorDerived2);
+    public void visit(SimpleDesignatorDerived1 SimpleDesignatorDerived1);
+    public void visit(FactorDerived3 FactorDerived3);
     public void visit(FactorDerived2 FactorDerived2);
     public void visit(FactorDerived1 FactorDerived1);
+    public void visit(TermDerived2 TermDerived2);
     public void visit(TermDerived1 TermDerived1);
     public void visit(ExprDerived2 ExprDerived2);
     public void visit(ExprDerived1 ExprDerived1);
-    public void visit(StatementDerived3 StatementDerived3);
+    public void visit(StatementDerived4 StatementDerived4);
     public void visit(PrintStmt PrintStmt);
+    public void visit(StatementDerived3 StatementDerived3);
     public void visit(StatementDerived2 StatementDerived2);
     public void visit(StatementDerived1 StatementDerived1);
     public void visit(StatementListDerived2 StatementListDerived2);

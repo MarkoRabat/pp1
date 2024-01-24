@@ -1,28 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/0/2024 19:46:17
+// 24/0/2024 19:30:41
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class StatementDerived1 extends Statement {
 
-    private Designator Designator;
+    private SimpleDesignator SimpleDesignator;
     private Expr Expr;
 
-    public StatementDerived1 (Designator Designator, Expr Expr) {
-        this.Designator=Designator;
-        if(Designator!=null) Designator.setParent(this);
+    public StatementDerived1 (SimpleDesignator SimpleDesignator, Expr Expr) {
+        this.SimpleDesignator=SimpleDesignator;
+        if(SimpleDesignator!=null) SimpleDesignator.setParent(this);
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
     }
 
-    public Designator getDesignator() {
-        return Designator;
+    public SimpleDesignator getSimpleDesignator() {
+        return SimpleDesignator;
     }
 
-    public void setDesignator(Designator Designator) {
-        this.Designator=Designator;
+    public void setSimpleDesignator(SimpleDesignator SimpleDesignator) {
+        this.SimpleDesignator=SimpleDesignator;
     }
 
     public Expr getExpr() {
@@ -38,18 +38,18 @@ public class StatementDerived1 extends Statement {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Designator!=null) Designator.accept(visitor);
+        if(SimpleDesignator!=null) SimpleDesignator.accept(visitor);
         if(Expr!=null) Expr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Designator!=null) Designator.traverseTopDown(visitor);
+        if(SimpleDesignator!=null) SimpleDesignator.traverseTopDown(visitor);
         if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Designator!=null) Designator.traverseBottomUp(visitor);
+        if(SimpleDesignator!=null) SimpleDesignator.traverseBottomUp(visitor);
         if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -59,8 +59,8 @@ public class StatementDerived1 extends Statement {
         buffer.append(tab);
         buffer.append("StatementDerived1(\n");
 
-        if(Designator!=null)
-            buffer.append(Designator.toString("  "+tab));
+        if(SimpleDesignator!=null)
+            buffer.append(SimpleDesignator.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
