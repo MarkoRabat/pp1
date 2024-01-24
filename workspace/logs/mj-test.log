@@ -1,189 +1,197 @@
-INFO  22:56:13,589 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
-INFO  22:56:13,652 - #2 program
-INFO  22:56:13,653 - #30 MJProgram
-INFO  22:56:13,653 - #30 int
-INFO  22:56:13,655 - #30 x
-INFO  22:56:13,655 - #15 ,
-INFO  22:56:13,656 - #30 y
-INFO  22:56:13,656 - #25 [
-INFO  22:56:13,656 - #27 ]
-INFO  22:56:13,656 - #5 ;
-INFO  22:56:13,657 - #30 int
-INFO  22:56:13,658 - #30 x
-INFO  22:56:13,658 - #25 [
-INFO  22:56:13,658 - #27 ]
-INFO  22:56:13,659 - #15 ,
-INFO  22:56:13,659 - #30 y
-INFO  22:56:13,659 - #25 [
-INFO  22:56:13,659 - #27 ]
-INFO  22:56:13,659 - #5 ;
-INFO  22:56:13,659 - #30 int
-INFO  22:56:13,660 - #30 x
-INFO  22:56:13,660 - #15 ,
-INFO  22:56:13,660 - #30 y
-INFO  22:56:13,660 - #8 =
-INFO  22:56:13,660 - #29 5
-INFO  22:56:13,661 - #5 ;
-INFO  22:56:13,661 - #30 int
-INFO  22:56:13,661 - #30 x
-INFO  22:56:13,662 - #8 =
-INFO  22:56:13,662 - #29 5
-INFO  22:56:13,662 - #15 ,
-INFO  22:56:13,662 - #30 y
-INFO  22:56:13,662 - #17 +
-ERROR 22:56:13,662 - 
+INFO  23:14:14,546 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  23:14:14,632 - #2 program
+INFO  23:14:14,632 - #30 MJProgram
+INFO  23:14:14,632 - #30 int
+INFO  23:14:14,633 - #30 x
+INFO  23:14:14,633 - #15 ,
+INFO  23:14:14,635 - #30 y
+INFO  23:14:14,635 - #25 [
+INFO  23:14:14,635 - #27 ]
+INFO  23:14:14,635 - #5 ;
+INFO  23:14:14,635 - #30 int
+INFO  23:14:14,637 - #30 x
+INFO  23:14:14,637 - #25 [
+INFO  23:14:14,637 - #27 ]
+INFO  23:14:14,637 - #15 ,
+INFO  23:14:14,637 - #30 y
+INFO  23:14:14,639 - #25 [
+INFO  23:14:14,639 - #27 ]
+INFO  23:14:14,639 - #5 ;
+INFO  23:14:14,640 - #30 int
+INFO  23:14:14,640 - #30 x
+INFO  23:14:14,640 - #15 ,
+INFO  23:14:14,640 - #30 y
+INFO  23:14:14,640 - #8 =
+INFO  23:14:14,642 - #29 5
+INFO  23:14:14,643 - #5 ;
+INFO  23:14:14,644 - #26 const
+INFO  23:14:14,644 - #30 int
+INFO  23:14:14,645 - #30 x
+INFO  23:14:14,645 - #8 =
+INFO  23:14:14,645 - #29 5
+INFO  23:14:14,645 - #15 ,
+INFO  23:14:14,646 - #30 y
+INFO  23:14:14,646 - #17 +
+ERROR 23:14:14,647 - 
 Sintaksna greska na liniji 5
-INFO  22:56:13,663 - #29 5
-INFO  22:56:13,663 - #8 =
-INFO  22:56:13,663 - #29 5
-INFO  22:56:13,665 - #15 ,
-INFO  22:56:13,665 - #30 x
-INFO  22:56:13,666 - #8 =
-INFO  22:56:13,666 - #29 3
-ERROR 22:56:13,666 - Izvrsen oporavak do , u deklaraciji promenljivih
-INFO  22:56:13,668 - #15 ,
-INFO  22:56:13,668 - #30 k
-INFO  22:56:13,668 - #8 =
-INFO  22:56:13,669 - #30 ttt
-ERROR 22:56:13,669 - 
+INFO  23:14:14,647 - #29 5
+INFO  23:14:14,647 - #8 =
+INFO  23:14:14,647 - #29 5
+INFO  23:14:14,648 - #15 ,
+INFO  23:14:14,648 - #30 x
+INFO  23:14:14,649 - #8 =
+INFO  23:14:14,649 - #29 3
+ERROR 23:14:14,649 - Izvrsen oporavak do , u deklaraciji promenljivih
+INFO  23:14:14,652 - #15 ,
+INFO  23:14:14,652 - #30 k
+INFO  23:14:14,652 - #8 =
+INFO  23:14:14,652 - #29 3
+INFO  23:14:14,652 - #15 ,
+INFO  23:14:14,653 - #30 a
+INFO  23:14:14,653 - #25 [
+ERROR 23:14:14,653 - 
 Sintaksna greska na liniji 5
-INFO  22:56:13,669 - #29 3
-INFO  22:56:13,669 - #15 ,
-INFO  22:56:13,669 - #30 a
-INFO  22:56:13,669 - #25 [
-INFO  22:56:13,669 - #27 ]
-ERROR 22:56:13,669 - Izvrsen oporavak do , u deklaraciji promenljivih
-INFO  22:56:13,669 - #15 ,
-INFO  22:56:13,669 - #30 a
-INFO  22:56:13,669 - #27 ]
-ERROR 22:56:13,670 - 
+INFO  23:14:14,653 - #27 ]
+INFO  23:14:14,653 - #15 ,
+INFO  23:14:14,653 - #30 a
+INFO  23:14:14,654 - #8 =
+INFO  23:14:14,655 - #29 6
+ERROR 23:14:14,655 - Izvrsen oporavak do , u deklaraciji promenljivih
+INFO  23:14:14,655 - #15 ,
+INFO  23:14:14,656 - #30 a
+INFO  23:14:14,656 - #27 ]
+ERROR 23:14:14,656 - 
 Sintaksna greska na liniji 5
-INFO  22:56:13,670 - #8 =
-INFO  22:56:13,670 - #8 =
-INFO  22:56:13,670 - #8 =
-INFO  22:56:13,671 - #29 9
-INFO  22:56:13,671 - #29 9
-INFO  22:56:13,671 - #29 9
-INFO  22:56:13,671 - #5 ;
-INFO  22:56:13,671 - #30 int
-INFO  22:56:13,671 - #30 x
-INFO  22:56:13,671 - #8 =
-ERROR 22:56:13,672 - Izvrsen oporavak do ; u deklaraciji promenljivih
-INFO  22:56:13,673 - #29 5
-INFO  22:56:13,673 - #15 ,
-INFO  22:56:13,673 - #30 y
-INFO  22:56:13,673 - #25 [
-INFO  22:56:13,673 - #27 ]
-INFO  22:56:13,673 - #5 ;
-INFO  22:56:13,674 - #3 {
-INFO  22:56:13,674 - #18 void
-INFO  22:56:13,675 - #30 main
-INFO  22:56:13,675 - #6 (
-INFO  22:56:13,675 - #7 )
-INFO  22:56:13,675 - #3 {
-INFO  22:56:13,675 - #19 print
-INFO  22:56:13,677 - #6 (
-INFO  22:56:13,677 - #29 1
-INFO  22:56:13,677 - #7 )
-INFO  22:56:13,678 - #5 ;
-INFO  22:56:13,678 - #30 x
-INFO  22:56:13,679 - #8 =
-INFO  22:56:13,679 - #23 -
-INFO  22:56:13,679 - #30 x
-INFO  22:56:13,679 - #5 ;
-INFO  22:56:13,680 - #30 x
-INFO  22:56:13,680 - #8 =
-INFO  22:56:13,681 - #23 -
-INFO  22:56:13,681 - #30 ns
-INFO  22:56:13,681 - #11 ::
-INFO  22:56:13,681 - #30 y
-INFO  22:56:13,681 - #25 [
-INFO  22:56:13,681 - #29 5
-INFO  22:56:13,681 - #27 ]
-INFO  22:56:13,681 - #14 *
-INFO  22:56:13,682 - #30 ns1
-INFO  22:56:13,686 - #11 ::
-INFO  22:56:13,686 - #30 x
-INFO  22:56:13,686 - #25 [
-INFO  22:56:13,687 - #23 -
-INFO  22:56:13,687 - #29 7
-INFO  22:56:13,687 - #27 ]
-INFO  22:56:13,688 - #22 /
-INFO  22:56:13,688 - #29 3
-INFO  22:56:13,690 - #5 ;
-INFO  22:56:13,690 - #19 print
-INFO  22:56:13,691 - #6 (
-INFO  22:56:13,691 - #30 x
-INFO  22:56:13,691 - #15 ,
-INFO  22:56:13,691 - #29 5
-INFO  22:56:13,691 - #7 )
-INFO  22:56:13,691 - #5 ;
-INFO  22:56:13,691 - #19 print
-INFO  22:56:13,692 - #6 (
-INFO  22:56:13,692 - #23 -
-INFO  22:56:13,692 - #30 ns
-INFO  22:56:13,692 - #11 ::
-INFO  22:56:13,693 - #30 x
-INFO  22:56:13,693 - #15 ,
-INFO  22:56:13,693 - #29 5
-INFO  22:56:13,693 - #7 )
-INFO  22:56:13,693 - #5 ;
-INFO  22:56:13,693 - #30 x
-INFO  22:56:13,694 - #16 ++
-INFO  22:56:13,694 - #5 ;
-INFO  22:56:13,694 - #30 x
-INFO  22:56:13,694 - #10 --
-INFO  22:56:13,695 - #5 ;
-INFO  22:56:13,695 - #30 ns
-INFO  22:56:13,695 - #11 ::
-INFO  22:56:13,695 - #30 x
-INFO  22:56:13,695 - #16 ++
-INFO  22:56:13,696 - #5 ;
-INFO  22:56:13,696 - #30 ns
-INFO  22:56:13,696 - #11 ::
-INFO  22:56:13,696 - #30 x
-INFO  22:56:13,696 - #10 --
-INFO  22:56:13,696 - #5 ;
-INFO  22:56:13,696 - #30 x
-INFO  22:56:13,697 - #25 [
-INFO  22:56:13,697 - #23 -
-INFO  22:56:13,697 - #30 x
-INFO  22:56:13,697 - #27 ]
-INFO  22:56:13,697 - #16 ++
-INFO  22:56:13,698 - #5 ;
-INFO  22:56:13,698 - #30 x
-INFO  22:56:13,698 - #25 [
-INFO  22:56:13,699 - #23 -
-INFO  22:56:13,699 - #30 x
-INFO  22:56:13,699 - #27 ]
-INFO  22:56:13,699 - #10 --
-INFO  22:56:13,699 - #5 ;
-INFO  22:56:13,699 - #30 ns
-INFO  22:56:13,699 - #11 ::
-INFO  22:56:13,699 - #30 x
-INFO  22:56:13,700 - #25 [
-INFO  22:56:13,700 - #23 -
-INFO  22:56:13,700 - #30 x
-INFO  22:56:13,700 - #27 ]
-INFO  22:56:13,700 - #16 ++
-INFO  22:56:13,700 - #5 ;
-INFO  22:56:13,700 - #30 ns
-INFO  22:56:13,700 - #11 ::
-INFO  22:56:13,700 - #30 x
-INFO  22:56:13,700 - #25 [
-INFO  22:56:13,701 - #23 -
-INFO  22:56:13,701 - #30 x
-INFO  22:56:13,701 - #27 ]
-INFO  22:56:13,701 - #10 --
-INFO  22:56:13,701 - #5 ;
-INFO  22:56:13,701 - #19 print
-INFO  22:56:13,701 - #6 (
-INFO  22:56:13,701 - #29 2
-INFO  22:56:13,702 - #7 )
-INFO  22:56:13,702 - #5 ;
-INFO  22:56:13,702 - #4 }
-INFO  22:56:13,702 - #4 }
-INFO  22:56:13,706 - ProgramDerived1(
+INFO  23:14:14,656 - #8 =
+INFO  23:14:14,656 - #8 =
+INFO  23:14:14,658 - #8 =
+INFO  23:14:14,659 - #29 9
+INFO  23:14:14,659 - #29 9
+INFO  23:14:14,659 - #29 9
+INFO  23:14:14,660 - #15 ,
+INFO  23:14:14,661 - #30 b
+INFO  23:14:14,662 - #8 =
+INFO  23:14:14,662 - #29 7
+ERROR 23:14:14,662 - Izvrsen oporavak do , u deklaraciji promenljivih
+INFO  23:14:14,663 - #5 ;
+INFO  23:14:14,664 - #30 int
+INFO  23:14:14,664 - #30 x
+INFO  23:14:14,664 - #8 =
+INFO  23:14:14,664 - #29 5
+INFO  23:14:14,664 - #15 ,
+INFO  23:14:14,664 - #30 y
+INFO  23:14:14,664 - #25 [
+INFO  23:14:14,664 - #27 ]
+INFO  23:14:14,664 - #5 ;
+INFO  23:14:14,665 - #3 {
+INFO  23:14:14,665 - #18 void
+INFO  23:14:14,667 - #30 main
+INFO  23:14:14,668 - #6 (
+INFO  23:14:14,668 - #7 )
+INFO  23:14:14,668 - #3 {
+INFO  23:14:14,668 - #19 print
+INFO  23:14:14,670 - #6 (
+INFO  23:14:14,670 - #29 1
+INFO  23:14:14,671 - #7 )
+INFO  23:14:14,672 - #5 ;
+INFO  23:14:14,673 - #30 x
+INFO  23:14:14,675 - #8 =
+INFO  23:14:14,676 - #23 -
+INFO  23:14:14,676 - #30 x
+INFO  23:14:14,676 - #5 ;
+INFO  23:14:14,678 - #30 x
+INFO  23:14:14,678 - #8 =
+INFO  23:14:14,679 - #23 -
+INFO  23:14:14,679 - #30 ns
+INFO  23:14:14,679 - #11 ::
+INFO  23:14:14,680 - #30 y
+INFO  23:14:14,680 - #25 [
+INFO  23:14:14,680 - #29 5
+INFO  23:14:14,680 - #27 ]
+INFO  23:14:14,680 - #14 *
+INFO  23:14:14,681 - #30 ns1
+INFO  23:14:14,684 - #11 ::
+INFO  23:14:14,685 - #30 x
+INFO  23:14:14,685 - #25 [
+INFO  23:14:14,685 - #23 -
+INFO  23:14:14,685 - #29 7
+INFO  23:14:14,685 - #27 ]
+INFO  23:14:14,685 - #22 /
+INFO  23:14:14,686 - #29 3
+INFO  23:14:14,688 - #5 ;
+INFO  23:14:14,689 - #19 print
+INFO  23:14:14,689 - #6 (
+INFO  23:14:14,689 - #30 x
+INFO  23:14:14,689 - #15 ,
+INFO  23:14:14,690 - #29 5
+INFO  23:14:14,690 - #7 )
+INFO  23:14:14,690 - #5 ;
+INFO  23:14:14,690 - #19 print
+INFO  23:14:14,691 - #6 (
+INFO  23:14:14,691 - #23 -
+INFO  23:14:14,691 - #30 ns
+INFO  23:14:14,691 - #11 ::
+INFO  23:14:14,691 - #30 x
+INFO  23:14:14,691 - #15 ,
+INFO  23:14:14,691 - #29 5
+INFO  23:14:14,691 - #7 )
+INFO  23:14:14,691 - #5 ;
+INFO  23:14:14,691 - #30 x
+INFO  23:14:14,691 - #16 ++
+INFO  23:14:14,693 - #5 ;
+INFO  23:14:14,693 - #30 x
+INFO  23:14:14,693 - #10 --
+INFO  23:14:14,693 - #5 ;
+INFO  23:14:14,693 - #30 ns
+INFO  23:14:14,694 - #11 ::
+INFO  23:14:14,694 - #30 x
+INFO  23:14:14,694 - #16 ++
+INFO  23:14:14,694 - #5 ;
+INFO  23:14:14,694 - #30 ns
+INFO  23:14:14,694 - #11 ::
+INFO  23:14:14,694 - #30 x
+INFO  23:14:14,694 - #10 --
+INFO  23:14:14,694 - #5 ;
+INFO  23:14:14,694 - #30 x
+INFO  23:14:14,694 - #25 [
+INFO  23:14:14,694 - #23 -
+INFO  23:14:14,695 - #30 x
+INFO  23:14:14,695 - #27 ]
+INFO  23:14:14,695 - #16 ++
+INFO  23:14:14,695 - #5 ;
+INFO  23:14:14,695 - #30 x
+INFO  23:14:14,695 - #25 [
+INFO  23:14:14,695 - #23 -
+INFO  23:14:14,695 - #30 x
+INFO  23:14:14,695 - #27 ]
+INFO  23:14:14,695 - #10 --
+INFO  23:14:14,695 - #5 ;
+INFO  23:14:14,695 - #30 ns
+INFO  23:14:14,695 - #11 ::
+INFO  23:14:14,696 - #30 x
+INFO  23:14:14,696 - #25 [
+INFO  23:14:14,696 - #23 -
+INFO  23:14:14,696 - #30 x
+INFO  23:14:14,696 - #27 ]
+INFO  23:14:14,696 - #16 ++
+INFO  23:14:14,696 - #5 ;
+INFO  23:14:14,696 - #30 ns
+INFO  23:14:14,696 - #11 ::
+INFO  23:14:14,696 - #30 x
+INFO  23:14:14,696 - #25 [
+INFO  23:14:14,696 - #23 -
+INFO  23:14:14,697 - #30 x
+INFO  23:14:14,697 - #27 ]
+INFO  23:14:14,697 - #10 --
+INFO  23:14:14,697 - #5 ;
+INFO  23:14:14,697 - #19 print
+INFO  23:14:14,697 - #6 (
+INFO  23:14:14,697 - #29 2
+INFO  23:14:14,697 - #7 )
+INFO  23:14:14,697 - #5 ;
+INFO  23:14:14,697 - #4 }
+INFO  23:14:14,697 - #4 }
+INFO  23:14:14,702 - ProgramDerived1(
  MJProgram
   VarDeclListDerived1(
     VarDeclListDerived1(
@@ -243,44 +251,63 @@ INFO  22:56:13,706 - ProgramDerived1(
           ) [DeclListDerived1]
         ) [VarDeclaration]
       ) [VarDeclListDerived1]
-      VarDeclaration(
+      ConstVarDeclaration(
         TypeDerived1(
          int
         ) [TypeDerived1]
-        DeclListDerived1(
-          IdentifierDerived3(
+        ConstDeclListDerived1(
+          ConstIdentifierDerived1(
            x
             InitializatorDerived1(
              5
             ) [InitializatorDerived1]
-          ) [IdentifierDerived3]
-          DeclListDerived1(
-            IdentifierDerived4(
-            ) [IdentifierDerived4]
-            DeclListDerived1(
-              IdentifierDerived3(
+          ) [ConstIdentifierDerived1]
+          ConstDeclListDerived1(
+            ConstIdentifierDerived2(
+            ) [ConstIdentifierDerived2]
+            ConstDeclListDerived1(
+              ConstIdentifierDerived1(
                x
                 InitializatorDerived1(
                  3
                 ) [InitializatorDerived1]
-              ) [IdentifierDerived3]
-              DeclListDerived1(
-                IdentifierDerived4(
-                ) [IdentifierDerived4]
-                DeclListDerived1(
-                  IdentifierDerived2(
-                   a
-                  ) [IdentifierDerived2]
-                  DeclListDerived2(
-                    EndIdentifierDerived4(
-                    ) [EndIdentifierDerived4]
-                  ) [DeclListDerived2]
-                ) [DeclListDerived1]
-              ) [DeclListDerived1]
-            ) [DeclListDerived1]
-          ) [DeclListDerived1]
-        ) [DeclListDerived1]
-      ) [VarDeclaration]
+              ) [ConstIdentifierDerived1]
+              ConstDeclListDerived1(
+                ConstIdentifierDerived1(
+                 k
+                  InitializatorDerived1(
+                   3
+                  ) [InitializatorDerived1]
+                ) [ConstIdentifierDerived1]
+                ConstDeclListDerived1(
+                  ConstIdentifierDerived2(
+                  ) [ConstIdentifierDerived2]
+                  ConstDeclListDerived1(
+                    ConstIdentifierDerived1(
+                     a
+                      InitializatorDerived1(
+                       6
+                      ) [InitializatorDerived1]
+                    ) [ConstIdentifierDerived1]
+                    ConstDeclListDerived1(
+                      ConstIdentifierDerived2(
+                      ) [ConstIdentifierDerived2]
+                      ConstDeclListDerived2(
+                        ConstEndIdentifierDerived1(
+                         b
+                          InitializatorDerived1(
+                           7
+                          ) [InitializatorDerived1]
+                        ) [ConstEndIdentifierDerived1]
+                      ) [ConstDeclListDerived2]
+                    ) [ConstDeclListDerived1]
+                  ) [ConstDeclListDerived1]
+                ) [ConstDeclListDerived1]
+              ) [ConstDeclListDerived1]
+            ) [ConstDeclListDerived1]
+          ) [ConstDeclListDerived1]
+        ) [ConstDeclListDerived1]
+      ) [ConstVarDeclaration]
     ) [VarDeclListDerived1]
     VarDeclaration(
       TypeDerived1(
@@ -524,8 +551,8 @@ INFO  22:56:13,706 - ProgramDerived1(
     ) [MethodDeclDerived1]
   ) [MethodDeclListDerived1]
 ) [ProgramDerived1]
-INFO  22:56:13,707 - ====================================
-INFO  22:56:13,713 - Prepoznata naredba print!
-INFO  22:56:13,713 - Prepoznata naredba print!
-INFO  22:56:13,714 -  Broj print naredbi = 2
-INFO  22:56:13,714 -  Deklarisanih promenljivih ima = 5
+INFO  23:14:14,704 - ====================================
+INFO  23:14:14,711 - Prepoznata naredba print!
+INFO  23:14:14,713 - Prepoznata naredba print!
+INFO  23:14:14,713 -  Broj print naredbi = 2
+INFO  23:14:14,713 -  Deklarisanih promenljivih ima = 4

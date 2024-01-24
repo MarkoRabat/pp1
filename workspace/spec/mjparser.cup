@@ -52,7 +52,8 @@ nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
 nonterminal StatementList, Statement, Mulop, DeclList, Initializator;
 nonterminal SimpleDesignator, ArrayDesignator, Expr, Term, Addop, Factor;
 
-nonterminal Identifier, EndIdentifier;
+nonterminal Identifier, EndIdentifier, ConstDeclList, ConstIdentifier;
+nonterminal ConstEndIdentifier;
 
 Program ::= PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
 
@@ -60,6 +61,7 @@ VarDeclList ::= VarDeclList VarDecl
 			| /* epsilon */;
 
 VarDecl ::= (VarDeclaration) Type:varType DeclList SEMI
+		| (ConstVarDeclaration) CONST Type:varType ConstDeclList SEMI
 		| error SEMI:l
 		{:
 			parser.report_error(
@@ -92,6 +94,28 @@ EndIdentifier ::= IDENT
 						, null
 					);
 				:};
+
+ConstDeclList ::= ConstIdentifier COMMA ConstDeclList
+			| ConstEndIdentifier;
+
+ConstIdentifier ::= IDENT EQUAL Initializator
+				| error
+				{:
+					parser.report_error(
+						"Izvrsen oporavak do , u deklaraciji promenljivih"
+						, null
+					);
+				:};
+
+ConstEndIdentifier ::= IDENT EQUAL Initializator
+				| error
+				{:
+					parser.report_error(
+						"Izvrsen oporavak do ; u deklaraciji promenljivih"
+						, null
+					);
+				:};
+				
 			
 Initializator ::= NUMBER;
 

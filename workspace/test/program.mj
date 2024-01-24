@@ -2,7 +2,7 @@ program MJProgram
 	int x, y[];
 	int x[], y[];
 	int x, y = 5;
-	int x = 5, y + 5 = 5, x = 3 ,  k = ttt 3, a[], a] = = = 9 9 9;
+	const int x = 5, y + 5 = 5, x = 3 ,  k = 3, a[] , a = 6, a] = = = 9 9 9, b = 7;
 	int x = 5, y[];
 {
 	void main() {
