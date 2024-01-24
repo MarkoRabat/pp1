@@ -1,5 +1,9 @@
 program MJProgram
-	int x; int y;
+	int x, y[];
+	int x[], y[];
+	int x, y = 5;
+	int x = 5, y + 5 = 5, x = 3 ,  k = ttt 3, a[], a] = = = 9 9 9;
+	int x = 5, y[];
 {
 	void main() {
 	

@@ -1,27 +1,31 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/0/2024 21:48:27
+// 24/0/2024 22:54:56
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
-    public void visit(Type Type);
-    public void visit(Program Program);
-    public void visit(Expr Expr);
-    public void visit(VarDeclList VarDeclList);
-    public void visit(StatementList StatementList);
-    public void visit(ArrayDesignator ArrayDesignator);
     public void visit(MethodDecl MethodDecl);
+    public void visit(Factor Factor);
+    public void visit(Initializator Initializator);
+    public void visit(Mulop Mulop);
+    public void visit(Expr Expr);
+    public void visit(Type Type);
+    public void visit(VarDeclList VarDeclList);
+    public void visit(SimpleDesignator SimpleDesignator);
+    public void visit(Identifier Identifier);
     public void visit(VarDecl VarDecl);
+    public void visit(ArrayDesignator ArrayDesignator);
     public void visit(Addop Addop);
+    public void visit(MethodDeclList MethodDeclList);
+    public void visit(DeclList DeclList);
     public void visit(Statement Statement);
     public void visit(Term Term);
-    public void visit(Factor Factor);
-    public void visit(SimpleDesignator SimpleDesignator);
-    public void visit(Mulop Mulop);
-    public void visit(MethodDeclList MethodDeclList);
+    public void visit(StatementList StatementList);
+    public void visit(Program Program);
+    public void visit(EndIdentifier EndIdentifier);
     public void visit(AddopDerived2 AddopDerived2);
     public void visit(AddopDerived1 AddopDerived1);
     public void visit(MulopDerived3 MulopDerived3);
@@ -57,6 +61,18 @@ public interface Visitor {
     public void visit(MethodDeclListDerived2 MethodDeclListDerived2);
     public void visit(MethodDeclListDerived1 MethodDeclListDerived1);
     public void visit(TypeDerived1 TypeDerived1);
+    public void visit(InitializatorDerived1 InitializatorDerived1);
+    public void visit(EndIdentifierDerived4 EndIdentifierDerived4);
+    public void visit(EndIdentifierDerived3 EndIdentifierDerived3);
+    public void visit(EndIdentifierDerived2 EndIdentifierDerived2);
+    public void visit(EndIdentifierDerived1 EndIdentifierDerived1);
+    public void visit(IdentifierDerived4 IdentifierDerived4);
+    public void visit(IdentifierDerived3 IdentifierDerived3);
+    public void visit(IdentifierDerived2 IdentifierDerived2);
+    public void visit(IdentifierDerived1 IdentifierDerived1);
+    public void visit(DeclListDerived2 DeclListDerived2);
+    public void visit(DeclListDerived1 DeclListDerived1);
+    public void visit(VarDeclDerived1 VarDeclDerived1);
     public void visit(VarDeclaration VarDeclaration);
     public void visit(VarDeclListDerived2 VarDeclListDerived2);
     public void visit(VarDeclListDerived1 VarDeclListDerived1);

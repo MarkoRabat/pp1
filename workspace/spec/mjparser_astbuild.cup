@@ -57,6 +57,8 @@ nonterminal MethodDecl MethodDecl;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
 nonterminal Mulop Mulop;
+nonterminal DeclList DeclList;
+nonterminal Initializator Initializator;
 nonterminal SimpleDesignator SimpleDesignator;
 nonterminal ArrayDesignator ArrayDesignator;
 nonterminal Expr Expr;
@@ -64,12 +66,49 @@ nonterminal Term Term;
 nonterminal Addop Addop;
 nonterminal Factor Factor;
 
+nonterminal Identifier Identifier;
+nonterminal EndIdentifier EndIdentifier;
+
 Program ::= PROG IDENT:I1 VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new ProgramDerived1(I1, V2, M3); RESULT.setLine(I1left); :};
 
 VarDeclList ::= VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclListDerived1(V1, V2); RESULT.setLine(V1left); :}
 			| {: RESULT=new VarDeclListDerived2(); :} /* epsilon */;
 
-VarDecl ::= (VarDeclaration) Type:varType IDENT:varName SEMI {: RESULT=new VarDeclaration(varType, varName); RESULT.setLine(varTypeleft); :};
+VarDecl ::= (VarDeclaration) Type:varType DeclList:D1 SEMI {: RESULT=new VarDeclaration(varType, D1); RESULT.setLine(varTypeleft); :}
+		| error SEMI:l
+		{:
+			parser.report_error(
+				"Izvrsen oporavak do ; u deklaraciji promenljivih na liniji "
+				+ lleft, null
+			);
+		:} {: RESULT=new VarDeclDerived1(); :};
+
+DeclList ::= Identifier:I1 COMMA DeclList:D2 {: RESULT=new DeclListDerived1(I1, D2); RESULT.setLine(I1left); :}
+			| EndIdentifier:E1 {: RESULT=new DeclListDerived2(E1); RESULT.setLine(E1left); :};
+
+Identifier ::= IDENT:I1 {: RESULT=new IdentifierDerived1(I1); RESULT.setLine(I1left); :}
+			| IDENT:I1 LBRACKET RBRACKET {: RESULT=new IdentifierDerived2(I1); RESULT.setLine(I1left); :}
+			| IDENT:I1 EQUAL Initializator:I2 {: RESULT=new IdentifierDerived3(I1, I2); RESULT.setLine(I1left); :}
+			| error
+			{:
+				parser.report_error(
+					"Izvrsen oporavak do , u deklaraciji promenljivih"
+					, null
+				);
+			:} {: RESULT=new IdentifierDerived4(); :};
+
+EndIdentifier ::= IDENT:I1 {: RESULT=new EndIdentifierDerived1(I1); RESULT.setLine(I1left); :}
+				| IDENT:I1 LBRACKET RBRACKET {: RESULT=new EndIdentifierDerived2(I1); RESULT.setLine(I1left); :}
+				| IDENT:I1 EQUAL Initializator:I2 {: RESULT=new EndIdentifierDerived3(I1, I2); RESULT.setLine(I1left); :}
+				| error
+				{:
+					parser.report_error(
+						"Izvrsen oporavak do ; u deklaraciji promenljivih"
+						, null
+					);
+				:} {: RESULT=new EndIdentifierDerived4(); :};
+			
+Initializator ::= NUMBER:N1 {: RESULT=new InitializatorDerived1(N1); RESULT.setLine(N1left); :};
 
 Type ::= IDENT:typeName {: RESULT=new TypeDerived1(typeName); RESULT.setLine(typeNameleft); :};
 
@@ -86,7 +125,7 @@ Statement ::= SimpleDesignator:S1 EQUAL Expr:e SEMI {: RESULT=new StatementDeriv
 			| error SEMI:l
 			{:
 				parser.report_error(
-					"Izvrsen oporavak do ; u liniji "
+					"Izvrsen oporavak do ; na liniji "
 					+ lleft, null
 				);
 			:} {: RESULT=new StatementDerived3(); :}

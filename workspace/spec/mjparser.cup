@@ -49,15 +49,51 @@ terminal Integer NUMBER;
 terminal String IDENT;
 
 nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
-nonterminal StatementList, Statement, Mulop;
+nonterminal StatementList, Statement, Mulop, DeclList, Initializator;
 nonterminal SimpleDesignator, ArrayDesignator, Expr, Term, Addop, Factor;
+
+nonterminal Identifier, EndIdentifier;
 
 Program ::= PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
 
 VarDeclList ::= VarDeclList VarDecl
 			| /* epsilon */;
 
-VarDecl ::= (VarDeclaration) Type:varType IDENT:varName SEMI;
+VarDecl ::= (VarDeclaration) Type:varType DeclList SEMI
+		| error SEMI:l
+		{:
+			parser.report_error(
+				"Izvrsen oporavak do ; u deklaraciji promenljivih na liniji "
+				+ lleft, null
+			);
+		:};
+
+DeclList ::= Identifier COMMA DeclList
+			| EndIdentifier;
+
+Identifier ::= IDENT
+			| IDENT LBRACKET RBRACKET
+			| IDENT EQUAL Initializator
+			| error
+			{:
+				parser.report_error(
+					"Izvrsen oporavak do , u deklaraciji promenljivih"
+					, null
+				);
+			:};
+
+EndIdentifier ::= IDENT
+				| IDENT LBRACKET RBRACKET
+				| IDENT EQUAL Initializator
+				| error
+				{:
+					parser.report_error(
+						"Izvrsen oporavak do ; u deklaraciji promenljivih"
+						, null
+					);
+				:};
+			
+Initializator ::= NUMBER;
 
 Type ::= IDENT:typeName;
 
@@ -74,7 +110,7 @@ Statement ::= SimpleDesignator EQUAL Expr:e SEMI
 			| error SEMI:l
 			{:
 				parser.report_error(
-					"Izvrsen oporavak do ; u liniji "
+					"Izvrsen oporavak do ; na liniji "
 					+ lleft, null
 				);
 			:}
