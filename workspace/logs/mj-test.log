@@ -1,213 +1,307 @@
-INFO  23:18:43,829 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
-INFO  23:18:44,569 - #2 program
-INFO  23:18:44,570 - #30 MJProgram
-INFO  23:18:44,570 - #30 int
-INFO  23:18:44,584 - #30 x
-INFO  23:18:44,585 - #15 ,
-INFO  23:18:44,586 - #30 y
-INFO  23:18:44,586 - #25 [
-INFO  23:18:44,586 - #27 ]
-INFO  23:18:44,587 - #5 ;
-INFO  23:18:44,588 - #30 int
-INFO  23:18:44,588 - #30 x
-INFO  23:18:44,588 - #25 [
-INFO  23:18:44,589 - #27 ]
-INFO  23:18:44,589 - #15 ,
-INFO  23:18:44,589 - #30 y
-INFO  23:18:44,589 - #25 [
-INFO  23:18:44,590 - #27 ]
-INFO  23:18:44,590 - #5 ;
-INFO  23:18:44,590 - #30 int
-INFO  23:18:44,590 - #30 x
-INFO  23:18:44,591 - #15 ,
-INFO  23:18:44,591 - #30 y
-INFO  23:18:44,591 - #8 =
-INFO  23:18:44,593 - #29 5
-INFO  23:18:44,593 - #5 ;
-INFO  23:18:44,593 - #26 const
-INFO  23:18:44,594 - #30 int
-INFO  23:18:44,594 - #30 x
-INFO  23:18:44,594 - #8 =
-INFO  23:18:44,594 - #29 5
-INFO  23:18:44,594 - #15 ,
-INFO  23:18:44,595 - #30 y
-INFO  23:18:44,595 - #17 +
-ERROR 23:18:44,596 - 
-Sintaksna greska na liniji 5
-INFO  23:18:44,596 - #29 5
-INFO  23:18:44,596 - #8 =
-INFO  23:18:44,596 - #29 5
-INFO  23:18:44,598 - #15 ,
-INFO  23:18:44,598 - #30 x
-INFO  23:18:44,598 - #8 =
-INFO  23:18:44,598 - #29 3
-ERROR 23:18:44,598 - Izvrsen oporavak do ,(|;) u deklaraciji promenljivih
-INFO  23:18:44,611 - #15 ,
-INFO  23:18:44,612 - #30 k
-INFO  23:18:44,612 - #8 =
-INFO  23:18:44,612 - #29 3
-INFO  23:18:44,613 - #15 ,
-INFO  23:18:44,613 - #30 a
-INFO  23:18:44,613 - #25 [
-ERROR 23:18:44,613 - 
-Sintaksna greska na liniji 5
-INFO  23:18:44,613 - #27 ]
-INFO  23:18:44,613 - #15 ,
-INFO  23:18:44,613 - #30 a
-INFO  23:18:44,613 - #8 =
-INFO  23:18:44,614 - #29 6
-ERROR 23:18:44,614 - Izvrsen oporavak do ,(|;) u deklaraciji promenljivih
-INFO  23:18:44,614 - #15 ,
-INFO  23:18:44,614 - #30 a
-INFO  23:18:44,614 - #27 ]
-ERROR 23:18:44,614 - 
-Sintaksna greska na liniji 5
-INFO  23:18:44,614 - #8 =
-INFO  23:18:44,615 - #8 =
-INFO  23:18:44,615 - #8 =
-INFO  23:18:44,615 - #29 9
-INFO  23:18:44,615 - #29 9
-INFO  23:18:44,615 - #29 9
-INFO  23:18:44,615 - #15 ,
-INFO  23:18:44,615 - #30 b
-INFO  23:18:44,616 - #8 =
-INFO  23:18:44,616 - #29 7
-ERROR 23:18:44,616 - Izvrsen oporavak do ,(|;) u deklaraciji promenljivih
-INFO  23:18:44,616 - #5 ;
-INFO  23:18:44,617 - #30 int
-INFO  23:18:44,617 - #30 x
-INFO  23:18:44,618 - #8 =
-INFO  23:18:44,618 - #29 5
-INFO  23:18:44,618 - #15 ,
-INFO  23:18:44,618 - #30 y
-INFO  23:18:44,618 - #25 [
-INFO  23:18:44,618 - #27 ]
-INFO  23:18:44,619 - #5 ;
-INFO  23:18:44,619 - #3 {
-INFO  23:18:44,619 - #18 void
-INFO  23:18:44,631 - #30 main
-INFO  23:18:44,632 - #6 (
-INFO  23:18:44,632 - #7 )
-INFO  23:18:44,632 - #3 {
-INFO  23:18:44,632 - #19 print
-INFO  23:18:44,644 - #6 (
-INFO  23:18:44,644 - #29 1
-INFO  23:18:44,644 - #7 )
-INFO  23:18:44,645 - #5 ;
-INFO  23:18:44,645 - #30 x
-INFO  23:18:44,646 - #8 =
-INFO  23:18:44,647 - #23 -
-INFO  23:18:44,647 - #30 x
-INFO  23:18:44,647 - #5 ;
-INFO  23:18:44,648 - #30 x
-INFO  23:18:44,648 - #8 =
-INFO  23:18:44,648 - #23 -
-INFO  23:18:44,648 - #30 ns
-INFO  23:18:44,648 - #11 ::
-INFO  23:18:44,648 - #30 y
-INFO  23:18:44,649 - #25 [
-INFO  23:18:44,649 - #29 5
-INFO  23:18:44,649 - #27 ]
-INFO  23:18:44,649 - #14 *
-INFO  23:18:44,650 - #30 ns1
-INFO  23:18:44,671 - #11 ::
-INFO  23:18:44,671 - #30 x
-INFO  23:18:44,672 - #25 [
-INFO  23:18:44,672 - #23 -
-INFO  23:18:44,672 - #29 7
-INFO  23:18:44,672 - #27 ]
-INFO  23:18:44,672 - #22 /
-INFO  23:18:44,673 - #29 3
-INFO  23:18:44,683 - #5 ;
-INFO  23:18:44,683 - #19 print
-INFO  23:18:44,683 - #6 (
-INFO  23:18:44,683 - #30 x
-INFO  23:18:44,684 - #15 ,
-INFO  23:18:44,684 - #29 5
-INFO  23:18:44,684 - #7 )
-INFO  23:18:44,684 - #5 ;
-INFO  23:18:44,684 - #19 print
-INFO  23:18:44,685 - #6 (
-INFO  23:18:44,685 - #23 -
-INFO  23:18:44,685 - #30 ns
-INFO  23:18:44,685 - #11 ::
-INFO  23:18:44,686 - #30 x
-INFO  23:18:44,686 - #15 ,
-INFO  23:18:44,687 - #29 5
-INFO  23:18:44,687 - #7 )
-INFO  23:18:44,687 - #5 ;
-INFO  23:18:44,687 - #30 x
-INFO  23:18:44,688 - #16 ++
-INFO  23:18:44,688 - #5 ;
-INFO  23:18:44,689 - #30 x
-INFO  23:18:44,689 - #10 --
-INFO  23:18:44,690 - #5 ;
-INFO  23:18:44,690 - #30 ns
-INFO  23:18:44,690 - #11 ::
-INFO  23:18:44,690 - #30 x
-INFO  23:18:44,690 - #16 ++
-INFO  23:18:44,690 - #5 ;
-INFO  23:18:44,690 - #30 ns
-INFO  23:18:44,690 - #11 ::
-INFO  23:18:44,691 - #30 x
-INFO  23:18:44,691 - #10 --
-INFO  23:18:44,691 - #5 ;
-INFO  23:18:44,691 - #30 x
-INFO  23:18:44,691 - #25 [
-INFO  23:18:44,691 - #23 -
-INFO  23:18:44,691 - #30 x
-INFO  23:18:44,692 - #27 ]
-INFO  23:18:44,692 - #16 ++
-INFO  23:18:44,692 - #5 ;
-INFO  23:18:44,693 - #30 x
-INFO  23:18:44,693 - #25 [
-INFO  23:18:44,693 - #23 -
-INFO  23:18:44,693 - #30 x
-INFO  23:18:44,693 - #27 ]
-INFO  23:18:44,694 - #10 --
-INFO  23:18:44,694 - #5 ;
-INFO  23:18:44,694 - #30 ns
-INFO  23:18:44,695 - #11 ::
-INFO  23:18:44,695 - #30 x
-INFO  23:18:44,695 - #25 [
-INFO  23:18:44,695 - #23 -
-INFO  23:18:44,695 - #30 x
-INFO  23:18:44,695 - #27 ]
-INFO  23:18:44,695 - #16 ++
-INFO  23:18:44,696 - #5 ;
-INFO  23:18:44,696 - #30 ns
-INFO  23:18:44,696 - #11 ::
-INFO  23:18:44,696 - #30 x
-INFO  23:18:44,696 - #25 [
-INFO  23:18:44,696 - #23 -
-INFO  23:18:44,697 - #30 x
-INFO  23:18:44,697 - #27 ]
-INFO  23:18:44,698 - #10 --
-INFO  23:18:44,698 - #5 ;
-INFO  23:18:44,698 - #19 print
-INFO  23:18:44,698 - #6 (
-INFO  23:18:44,698 - #29 2
-INFO  23:18:44,698 - #7 )
-INFO  23:18:44,698 - #5 ;
-INFO  23:18:44,698 - #4 }
-INFO  23:18:44,698 - #4 }
-INFO  23:18:44,703 - ProgramDerived1(
+INFO  18:31:57,204 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  18:31:57,296 - #2 program
+INFO  18:31:57,297 - #30 MJProgram
+INFO  18:31:57,297 - #26 const
+INFO  18:31:57,301 - #30 int
+INFO  18:31:57,301 - #30 x
+INFO  18:31:57,301 - #15 ,
+ERROR 18:31:57,301 - 
+Sintaksna greska na liniji 3
+INFO  18:31:57,302 - #30 y
+INFO  18:31:57,302 - #8 =
+INFO  18:31:57,302 - #29 5
+ERROR 18:31:57,304 - Izvrsen oporavak do ,(|;) u deklaraciji promenljivih
+INFO  18:31:57,307 - #5 ;
+INFO  18:31:57,308 - #30 int
+INFO  18:31:57,309 - #30 x
+INFO  18:31:57,309 - #8 =
+INFO  18:31:57,309 - #29 5
+INFO  18:31:57,309 - #15 ,
+INFO  18:31:57,310 - #30 y
+INFO  18:31:57,310 - #25 [
+INFO  18:31:57,310 - #27 ]
+INFO  18:31:57,311 - #5 ;
+INFO  18:31:57,312 - #28 namespace
+INFO  18:31:57,314 - #30 ns2
+INFO  18:31:57,314 - #3 {
+INFO  18:31:57,314 - #30 int
+INFO  18:31:57,317 - #30 x
+INFO  18:31:57,317 - #15 ,
+INFO  18:31:57,318 - #30 y
+INFO  18:31:57,318 - #25 [
+INFO  18:31:57,318 - #27 ]
+INFO  18:31:57,318 - #5 ;
+INFO  18:31:57,319 - #30 int
+INFO  18:31:57,319 - #30 x
+INFO  18:31:57,320 - #25 [
+INFO  18:31:57,320 - #27 ]
+INFO  18:31:57,320 - #15 ,
+INFO  18:31:57,320 - #30 y
+INFO  18:31:57,320 - #25 [
+INFO  18:31:57,320 - #27 ]
+INFO  18:31:57,322 - #5 ;
+INFO  18:31:57,322 - #30 int
+INFO  18:31:57,322 - #30 x
+INFO  18:31:57,322 - #15 ,
+INFO  18:31:57,322 - #30 y
+INFO  18:31:57,322 - #8 =
+INFO  18:31:57,323 - #29 5
+INFO  18:31:57,323 - #5 ;
+INFO  18:31:57,323 - #30 int
+INFO  18:31:57,323 - #30 x
+INFO  18:31:57,323 - #8 =
+INFO  18:31:57,323 - #29 5
+INFO  18:31:57,324 - #15 ,
+INFO  18:31:57,324 - #30 y
+INFO  18:31:57,324 - #25 [
+INFO  18:31:57,324 - #27 ]
+INFO  18:31:57,324 - #5 ;
+INFO  18:31:57,324 - #3 {
+INFO  18:31:57,324 - #4 }
+INFO  18:31:57,325 - #4 }
+INFO  18:31:57,325 - #26 const
+INFO  18:31:57,329 - #30 int
+INFO  18:31:57,329 - #30 x
+INFO  18:31:57,331 - #8 =
+INFO  18:31:57,334 - #29 22
+INFO  18:31:57,334 - #15 ,
+INFO  18:31:57,334 - #30 y
+INFO  18:31:57,334 - #8 =
+INFO  18:31:57,334 - #29 5
+INFO  18:31:57,334 - #5 ;
+INFO  18:31:57,334 - #30 int
+INFO  18:31:57,335 - #30 x
+INFO  18:31:57,335 - #8 =
+INFO  18:31:57,337 - #29 5
+INFO  18:31:57,337 - #15 ,
+INFO  18:31:57,337 - #30 y
+INFO  18:31:57,337 - #25 [
+INFO  18:31:57,338 - #27 ]
+INFO  18:31:57,338 - #5 ;
+INFO  18:31:57,338 - #3 {
+INFO  18:31:57,339 - #18 void
+INFO  18:31:57,341 - #30 main
+INFO  18:31:57,342 - #6 (
+INFO  18:31:57,342 - #7 )
+INFO  18:31:57,342 - #3 {
+INFO  18:31:57,343 - #19 print
+INFO  18:31:57,345 - #6 (
+INFO  18:31:57,345 - #29 1
+INFO  18:31:57,345 - #7 )
+INFO  18:31:57,347 - #5 ;
+INFO  18:31:57,347 - #30 x
+INFO  18:31:57,347 - #8 =
+INFO  18:31:57,348 - #23 -
+INFO  18:31:57,353 - #30 x
+INFO  18:31:57,354 - #5 ;
+INFO  18:31:57,356 - #30 x
+INFO  18:31:57,357 - #8 =
+INFO  18:31:57,357 - #23 -
+INFO  18:31:57,357 - #30 ns
+INFO  18:31:57,357 - #11 ::
+INFO  18:31:57,358 - #30 y
+INFO  18:31:57,359 - #25 [
+INFO  18:31:57,359 - #29 5
+INFO  18:31:57,359 - #27 ]
+INFO  18:31:57,359 - #14 *
+INFO  18:31:57,360 - #30 ns1
+INFO  18:31:57,364 - #11 ::
+INFO  18:31:57,365 - #30 x
+INFO  18:31:57,366 - #25 [
+INFO  18:31:57,366 - #23 -
+INFO  18:31:57,367 - #29 7
+INFO  18:31:57,369 - #27 ]
+INFO  18:31:57,369 - #22 /
+INFO  18:31:57,370 - #29 3
+INFO  18:31:57,374 - #5 ;
+INFO  18:31:57,374 - #19 print
+INFO  18:31:57,375 - #6 (
+INFO  18:31:57,375 - #30 x
+INFO  18:31:57,375 - #15 ,
+INFO  18:31:57,376 - #29 5
+INFO  18:31:57,376 - #7 )
+INFO  18:31:57,377 - #5 ;
+INFO  18:31:57,377 - #19 print
+INFO  18:31:57,378 - #6 (
+INFO  18:31:57,378 - #23 -
+INFO  18:31:57,378 - #30 ns
+INFO  18:31:57,378 - #11 ::
+INFO  18:31:57,378 - #30 x
+INFO  18:31:57,378 - #15 ,
+INFO  18:31:57,380 - #29 5
+INFO  18:31:57,380 - #7 )
+INFO  18:31:57,380 - #5 ;
+INFO  18:31:57,380 - #30 x
+INFO  18:31:57,380 - #16 ++
+INFO  18:31:57,380 - #5 ;
+INFO  18:31:57,380 - #30 x
+INFO  18:31:57,381 - #10 --
+INFO  18:31:57,381 - #5 ;
+INFO  18:31:57,381 - #30 ns
+INFO  18:31:57,382 - #11 ::
+INFO  18:31:57,382 - #30 x
+INFO  18:31:57,382 - #16 ++
+INFO  18:31:57,382 - #5 ;
+INFO  18:31:57,383 - #30 ns
+INFO  18:31:57,383 - #11 ::
+INFO  18:31:57,383 - #30 x
+INFO  18:31:57,383 - #10 --
+INFO  18:31:57,383 - #5 ;
+INFO  18:31:57,383 - #30 x
+INFO  18:31:57,383 - #25 [
+INFO  18:31:57,384 - #23 -
+INFO  18:31:57,384 - #30 x
+INFO  18:31:57,384 - #27 ]
+INFO  18:31:57,384 - #16 ++
+INFO  18:31:57,385 - #5 ;
+INFO  18:31:57,385 - #30 x
+INFO  18:31:57,385 - #25 [
+INFO  18:31:57,385 - #23 -
+INFO  18:31:57,385 - #30 x
+INFO  18:31:57,386 - #27 ]
+INFO  18:31:57,386 - #10 --
+INFO  18:31:57,386 - #5 ;
+INFO  18:31:57,386 - #30 ns
+INFO  18:31:57,387 - #11 ::
+INFO  18:31:57,387 - #30 x
+INFO  18:31:57,387 - #25 [
+INFO  18:31:57,387 - #23 -
+INFO  18:31:57,388 - #30 x
+INFO  18:31:57,388 - #27 ]
+INFO  18:31:57,388 - #16 ++
+INFO  18:31:57,388 - #5 ;
+INFO  18:31:57,388 - #30 ns
+INFO  18:31:57,389 - #11 ::
+INFO  18:31:57,389 - #30 x
+INFO  18:31:57,389 - #25 [
+INFO  18:31:57,389 - #23 -
+INFO  18:31:57,389 - #30 x
+INFO  18:31:57,389 - #27 ]
+INFO  18:31:57,389 - #10 --
+INFO  18:31:57,390 - #5 ;
+INFO  18:31:57,390 - #19 print
+INFO  18:31:57,390 - #6 (
+INFO  18:31:57,390 - #29 2
+INFO  18:31:57,390 - #7 )
+INFO  18:31:57,390 - #5 ;
+INFO  18:31:57,390 - #4 }
+INFO  18:31:57,391 - #4 }
+INFO  18:31:57,396 - ProgramDerived1(
  MJProgram
-  VarDeclListDerived1(
-    VarDeclListDerived1(
-      VarDeclListDerived1(
-        VarDeclListDerived1(
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived1(
+        ProgNameDeclListDerived2(
+          ProgNameDeclListDerived2(
+            ProgNameDeclListDerived3(
+            ) [ProgNameDeclListDerived3]
+            ConstVarDeclaration(
+              TypeDerived1(
+               int
+              ) [TypeDerived1]
+              ConstDeclListDerived1(
+                ConstIdentifierDerived2(
+                ) [ConstIdentifierDerived2]
+                ConstDeclListDerived2(
+                  ConstIdentifierDerived1(
+                   y
+                    InitializatorDerived1(
+                     5
+                    ) [InitializatorDerived1]
+                  ) [ConstIdentifierDerived1]
+                ) [ConstDeclListDerived2]
+              ) [ConstDeclListDerived1]
+            ) [ConstVarDeclaration]
+          ) [ProgNameDeclListDerived2]
+          VarDeclaration(
+            TypeDerived1(
+             int
+            ) [TypeDerived1]
+            DeclListDerived1(
+              IdentifierDerived3(
+               x
+                InitializatorDerived1(
+                 5
+                ) [InitializatorDerived1]
+              ) [IdentifierDerived3]
+              DeclListDerived2(
+                IdentifierDerived2(
+                 y
+                ) [IdentifierDerived2]
+              ) [DeclListDerived2]
+            ) [DeclListDerived1]
+          ) [VarDeclaration]
+        ) [ProgNameDeclListDerived2]
+        NamespaceDeclDerived1(
+         ns2
           VarDeclListDerived1(
-            VarDeclListDerived2(
-            ) [VarDeclListDerived2]
+            VarDeclListDerived1(
+              VarDeclListDerived1(
+                VarDeclListDerived1(
+                  VarDeclListDerived2(
+                  ) [VarDeclListDerived2]
+                  VarDeclaration(
+                    TypeDerived1(
+                     int
+                    ) [TypeDerived1]
+                    DeclListDerived1(
+                      IdentifierDerived1(
+                       x
+                      ) [IdentifierDerived1]
+                      DeclListDerived2(
+                        IdentifierDerived2(
+                         y
+                        ) [IdentifierDerived2]
+                      ) [DeclListDerived2]
+                    ) [DeclListDerived1]
+                  ) [VarDeclaration]
+                ) [VarDeclListDerived1]
+                VarDeclaration(
+                  TypeDerived1(
+                   int
+                  ) [TypeDerived1]
+                  DeclListDerived1(
+                    IdentifierDerived2(
+                     x
+                    ) [IdentifierDerived2]
+                    DeclListDerived2(
+                      IdentifierDerived2(
+                       y
+                      ) [IdentifierDerived2]
+                    ) [DeclListDerived2]
+                  ) [DeclListDerived1]
+                ) [VarDeclaration]
+              ) [VarDeclListDerived1]
+              VarDeclaration(
+                TypeDerived1(
+                 int
+                ) [TypeDerived1]
+                DeclListDerived1(
+                  IdentifierDerived1(
+                   x
+                  ) [IdentifierDerived1]
+                  DeclListDerived2(
+                    IdentifierDerived3(
+                     y
+                      InitializatorDerived1(
+                       5
+                      ) [InitializatorDerived1]
+                    ) [IdentifierDerived3]
+                  ) [DeclListDerived2]
+                ) [DeclListDerived1]
+              ) [VarDeclaration]
+            ) [VarDeclListDerived1]
             VarDeclaration(
               TypeDerived1(
                int
               ) [TypeDerived1]
               DeclListDerived1(
-                IdentifierDerived1(
+                IdentifierDerived3(
                  x
-                ) [IdentifierDerived1]
+                  InitializatorDerived1(
+                   5
+                  ) [InitializatorDerived1]
+                ) [IdentifierDerived3]
                 DeclListDerived2(
                   IdentifierDerived2(
                    y
@@ -216,41 +310,8 @@ INFO  23:18:44,703 - ProgramDerived1(
               ) [DeclListDerived1]
             ) [VarDeclaration]
           ) [VarDeclListDerived1]
-          VarDeclaration(
-            TypeDerived1(
-             int
-            ) [TypeDerived1]
-            DeclListDerived1(
-              IdentifierDerived2(
-               x
-              ) [IdentifierDerived2]
-              DeclListDerived2(
-                IdentifierDerived2(
-                 y
-                ) [IdentifierDerived2]
-              ) [DeclListDerived2]
-            ) [DeclListDerived1]
-          ) [VarDeclaration]
-        ) [VarDeclListDerived1]
-        VarDeclaration(
-          TypeDerived1(
-           int
-          ) [TypeDerived1]
-          DeclListDerived1(
-            IdentifierDerived1(
-             x
-            ) [IdentifierDerived1]
-            DeclListDerived2(
-              IdentifierDerived3(
-               y
-                InitializatorDerived1(
-                 5
-                ) [InitializatorDerived1]
-              ) [IdentifierDerived3]
-            ) [DeclListDerived2]
-          ) [DeclListDerived1]
-        ) [VarDeclaration]
-      ) [VarDeclListDerived1]
+        ) [NamespaceDeclDerived1]
+      ) [ProgNameDeclListDerived1]
       ConstVarDeclaration(
         TypeDerived1(
          int
@@ -259,56 +320,20 @@ INFO  23:18:44,703 - ProgramDerived1(
           ConstIdentifierDerived1(
            x
             InitializatorDerived1(
-             5
+             22
             ) [InitializatorDerived1]
           ) [ConstIdentifierDerived1]
-          ConstDeclListDerived1(
-            ConstIdentifierDerived2(
-            ) [ConstIdentifierDerived2]
-            ConstDeclListDerived1(
-              ConstIdentifierDerived1(
-               x
-                InitializatorDerived1(
-                 3
-                ) [InitializatorDerived1]
-              ) [ConstIdentifierDerived1]
-              ConstDeclListDerived1(
-                ConstIdentifierDerived1(
-                 k
-                  InitializatorDerived1(
-                   3
-                  ) [InitializatorDerived1]
-                ) [ConstIdentifierDerived1]
-                ConstDeclListDerived1(
-                  ConstIdentifierDerived2(
-                  ) [ConstIdentifierDerived2]
-                  ConstDeclListDerived1(
-                    ConstIdentifierDerived1(
-                     a
-                      InitializatorDerived1(
-                       6
-                      ) [InitializatorDerived1]
-                    ) [ConstIdentifierDerived1]
-                    ConstDeclListDerived1(
-                      ConstIdentifierDerived2(
-                      ) [ConstIdentifierDerived2]
-                      ConstDeclListDerived2(
-                        ConstIdentifierDerived1(
-                         b
-                          InitializatorDerived1(
-                           7
-                          ) [InitializatorDerived1]
-                        ) [ConstIdentifierDerived1]
-                      ) [ConstDeclListDerived2]
-                    ) [ConstDeclListDerived1]
-                  ) [ConstDeclListDerived1]
-                ) [ConstDeclListDerived1]
-              ) [ConstDeclListDerived1]
-            ) [ConstDeclListDerived1]
-          ) [ConstDeclListDerived1]
+          ConstDeclListDerived2(
+            ConstIdentifierDerived1(
+             y
+              InitializatorDerived1(
+               5
+              ) [InitializatorDerived1]
+            ) [ConstIdentifierDerived1]
+          ) [ConstDeclListDerived2]
         ) [ConstDeclListDerived1]
       ) [ConstVarDeclaration]
-    ) [VarDeclListDerived1]
+    ) [ProgNameDeclListDerived2]
     VarDeclaration(
       TypeDerived1(
        int
@@ -327,7 +352,7 @@ INFO  23:18:44,703 - ProgramDerived1(
         ) [DeclListDerived2]
       ) [DeclListDerived1]
     ) [VarDeclaration]
-  ) [VarDeclListDerived1]
+  ) [ProgNameDeclListDerived2]
   MethodDeclListDerived1(
     MethodDeclListDerived2(
     ) [MethodDeclListDerived2]
@@ -551,8 +576,8 @@ INFO  23:18:44,703 - ProgramDerived1(
     ) [MethodDeclDerived1]
   ) [MethodDeclListDerived1]
 ) [ProgramDerived1]
-INFO  23:18:44,705 - ====================================
-INFO  23:18:44,723 - Prepoznata naredba print!
-INFO  23:18:44,724 - Prepoznata naredba print!
-INFO  23:18:44,724 -  Broj print naredbi = 2
-INFO  23:18:44,724 -  Deklarisanih promenljivih ima = 4
+INFO  18:31:57,398 - ====================================
+INFO  18:31:57,409 - Prepoznata naredba print!
+INFO  18:31:57,410 - Prepoznata naredba print!
+INFO  18:31:57,410 -  Broj print naredbi = 2
+INFO  18:31:57,410 -  Deklarisanih promenljivih ima = 6

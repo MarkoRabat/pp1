@@ -1,19 +1,19 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/0/2024 23:13:33
+// 25/0/2024 18:30:58
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class EndIdentifierDerived3 extends EndIdentifier {
+public class NamespaceDeclDerived1 extends NamespaceDecl {
 
     private String I1;
-    private Initializator Initializator;
+    private VarDeclList VarDeclList;
 
-    public EndIdentifierDerived3 (String I1, Initializator Initializator) {
+    public NamespaceDeclDerived1 (String I1, VarDeclList VarDeclList) {
         this.I1=I1;
-        this.Initializator=Initializator;
-        if(Initializator!=null) Initializator.setParent(this);
+        this.VarDeclList=VarDeclList;
+        if(VarDeclList!=null) VarDeclList.setParent(this);
     }
 
     public String getI1() {
@@ -24,12 +24,12 @@ public class EndIdentifierDerived3 extends EndIdentifier {
         this.I1=I1;
     }
 
-    public Initializator getInitializator() {
-        return Initializator;
+    public VarDeclList getVarDeclList() {
+        return VarDeclList;
     }
 
-    public void setInitializator(Initializator Initializator) {
-        this.Initializator=Initializator;
+    public void setVarDeclList(VarDeclList VarDeclList) {
+        this.VarDeclList=VarDeclList;
     }
 
     public void accept(Visitor visitor) {
@@ -37,35 +37,35 @@ public class EndIdentifierDerived3 extends EndIdentifier {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Initializator!=null) Initializator.accept(visitor);
+        if(VarDeclList!=null) VarDeclList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Initializator!=null) Initializator.traverseTopDown(visitor);
+        if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Initializator!=null) Initializator.traverseBottomUp(visitor);
+        if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("EndIdentifierDerived3(\n");
+        buffer.append("NamespaceDeclDerived1(\n");
 
         buffer.append(" "+tab+I1);
         buffer.append("\n");
 
-        if(Initializator!=null)
-            buffer.append(Initializator.toString("  "+tab));
+        if(VarDeclList!=null)
+            buffer.append(VarDeclList.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [EndIdentifierDerived3]");
+        buffer.append(") [NamespaceDeclDerived1]");
         return buffer.toString();
     }
 }

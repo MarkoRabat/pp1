@@ -1,11 +1,11 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/0/2024 23:13:33
+// 25/0/2024 18:30:58
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class ConstEndIdentifier implements SyntaxNode {
+public abstract class NamespaceDecl implements SyntaxNode {
 
     private SyntaxNode parent;
 

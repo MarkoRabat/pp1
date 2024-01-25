@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/0/2024 22:48:55
+// 25/0/2024 18:30:58
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class DeclListDerived4 extends DeclList {
+public class ProgNameDeclListDerived3 extends ProgNameDeclList {
 
-    public DeclListDerived4 () {
+    public ProgNameDeclListDerived3 () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class DeclListDerived4 extends DeclList {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("DeclListDerived4(\n");
+        buffer.append("ProgNameDeclListDerived3(\n");
 
         buffer.append(tab);
-        buffer.append(") [DeclListDerived4]");
+        buffer.append(") [ProgNameDeclListDerived3]");
         return buffer.toString();
     }
 }

@@ -51,9 +51,16 @@ terminal String IDENT;
 nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
 nonterminal StatementList, Statement, Mulop, DeclList, Initializator;
 nonterminal SimpleDesignator, ArrayDesignator, Expr, Term, Addop, Factor;
-nonterminal Identifier, ConstDeclList, ConstIdentifier;
+nonterminal Identifier, ConstDeclList, ConstIdentifier, ProgNameDeclList;
+nonterminal NamespaceDecl;
 
-Program ::= PROG IDENT VarDeclList LBRACE MethodDeclList RBRACE;
+Program ::= PROG IDENT ProgNameDeclList LBRACE MethodDeclList RBRACE;
+
+ProgNameDeclList ::= ProgNameDeclList NamespaceDecl
+					| ProgNameDeclList VarDecl
+					| /* epsilon */;
+
+NamespaceDecl ::= NAMESPACE IDENT LBRACE VarDeclList LBRACE RBRACE RBRACE;
 
 VarDeclList ::= VarDeclList VarDecl
 			| /* epsilon */;

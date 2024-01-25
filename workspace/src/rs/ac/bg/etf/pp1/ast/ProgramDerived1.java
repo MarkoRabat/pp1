@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 24/0/2024 23:18:27
+// 25/0/2024 18:30:58
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class ProgramDerived1 extends Program {
 
     private String I1;
-    private VarDeclList VarDeclList;
+    private ProgNameDeclList ProgNameDeclList;
     private MethodDeclList MethodDeclList;
 
-    public ProgramDerived1 (String I1, VarDeclList VarDeclList, MethodDeclList MethodDeclList) {
+    public ProgramDerived1 (String I1, ProgNameDeclList ProgNameDeclList, MethodDeclList MethodDeclList) {
         this.I1=I1;
-        this.VarDeclList=VarDeclList;
-        if(VarDeclList!=null) VarDeclList.setParent(this);
+        this.ProgNameDeclList=ProgNameDeclList;
+        if(ProgNameDeclList!=null) ProgNameDeclList.setParent(this);
         this.MethodDeclList=MethodDeclList;
         if(MethodDeclList!=null) MethodDeclList.setParent(this);
     }
@@ -27,12 +27,12 @@ public class ProgramDerived1 extends Program {
         this.I1=I1;
     }
 
-    public VarDeclList getVarDeclList() {
-        return VarDeclList;
+    public ProgNameDeclList getProgNameDeclList() {
+        return ProgNameDeclList;
     }
 
-    public void setVarDeclList(VarDeclList VarDeclList) {
-        this.VarDeclList=VarDeclList;
+    public void setProgNameDeclList(ProgNameDeclList ProgNameDeclList) {
+        this.ProgNameDeclList=ProgNameDeclList;
     }
 
     public MethodDeclList getMethodDeclList() {
@@ -48,18 +48,18 @@ public class ProgramDerived1 extends Program {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(VarDeclList!=null) VarDeclList.accept(visitor);
+        if(ProgNameDeclList!=null) ProgNameDeclList.accept(visitor);
         if(MethodDeclList!=null) MethodDeclList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
+        if(ProgNameDeclList!=null) ProgNameDeclList.traverseTopDown(visitor);
         if(MethodDeclList!=null) MethodDeclList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
+        if(ProgNameDeclList!=null) ProgNameDeclList.traverseBottomUp(visitor);
         if(MethodDeclList!=null) MethodDeclList.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -72,8 +72,8 @@ public class ProgramDerived1 extends Program {
         buffer.append(" "+tab+I1);
         buffer.append("\n");
 
-        if(VarDeclList!=null)
-            buffer.append(VarDeclList.toString("  "+tab));
+        if(ProgNameDeclList!=null)
+            buffer.append(ProgNameDeclList.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

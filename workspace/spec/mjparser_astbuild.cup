@@ -68,8 +68,16 @@ nonterminal Factor Factor;
 nonterminal Identifier Identifier;
 nonterminal ConstDeclList ConstDeclList;
 nonterminal ConstIdentifier ConstIdentifier;
+nonterminal ProgNameDeclList ProgNameDeclList;
+nonterminal NamespaceDecl NamespaceDecl;
 
-Program ::= PROG IDENT:I1 VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new ProgramDerived1(I1, V2, M3); RESULT.setLine(I1left); :};
+Program ::= PROG IDENT:I1 ProgNameDeclList:P2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new ProgramDerived1(I1, P2, M3); RESULT.setLine(I1left); :};
+
+ProgNameDeclList ::= ProgNameDeclList:P1 NamespaceDecl:N2 {: RESULT=new ProgNameDeclListDerived1(P1, N2); RESULT.setLine(P1left); :}
+					| ProgNameDeclList:P1 VarDecl:V2 {: RESULT=new ProgNameDeclListDerived2(P1, V2); RESULT.setLine(P1left); :}
+					| {: RESULT=new ProgNameDeclListDerived3(); :} /* epsilon */;
+
+NamespaceDecl ::= NAMESPACE IDENT:I1 LBRACE VarDeclList:V2 LBRACE RBRACE RBRACE {: RESULT=new NamespaceDeclDerived1(I1, V2); RESULT.setLine(I1left); :};
 
 VarDeclList ::= VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclListDerived1(V1, V2); RESULT.setLine(V1left); :}
 			| {: RESULT=new VarDeclListDerived2(); :} /* epsilon */;
