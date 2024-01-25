@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/0/2024 18:30:58
+// 25/0/2024 19:14:58
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class StatementDerived6 extends Statement {
 
-    private SimpleDesignator SimpleDesignator;
+    private ArrayDesignator ArrayDesignator;
 
-    public StatementDerived6 (SimpleDesignator SimpleDesignator) {
-        this.SimpleDesignator=SimpleDesignator;
-        if(SimpleDesignator!=null) SimpleDesignator.setParent(this);
+    public StatementDerived6 (ArrayDesignator ArrayDesignator) {
+        this.ArrayDesignator=ArrayDesignator;
+        if(ArrayDesignator!=null) ArrayDesignator.setParent(this);
     }
 
-    public SimpleDesignator getSimpleDesignator() {
-        return SimpleDesignator;
+    public ArrayDesignator getArrayDesignator() {
+        return ArrayDesignator;
     }
 
-    public void setSimpleDesignator(SimpleDesignator SimpleDesignator) {
-        this.SimpleDesignator=SimpleDesignator;
+    public void setArrayDesignator(ArrayDesignator ArrayDesignator) {
+        this.ArrayDesignator=ArrayDesignator;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class StatementDerived6 extends Statement {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(SimpleDesignator!=null) SimpleDesignator.accept(visitor);
+        if(ArrayDesignator!=null) ArrayDesignator.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(SimpleDesignator!=null) SimpleDesignator.traverseTopDown(visitor);
+        if(ArrayDesignator!=null) ArrayDesignator.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(SimpleDesignator!=null) SimpleDesignator.traverseBottomUp(visitor);
+        if(ArrayDesignator!=null) ArrayDesignator.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class StatementDerived6 extends Statement {
         buffer.append(tab);
         buffer.append("StatementDerived6(\n");
 
-        if(SimpleDesignator!=null)
-            buffer.append(SimpleDesignator.toString("  "+tab));
+        if(ArrayDesignator!=null)
+            buffer.append(ArrayDesignator.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

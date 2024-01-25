@@ -1,0 +1,47 @@
+INFO  19:19:15,066 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  19:19:15,132 - #2 program
+INFO  19:19:15,133 - #30 MJProgram
+INFO  19:19:15,134 - #3 {
+INFO  19:19:15,136 - #18 void
+INFO  19:19:15,138 - #30 main
+INFO  19:19:15,138 - #6 (
+INFO  19:19:15,139 - #7 )
+INFO  19:19:15,139 - #3 {
+INFO  19:19:15,140 - #30 x
+INFO  19:19:15,142 - #8 =
+INFO  19:19:15,142 - #13 new
+INFO  19:19:15,142 - #30 char
+INFO  19:19:15,143 - #25 [
+INFO  19:19:15,143 - #29 7
+INFO  19:19:15,143 - #27 ]
+INFO  19:19:15,144 - #17 +
+ERROR 19:19:15,144 - 
+Sintaksna greska na liniji 4
+INFO  19:19:15,145 - #29 5
+INFO  19:19:15,145 - #5 ;
+INFO  19:19:15,145 - #4 }
+INFO  19:19:15,147 - #4 }
+ERROR 19:19:15,147 - Izvrsen oporavak do ; na liniji 4
+INFO  19:19:15,157 - ProgramDerived1(
+ MJProgram
+  ProgNameDeclListDerived3(
+  ) [ProgNameDeclListDerived3]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+     main
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived4(
+        ) [StatementDerived4]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [ProgramDerived1]
+INFO  19:19:15,158 - ====================================
+INFO  19:19:15,162 -  Broj print naredbi = 0
+INFO  19:19:15,162 -  Deklarisanih promenljivih ima = 0

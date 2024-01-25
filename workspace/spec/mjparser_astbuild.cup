@@ -118,7 +118,7 @@ ConstIdentifier ::= IDENT:I1 EQUAL Initializator:I2 {: RESULT=new ConstIdentifie
 					);
 				:} {: RESULT=new ConstIdentifierDerived2(); :};
 			
-Initializator ::= NUMBER:N1 {: RESULT=new InitializatorDerived1(N1); RESULT.setLine(N1left); :};
+Initializator ::= NUMBER:N1 {: RESULT=new InitializatorDerived1(N1); RESULT.setLine(N1left); :} | CHARACTER {: RESULT=new InitializatorDerived2(); :} | BOOLEAN {: RESULT=new InitializatorDerived3(); :};
 
 Type ::= IDENT:typeName {: RESULT=new TypeDerived1(typeName); RESULT.setLine(typeNameleft); :};
 
@@ -131,23 +131,24 @@ StatementList ::= StatementList:S1 Statement:S2 {: RESULT=new StatementListDeriv
 				| {: RESULT=new StatementListDerived2(); :} /* epsilon */;
 
 Statement ::= SimpleDesignator:S1 EQUAL Expr:e SEMI {: RESULT=new StatementDerived1(S1, e); RESULT.setLine(S1left); :}
-			| ArrayDesignator:A1 EQUAL Expr:e SEMI {: RESULT=new StatementDerived2(A1, e); RESULT.setLine(A1left); :}
+			| SimpleDesignator:S1 EQUAL NEW Type:T2 LBRACKET Expr:E3 RBRACKET SEMI {: RESULT=new StatementDerived2(S1, T2, E3); RESULT.setLine(S1left); :}
+			| ArrayDesignator:A1 EQUAL Expr:e SEMI {: RESULT=new StatementDerived3(A1, e); RESULT.setLine(A1left); :}
 			| error SEMI:l
 			{:
 				parser.report_error(
 					"Izvrsen oporavak do ; na liniji "
 					+ lleft, null
 				);
-			:} {: RESULT=new StatementDerived3(); :}
-			| SimpleDesignator:S1 DOUBLEPLUS SEMI {: RESULT=new StatementDerived4(S1); RESULT.setLine(S1left); :}
-			| ArrayDesignator:A1 DOUBLEPLUS SEMI {: RESULT=new StatementDerived5(A1); RESULT.setLine(A1left); :}
-			| SimpleDesignator:S1 DOUBLEMINUS SEMI {: RESULT=new StatementDerived6(S1); RESULT.setLine(S1left); :}
-			| ArrayDesignator:A1 DOUBLEMINUS SEMI {: RESULT=new StatementDerived7(A1); RESULT.setLine(A1left); :}
-			| READ LPAREN SimpleDesignator:S1 RPAREN SEMI {: RESULT=new StatementDerived8(S1); RESULT.setLine(S1left); :}
-			| READ LPAREN ArrayDesignator:A1 RPAREN SEMI {: RESULT=new StatementDerived9(A1); RESULT.setLine(A1left); :}
+			:} {: RESULT=new StatementDerived4(); :}
+			| SimpleDesignator:S1 DOUBLEPLUS SEMI {: RESULT=new StatementDerived5(S1); RESULT.setLine(S1left); :}
+			| ArrayDesignator:A1 DOUBLEPLUS SEMI {: RESULT=new StatementDerived6(A1); RESULT.setLine(A1left); :}
+			| SimpleDesignator:S1 DOUBLEMINUS SEMI {: RESULT=new StatementDerived7(S1); RESULT.setLine(S1left); :}
+			| ArrayDesignator:A1 DOUBLEMINUS SEMI {: RESULT=new StatementDerived8(A1); RESULT.setLine(A1left); :}
+			| READ LPAREN SimpleDesignator:S1 RPAREN SEMI {: RESULT=new StatementDerived9(S1); RESULT.setLine(S1left); :}
+			| READ LPAREN ArrayDesignator:A1 RPAREN SEMI {: RESULT=new StatementDerived10(A1); RESULT.setLine(A1left); :}
 			| (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
 			| (PrintOnWith) PRINT LPAREN Expr:E1 COMMA NUMBER:N2 RPAREN SEMI {: RESULT=new PrintOnWith(E1, N2); RESULT.setLine(E1left); :}
-			| RETURN SEMI {: RESULT=new StatementDerived10(); :};
+			| RETURN SEMI {: RESULT=new StatementDerived11(); :};
 
 Expr ::= Expr:E1 Addop:A2 Term:T3 {: RESULT=new ExprDerived1(E1, A2, T3); RESULT.setLine(E1left); :}
 		| MINUS Term:T1 {: RESULT=new ExprDerived2(T1); RESULT.setLine(T1left); :}
@@ -157,8 +158,11 @@ Term ::= Term:t Mulop:M1 Factor:te {: RESULT=new TermDerived1(t, M1, te); RESULT
 		| Factor:t {: RESULT=new TermDerived2(t); RESULT.setLine(tleft); :};
 
 Factor ::= NUMBER:N1 {: RESULT=new FactorDerived1(N1); RESULT.setLine(N1left); :}
-		| SimpleDesignator:d {: RESULT=new FactorDerived2(d); RESULT.setLine(dleft); :}
-		| ArrayDesignator:d {: RESULT=new FactorDerived3(d); RESULT.setLine(dleft); :};
+		| CHARACTER {: RESULT=new FactorDerived2(); :}
+		| BOOLEAN {: RESULT=new FactorDerived3(); :}
+		| LPAREN Expr:E1 RPAREN {: RESULT=new FactorDerived4(E1); RESULT.setLine(E1left); :}
+		| SimpleDesignator:d {: RESULT=new FactorDerived5(d); RESULT.setLine(dleft); :}
+		| ArrayDesignator:d {: RESULT=new FactorDerived6(d); RESULT.setLine(dleft); :};
 
 SimpleDesignator ::= IDENT:name {: RESULT=new SimpleDesignatorDerived1(name); RESULT.setLine(nameleft); :}
 					| IDENT:namesp DOUBLECOLON IDENT:name {: RESULT=new SimpleDesignatorDerived2(namesp, name); RESULT.setLine(namespleft); :};

@@ -1,39 +1,11 @@
 program MJProgram
-
-	const int x, y = 5;
-	int x = 5, y[];
-
-
-	namespace ns2 {
-		int x, y[];
-		int x[], y[];
-		int x, y = 5;
-		int x = 5, y[];
-	{}}
-
-	const int x = 22, y = 5;
-	int x = 5, y[];
-
-
 {
 	void main() {
-	
-		print(1);
-		
-		x = -x;
-		x = -ns::y[5] * ns1::x[-7] / 3;
-		print(x, 5);
-		print(-ns::x, 5);
-		x++;
-		x--;
-		ns::x++;
-		ns::x--;
-		x[-x]++;
-		x[-x]--;
-		ns::x[-x]++;
-		ns::x[-x]--;
-
-		print(2);
-		
+		x[4] = new char[7];
+		x = new char[7];
+		x[3] = new int[7];
+		x = new char[7];
+		x[2] = new bool[7];
+		x = new char[7];
 	}
 }

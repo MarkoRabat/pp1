@@ -101,7 +101,7 @@ ConstIdentifier ::= IDENT EQUAL Initializator
 					);
 				:};
 			
-Initializator ::= NUMBER;
+Initializator ::= NUMBER | CHARACTER | BOOLEAN;
 
 Type ::= IDENT:typeName;
 
@@ -114,6 +114,7 @@ StatementList ::= StatementList Statement
 				| /* epsilon */;
 
 Statement ::= SimpleDesignator EQUAL Expr:e SEMI
+			| SimpleDesignator EQUAL NEW Type LBRACKET Expr RBRACKET SEMI
 			| ArrayDesignator EQUAL Expr:e SEMI
 			| error SEMI:l
 			{:
@@ -140,6 +141,9 @@ Term ::= Term:t Mulop Factor:te
 		| Factor:t;
 
 Factor ::= NUMBER
+		| CHARACTER
+		| BOOLEAN
+		| LPAREN Expr RPAREN
 		| SimpleDesignator:d
 		| ArrayDesignator:d;
 

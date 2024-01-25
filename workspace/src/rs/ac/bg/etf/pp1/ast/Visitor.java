@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/0/2024 18:30:58
+// 25/0/2024 19:14:58
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -38,6 +38,9 @@ public interface Visitor {
     public void visit(ArrayDesignatorDerived1 ArrayDesignatorDerived1);
     public void visit(SimpleDesignatorDerived2 SimpleDesignatorDerived2);
     public void visit(SimpleDesignatorDerived1 SimpleDesignatorDerived1);
+    public void visit(FactorDerived6 FactorDerived6);
+    public void visit(FactorDerived5 FactorDerived5);
+    public void visit(FactorDerived4 FactorDerived4);
     public void visit(FactorDerived3 FactorDerived3);
     public void visit(FactorDerived2 FactorDerived2);
     public void visit(FactorDerived1 FactorDerived1);
@@ -46,9 +49,10 @@ public interface Visitor {
     public void visit(ExprDerived3 ExprDerived3);
     public void visit(ExprDerived2 ExprDerived2);
     public void visit(ExprDerived1 ExprDerived1);
-    public void visit(StatementDerived10 StatementDerived10);
+    public void visit(StatementDerived11 StatementDerived11);
     public void visit(PrintOnWith PrintOnWith);
     public void visit(PrintStmt PrintStmt);
+    public void visit(StatementDerived10 StatementDerived10);
     public void visit(StatementDerived9 StatementDerived9);
     public void visit(StatementDerived8 StatementDerived8);
     public void visit(StatementDerived7 StatementDerived7);
@@ -64,6 +68,8 @@ public interface Visitor {
     public void visit(MethodDeclListDerived2 MethodDeclListDerived2);
     public void visit(MethodDeclListDerived1 MethodDeclListDerived1);
     public void visit(TypeDerived1 TypeDerived1);
+    public void visit(InitializatorDerived3 InitializatorDerived3);
+    public void visit(InitializatorDerived2 InitializatorDerived2);
     public void visit(InitializatorDerived1 InitializatorDerived1);
     public void visit(ConstIdentifierDerived2 ConstIdentifierDerived2);
     public void visit(ConstIdentifierDerived1 ConstIdentifierDerived1);
