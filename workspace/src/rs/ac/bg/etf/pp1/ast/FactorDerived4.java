@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/0/2024 17:15:9
+// 26/0/2024 18:35:22
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class FactorDerived4 extends Factor {
 
-    private Expr Expr;
+    private ArrayDesignator ArrayDesignator;
 
-    public FactorDerived4 (Expr Expr) {
-        this.Expr=Expr;
-        if(Expr!=null) Expr.setParent(this);
+    public FactorDerived4 (ArrayDesignator ArrayDesignator) {
+        this.ArrayDesignator=ArrayDesignator;
+        if(ArrayDesignator!=null) ArrayDesignator.setParent(this);
     }
 
-    public Expr getExpr() {
-        return Expr;
+    public ArrayDesignator getArrayDesignator() {
+        return ArrayDesignator;
     }
 
-    public void setExpr(Expr Expr) {
-        this.Expr=Expr;
+    public void setArrayDesignator(ArrayDesignator ArrayDesignator) {
+        this.ArrayDesignator=ArrayDesignator;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class FactorDerived4 extends Factor {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Expr!=null) Expr.accept(visitor);
+        if(ArrayDesignator!=null) ArrayDesignator.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Expr!=null) Expr.traverseTopDown(visitor);
+        if(ArrayDesignator!=null) ArrayDesignator.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Expr!=null) Expr.traverseBottomUp(visitor);
+        if(ArrayDesignator!=null) ArrayDesignator.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class FactorDerived4 extends Factor {
         buffer.append(tab);
         buffer.append("FactorDerived4(\n");
 
-        if(Expr!=null)
-            buffer.append(Expr.toString("  "+tab));
+        if(ArrayDesignator!=null)
+            buffer.append(ArrayDesignator.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

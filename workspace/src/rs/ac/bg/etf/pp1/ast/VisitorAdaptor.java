@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/0/2024 17:15:10
+// 26/0/2024 18:35:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -30,26 +30,26 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Term Term) { }
     public void visit(StatementList StatementList) { }
     public void visit(Program Program) { }
-    public void visit(AddopDerived2 AddopDerived2) { visit(); }
-    public void visit(AddopDerived1 AddopDerived1) { visit(); }
-    public void visit(MulopDerived3 MulopDerived3) { visit(); }
-    public void visit(MulopDerived2 MulopDerived2) { visit(); }
-    public void visit(MulopDerived1 MulopDerived1) { visit(); }
+    public void visit(Minus Minus) { visit(); }
+    public void visit(Plus Plus) { visit(); }
+    public void visit(Per Per) { visit(); }
+    public void visit(Div Div) { visit(); }
+    public void visit(Mul Mul) { visit(); }
     public void visit(NsArrIdent NsArrIdent) { visit(); }
     public void visit(ArrIdent ArrIdent) { visit(); }
     public void visit(NsIdent NsIdent) { visit(); }
     public void visit(Ident Ident) { visit(); }
-    public void visit(FactorDerived6 FactorDerived6) { visit(); }
-    public void visit(FactorDerived5 FactorDerived5) { visit(); }
     public void visit(FactorDerived4 FactorDerived4) { visit(); }
+    public void visit(SFactorDesignator SFactorDesignator) { visit(); }
     public void visit(FactorDerived3 FactorDerived3) { visit(); }
     public void visit(FactorDerived2 FactorDerived2) { visit(); }
     public void visit(FactorDerived1 FactorDerived1) { visit(); }
-    public void visit(TermDerived2 TermDerived2) { visit(); }
-    public void visit(TermDerived1 TermDerived1) { visit(); }
-    public void visit(ExprDerived3 ExprDerived3) { visit(); }
-    public void visit(ExprDerived2 ExprDerived2) { visit(); }
-    public void visit(ExprDerived1 ExprDerived1) { visit(); }
+    public void visit(NumberConst NumberConst) { visit(); }
+    public void visit(FactorTerm FactorTerm) { visit(); }
+    public void visit(MulTerm MulTerm) { visit(); }
+    public void visit(TermExpr TermExpr) { visit(); }
+    public void visit(NegExpr NegExpr) { visit(); }
+    public void visit(AddExpr AddExpr) { visit(); }
     public void visit(StatementDerived11 StatementDerived11) { visit(); }
     public void visit(PrintOnWith PrintOnWith) { visit(); }
     public void visit(PrintStmt PrintStmt) { visit(); }

@@ -11,7 +11,7 @@ public class RuleVisitor extends VisitorAdaptor {
 	int printCallCount = 0;
 	int varDeclCount = 0;
 	
-	public void visit(VarDeclaration varDeclaration) {
+	public void visit(DeclListType declListType) {
 		++varDeclCount;
 	}
 	

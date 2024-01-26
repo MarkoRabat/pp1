@@ -1,24 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/0/2024 17:15:9
+// 26/0/2024 18:35:22
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class FactorDerived1 extends Factor {
 
-    private Integer N1;
-
-    public FactorDerived1 (Integer N1) {
-        this.N1=N1;
-    }
-
-    public Integer getN1() {
-        return N1;
-    }
-
-    public void setN1(Integer N1) {
-        this.N1=N1;
+    public FactorDerived1 () {
     }
 
     public void accept(Visitor visitor) {
@@ -40,9 +29,6 @@ public class FactorDerived1 extends Factor {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("FactorDerived1(\n");
-
-        buffer.append(" "+tab+N1);
-        buffer.append("\n");
 
         buffer.append(tab);
         buffer.append(") [FactorDerived1]");

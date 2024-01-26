@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/0/2024 17:15:10
+// 26/0/2024 18:35:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -30,26 +30,26 @@ public interface Visitor {
     public void visit(Term Term);
     public void visit(StatementList StatementList);
     public void visit(Program Program);
-    public void visit(AddopDerived2 AddopDerived2);
-    public void visit(AddopDerived1 AddopDerived1);
-    public void visit(MulopDerived3 MulopDerived3);
-    public void visit(MulopDerived2 MulopDerived2);
-    public void visit(MulopDerived1 MulopDerived1);
+    public void visit(Minus Minus);
+    public void visit(Plus Plus);
+    public void visit(Per Per);
+    public void visit(Div Div);
+    public void visit(Mul Mul);
     public void visit(NsArrIdent NsArrIdent);
     public void visit(ArrIdent ArrIdent);
     public void visit(NsIdent NsIdent);
     public void visit(Ident Ident);
-    public void visit(FactorDerived6 FactorDerived6);
-    public void visit(FactorDerived5 FactorDerived5);
     public void visit(FactorDerived4 FactorDerived4);
+    public void visit(SFactorDesignator SFactorDesignator);
     public void visit(FactorDerived3 FactorDerived3);
     public void visit(FactorDerived2 FactorDerived2);
     public void visit(FactorDerived1 FactorDerived1);
-    public void visit(TermDerived2 TermDerived2);
-    public void visit(TermDerived1 TermDerived1);
-    public void visit(ExprDerived3 ExprDerived3);
-    public void visit(ExprDerived2 ExprDerived2);
-    public void visit(ExprDerived1 ExprDerived1);
+    public void visit(NumberConst NumberConst);
+    public void visit(FactorTerm FactorTerm);
+    public void visit(MulTerm MulTerm);
+    public void visit(TermExpr TermExpr);
+    public void visit(NegExpr NegExpr);
+    public void visit(AddExpr AddExpr);
     public void visit(StatementDerived11 StatementDerived11);
     public void visit(PrintOnWith PrintOnWith);
     public void visit(PrintStmt PrintStmt);
