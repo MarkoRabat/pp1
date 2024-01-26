@@ -48,13 +48,19 @@ terminal LBRACKET, CONST, RBRACKET, NAMESPACE;
 terminal Integer NUMBER;
 terminal String IDENT;
 
-nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
+nonterminal VarDeclList, MethodDeclList, VarDecl;
 nonterminal StatementList, Statement, Mulop, DeclList, Initializator;
-nonterminal SimpleDesignator, ArrayDesignator, Expr, Term, Addop, Factor;
+nonterminal Expr, Term, Addop, Factor;
 nonterminal Identifier, ConstDeclList, ConstIdentifier, ProgNameDeclList;
 nonterminal NamespaceDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SimpleDesignator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ArrayDesignator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
-Program ::= PROG IDENT ProgNameDeclList LBRACE MethodDeclList RBRACE;
+Program ::= (Prog) PROG ProgName:p ProgNameDeclList LBRACE MethodDeclList RBRACE;
+
+ProgName ::= (ProgName) IDENT:progName;
 
 ProgNameDeclList ::= ProgNameDeclList NamespaceDecl
 					| ProgNameDeclList VarDecl
@@ -65,8 +71,8 @@ NamespaceDecl ::= NAMESPACE IDENT LBRACE VarDeclList LBRACE RBRACE RBRACE;
 VarDeclList ::= VarDeclList VarDecl
 			| /* epsilon */;
 
-VarDecl ::= (VarDeclaration) Type:varType DeclList SEMI
-		| (ConstVarDeclaration) CONST Type:varType ConstDeclList SEMI
+VarDecl ::= (DeclListType) Type:varType DeclList SEMI
+		| (ConstDeclListType) CONST Type:varType ConstDeclList SEMI
 		| error SEMI:l
 		{:
 			parser.report_error(
@@ -103,12 +109,14 @@ ConstIdentifier ::= IDENT EQUAL Initializator
 			
 Initializator ::= NUMBER | CHARACTER | BOOLEAN;
 
-Type ::= IDENT:typeName;
+Type ::= (TypeAccess) IDENT:typeName;
 
 MethodDeclList ::= MethodDeclList MethodDecl
 				| /* epsilon */;
 
-MethodDecl ::= VOID IDENT LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE;
+MethodDecl ::= (MethodDeclaration) VOID MethodName LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE;
+
+MethodName ::= (MethName) IDENT;
 
 StatementList ::= StatementList Statement
 				| /* epsilon */;
@@ -147,11 +155,11 @@ Factor ::= NUMBER
 		| SimpleDesignator:d
 		| ArrayDesignator:d;
 
-SimpleDesignator ::= IDENT:name
-					| IDENT:namesp DOUBLECOLON IDENT:name;
+SimpleDesignator ::= (Ident) IDENT:name
+					| (NsIdent) IDENT:namesp DOUBLECOLON IDENT:name;
 
-ArrayDesignator ::= IDENT:name LBRACKET Expr RBRACKET
-				| IDENT:namesp DOUBLECOLON IDENT:name LBRACKET Expr RBRACKET;
+ArrayDesignator ::= (ArrIdent) IDENT:name LBRACKET Expr RBRACKET
+				| (NsArrIdent) IDENT:namesp DOUBLECOLON IDENT:name LBRACKET Expr RBRACKET;
 
 Mulop ::= MUL | DIV | PERCENT;
 

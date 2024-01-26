@@ -48,19 +48,14 @@ terminal LBRACKET, CONST, RBRACKET, NAMESPACE;
 terminal Integer NUMBER;
 terminal String IDENT;
 
-nonterminal Program Program;
 nonterminal VarDeclList VarDeclList;
 nonterminal MethodDeclList MethodDeclList;
 nonterminal VarDecl VarDecl;
-nonterminal Type Type;
-nonterminal MethodDecl MethodDecl;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
 nonterminal Mulop Mulop;
 nonterminal DeclList DeclList;
 nonterminal Initializator Initializator;
-nonterminal SimpleDesignator SimpleDesignator;
-nonterminal ArrayDesignator ArrayDesignator;
 nonterminal Expr Expr;
 nonterminal Term Term;
 nonterminal Addop Addop;
@@ -70,8 +65,14 @@ nonterminal ConstDeclList ConstDeclList;
 nonterminal ConstIdentifier ConstIdentifier;
 nonterminal ProgNameDeclList ProgNameDeclList;
 nonterminal NamespaceDecl NamespaceDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SimpleDesignator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ArrayDesignator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
-Program ::= PROG IDENT:I1 ProgNameDeclList:P2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new ProgramDerived1(I1, P2, M3); RESULT.setLine(I1left); :};
+Program ::= (Prog) PROG ProgName:p ProgNameDeclList:P1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Prog(p, P1, M2); RESULT.setLine(pleft); :};
+
+ProgName ::= (ProgName) IDENT:progName {: RESULT=new ProgName(progName); RESULT.setLine(progNameleft); :};
 
 ProgNameDeclList ::= ProgNameDeclList:P1 NamespaceDecl:N2 {: RESULT=new ProgNameDeclListDerived1(P1, N2); RESULT.setLine(P1left); :}
 					| ProgNameDeclList:P1 VarDecl:V2 {: RESULT=new ProgNameDeclListDerived2(P1, V2); RESULT.setLine(P1left); :}
@@ -82,8 +83,8 @@ NamespaceDecl ::= NAMESPACE IDENT:I1 LBRACE VarDeclList:V2 LBRACE RBRACE RBRACE 
 VarDeclList ::= VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclListDerived1(V1, V2); RESULT.setLine(V1left); :}
 			| {: RESULT=new VarDeclListDerived2(); :} /* epsilon */;
 
-VarDecl ::= (VarDeclaration) Type:varType DeclList:D1 SEMI {: RESULT=new VarDeclaration(varType, D1); RESULT.setLine(varTypeleft); :}
-		| (ConstVarDeclaration) CONST Type:varType ConstDeclList:C1 SEMI {: RESULT=new ConstVarDeclaration(varType, C1); RESULT.setLine(varTypeleft); :}
+VarDecl ::= (DeclListType) Type:varType DeclList:D1 SEMI {: RESULT=new DeclListType(varType, D1); RESULT.setLine(varTypeleft); :}
+		| (ConstDeclListType) CONST Type:varType ConstDeclList:C1 SEMI {: RESULT=new ConstDeclListType(varType, C1); RESULT.setLine(varTypeleft); :}
 		| error SEMI:l
 		{:
 			parser.report_error(
@@ -120,12 +121,14 @@ ConstIdentifier ::= IDENT:I1 EQUAL Initializator:I2 {: RESULT=new ConstIdentifie
 			
 Initializator ::= NUMBER:N1 {: RESULT=new InitializatorDerived1(N1); RESULT.setLine(N1left); :} | CHARACTER {: RESULT=new InitializatorDerived2(); :} | BOOLEAN {: RESULT=new InitializatorDerived3(); :};
 
-Type ::= IDENT:typeName {: RESULT=new TypeDerived1(typeName); RESULT.setLine(typeNameleft); :};
+Type ::= (TypeAccess) IDENT:typeName {: RESULT=new TypeAccess(typeName); RESULT.setLine(typeNameleft); :};
 
 MethodDeclList ::= MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclListDerived1(M1, M2); RESULT.setLine(M1left); :}
 				| {: RESULT=new MethodDeclListDerived2(); :} /* epsilon */;
 
-MethodDecl ::= VOID IDENT:I1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDeclDerived1(I1, V2, S3); RESULT.setLine(I1left); :};
+MethodDecl ::= (MethodDeclaration) VOID MethodName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDeclaration(M1, V2, S3); RESULT.setLine(M1left); :};
+
+MethodName ::= (MethName) IDENT:I1 {: RESULT=new MethName(I1); RESULT.setLine(I1left); :};
 
 StatementList ::= StatementList:S1 Statement:S2 {: RESULT=new StatementListDerived1(S1, S2); RESULT.setLine(S1left); :}
 				| {: RESULT=new StatementListDerived2(); :} /* epsilon */;
@@ -164,11 +167,11 @@ Factor ::= NUMBER:N1 {: RESULT=new FactorDerived1(N1); RESULT.setLine(N1left); :
 		| SimpleDesignator:d {: RESULT=new FactorDerived5(d); RESULT.setLine(dleft); :}
 		| ArrayDesignator:d {: RESULT=new FactorDerived6(d); RESULT.setLine(dleft); :};
 
-SimpleDesignator ::= IDENT:name {: RESULT=new SimpleDesignatorDerived1(name); RESULT.setLine(nameleft); :}
-					| IDENT:namesp DOUBLECOLON IDENT:name {: RESULT=new SimpleDesignatorDerived2(namesp, name); RESULT.setLine(namespleft); :};
+SimpleDesignator ::= (Ident) IDENT:name {: RESULT=new Ident(name); RESULT.setLine(nameleft); :}
+					| (NsIdent) IDENT:namesp DOUBLECOLON IDENT:name {: RESULT=new NsIdent(namesp, name); RESULT.setLine(namespleft); :};
 
-ArrayDesignator ::= IDENT:name LBRACKET Expr:E1 RBRACKET {: RESULT=new ArrayDesignatorDerived1(name, E1); RESULT.setLine(nameleft); :}
-				| IDENT:namesp DOUBLECOLON IDENT:name LBRACKET Expr:E1 RBRACKET {: RESULT=new ArrayDesignatorDerived2(namesp, name, E1); RESULT.setLine(namespleft); :};
+ArrayDesignator ::= (ArrIdent) IDENT:name LBRACKET Expr:E1 RBRACKET {: RESULT=new ArrIdent(name, E1); RESULT.setLine(nameleft); :}
+				| (NsArrIdent) IDENT:namesp DOUBLECOLON IDENT:name LBRACKET Expr:E1 RBRACKET {: RESULT=new NsArrIdent(namesp, name, E1); RESULT.setLine(namespleft); :};
 
 Mulop ::= MUL {: RESULT=new MulopDerived1(); :} | DIV {: RESULT=new MulopDerived2(); :} | PERCENT {: RESULT=new MulopDerived3(); :};
 

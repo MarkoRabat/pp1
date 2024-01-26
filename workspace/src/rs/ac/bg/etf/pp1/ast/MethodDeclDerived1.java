@@ -1,30 +1,31 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/0/2024 19:14:58
+// 26/0/2024 14:46:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class MethodDeclDerived1 extends MethodDecl {
 
-    private String I1;
+    private MethodName MethodName;
     private VarDeclList VarDeclList;
     private StatementList StatementList;
 
-    public MethodDeclDerived1 (String I1, VarDeclList VarDeclList, StatementList StatementList) {
-        this.I1=I1;
+    public MethodDeclDerived1 (MethodName MethodName, VarDeclList VarDeclList, StatementList StatementList) {
+        this.MethodName=MethodName;
+        if(MethodName!=null) MethodName.setParent(this);
         this.VarDeclList=VarDeclList;
         if(VarDeclList!=null) VarDeclList.setParent(this);
         this.StatementList=StatementList;
         if(StatementList!=null) StatementList.setParent(this);
     }
 
-    public String getI1() {
-        return I1;
+    public MethodName getMethodName() {
+        return MethodName;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setMethodName(MethodName MethodName) {
+        this.MethodName=MethodName;
     }
 
     public VarDeclList getVarDeclList() {
@@ -48,17 +49,20 @@ public class MethodDeclDerived1 extends MethodDecl {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(MethodName!=null) MethodName.accept(visitor);
         if(VarDeclList!=null) VarDeclList.accept(visitor);
         if(StatementList!=null) StatementList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(MethodName!=null) MethodName.traverseTopDown(visitor);
         if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
         if(StatementList!=null) StatementList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(MethodName!=null) MethodName.traverseBottomUp(visitor);
         if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
         if(StatementList!=null) StatementList.traverseBottomUp(visitor);
         accept(visitor);
@@ -69,7 +73,10 @@ public class MethodDeclDerived1 extends MethodDecl {
         buffer.append(tab);
         buffer.append("MethodDeclDerived1(\n");
 
-        buffer.append(" "+tab+I1);
+        if(MethodName!=null)
+            buffer.append(MethodName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(VarDeclList!=null)
