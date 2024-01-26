@@ -48,15 +48,14 @@ terminal LBRACKET, CONST, RBRACKET, NAMESPACE;
 terminal Integer NUMBER;
 terminal String IDENT;
 
-nonterminal VarDeclList, MethodDeclList, VarDecl;
+nonterminal VarDeclList, MethodDeclList, VarDecl, Addop;
 nonterminal StatementList, Statement, Mulop, DeclList, Initializator;
-nonterminal Expr, Term, Addop, Factor;
 nonterminal Identifier, ConstDeclList, ConstIdentifier, ProgNameDeclList;
 nonterminal NamespaceDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SimpleDesignator;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ArrayDesignator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
 
 Program ::= (Prog) PROG ProgName:p ProgNameDeclList LBRACE MethodDeclList RBRACE;
 

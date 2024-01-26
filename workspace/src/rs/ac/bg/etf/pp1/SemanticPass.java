@@ -8,13 +8,22 @@ import rs.etf.pp1.symboltable.concepts.*;
 
 public class SemanticPass extends VisitorAdaptor {
 
-	Logger log = Logger.getLogger(getClass());
 	
-	int printCallCount = 0;
-	int varDeclCount = 0;
+	private int printCallCount = 0;
+	private int varDeclCount = 0;
 	private Obj currentMethod = null;
 	private Struct currDeclListType = null;
+	private SemanticPassLogger spl = new SemanticPassLogger();
 	
+	public SemanticPass() {}
+	
+	public void setPrintCallCount(int newPrintCallCount) { printCallCount = newPrintCallCount; }
+	public int getPrintCallCount() { return printCallCount; } 
+	public void incPrintCallCount() { ++printCallCount; }
+	public void setVarDeclCount(int newVarDeclCount) { varDeclCount = newVarDeclCount; }
+	public int getVarDeclCount() { return varDeclCount; } 
+	public void incVarDeclCount() { ++varDeclCount; }
+
 	public void setCurrDeclLType(Struct type) { currDeclListType = type; }
 	public Struct getCurrDeclLType() { return currDeclListType; }
 	public void setCurrentMethod(Obj currMethod) { currentMethod = currMethod; }
@@ -25,12 +34,16 @@ public class SemanticPass extends VisitorAdaptor {
 	public boolean isNotTypeObj(Obj obj) { return obj.getKind() != Obj.Type; }
 	
 	public void visit(Prog prog) {
-		Tab.chainLocalSymbols(prog.getProgName().obj);
-		Tab.closeScope();
+		String programName = prog.getProgName().obj.getName();
+		Obj program = Tab.find(programName);
+		if (isNoObj(program)) {
+			spl.report_name_isNot_defined(programName, prog); return; }
+		Tab.chainLocalSymbols(prog.getProgName().obj); Tab.closeScope();
 	}
-	
 	public void visit(ProgName progName) {
 		progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
+		if (isNoObj(progName.obj)) {
+			spl.report_name_isAlready_defined(progName.getProgName(), progName); return; }
 		Tab.openScope();
 	}
 
@@ -41,10 +54,9 @@ public class SemanticPass extends VisitorAdaptor {
 		setCurrDeclLType(constDeclListType.getType().struct); }
 	
 	public void visit(TypeAccess type) {
-		Obj typeNode = Tab.find(type.getTypeName());
-		type.struct = Tab.noType; 
+		Obj typeNode = Tab.find(type.getTypeName()); type.struct = Tab.noType; 
 		if (isNoObj(typeNode) || isNotTypeObj(typeNode)) {
-			report_undefined_type(type.getTypeName(), type); return; }
+			spl.report_undefined_type(type.getTypeName(), type); return; }
 		type.struct = typeNode.getType();
 	}
 	
@@ -57,46 +69,20 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(MethName methName) {
 		methName.obj = Tab.insert(Obj.Meth, methName.getI1(), Tab.nullType);
 		if (isNoObj(methName.obj)) {
-			report_name_isAlready_defined(methName.getI1(), methName); return; }
-		setCurrentMethod(methName.obj);
-		Tab.openScope();
+			spl.report_name_isAlready_defined(methName.getI1(), methName); return; }
+		setCurrentMethod(methName.obj); Tab.openScope();
 	}
 
 	public void visit(PrintStmt printStmt) {
-		++printCallCount;
-		log.info("Prepoznata naredba print!");
+		incPrintCallCount();
+		spl.info_print();
 	}
 	
 	public void visit(Ident ident) {
 		Obj designator = Tab.find(ident.getName());
 		if (isNoObj(designator))
-			report_name_isNot_defined(ident.getName(), ident);
+			spl.report_name_isNot_defined(ident.getName(), ident);
 		ident.obj = designator;
-	}
-	
-	public void report_name_isNot_defined(String name, SyntaxNode obj) {
-		report_error("ime " + name + " nije definisano", obj); }
-	public void report_name_isAlready_defined(String name, SyntaxNode obj) {
-		report_error("ime " + name + " je vec definisano", obj); }
-	public void report_undefined_type(String name, SyntaxNode obj) {
-		report_error("nepostojeci tip " + name, obj); }
-	public StringBuilder build_msg(String message, SyntaxNode info) {
-		StringBuilder msg = new StringBuilder(message);
-		int line = (info == null) ? 0 : info.getLine();
-		if (line != 0)
-			msg.append("\n\tna liniji ").append(line);
-		return msg;
-	}
-	
-	public void report_error(String message, SyntaxNode info) {
-		StringBuilder msg = build_msg(message, info);
-		msg.insert(0, "Greska: ");
-		log.error(msg.toString());
-	}
-	
-	public void report_info(String message, SyntaxNode info) {
-		StringBuilder msg = build_msg(message, info);
-		log.info(msg.toString());
 	}
 
 }

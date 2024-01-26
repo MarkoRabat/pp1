@@ -12,45 +12,32 @@ import org.apache.log4j.xml.DOMConfigurator;
 import java_cup.runtime.Symbol;
 import rs.ac.bg.etf.pp1.ast.Program;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
+import rs.etf.pp1.symboltable.Tab;
 
 public class MJParserTest {
 	static {
 		DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());
 		Log4JUtils.instance().prepareLogFile(Logger.getRootLogger());
 	}
-	
 	public static void main(String[] args) throws Exception {
-		Logger log = Logger.getLogger(MJParserTest.class);
-		
-		Reader br = null;
+		Logger log = Logger.getLogger(MJParserTest.class); Reader br = null;
 		try {
 			//File sourceCode = new File("test/program.mj");
 			File sourceCode = new File("test/test301.mj");
 			//File sourceCode = new File("test/test302.mj");
 			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
-			
-			br = new BufferedReader(new FileReader(sourceCode));
-			Yylex lexer = new Yylex(br);
-			
-			MJParser p = new MJParser(lexer);
-			Symbol s = p.parse(); // pocetak parsiranja
-			
-			Program prog = (Program) (s.value);
-			// ispis sintaksnog stabla
-			log.info(prog.toString(""));
+			br = new BufferedReader(new FileReader(sourceCode)); Yylex lexer = new Yylex(br);
+			MJParser p = new MJParser(lexer); Symbol s = p.parse();
+			Program prog = (Program) (s.value); log.info(prog.toString(""));
 			log.info("====================================");
-			
-			// ispis prepoznatih programskih konstrukcija
-			RuleVisitor v = new RuleVisitor();
-			prog.traverseBottomUp(v);
-			
-			log.info(" Broj print naredbi = " + v.printCallCount);
-			log.info(" Deklarisanih promenljivih ima = " + v.varDeclCount);
-
+			Tab.init(); SemanticPass v = new SemanticPass(); prog.traverseBottomUp(v);
+			log.info(" Broj print naredbi = " + v.getPrintCallCount());
+			log.info(" Deklarisanih promenljivih ima = " + v.getVarDeclCount());
+			log.info("===================================="); Tab.dump();
 		}
 		finally {
-			if (br != null) try { br.close(); } catch (IOException e1)  { log.error(e1.getMessage(), e1); }
+			if (br != null) try { br.close(); }
+			catch (IOException e1)  { log.error(e1.getMessage(), e1); }
 		}
-		
 	}
 }
