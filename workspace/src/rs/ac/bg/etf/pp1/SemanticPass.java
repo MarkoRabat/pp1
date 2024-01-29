@@ -1,5 +1,8 @@
 package rs.ac.bg.etf.pp1;
 
+import javax.naming.NameAlreadyBoundException;
+import javax.naming.NameNotFoundException;
+
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.ast.*;
@@ -34,20 +37,36 @@ public class SemanticPass extends VisitorAdaptor {
 	public boolean isNoObj(Obj obj) { return obj == Tab.noObj; }
 	public boolean isNotTypeObj(Obj obj) { return obj.getKind() != Obj.Type; }
 	public boolean isIntType(Struct type) { return type == Tab.intType; }
+	public boolean isInTab(String name) { return !isNoObj(Tab.find(name)); }
 	
+	public Obj insertIntoTab(int kind, String name, Struct type) throws NameAlreadyBoundException {
+		if (!isNoObj(Tab.find(name))) throw new NameAlreadyBoundException(name);
+		return Tab.insert(kind, name, type);
+	}
+	public Obj findInTab(String name) throws NameNotFoundException {
+		Obj obj = Tab.find(name);
+		if (isNoObj(obj)) throw new NameNotFoundException(name);
+		return obj;
+	}
+
 	public void visit(Prog prog) {
-		String programName = prog.getProgName().obj.getName();
-		Obj program = Tab.find(programName);
-		if (isNoObj(program)) {
-			spl.report_name_isNot_defined(programName, prog); return; }
-		Tab.chainLocalSymbols(prog.getProgName().obj); Tab.closeScope();
+		try {
+			Obj programObj = findInTab(prog.getProgName().obj.getName());
+			Tab.chainLocalSymbols(programObj); Tab.closeScope();
+		}
+		catch (NameNotFoundException e) {}
 	}
 
 	public void visit(ProgName progName) {
-		progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
-		if (isNoObj(progName.obj)) {
-			spl.report_name_isAlready_defined(progName.getProgName(), progName); return; }
-		Tab.openScope();
+		try {
+			progName.obj =
+				insertIntoTab(Obj.Prog, progName.getProgName(), Tab.noType);
+			Tab.openScope();
+		}
+		catch (NameAlreadyBoundException e) {
+			spl.report_name_isAlready_defined(e.getMessage(), progName);
+			progName.obj = Tab.noObj;
+		}
 	}
 
 	public void visit(DeclListType declListType) {
@@ -57,10 +76,16 @@ public class SemanticPass extends VisitorAdaptor {
 		setCurrDeclLType(constDeclListType.getType().struct); }
 
 	public void visit(TypeAccess type) {
-		Obj typeNode = Tab.find(type.getTypeName()); type.struct = Tab.noType; 
-		if (isNoObj(typeNode) || isNotTypeObj(typeNode)) {
-			spl.report_undefined_type(type.getTypeName(), type); return; }
-		type.struct = typeNode.getType();
+		try {
+			Obj typeNode = findInTab(type.getTypeName());
+			if (isNotTypeObj(typeNode))
+				throw new NameAlreadyBoundException(typeNode.getName());
+			type.struct = typeNode.getType();
+		}
+		catch (NameNotFoundException | NameAlreadyBoundException e) {
+			spl.report_undefined_type(e.getMessage(), type);
+			type.struct = Tab.noType; 
+		}
 	}
 
 	public void visit(MethodDeclaration methodDeclaration) {
@@ -70,23 +95,32 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 
 	public void visit(MethName methName) {
-		methName.obj = Tab.insert(Obj.Meth, methName.getI1(), Tab.nullType);
-		if (isNoObj(methName.obj)) {
-			spl.report_name_isAlready_defined(methName.getI1(), methName); return; }
-		setCurrentMethod(methName.obj); Tab.openScope();
+		try {
+			methName.obj = insertIntoTab(Obj.Meth, methName.getI1(), Tab.nullType);
+			setCurrentMethod(methName.obj); Tab.openScope();
+		}
+		catch (NameAlreadyBoundException e) {
+			spl.report_name_isAlready_defined(e.getMessage(), methName);
+			methName.obj = Tab.noObj;
+		}
 	}
 
 	public void visit(PrintStmt printStmt) {
 		incPrintCallCount(); spl.info_print(); }
 
 	public void visit(AddExpr addExpr) {
-		Struct leftOpType = addExpr.getExpr().struct;
-		Struct rightOpType = addExpr.getTerm().struct;
-		addExpr.struct = Tab.noType;
-		if (!isIntType(rightOpType) || !isIntType(leftOpType)) {
+		try {
+			Struct leftOpType = addExpr.getExpr().struct;
+			Struct rightOpType = addExpr.getTerm().struct;
+			if (!isIntType(rightOpType) || !isIntType(leftOpType))
+				throw new IllegalArgumentException();
+			addExpr.struct = leftOpType;
+		}
+		catch (IllegalArgumentException e) {
 			String op = addExpr.getAddop().obj.getName();
-			spl.report_nonInt_operands(op, addExpr); return; }
-		addExpr.struct = leftOpType;
+			spl.report_nonInt_operands(op, addExpr);
+			addExpr.struct = Tab.noType;
+		}
 	}
 
 	public void visit(TermExpr termExpr) {
@@ -96,10 +130,11 @@ public class SemanticPass extends VisitorAdaptor {
 		factorTerm.struct = factorTerm.getFactor().struct; }
 
 	public void visit(Ident ident) {
-		Obj designator = Tab.find(ident.getName());
-		if (isNoObj(designator))
-			spl.report_name_isNot_defined(ident.getName(), ident);
-		ident.obj = designator;
+		try { ident.obj = findInTab(ident.getName()); }
+		catch (NameNotFoundException e) {
+			spl.report_name_isNot_defined(e.getMessage(), ident);
+			ident.obj = Tab.noObj;
+		}
 	}
 	
 	public void visit(NumberConst numberConst) {

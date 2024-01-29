@@ -1,0 +1,88 @@
+INFO  16:42:53,620 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  16:42:53,674 - #2 program
+INFO  16:42:53,674 - #25 Program
+INFO  16:42:53,674 - #25 int
+INFO  16:42:53,678 - #25 a
+INFO  16:42:53,678 - #5 ;
+INFO  16:42:53,678 - #3 {
+INFO  16:42:53,679 - #16 void
+INFO  16:42:53,680 - #25 main
+INFO  16:42:53,680 - #6 (
+INFO  16:42:53,680 - #7 )
+INFO  16:42:53,681 - #3 {
+INFO  16:42:53,683 - #25 a
+INFO  16:42:53,683 - #8 =
+INFO  16:42:53,683 - #25 a
+INFO  16:42:53,683 - #26 +
+INFO  16:42:53,684 - #24 2
+INFO  16:42:53,684 - #5 ;
+INFO  16:42:53,685 - #4 }
+INFO  16:42:53,685 - #4 }
+INFO  16:42:53,686 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived3(
+    ) [ProgNameDeclListDerived3]
+    DeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      DeclListDerived2(
+        IdentifierDerived1(
+         a
+        ) [IdentifierDerived1]
+      ) [DeclListDerived2]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived1(
+          Ident(
+           a
+          ) [Ident]
+          AddExpr(
+            TermExpr(
+              FactorTerm(
+                SFactorDesignator(
+                  Ident(
+                   a
+                  ) [Ident]
+                ) [SFactorDesignator]
+              ) [FactorTerm]
+            ) [TermExpr]
+            Plus(
+             +
+            ) [Plus]
+            FactorTerm(
+              NumberConst(
+               2
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [AddExpr]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  16:42:53,687 - ====================================
+ERROR 16:42:53,702 - Greska: ime a nije definisano
+	na liniji 5
+ERROR 16:42:53,702 - Greska: ime a nije definisano
+	na liniji 5
+ERROR 16:42:53,702 - Greska: tipovi operanada operatora + moraju biti tipa int
+	na liniji 5
+INFO  16:42:53,702 -  Broj print naredbi = 0
+INFO  16:42:53,702 -  Deklarisanih promenljivih ima = 0
+INFO  16:42:53,702 - ====================================

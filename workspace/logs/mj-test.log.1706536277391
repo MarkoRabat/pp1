@@ -1,0 +1,35 @@
+INFO  14:48:52,537 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  14:48:52,610 - #2 program
+INFO  14:48:52,610 - #25 MJProgram
+INFO  14:48:52,610 - #3 {
+INFO  14:48:52,614 - #16 void
+INFO  14:48:52,616 - #25 int
+INFO  14:48:52,616 - #6 (
+INFO  14:48:52,616 - #7 )
+INFO  14:48:52,616 - #3 {
+INFO  14:48:52,617 - #4 }
+INFO  14:48:52,618 - #4 }
+INFO  14:48:52,619 - Prog(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  ProgNameDeclListDerived3(
+  ) [ProgNameDeclListDerived3]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       int
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  14:48:52,621 - ====================================
+INFO  14:48:52,638 -  Broj print naredbi = 0
+INFO  14:48:52,638 -  Deklarisanih promenljivih ima = 0
+INFO  14:48:52,638 - ====================================

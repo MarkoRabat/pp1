@@ -1,11 +1,12 @@
-program MJProgram
+program Program
 {
 	void main() {
-		x[4] = new char[7];
-		x = new char[7];
-		x[3] = new int[7];
-		x = new char[7];
-		x[2] = new bool[7];
-		x = new char[7];
+		main = 2;
+		Program = 2;
+		chr = 2;
+		ord = 2;
+		int = 2;
+		abra = 2;
+
 	}
 }

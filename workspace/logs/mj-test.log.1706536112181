@@ -1,0 +1,170 @@
+INFO  19:15:03,205 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  19:15:03,275 - #2 program
+INFO  19:15:03,275 - #25 MJProgram
+INFO  19:15:03,275 - #3 {
+INFO  19:15:03,277 - #16 void
+INFO  19:15:03,280 - #25 main
+INFO  19:15:03,280 - #6 (
+INFO  19:15:03,280 - #7 )
+INFO  19:15:03,281 - #3 {
+INFO  19:15:03,283 - #25 x
+INFO  19:15:03,285 - #20 [
+INFO  19:15:03,286 - #24 4
+INFO  19:15:03,286 - #22 ]
+INFO  19:15:03,287 - #8 =
+INFO  19:15:03,288 - #13 new
+ERROR 19:15:03,288 - 
+Sintaksna greska na liniji 4
+INFO  19:15:03,288 - #25 char
+INFO  19:15:03,289 - #20 [
+INFO  19:15:03,289 - #24 7
+INFO  19:15:03,290 - #22 ]
+INFO  19:15:03,290 - #5 ;
+INFO  19:15:03,290 - #25 x
+INFO  19:15:03,291 - #8 =
+INFO  19:15:03,309 - #13 new
+ERROR 19:15:03,309 - Izvrsen oporavak do ; na liniji 4
+INFO  19:15:03,327 - #25 char
+INFO  19:15:03,327 - #20 [
+INFO  19:15:03,328 - #24 7
+INFO  19:15:03,328 - #22 ]
+INFO  19:15:03,329 - #5 ;
+INFO  19:15:03,329 - #25 x
+INFO  19:15:03,330 - #20 [
+INFO  19:15:03,331 - #24 3
+INFO  19:15:03,331 - #22 ]
+INFO  19:15:03,331 - #8 =
+INFO  19:15:03,331 - #13 new
+ERROR 19:15:03,332 - 
+Sintaksna greska na liniji 6
+INFO  19:15:03,333 - #25 int
+INFO  19:15:03,335 - #20 [
+INFO  19:15:03,336 - #24 7
+INFO  19:15:03,336 - #22 ]
+INFO  19:15:03,337 - #5 ;
+INFO  19:15:03,337 - #25 x
+INFO  19:15:03,337 - #8 =
+INFO  19:15:03,337 - #13 new
+ERROR 19:15:03,337 - Izvrsen oporavak do ; na liniji 6
+INFO  19:15:03,337 - #25 char
+INFO  19:15:03,338 - #20 [
+INFO  19:15:03,338 - #24 7
+INFO  19:15:03,338 - #22 ]
+INFO  19:15:03,338 - #5 ;
+INFO  19:15:03,338 - #25 x
+INFO  19:15:03,338 - #20 [
+INFO  19:15:03,339 - #24 2
+INFO  19:15:03,339 - #22 ]
+INFO  19:15:03,339 - #8 =
+INFO  19:15:03,339 - #13 new
+ERROR 19:15:03,339 - 
+Sintaksna greska na liniji 8
+INFO  19:15:03,339 - #25 bool
+INFO  19:15:03,340 - #20 [
+INFO  19:15:03,340 - #24 7
+INFO  19:15:03,340 - #22 ]
+INFO  19:15:03,340 - #5 ;
+INFO  19:15:03,340 - #25 x
+INFO  19:15:03,341 - #8 =
+INFO  19:15:03,341 - #13 new
+ERROR 19:15:03,341 - Izvrsen oporavak do ; na liniji 8
+INFO  19:15:03,342 - #25 char
+INFO  19:15:03,342 - #20 [
+INFO  19:15:03,342 - #24 7
+INFO  19:15:03,342 - #22 ]
+INFO  19:15:03,342 - #5 ;
+INFO  19:15:03,342 - #4 }
+INFO  19:15:03,343 - #4 }
+INFO  19:15:03,345 - Prog(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  ProgNameDeclListDerived3(
+  ) [ProgNameDeclListDerived3]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived2(
+                  ) [StatementListDerived2]
+                  StatementDerived4(
+                  ) [StatementDerived4]
+                ) [StatementListDerived1]
+                StatementDerived2(
+                  Ident(
+                   x
+                  ) [Ident]
+                  TypeAccess(
+                   char
+                  ) [TypeAccess]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       7
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [StatementDerived2]
+              ) [StatementListDerived1]
+              StatementDerived4(
+              ) [StatementDerived4]
+            ) [StatementListDerived1]
+            StatementDerived2(
+              Ident(
+               x
+              ) [Ident]
+              TypeAccess(
+               char
+              ) [TypeAccess]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   7
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [StatementDerived2]
+          ) [StatementListDerived1]
+          StatementDerived4(
+          ) [StatementDerived4]
+        ) [StatementListDerived1]
+        StatementDerived2(
+          Ident(
+           x
+          ) [Ident]
+          TypeAccess(
+           char
+          ) [TypeAccess]
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               7
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [StatementDerived2]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  19:15:03,346 - ====================================
+ERROR 19:15:03,372 - Greska: ime x nije definisano
+	na liniji 5
+ERROR 19:15:03,372 - Greska: ime x nije definisano
+	na liniji 7
+ERROR 19:15:03,372 - Greska: ime x nije definisano
+	na liniji 9
+INFO  19:15:03,373 -  Broj print naredbi = 0
+INFO  19:15:03,373 -  Deklarisanih promenljivih ima = 0
+INFO  19:15:03,373 - ====================================

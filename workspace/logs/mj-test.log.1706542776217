@@ -1,0 +1,37 @@
+INFO  16:39:23,347 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  16:39:23,401 - #2 program
+INFO  16:39:23,401 - #25 chr
+INFO  16:39:23,401 - #3 {
+INFO  16:39:23,403 - #16 void
+INFO  16:39:23,404 - #25 main
+INFO  16:39:23,404 - #6 (
+INFO  16:39:23,405 - #7 )
+INFO  16:39:23,405 - #3 {
+INFO  16:39:23,406 - #4 }
+INFO  16:39:23,406 - #4 }
+INFO  16:39:23,407 - Prog(
+  ProgName(
+   chr
+  ) [ProgName]
+  ProgNameDeclListDerived3(
+  ) [ProgNameDeclListDerived3]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  16:39:23,408 - ====================================
+ERROR 16:39:23,422 - Greska: ime chr je vec definisano
+	na liniji 1
+INFO  16:39:23,422 -  Broj print naredbi = 0
+INFO  16:39:23,422 -  Deklarisanih promenljivih ima = 0
+INFO  16:39:23,422 - ====================================
