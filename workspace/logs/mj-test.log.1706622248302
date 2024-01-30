@@ -1,0 +1,263 @@
+INFO  14:43:57,282 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  14:43:57,321 - #2 program
+INFO  14:43:57,322 - #23 Program
+INFO  14:43:57,322 - #23 int
+INFO  14:43:57,324 - #23 a
+INFO  14:43:57,324 - #8 =
+INFO  14:43:57,325 - #22 3
+INFO  14:43:57,325 - #14 ,
+INFO  14:43:57,325 - #23 b
+INFO  14:43:57,325 - #8 =
+INFO  14:43:57,326 - #22 7
+INFO  14:43:57,326 - #14 ,
+INFO  14:43:57,326 - #23 c
+INFO  14:43:57,326 - #14 ,
+INFO  14:43:57,326 - #23 d
+INFO  14:43:57,326 - #5 ;
+INFO  14:43:57,327 - #23 bool
+INFO  14:43:57,327 - #23 a1
+INFO  14:43:57,327 - #14 ,
+INFO  14:43:57,328 - #23 b1
+INFO  14:43:57,328 - #8 =
+INFO  14:43:57,328 - #25 true
+INFO  14:43:57,328 - #14 ,
+INFO  14:43:57,328 - #23 c1
+INFO  14:43:57,329 - #8 =
+INFO  14:43:57,329 - #25 false
+INFO  14:43:57,329 - #14 ,
+INFO  14:43:57,329 - #23 a2
+INFO  14:43:57,329 - #8 =
+INFO  14:43:57,329 - #25 true
+INFO  14:43:57,330 - #5 ;
+INFO  14:43:57,330 - #23 char
+INFO  14:43:57,330 - #23 b2
+INFO  14:43:57,330 - #8 =
+INFO  14:43:57,330 - #24 'a'
+INFO  14:43:57,330 - #14 ,
+INFO  14:43:57,331 - #23 c2
+INFO  14:43:57,331 - #8 =
+INFO  14:43:57,331 - #24 'b'
+INFO  14:43:57,331 - #14 ,
+INFO  14:43:57,331 - #23 d2
+INFO  14:43:57,331 - #8 =
+INFO  14:43:57,331 - #24 'c'
+INFO  14:43:57,331 - #5 ;
+INFO  14:43:57,332 - #3 {
+INFO  14:43:57,332 - #16 void
+INFO  14:43:57,333 - #23 main
+INFO  14:43:57,333 - #6 (
+INFO  14:43:57,333 - #7 )
+INFO  14:43:57,333 - #23 int
+INFO  14:43:57,334 - #23 k1
+INFO  14:43:57,334 - #5 ;
+INFO  14:43:57,334 - #3 {
+INFO  14:43:57,335 - #23 a
+INFO  14:43:57,335 - #8 =
+INFO  14:43:57,336 - #22 3
+INFO  14:43:57,336 - #5 ;
+INFO  14:43:57,337 - #23 b
+INFO  14:43:57,337 - #8 =
+INFO  14:43:57,337 - #22 3
+INFO  14:43:57,338 - #5 ;
+INFO  14:43:57,338 - #23 c
+INFO  14:43:57,338 - #8 =
+INFO  14:43:57,338 - #22 3
+INFO  14:43:57,338 - #5 ;
+INFO  14:43:57,338 - #23 d
+INFO  14:43:57,338 - #8 =
+INFO  14:43:57,339 - #22 3
+INFO  14:43:57,339 - #5 ;
+INFO  14:43:57,339 - #4 }
+INFO  14:43:57,339 - #4 }
+INFO  14:43:57,341 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived2(
+        ProgNameDeclListDerived3(
+        ) [ProgNameDeclListDerived3]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived1(
+            IIdentDecl(
+             a
+              NInit(
+               3
+              ) [NInit]
+            ) [IIdentDecl]
+            DeclListDerived1(
+              IIdentDecl(
+               b
+                NInit(
+                 7
+                ) [NInit]
+              ) [IIdentDecl]
+              DeclListDerived1(
+                SIdentDecl(
+                 c
+                ) [SIdentDecl]
+                DeclListDerived2(
+                  SIdentDecl(
+                   d
+                  ) [SIdentDecl]
+                ) [DeclListDerived2]
+              ) [DeclListDerived1]
+            ) [DeclListDerived1]
+          ) [DeclListDerived1]
+        ) [DeclListType]
+      ) [ProgNameDeclListDerived2]
+      DeclListType(
+        TypeAccess(
+         bool
+        ) [TypeAccess]
+        DeclListDerived1(
+          SIdentDecl(
+           a1
+          ) [SIdentDecl]
+          DeclListDerived1(
+            IIdentDecl(
+             b1
+              BInit(
+               true
+              ) [BInit]
+            ) [IIdentDecl]
+            DeclListDerived1(
+              IIdentDecl(
+               c1
+                BInit(
+                 false
+                ) [BInit]
+              ) [IIdentDecl]
+              DeclListDerived2(
+                IIdentDecl(
+                 a2
+                  BInit(
+                   true
+                  ) [BInit]
+                ) [IIdentDecl]
+              ) [DeclListDerived2]
+            ) [DeclListDerived1]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    DeclListType(
+      TypeAccess(
+       char
+      ) [TypeAccess]
+      DeclListDerived1(
+        IIdentDecl(
+         b2
+          CInit(
+           'a'
+          ) [CInit]
+        ) [IIdentDecl]
+        DeclListDerived1(
+          IIdentDecl(
+           c2
+            CInit(
+             'b'
+            ) [CInit]
+          ) [IIdentDecl]
+          DeclListDerived2(
+            IIdentDecl(
+             d2
+              CInit(
+               'c'
+              ) [CInit]
+            ) [IIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListDerived1]
+      ) [DeclListDerived1]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived1(
+        VarDeclListDerived2(
+        ) [VarDeclListDerived2]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived2(
+            SIdentDecl(
+             k1
+            ) [SIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListType]
+      ) [VarDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived2(
+              ) [StatementListDerived2]
+              StatementDerived1(
+                Ident(
+                 a
+                ) [Ident]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     3
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            StatementDerived1(
+              Ident(
+               b
+              ) [Ident]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   3
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            Ident(
+             c
+            ) [Ident]
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 3
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          Ident(
+           d
+          ) [Ident]
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               3
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  14:43:57,342 - ====================================
+INFO  14:43:57,359 -  Broj print naredbi = 0
+INFO  14:43:57,359 -  Deklarisanih promenljivih ima = 12
+INFO  14:43:57,359 - ====================================

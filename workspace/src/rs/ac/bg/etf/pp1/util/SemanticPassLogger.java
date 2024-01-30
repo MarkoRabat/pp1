@@ -32,5 +32,8 @@ public class SemanticPassLogger {
 		String varType, String literalType, SyntaxNode obj) {
 		report_error("identifikator tipa " + varType
 				+ " inicijalizovan literalom tipa " + literalType, obj); }
+	public void report_indexing_nonArray(String ident, SyntaxNode obj) {
+		report_error("indeksiranje ne nizovskog identifikatora " + ident, obj);
+	}
 	public void info_print() { log.info("Prepoznata naredba print"); }
 }

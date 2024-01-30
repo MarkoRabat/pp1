@@ -66,7 +66,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		return "nepostojeci_tip";
 	}
-
+	
 	public boolean isCurrentMethodNull() { return currentMethod == null; }
 	public boolean isNoObj(Obj obj) { return obj == Tab.noObj; }
 	public boolean isNotTypeObj(Obj obj) { return obj.getKind() != Obj.Type; }
@@ -248,6 +248,22 @@ public class SemanticPass extends VisitorAdaptor {
 		catch (NameNotFoundException e) {
 			spl.report_name_isNot_defined(e.getMessage(), ident);
 			ident.obj = Tab.noObj;
+		}
+	}
+
+	public void visit(ArrIdent arrIdent) {
+		try {
+			arrIdent.obj = findInTab(arrIdent.getName());
+			if (arrIdent.obj.getType().getKind() != Struct.Array)
+				throw new IllegalArgumentException(arrIdent.obj.getName());
+		}
+		catch (NameNotFoundException e) {
+			spl.report_name_isNot_defined(e.getMessage(), arrIdent);
+			arrIdent.obj = Tab.noObj;
+		}
+		catch (IllegalArgumentException e) {
+			spl.report_indexing_nonArray(e.getMessage(), arrIdent);
+			arrIdent.obj = Tab.noObj;
 		}
 	}
 	
