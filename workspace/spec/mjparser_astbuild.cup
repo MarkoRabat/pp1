@@ -66,7 +66,7 @@ ProgNameDeclList ::= ProgNameDeclList:P1 NamespaceDecl:N2 {: RESULT=new ProgName
 					| ProgNameDeclList:P1 VarDecl:V2 {: RESULT=new ProgNameDeclListDerived2(P1, V2); RESULT.setLine(P1left); :}
 					| {: RESULT=new ProgNameDeclListDerived3(); :} /* epsilon */;
 
-NamespaceDecl ::= NAMESPACE NamespaceName:N1 LBRACE VarDeclList:V2 LBRACE RBRACE RBRACE {: RESULT=new NamespaceDeclDerived1(N1, V2); RESULT.setLine(N1left); :};
+NamespaceDecl ::= (NamespDecl) NAMESPACE NamespaceName:N1 LBRACE VarDeclList:V2 LBRACE RBRACE RBRACE {: RESULT=new NamespDecl(N1, V2); RESULT.setLine(N1left); :};
 
 NamespaceName ::= (NamespName) IDENT:i {: RESULT=new NamespName(i); RESULT.setLine(ileft); :};
 

@@ -33,6 +33,7 @@ public class MJParserTest {
 			Tab.init(); SemanticPass v = new SemanticPass(); prog.traverseBottomUp(v);
 			log.info(" Broj print naredbi = " + v.getPrintCallCount());
 			log.info(" Deklarisanih promenljivih ima = " + v.getVarDeclCount());
+			log.info(" Deklarisanih simbolickih konstanti ima = " + v.getConDeclCount());
 			log.info("===================================="); Tab.dump();
 		}
 		finally {

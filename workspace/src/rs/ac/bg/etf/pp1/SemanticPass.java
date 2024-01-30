@@ -15,6 +15,7 @@ public class SemanticPass extends VisitorAdaptor {
 	private int varDeclCount = 0;
 	private int conDeclCount = 0;
 	private Obj currentMethod = null;
+	private Obj currentNamespace = null;
 	private Struct currDeclListType = null;
 	private SemanticPassLogger spl = new SemanticPassLogger();
 	private static Struct boolType, intArray, charArray, boolArray;
@@ -40,6 +41,9 @@ public class SemanticPass extends VisitorAdaptor {
 	public void setCurrentMethod(Obj currMethod) { currentMethod = currMethod; }
 	public void setCurrentMethodToNull() { currentMethod = null; }
 	public Obj getCurrentMethod() { return currentMethod; }
+	public void setCurrentNamespace(Obj currNamespace) { currentNamespace = currNamespace; }
+	public void setCurrentNamespaceToNull() { currentNamespace = null; }
+	public Obj getCurrentNamespace() { return currentNamespace; }
 	public static Struct getArrayTypeOf(Struct primitiveType) {
 		switch(primitiveType.getKind()) {
 		case Struct.Int: return intArray;
@@ -132,10 +136,28 @@ public class SemanticPass extends VisitorAdaptor {
 			progName.obj = Tab.noObj;
 		}
 	}
+	
+	public void visit(NamespDecl namespDecl) { setCurrentNamespaceToNull(); }
+	public void visit(NamespName namespName) {
+		try {
+			namespName.obj =
+				insertIntoTab(Obj.NO_VALUE, namespName.getI(), Tab.noType);
+			setCurrentNamespace(namespName.obj);
+		}
+		catch (NameAlreadyBoundException e) {
+			spl.report_name_isAlready_defined(e.getMessage(), namespName);
+			namespName.obj = Tab.noObj;
+		}
+	}
 
 	public void visit(SIdentDecl newVar) {
 		try {
-			newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), getCurrDeclLType());
+			if (getCurrentNamespace() == null)
+				newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), getCurrDeclLType());
+			else
+				newVar.obj = insertIntoTab(Obj.Var,
+					":" + getCurrentNamespace().getName() + "|" +  newVar.getI1(),
+					getCurrDeclLType());
 		}
 		catch (NameAlreadyBoundException e) {
 			spl.report_name_isAlready_defined(e.getMessage(), newVar);
@@ -146,7 +168,12 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(AIdentDecl newVar) {
 		try {
 			Struct arrayType = getArrayTypeOf(getCurrDeclLType());
-			newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), arrayType);
+			if (getCurrentNamespace() == null)
+				newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), arrayType);
+			else
+				newVar.obj = insertIntoTab(Obj.Var,
+					":" + getCurrentNamespace().getName() + "|" +  newVar.getI1(),
+					arrayType);
 		}
 		catch (NameAlreadyBoundException e) {
 			spl.report_name_isAlready_defined(e.getMessage(), newVar);
@@ -156,7 +183,12 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(IIdentDecl newVar) {
 		try {
-			newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), getCurrDeclLType());
+			if (getCurrentNamespace() == null)
+				newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), getCurrDeclLType());
+			else
+				newVar.obj = insertIntoTab(Obj.Var,
+					":" + getCurrentNamespace().getName() + "|" +  newVar.getI1(),
+					getCurrDeclLType());
 		}
 		catch (NameAlreadyBoundException e) {
 			spl.report_name_isAlready_defined(e.getMessage(), newVar);
@@ -166,7 +198,12 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(CIdentDecl newConst) {
 		try {
-			newConst.obj = insertIntoTab(Obj.Con, newConst.getI1(), getCurrDeclLType());
+			if (getCurrentNamespace() == null)
+				newConst.obj = insertIntoTab(Obj.Con, newConst.getI1(), getCurrDeclLType());
+			else
+				newConst.obj = insertIntoTab(Obj.Con,
+					":" + getCurrentNamespace().getName() + "|" +  newConst.getI1(),
+					getCurrDeclLType());
 			newConst.obj.setAdr(newConst.getInitializator().obj.getAdr());
 		}
 		catch (NameAlreadyBoundException e) {

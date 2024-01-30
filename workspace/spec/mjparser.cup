@@ -61,7 +61,7 @@ ProgNameDeclList ::= ProgNameDeclList NamespaceDecl
 					| ProgNameDeclList VarDecl
 					| /* epsilon */;
 
-NamespaceDecl ::= NAMESPACE NamespaceName LBRACE VarDeclList LBRACE RBRACE RBRACE;
+NamespaceDecl ::= (NamespDecl) NAMESPACE NamespaceName LBRACE VarDeclList LBRACE RBRACE RBRACE;
 
 NamespaceName ::= (NamespName) IDENT:i;
 

@@ -1,9 +1,0 @@
-INFO  19:25:34,292 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
-INFO  19:25:34,314 - #2 program
-INFO  19:25:34,315 - #30 MJProgram
-INFO  19:25:34,315 - #30 int
-INFO  19:25:34,316 - #30 x
-INFO  19:25:34,316 - #15 ,
-ERROR 19:25:34,316 - 
-Sintaksna greska na liniji 2
-ERROR 19:25:34,316 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2
