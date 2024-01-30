@@ -28,5 +28,9 @@ public class SemanticPassLogger {
 		report_error("nepostojeci tip " + name, obj); }
 	public void report_nonInt_operands(String operator, SyntaxNode obj) {
 		report_error("tipovi operanada operatora " + operator + " moraju biti tipa int", obj); }
+	public void report_incompatible_types_inInit(
+		String varType, String literalType, SyntaxNode obj) {
+		report_error("identifikator tipa " + varType
+				+ " inicijalizovan literalom tipa " + literalType, obj); }
 	public void info_print() { log.info("Prepoznata naredba print"); }
 }

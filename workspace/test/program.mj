@@ -1,12 +1,12 @@
 program Program
+char a = 3, b = 7, c, d;
+bool a1, b1 = 'a', c1 = false, a2 = true;
+int b2 = 'a', c2 = 'b', d2 = 'c';
 {
 	void main() {
-		main = 2;
-		Program = 2;
-		chr = 2;
-		ord = 2;
-		int = 2;
-		abra = 2;
-
+		a = 3;
+		b = 3;
+		c = 3;
+		d = 3;
 	}
 }

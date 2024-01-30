@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2024 14:48:4
+// 30/0/2024 13:52:38
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class InitializatorDerived1 extends Initializator {
+public class NInit extends Initializator {
 
     private Integer N1;
 
-    public InitializatorDerived1 (Integer N1) {
+    public NInit (Integer N1) {
         this.N1=N1;
     }
 
@@ -39,13 +39,13 @@ public class InitializatorDerived1 extends Initializator {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("InitializatorDerived1(\n");
+        buffer.append("NInit(\n");
 
         buffer.append(" "+tab+N1);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [InitializatorDerived1]");
+        buffer.append(") [NInit]");
         return buffer.toString();
     }
 }

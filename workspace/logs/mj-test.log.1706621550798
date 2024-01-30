@@ -1,0 +1,249 @@
+INFO  14:31:53,778 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  14:31:53,847 - #2 program
+INFO  14:31:53,847 - #23 Program
+INFO  14:31:53,848 - #19 const
+INFO  14:31:53,850 - #23 char
+INFO  14:31:53,850 - #23 a
+INFO  14:31:53,850 - #8 =
+INFO  14:31:53,850 - #22 3
+INFO  14:31:53,851 - #14 ,
+INFO  14:31:53,851 - #23 b
+INFO  14:31:53,851 - #8 =
+INFO  14:31:53,851 - #22 7
+INFO  14:31:53,851 - #14 ,
+INFO  14:31:53,852 - #23 c
+INFO  14:31:53,852 - #14 ,
+ERROR 14:31:53,852 - 
+Sintaksna greska na liniji 2
+INFO  14:31:53,852 - #23 d
+INFO  14:31:53,852 - #5 ;
+INFO  14:31:53,852 - #19 const
+INFO  14:31:53,853 - #23 bool
+INFO  14:31:53,854 - #23 a1
+ERROR 14:31:53,854 - Izvrsen oporavak do ,(|;) u deklaraciji promenljivih
+INFO  14:31:53,857 - #14 ,
+ERROR 14:31:53,857 - 
+Sintaksna greska na liniji 3
+INFO  14:31:53,857 - #23 b1
+INFO  14:31:53,858 - #8 =
+INFO  14:31:53,858 - #24 'a'
+ERROR 14:31:53,858 - Izvrsen oporavak do ,(|;) u deklaraciji promenljivih
+INFO  14:31:53,858 - #14 ,
+INFO  14:31:53,858 - #23 c1
+INFO  14:31:53,859 - #8 =
+INFO  14:31:53,859 - #25 false
+INFO  14:31:53,859 - #14 ,
+INFO  14:31:53,860 - #23 a2
+INFO  14:31:53,860 - #8 =
+INFO  14:31:53,860 - #25 true
+INFO  14:31:53,860 - #5 ;
+INFO  14:31:53,860 - #19 const
+INFO  14:31:53,861 - #23 char
+INFO  14:31:53,861 - #23 b2
+INFO  14:31:53,861 - #8 =
+INFO  14:31:53,861 - #24 'a'
+INFO  14:31:53,861 - #14 ,
+INFO  14:31:53,861 - #23 c2
+INFO  14:31:53,862 - #8 =
+INFO  14:31:53,862 - #24 'b'
+INFO  14:31:53,862 - #14 ,
+INFO  14:31:53,862 - #23 d2
+INFO  14:31:53,862 - #8 =
+INFO  14:31:53,863 - #24 'c'
+INFO  14:31:53,863 - #5 ;
+INFO  14:31:53,863 - #3 {
+INFO  14:31:53,863 - #16 void
+INFO  14:31:53,864 - #23 main
+INFO  14:31:53,865 - #6 (
+INFO  14:31:53,865 - #7 )
+INFO  14:31:53,865 - #3 {
+INFO  14:31:53,866 - #23 a
+INFO  14:31:53,867 - #8 =
+INFO  14:31:53,867 - #22 3
+INFO  14:31:53,868 - #5 ;
+INFO  14:31:53,868 - #23 b
+INFO  14:31:53,869 - #8 =
+INFO  14:31:53,869 - #22 3
+INFO  14:31:53,869 - #5 ;
+INFO  14:31:53,869 - #23 c
+INFO  14:31:53,870 - #8 =
+INFO  14:31:53,870 - #22 3
+INFO  14:31:53,870 - #5 ;
+INFO  14:31:53,870 - #23 d
+INFO  14:31:53,870 - #8 =
+INFO  14:31:53,870 - #22 3
+INFO  14:31:53,870 - #5 ;
+INFO  14:31:53,870 - #4 }
+INFO  14:31:53,870 - #4 }
+INFO  14:31:53,872 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived2(
+        ProgNameDeclListDerived3(
+        ) [ProgNameDeclListDerived3]
+        ConstDeclListType(
+          TypeAccess(
+           char
+          ) [TypeAccess]
+          ConstDeclListDerived1(
+            CIdentDecl(
+             a
+              NInit(
+               3
+              ) [NInit]
+            ) [CIdentDecl]
+            ConstDeclListDerived1(
+              CIdentDecl(
+               b
+                NInit(
+                 7
+                ) [NInit]
+              ) [CIdentDecl]
+              ConstDeclListDerived2(
+                ConstIdentifierDerived1(
+                ) [ConstIdentifierDerived1]
+              ) [ConstDeclListDerived2]
+            ) [ConstDeclListDerived1]
+          ) [ConstDeclListDerived1]
+        ) [ConstDeclListType]
+      ) [ProgNameDeclListDerived2]
+      ConstDeclListType(
+        TypeAccess(
+         bool
+        ) [TypeAccess]
+        ConstDeclListDerived1(
+          ConstIdentifierDerived1(
+          ) [ConstIdentifierDerived1]
+          ConstDeclListDerived1(
+            CIdentDecl(
+             b1
+              CInit(
+               'a'
+              ) [CInit]
+            ) [CIdentDecl]
+            ConstDeclListDerived1(
+              CIdentDecl(
+               c1
+                BInit(
+                 false
+                ) [BInit]
+              ) [CIdentDecl]
+              ConstDeclListDerived2(
+                CIdentDecl(
+                 a2
+                  BInit(
+                   true
+                  ) [BInit]
+                ) [CIdentDecl]
+              ) [ConstDeclListDerived2]
+            ) [ConstDeclListDerived1]
+          ) [ConstDeclListDerived1]
+        ) [ConstDeclListDerived1]
+      ) [ConstDeclListType]
+    ) [ProgNameDeclListDerived2]
+    ConstDeclListType(
+      TypeAccess(
+       char
+      ) [TypeAccess]
+      ConstDeclListDerived1(
+        CIdentDecl(
+         b2
+          CInit(
+           'a'
+          ) [CInit]
+        ) [CIdentDecl]
+        ConstDeclListDerived1(
+          CIdentDecl(
+           c2
+            CInit(
+             'b'
+            ) [CInit]
+          ) [CIdentDecl]
+          ConstDeclListDerived2(
+            CIdentDecl(
+             d2
+              CInit(
+               'c'
+              ) [CInit]
+            ) [CIdentDecl]
+          ) [ConstDeclListDerived2]
+        ) [ConstDeclListDerived1]
+      ) [ConstDeclListDerived1]
+    ) [ConstDeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived2(
+              ) [StatementListDerived2]
+              StatementDerived1(
+                Ident(
+                 a
+                ) [Ident]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     3
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            StatementDerived1(
+              Ident(
+               b
+              ) [Ident]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   3
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            Ident(
+             c
+            ) [Ident]
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 3
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          Ident(
+           d
+          ) [Ident]
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               3
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  14:31:53,874 - ====================================
+ERROR 14:31:53,915 - Greska: idenrifikator tipa char inicijalizatorom literalom tipa int
+	na liniji 2

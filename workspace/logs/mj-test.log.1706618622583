@@ -1,0 +1,159 @@
+INFO  13:43:08,126 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  13:43:08,168 - #2 program
+INFO  13:43:08,169 - #23 Program
+INFO  13:43:08,169 - #23 int
+INFO  13:43:08,172 - #23 a
+INFO  13:43:08,172 - #14 ,
+INFO  13:43:08,172 - #23 b
+INFO  13:43:08,172 - #8 =
+INFO  13:43:08,172 - #22 7
+INFO  13:43:08,173 - #14 ,
+INFO  13:43:08,173 - #23 c
+INFO  13:43:08,173 - #18 [
+INFO  13:43:08,173 - #20 ]
+INFO  13:43:08,173 - #14 ,
+INFO  13:43:08,174 - #23 d
+INFO  13:43:08,174 - #14 ,
+INFO  13:43:08,174 - #23 a
+INFO  13:43:08,174 - #5 ;
+INFO  13:43:08,175 - #3 {
+INFO  13:43:08,175 - #16 void
+INFO  13:43:08,176 - #23 main
+INFO  13:43:08,176 - #6 (
+INFO  13:43:08,176 - #7 )
+INFO  13:43:08,176 - #3 {
+INFO  13:43:08,178 - #23 a
+INFO  13:43:08,179 - #8 =
+INFO  13:43:08,179 - #22 3
+INFO  13:43:08,180 - #5 ;
+INFO  13:43:08,180 - #23 b
+INFO  13:43:08,181 - #8 =
+INFO  13:43:08,181 - #22 3
+INFO  13:43:08,181 - #5 ;
+INFO  13:43:08,181 - #23 c
+INFO  13:43:08,181 - #8 =
+INFO  13:43:08,181 - #22 3
+INFO  13:43:08,181 - #5 ;
+INFO  13:43:08,181 - #23 d
+INFO  13:43:08,182 - #8 =
+INFO  13:43:08,182 - #22 3
+INFO  13:43:08,182 - #5 ;
+INFO  13:43:08,182 - #4 }
+INFO  13:43:08,182 - #4 }
+INFO  13:43:08,184 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived3(
+    ) [ProgNameDeclListDerived3]
+    DeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      DeclListDerived1(
+        SIdentDecl(
+         a
+        ) [SIdentDecl]
+        DeclListDerived1(
+          IIdentDecl(
+           b
+            NInit(
+             7
+            ) [NInit]
+          ) [IIdentDecl]
+          DeclListDerived1(
+            AIdentDecl(
+             c
+            ) [AIdentDecl]
+            DeclListDerived1(
+              SIdentDecl(
+               d
+              ) [SIdentDecl]
+              DeclListDerived2(
+                SIdentDecl(
+                 a
+                ) [SIdentDecl]
+              ) [DeclListDerived2]
+            ) [DeclListDerived1]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListDerived1]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived2(
+              ) [StatementListDerived2]
+              StatementDerived1(
+                Ident(
+                 a
+                ) [Ident]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     3
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            StatementDerived1(
+              Ident(
+               b
+              ) [Ident]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   3
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            Ident(
+             c
+            ) [Ident]
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 3
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          Ident(
+           d
+          ) [Ident]
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               3
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  13:43:08,185 - ====================================
+ERROR 13:43:08,205 - Greska: ime a je vec definisano
+	na liniji 2
+INFO  13:43:08,206 -  Broj print naredbi = 0
+INFO  13:43:08,206 -  Deklarisanih promenljivih ima = 4
+INFO  13:43:08,206 - ====================================

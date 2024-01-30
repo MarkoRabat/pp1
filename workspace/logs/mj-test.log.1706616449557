@@ -1,0 +1,145 @@
+INFO  13:06:58,205 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  13:06:58,678 - #2 program
+INFO  13:06:58,678 - #23 Program
+INFO  13:06:58,678 - #3 {
+INFO  13:06:58,692 - #16 void
+INFO  13:06:58,698 - #23 main
+INFO  13:06:58,699 - #6 (
+INFO  13:06:58,699 - #7 )
+INFO  13:06:58,699 - #3 {
+INFO  13:06:58,707 - #23 main
+INFO  13:06:58,715 - #8 =
+INFO  13:06:58,715 - #22 2
+INFO  13:06:58,716 - #5 ;
+INFO  13:06:58,716 - #23 Program
+INFO  13:06:58,717 - #8 =
+INFO  13:06:58,717 - #22 2
+INFO  13:06:58,718 - #5 ;
+INFO  13:06:58,718 - #23 chr
+INFO  13:06:58,718 - #8 =
+INFO  13:06:58,718 - #22 2
+INFO  13:06:58,718 - #5 ;
+INFO  13:06:58,718 - #23 ord
+INFO  13:06:58,719 - #8 =
+INFO  13:06:58,719 - #22 2
+INFO  13:06:58,719 - #5 ;
+INFO  13:06:58,720 - #23 int
+INFO  13:06:58,720 - #8 =
+INFO  13:06:58,720 - #22 2
+INFO  13:06:58,720 - #5 ;
+INFO  13:06:58,720 - #23 abra
+INFO  13:06:58,720 - #8 =
+INFO  13:06:58,721 - #22 2
+INFO  13:06:58,721 - #5 ;
+INFO  13:06:58,721 - #4 }
+INFO  13:06:58,721 - #4 }
+INFO  13:06:58,722 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived3(
+  ) [ProgNameDeclListDerived3]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived2(
+                  ) [StatementListDerived2]
+                  StatementDerived1(
+                    Ident(
+                     main
+                    ) [Ident]
+                    TermExpr(
+                      FactorTerm(
+                        NumberConst(
+                         2
+                        ) [NumberConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [StatementDerived1]
+                ) [StatementListDerived1]
+                StatementDerived1(
+                  Ident(
+                   Program
+                  ) [Ident]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       2
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [StatementDerived1]
+              ) [StatementListDerived1]
+              StatementDerived1(
+                Ident(
+                 chr
+                ) [Ident]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            StatementDerived1(
+              Ident(
+               ord
+              ) [Ident]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   2
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            Ident(
+             int
+            ) [Ident]
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 2
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          Ident(
+           abra
+          ) [Ident]
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               2
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  13:06:58,723 - ====================================
+ERROR 13:06:58,758 - Greska: ime abra nije definisano
+	na liniji 9
+INFO  13:06:58,758 -  Broj print naredbi = 0
+INFO  13:06:58,758 -  Deklarisanih promenljivih ima = 0
+INFO  13:06:58,758 - ====================================

@@ -1,16 +1,16 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2024 14:48:4
+// 30/0/2024 13:52:38
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class IdentifierDerived3 extends Identifier {
+public class CIdentDecl extends ConstIdentifier {
 
     private String I1;
     private Initializator Initializator;
 
-    public IdentifierDerived3 (String I1, Initializator Initializator) {
+    public CIdentDecl (String I1, Initializator Initializator) {
         this.I1=I1;
         this.Initializator=Initializator;
         if(Initializator!=null) Initializator.setParent(this);
@@ -53,7 +53,7 @@ public class IdentifierDerived3 extends Identifier {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("IdentifierDerived3(\n");
+        buffer.append("CIdentDecl(\n");
 
         buffer.append(" "+tab+I1);
         buffer.append("\n");
@@ -65,7 +65,7 @@ public class IdentifierDerived3 extends Identifier {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [IdentifierDerived3]");
+        buffer.append(") [CIdentDecl]");
         return buffer.toString();
     }
 }

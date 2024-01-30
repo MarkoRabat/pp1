@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2024 14:48:4
+// 30/0/2024 13:52:38
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,18 +8,18 @@ package rs.ac.bg.etf.pp1.ast;
 public abstract class VisitorAdaptor implements Visitor { 
 
     public void visit(MethodDecl MethodDecl) { }
-    public void visit(Factor Factor) { }
     public void visit(Initializator Initializator) { }
+    public void visit(Factor Factor) { }
     public void visit(Mulop Mulop) { }
     public void visit(ConstIdentifier ConstIdentifier) { }
     public void visit(Expr Expr) { }
     public void visit(Type Type) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(SimpleDesignator SimpleDesignator) { }
-    public void visit(VarDecl VarDecl) { }
     public void visit(Identifier Identifier) { }
-    public void visit(ArrayDesignator ArrayDesignator) { }
+    public void visit(VarDecl VarDecl) { }
     public void visit(NamespaceDecl NamespaceDecl) { }
+    public void visit(ArrayDesignator ArrayDesignator) { }
     public void visit(ConstDeclList ConstDeclList) { }
     public void visit(ProgNameDeclList ProgNameDeclList) { }
     public void visit(Addop Addop) { }
@@ -70,17 +70,17 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodDeclListDerived2 MethodDeclListDerived2) { visit(); }
     public void visit(MethodDeclListDerived1 MethodDeclListDerived1) { visit(); }
     public void visit(TypeAccess TypeAccess) { visit(); }
-    public void visit(InitializatorDerived3 InitializatorDerived3) { visit(); }
-    public void visit(InitializatorDerived2 InitializatorDerived2) { visit(); }
-    public void visit(InitializatorDerived1 InitializatorDerived1) { visit(); }
-    public void visit(ConstIdentifierDerived2 ConstIdentifierDerived2) { visit(); }
+    public void visit(BInit BInit) { visit(); }
+    public void visit(CInit CInit) { visit(); }
+    public void visit(NInit NInit) { visit(); }
     public void visit(ConstIdentifierDerived1 ConstIdentifierDerived1) { visit(); }
+    public void visit(CIdentDecl CIdentDecl) { visit(); }
     public void visit(ConstDeclListDerived2 ConstDeclListDerived2) { visit(); }
     public void visit(ConstDeclListDerived1 ConstDeclListDerived1) { visit(); }
-    public void visit(IdentifierDerived4 IdentifierDerived4) { visit(); }
-    public void visit(IdentifierDerived3 IdentifierDerived3) { visit(); }
-    public void visit(IdentifierDerived2 IdentifierDerived2) { visit(); }
     public void visit(IdentifierDerived1 IdentifierDerived1) { visit(); }
+    public void visit(IIdentDecl IIdentDecl) { visit(); }
+    public void visit(AIdentDecl AIdentDecl) { visit(); }
+    public void visit(SIdentDecl SIdentDecl) { visit(); }
     public void visit(DeclListDerived2 DeclListDerived2) { visit(); }
     public void visit(DeclListDerived1 DeclListDerived1) { visit(); }
     public void visit(VarDeclDerived1 VarDeclDerived1) { visit(); }

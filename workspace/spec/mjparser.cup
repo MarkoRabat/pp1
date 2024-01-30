@@ -35,21 +35,22 @@ scan with {:
 
 terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN;
 terminal DOUBLEMINUS, DOUBLECOLON, READ, NEW, COMMA, DOUBLEPLUS;
-terminal VOID, PRINT, CHARACTER, BOOLEAN;
+terminal VOID, PRINT;
 terminal LBRACKET, CONST, RBRACKET, NAMESPACE;
 terminal Integer NUMBER;
-terminal String IDENT;
+terminal String IDENT, CHARACTER, BOOLEAN;
 terminal String PLUS, MINUS, MUL, DIV, PER;
 
 nonterminal VarDeclList, MethodDeclList, VarDecl;
-nonterminal StatementList, Statement, DeclList, Initializator;
-nonterminal Identifier, ConstDeclList, ConstIdentifier, ProgNameDeclList;
+nonterminal StatementList, Statement, DeclList;
+nonterminal ConstDeclList, ProgNameDeclList;
 nonterminal NamespaceDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SimpleDesignator;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ArrayDesignator;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Addop, Mulop;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Addop, Mulop, Identifier;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Initializator, ConstIdentifier;
 
 Program ::= (Prog) PROG ProgName:p ProgNameDeclList LBRACE MethodDeclList RBRACE;
 
@@ -77,9 +78,9 @@ VarDecl ::= (DeclListType) Type:varType DeclList SEMI
 DeclList ::= Identifier COMMA DeclList
 			| Identifier;
 
-Identifier ::= IDENT
-			| IDENT LBRACKET RBRACKET
-			| IDENT EQUAL Initializator
+Identifier ::= (SIdentDecl) IDENT
+			| (AIdentDecl) IDENT LBRACKET RBRACKET
+			| (IIdentDecl) IDENT EQUAL Initializator
 			| error
 			{:
 				parser.report_error(
@@ -91,7 +92,7 @@ Identifier ::= IDENT
 ConstDeclList ::= ConstIdentifier COMMA ConstDeclList
 				| ConstIdentifier;
 
-ConstIdentifier ::= IDENT EQUAL Initializator
+ConstIdentifier ::= (CIdentDecl) IDENT EQUAL Initializator
 				| error
 				{:
 					parser.report_error(
@@ -100,7 +101,7 @@ ConstIdentifier ::= IDENT EQUAL Initializator
 					);
 				:};
 			
-Initializator ::= NUMBER | CHARACTER | BOOLEAN;
+Initializator ::= (NInit) NUMBER | (CInit) CHARACTER | (BInit) BOOLEAN;
 
 Type ::= (TypeAccess) IDENT:typeName;
 

@@ -35,10 +35,10 @@ scan with {:
 
 terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN;
 terminal DOUBLEMINUS, DOUBLECOLON, READ, NEW, COMMA, DOUBLEPLUS;
-terminal VOID, PRINT, CHARACTER, BOOLEAN;
+terminal VOID, PRINT;
 terminal LBRACKET, CONST, RBRACKET, NAMESPACE;
 terminal Integer NUMBER;
-terminal String IDENT;
+terminal String IDENT, CHARACTER, BOOLEAN;
 terminal String PLUS, MINUS, MUL, DIV, PER;
 
 nonterminal VarDeclList VarDeclList;
@@ -47,17 +47,15 @@ nonterminal VarDecl VarDecl;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
 nonterminal DeclList DeclList;
-nonterminal Initializator Initializator;
-nonterminal Identifier Identifier;
 nonterminal ConstDeclList ConstDeclList;
-nonterminal ConstIdentifier ConstIdentifier;
 nonterminal ProgNameDeclList ProgNameDeclList;
 nonterminal NamespaceDecl NamespaceDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SimpleDesignator;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ArrayDesignator;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Addop, Mulop;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Addop, Mulop, Identifier;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Initializator, ConstIdentifier;
 
 Program ::= (Prog) PROG ProgName:p ProgNameDeclList:P1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Prog(p, P1, M2); RESULT.setLine(pleft); :};
 
@@ -85,30 +83,30 @@ VarDecl ::= (DeclListType) Type:varType DeclList:D1 SEMI {: RESULT=new DeclListT
 DeclList ::= Identifier:I1 COMMA DeclList:D2 {: RESULT=new DeclListDerived1(I1, D2); RESULT.setLine(I1left); :}
 			| Identifier:I1 {: RESULT=new DeclListDerived2(I1); RESULT.setLine(I1left); :};
 
-Identifier ::= IDENT:I1 {: RESULT=new IdentifierDerived1(I1); RESULT.setLine(I1left); :}
-			| IDENT:I1 LBRACKET RBRACKET {: RESULT=new IdentifierDerived2(I1); RESULT.setLine(I1left); :}
-			| IDENT:I1 EQUAL Initializator:I2 {: RESULT=new IdentifierDerived3(I1, I2); RESULT.setLine(I1left); :}
+Identifier ::= (SIdentDecl) IDENT:I1 {: RESULT=new SIdentDecl(I1); RESULT.setLine(I1left); :}
+			| (AIdentDecl) IDENT:I1 LBRACKET RBRACKET {: RESULT=new AIdentDecl(I1); RESULT.setLine(I1left); :}
+			| (IIdentDecl) IDENT:I1 EQUAL Initializator:I2 {: RESULT=new IIdentDecl(I1, I2); RESULT.setLine(I1left); :}
 			| error
 			{:
 				parser.report_error(
 					"Izvrsen oporavak do ,(|;) u deklaraciji promenljivih",
 					null
 				);
-			:} {: RESULT=new IdentifierDerived4(); :};
+			:} {: RESULT=new IdentifierDerived1(); :};
 
 ConstDeclList ::= ConstIdentifier:C1 COMMA ConstDeclList:C2 {: RESULT=new ConstDeclListDerived1(C1, C2); RESULT.setLine(C1left); :}
 				| ConstIdentifier:C1 {: RESULT=new ConstDeclListDerived2(C1); RESULT.setLine(C1left); :};
 
-ConstIdentifier ::= IDENT:I1 EQUAL Initializator:I2 {: RESULT=new ConstIdentifierDerived1(I1, I2); RESULT.setLine(I1left); :}
+ConstIdentifier ::= (CIdentDecl) IDENT:I1 EQUAL Initializator:I2 {: RESULT=new CIdentDecl(I1, I2); RESULT.setLine(I1left); :}
 				| error
 				{:
 					parser.report_error(
 						"Izvrsen oporavak do ,(|;) u deklaraciji promenljivih",
 						null
 					);
-				:} {: RESULT=new ConstIdentifierDerived2(); :};
+				:} {: RESULT=new ConstIdentifierDerived1(); :};
 			
-Initializator ::= NUMBER:N1 {: RESULT=new InitializatorDerived1(N1); RESULT.setLine(N1left); :} | CHARACTER {: RESULT=new InitializatorDerived2(); :} | BOOLEAN {: RESULT=new InitializatorDerived3(); :};
+Initializator ::= (NInit) NUMBER:N1 {: RESULT=new NInit(N1); RESULT.setLine(N1left); :} | (CInit) CHARACTER:C1 {: RESULT=new CInit(C1); RESULT.setLine(C1left); :} | (BInit) BOOLEAN:B1 {: RESULT=new BInit(B1); RESULT.setLine(B1left); :};
 
 Type ::= (TypeAccess) IDENT:typeName {: RESULT=new TypeAccess(typeName); RESULT.setLine(typeNameleft); :};
 
@@ -150,8 +148,8 @@ Term ::= (MulTerm) Term:t Mulop:M1 Factor:te {: RESULT=new MulTerm(t, M1, te); R
 		| (FactorTerm) Factor:t {: RESULT=new FactorTerm(t); RESULT.setLine(tleft); :};
 
 Factor ::= (NumberConst) NUMBER:N1 {: RESULT=new NumberConst(N1); RESULT.setLine(N1left); :}
-		| CHARACTER {: RESULT=new FactorDerived1(); :}
-		| BOOLEAN {: RESULT=new FactorDerived2(); :}
+		| CHARACTER:C1 {: RESULT=new FactorDerived1(C1); RESULT.setLine(C1left); :}
+		| BOOLEAN:B1 {: RESULT=new FactorDerived2(B1); RESULT.setLine(B1left); :}
 		| LPAREN Expr:E1 RPAREN {: RESULT=new FactorDerived3(E1); RESULT.setLine(E1left); :}
 		| (SFactorDesignator) SimpleDesignator:d {: RESULT=new SFactorDesignator(d); RESULT.setLine(dleft); :}
 		| ArrayDesignator:d {: RESULT=new FactorDerived4(d); RESULT.setLine(dleft); :};

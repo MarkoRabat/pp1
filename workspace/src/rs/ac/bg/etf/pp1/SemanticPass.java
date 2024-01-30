@@ -13,12 +13,20 @@ import rs.etf.pp1.symboltable.concepts.*;
 public class SemanticPass extends VisitorAdaptor {
 	private int printCallCount = 0;
 	private int varDeclCount = 0;
+	private int conDeclCount = 0;
 	private Obj currentMethod = null;
 	private Struct currDeclListType = null;
 	private SemanticPassLogger spl = new SemanticPassLogger();
+	private Struct boolType, intArray, charArray, boolArray;
 	public SemanticPass() {
-		// kreate bool and array structs here
-		// or maybe inherit symbol table and redefine init() [and dump()]
+		boolType = new Struct(Struct.Bool);
+		Tab.insert(Obj.Type, "bool", boolType);
+		intArray = new Struct(Struct.Array);
+		intArray.setElementType(Tab.intType);
+		charArray = new Struct(Struct.Array);
+		charArray.setElementType(Tab.charType);
+		boolArray = new Struct(Struct.Array);
+		boolArray.setElementType(boolType);
 	}
 	
 	public void setPrintCallCount(int newPrintCallCount) { printCallCount = newPrintCallCount; }
@@ -27,11 +35,37 @@ public class SemanticPass extends VisitorAdaptor {
 	public void setVarDeclCount(int newVarDeclCount) { varDeclCount = newVarDeclCount; }
 	public int getVarDeclCount() { return varDeclCount; } 
 	public void incVarDeclCount() { ++varDeclCount; }
+	public void setConDeclCount(int newConDeclCount) { conDeclCount = newConDeclCount; }
+	public int getConDeclCount() { return conDeclCount; } 
+	public void incConDeclCount() { ++conDeclCount; }
 	public void setCurrDeclLType(Struct type) { currDeclListType = type; }
 	public Struct getCurrDeclLType() { return currDeclListType; }
 	public void setCurrentMethod(Obj currMethod) { currentMethod = currMethod; }
 	public void setCurrentMethodToNull() { currentMethod = null; }
 	public Obj getCurrentMethod() { return currentMethod; }
+	public Struct getArrayType(Struct primitiveType) {
+		switch(primitiveType.getKind()) {
+		case Struct.Int: return intArray;
+		case Struct.Char: return charArray;
+		case Struct.Bool: return boolArray;
+		}
+		return Tab.noType;
+	}
+	
+	public String getTypeName(Struct type) {
+		switch(type.getKind()) {
+		case Struct.Int: return "int";
+		case Struct.Char: return "char";
+		case Struct.Bool: return "bool";
+		case Struct.Array:
+			switch(type.getElemType().getKind()) {
+			case Struct.Int: return "int array";
+			case Struct.Char: return "char array";
+			case Struct.Bool: return "bool array";
+			}
+		}
+		return "nepostojeci_tip";
+	}
 
 	public boolean isCurrentMethodNull() { return currentMethod == null; }
 	public boolean isNoObj(Obj obj) { return obj == Tab.noObj; }
@@ -41,6 +75,9 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public Obj insertIntoTab(int kind, String name, Struct type) throws NameAlreadyBoundException {
 		if (!isNoObj(Tab.find(name))) throw new NameAlreadyBoundException(name);
+		switch(kind) {
+		case Obj.Var: incVarDeclCount(); break;
+		case Obj.Con: incConDeclCount(); break; }
 		return Tab.insert(kind, name, type);
 	}
 	public Obj findInTab(String name) throws NameNotFoundException {
@@ -69,11 +106,87 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 
-	public void visit(DeclListType declListType) {
-		setCurrDeclLType(declListType.getType().struct); }
+	public void visit(SIdentDecl newVar) {
+		try {
+			newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), getCurrDeclLType());
+		}
+		catch (NameAlreadyBoundException e) {
+			spl.report_name_isAlready_defined(e.getMessage(), newVar);
+			newVar.obj = Tab.noObj;
+		}
+	}
+	
+	public void visit(AIdentDecl newVar) {
+		try {
+			Struct arrayType = getArrayType(getCurrDeclLType());
+			newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), arrayType);
+		}
+		catch (NameAlreadyBoundException e) {
+			spl.report_name_isAlready_defined(e.getMessage(), newVar);
+			newVar.obj = Tab.noObj;
+		}
+	}
+	
+	public void visit(IIdentDecl newVar) {
+		try {
+			newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), getCurrDeclLType());
+		}
+		catch (NameAlreadyBoundException e) {
+			spl.report_name_isAlready_defined(e.getMessage(), newVar);
+			newVar.obj = Tab.noObj;
+		}
+	}
+	
+	public void visit(CIdentDecl newConst) {
+		try {
+			newConst.obj = insertIntoTab(Obj.Con, newConst.getI1(), getCurrDeclLType());
+			newConst.obj.setAdr(newConst.getInitializator().obj.getAdr());
+		}
+		catch (NameAlreadyBoundException e) {
+			spl.report_name_isAlready_defined(e.getMessage(), newConst);
+			newConst.obj = Tab.noObj;
+		}
+		catch (Exception e) {}
+	}
+	
+	public void visit(NInit nInit) {
+		try {
+			if (getCurrDeclLType() != Tab.intType)
+				throw new IllegalArgumentException("int");
+			int number = nInit.getN1();
+			nInit.obj = new Obj(Obj.Con, "numberInitializator", Tab.intType, number, 0);
+		}
+		catch(IllegalArgumentException e) {
+			String varType = getTypeName(getCurrDeclLType());
+			spl.report_incompatible_types_inInit(varType, e.getMessage(), nInit);
+		}
+	}
 
-	public void visit(ConstDeclListType constDeclListType) {
-		setCurrDeclLType(constDeclListType.getType().struct); }
+	public void visit(CInit cInit) {
+		try {
+			if (getCurrDeclLType() != Tab.charType)
+				throw new IllegalArgumentException("char");
+			char character = cInit.getC1().charAt(1);
+			cInit.obj = new Obj(Obj.Con, "characterInitializator", Tab.charType, character, 0);
+		}
+		catch(IllegalArgumentException e) {
+			String varType = getTypeName(getCurrDeclLType());
+			spl.report_incompatible_types_inInit(varType, e.getMessage(), cInit);
+		}
+	}
+
+	public void visit(BInit bInit) {
+		try {
+			if (getCurrDeclLType() != boolType)
+				throw new IllegalArgumentException("bool");
+			int bool = bInit.getB1().equals("true") ? 1 : 0;
+			bInit.obj = new Obj(Obj.Con, "booleanInitializator", boolType, bool, 0);
+		}
+		catch(IllegalArgumentException e) {
+			String varType = getTypeName(getCurrDeclLType());
+			spl.report_incompatible_types_inInit(varType, e.getMessage(), bInit);
+		}
+	}
 
 	public void visit(TypeAccess type) {
 		try {
@@ -86,6 +199,7 @@ public class SemanticPass extends VisitorAdaptor {
 			spl.report_undefined_type(e.getMessage(), type);
 			type.struct = Tab.noType; 
 		}
+		finally { setCurrDeclLType(type.struct); }
 	}
 
 	public void visit(MethodDeclaration methodDeclaration) {

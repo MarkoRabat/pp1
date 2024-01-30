@@ -1,13 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2024 14:48:4
+// 30/0/2024 13:52:38
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class IdentifierDerived4 extends Identifier {
+public class AIdentDecl extends Identifier {
 
-    public IdentifierDerived4 () {
+    private String I1;
+
+    public AIdentDecl (String I1) {
+        this.I1=I1;
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +39,13 @@ public class IdentifierDerived4 extends Identifier {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("IdentifierDerived4(\n");
+        buffer.append("AIdentDecl(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [IdentifierDerived4]");
+        buffer.append(") [AIdentDecl]");
         return buffer.toString();
     }
 }

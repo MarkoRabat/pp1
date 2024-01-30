@@ -1,0 +1,75 @@
+INFO  13:08:46,362 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  13:08:46,409 - #2 program
+INFO  13:08:46,409 - #23 Program
+INFO  13:08:46,409 - #23 int
+INFO  13:08:46,415 - #23 a
+INFO  13:08:46,415 - #14 ,
+INFO  13:08:46,415 - #23 b
+INFO  13:08:46,416 - #8 =
+INFO  13:08:46,416 - #22 7
+INFO  13:08:46,416 - #14 ,
+INFO  13:08:46,416 - #23 c
+INFO  13:08:46,416 - #18 [
+INFO  13:08:46,417 - #20 ]
+INFO  13:08:46,417 - #14 ,
+INFO  13:08:46,417 - #23 d
+INFO  13:08:46,417 - #5 ;
+INFO  13:08:46,417 - #3 {
+INFO  13:08:46,418 - #16 void
+INFO  13:08:46,419 - #23 main
+INFO  13:08:46,419 - #6 (
+INFO  13:08:46,419 - #7 )
+INFO  13:08:46,419 - #3 {
+INFO  13:08:46,421 - #4 }
+INFO  13:08:46,422 - #4 }
+INFO  13:08:46,424 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived3(
+    ) [ProgNameDeclListDerived3]
+    DeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      DeclListDerived1(
+        SIdentDecl(
+         a
+        ) [SIdentDecl]
+        DeclListDerived1(
+          IIdentDecl(
+           b
+            NInit(
+             7
+            ) [NInit]
+          ) [IIdentDecl]
+          DeclListDerived1(
+            AIdentDecl(
+             c
+            ) [AIdentDecl]
+            DeclListDerived2(
+              SIdentDecl(
+               d
+              ) [SIdentDecl]
+            ) [DeclListDerived2]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListDerived1]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  13:08:46,424 - ====================================
