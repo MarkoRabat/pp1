@@ -5,24 +5,6 @@ char t3[], b2 = 'a', c2 = 'b', d2 = 'c';
 {
 	void main() {
 		a = 2 % 2;
-		a1[b1] = true;
-		a1[c[7]] = true;
-		a1[t3[3]] = false;
-		a1[a1[2]] = true;
-		a1[a2] = false;
-		a1[7] = true;
-		a1['a'] = true;
-		a1[false] = true;
-		a1[a1] = true;
-		a = false % 2;
-		a = 2 % false;
-		a = false % false;
-		a = 'a' % 2;
-		a = 2 % 'a';
-		a = 'a' % 'a' % 2;
-		a = 'a' % 'a';
-		a = true % 2;
-		a = 2 % true;
-		a = true % true;
+		a = -b1 + (2 % 2);
 	}
 }

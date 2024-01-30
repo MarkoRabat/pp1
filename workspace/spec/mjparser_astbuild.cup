@@ -150,7 +150,7 @@ Term ::= (MulTerm) Term:t Mulop:M1 Factor:te {: RESULT=new MulTerm(t, M1, te); R
 Factor ::= (NumberConst) NUMBER:N1 {: RESULT=new NumberConst(N1); RESULT.setLine(N1left); :}
 		| (CharacterConst) CHARACTER:C1 {: RESULT=new CharacterConst(C1); RESULT.setLine(C1left); :}
 		| (BooleanConst) BOOLEAN:B1 {: RESULT=new BooleanConst(B1); RESULT.setLine(B1left); :}
-		| LPAREN Expr:E1 RPAREN {: RESULT=new FactorDerived1(E1); RESULT.setLine(E1left); :}
+		| (ParenExpr) LPAREN Expr:E1 RPAREN {: RESULT=new ParenExpr(E1); RESULT.setLine(E1left); :}
 		| (SFactorDesignator) SimpleDesignator:d {: RESULT=new SFactorDesignator(d); RESULT.setLine(dleft); :}
 		| (AFactorDesignator) ArrayDesignator:d {: RESULT=new AFactorDesignator(d); RESULT.setLine(dleft); :};
 

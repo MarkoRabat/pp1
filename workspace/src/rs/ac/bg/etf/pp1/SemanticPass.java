@@ -17,7 +17,7 @@ public class SemanticPass extends VisitorAdaptor {
 	private Obj currentMethod = null;
 	private Struct currDeclListType = null;
 	private SemanticPassLogger spl = new SemanticPassLogger();
-	private Struct boolType, intArray, charArray, boolArray;
+	private static Struct boolType, intArray, charArray, boolArray;
 	public SemanticPass() {
 		boolType = new Struct(Struct.Bool);
 		Tab.insert(Obj.Type, "bool", boolType);
@@ -43,7 +43,7 @@ public class SemanticPass extends VisitorAdaptor {
 	public void setCurrentMethod(Obj currMethod) { currentMethod = currMethod; }
 	public void setCurrentMethodToNull() { currentMethod = null; }
 	public Obj getCurrentMethod() { return currentMethod; }
-	public Struct getArrayTypeOf(Struct primitiveType) {
+	public static Struct getArrayTypeOf(Struct primitiveType) {
 		switch(primitiveType.getKind()) {
 		case Struct.Int: return intArray;
 		case Struct.Char: return charArray;
@@ -52,7 +52,7 @@ public class SemanticPass extends VisitorAdaptor {
 		return Tab.noType;
 	}
 	
-	public String getTypeName(Struct type) {
+	public static String getTypeName(Struct type) {
 		switch(type.getKind()) {
 		case Struct.Int: return "int";
 		case Struct.Char: return "char";
@@ -68,10 +68,10 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	public boolean isCurrentMethodNull() { return currentMethod == null; }
-	public boolean isNoObj(Obj obj) { return obj == Tab.noObj; }
-	public boolean isNotTypeObj(Obj obj) { return obj.getKind() != Obj.Type; }
-	public boolean isInTab(String name) { return !isNoObj(Tab.find(name)); }
-	public boolean isIntType(Struct... types) { 
+	public static boolean isNoObj(Obj obj) { return obj == Tab.noObj; }
+	public static boolean isNotTypeObj(Obj obj) { return obj.getKind() != Obj.Type; }
+	public static boolean isInTab(String name) { return !isNoObj(Tab.find(name)); }
+	public static boolean isIntType(Struct... types) { 
 		boolean rezult = true;
 		for (Struct type : types)
 			rezult = rezult && (type == Tab.intType);
@@ -228,17 +228,30 @@ public class SemanticPass extends VisitorAdaptor {
 		incPrintCallCount(); spl.info_print(); }
 
 	public void visit(AddExpr addExpr) {
+		Struct leftOpType = addExpr.getExpr().struct;
+		Struct rightOpType = addExpr.getTerm().struct;
 		try {
-			Struct leftOpType = addExpr.getExpr().struct;
-			Struct rightOpType = addExpr.getTerm().struct;
 			if (!isIntType(leftOpType, rightOpType))
 				throw new IllegalArgumentException(
 					addExpr.getAddop().obj.getName());
 			addExpr.struct = leftOpType;
 		}
 		catch (IllegalArgumentException e) {
-			spl.report_nonInt_operands(e.getMessage(), addExpr);
+			spl.report_nonInt_operands(e.getMessage(), addExpr, leftOpType, rightOpType);
 			addExpr.struct = Tab.noType;
+		}
+	}
+	
+	public void visit(NegExpr negExpr) {
+		Struct opType = negExpr.getTerm().struct;
+		try {
+			if (!isIntType(opType))
+				throw new IllegalArgumentException();
+			negExpr.struct = opType;
+		}
+		catch (IllegalArgumentException e) {
+			spl.report_nonInt_operands("-", negExpr, opType);
+			negExpr.struct = Tab.noType;
 		}
 	}
 
@@ -246,16 +259,16 @@ public class SemanticPass extends VisitorAdaptor {
 		termExpr.struct = termExpr.getTerm().struct; }
 	
 	public void visit(MulTerm mulTerm) {
+		Struct leftOpType = mulTerm.getTerm().struct;
+		Struct rightOpType = mulTerm.getFactor().struct;
 		try {
-			Struct leftOpType = mulTerm.getTerm().struct;
-			Struct rightOpType = mulTerm.getFactor().struct;
 			if (!isIntType(leftOpType, rightOpType))
 				throw new IllegalArgumentException(
 					mulTerm.getMulop().obj.getName());
 			mulTerm.struct = leftOpType;
 		}
 		catch (IllegalArgumentException e) {
-			spl.report_nonInt_operands(e.getMessage(), mulTerm);
+			spl.report_nonInt_operands(e.getMessage(), mulTerm, leftOpType, rightOpType);
 			mulTerm.struct = Tab.noType;
 		}
 	}
@@ -271,6 +284,9 @@ public class SemanticPass extends VisitorAdaptor {
 
 	public void visit(BooleanConst booleanConst) {
 		booleanConst.struct = boolType; }
+	
+	public void visit(ParenExpr parenExpr) {
+		parenExpr.struct = parenExpr.getExpr().struct; }
 	
 	public void visit(SFactorDesignator sFactorDesignator) {
 		sFactorDesignator.struct

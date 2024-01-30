@@ -145,7 +145,7 @@ Term ::= (MulTerm) Term:t Mulop Factor:te
 Factor ::= (NumberConst) NUMBER
 		| (CharacterConst) CHARACTER
 		| (BooleanConst) BOOLEAN
-		| LPAREN Expr RPAREN
+		| (ParenExpr) LPAREN Expr RPAREN
 		| (SFactorDesignator) SimpleDesignator:d
 		| (AFactorDesignator) ArrayDesignator:d;
 

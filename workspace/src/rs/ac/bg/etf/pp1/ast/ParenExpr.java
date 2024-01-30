@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 15:15:35
+// 30/0/2024 16:30:10
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class FactorDerived1 extends Factor {
+public class ParenExpr extends Factor {
 
     private Expr Expr;
 
-    public FactorDerived1 (Expr Expr) {
+    public ParenExpr (Expr Expr) {
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
     }
@@ -43,7 +43,7 @@ public class FactorDerived1 extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("FactorDerived1(\n");
+        buffer.append("ParenExpr(\n");
 
         if(Expr!=null)
             buffer.append(Expr.toString("  "+tab));
@@ -52,7 +52,7 @@ public class FactorDerived1 extends Factor {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [FactorDerived1]");
+        buffer.append(") [ParenExpr]");
         return buffer.toString();
     }
 }
