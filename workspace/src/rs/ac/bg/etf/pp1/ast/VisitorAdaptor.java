@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 16:30:10
+// 30/0/2024 19:54:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -50,19 +50,19 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(TermExpr TermExpr) { visit(); }
     public void visit(NegExpr NegExpr) { visit(); }
     public void visit(AddExpr AddExpr) { visit(); }
-    public void visit(StatementDerived11 StatementDerived11) { visit(); }
+    public void visit(StatementDerived4 StatementDerived4) { visit(); }
     public void visit(PrintOnWith PrintOnWith) { visit(); }
     public void visit(PrintStmt PrintStmt) { visit(); }
-    public void visit(StatementDerived10 StatementDerived10) { visit(); }
-    public void visit(StatementDerived9 StatementDerived9) { visit(); }
-    public void visit(StatementDerived8 StatementDerived8) { visit(); }
-    public void visit(StatementDerived7 StatementDerived7) { visit(); }
-    public void visit(StatementDerived6 StatementDerived6) { visit(); }
-    public void visit(StatementDerived5 StatementDerived5) { visit(); }
-    public void visit(StatementDerived4 StatementDerived4) { visit(); }
     public void visit(StatementDerived3 StatementDerived3) { visit(); }
     public void visit(StatementDerived2 StatementDerived2) { visit(); }
+    public void visit(ADesignDec ADesignDec) { visit(); }
+    public void visit(SDesignDec SDesignDec) { visit(); }
+    public void visit(ADesignInc ADesignInc) { visit(); }
+    public void visit(SDesignInc SDesignInc) { visit(); }
     public void visit(StatementDerived1 StatementDerived1) { visit(); }
+    public void visit(ADesignAsign ADesignAsign) { visit(); }
+    public void visit(ArrayAlloc ArrayAlloc) { visit(); }
+    public void visit(SDesignAsign SDesignAsign) { visit(); }
     public void visit(StatementListDerived2 StatementListDerived2) { visit(); }
     public void visit(StatementListDerived1 StatementListDerived1) { visit(); }
     public void visit(MethName MethName) { visit(); }

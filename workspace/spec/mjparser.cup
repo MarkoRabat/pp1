@@ -52,6 +52,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Addop, Mulop, Identifier;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Initializator, ConstIdentifier;
 
+
 Program ::= (Prog) PROG ProgName:p ProgNameDeclList LBRACE MethodDeclList RBRACE;
 
 ProgName ::= (ProgName) IDENT:progName;
@@ -115,9 +116,9 @@ MethodName ::= (MethName) IDENT;
 StatementList ::= StatementList Statement
 				| /* epsilon */;
 
-Statement ::= SimpleDesignator EQUAL Expr:e SEMI
-			| SimpleDesignator EQUAL NEW Type LBRACKET Expr RBRACKET SEMI
-			| ArrayDesignator EQUAL Expr:e SEMI
+Statement ::= (SDesignAsign) SimpleDesignator EQUAL Expr:e SEMI
+			| (ArrayAlloc) SimpleDesignator EQUAL NEW Type LBRACKET Expr RBRACKET SEMI
+			| (ADesignAsign) ArrayDesignator EQUAL Expr:e SEMI
 			| error SEMI:l
 			{:
 				parser.report_error(
@@ -125,10 +126,10 @@ Statement ::= SimpleDesignator EQUAL Expr:e SEMI
 					+ lleft, null
 				);
 			:}
-			| SimpleDesignator DOUBLEPLUS SEMI
-			| ArrayDesignator DOUBLEPLUS SEMI
-			| SimpleDesignator DOUBLEMINUS SEMI
-			| ArrayDesignator DOUBLEMINUS SEMI
+			| (SDesignInc) SimpleDesignator DOUBLEPLUS SEMI
+			| (ADesignInc) ArrayDesignator DOUBLEPLUS SEMI
+			| (SDesignDec) SimpleDesignator DOUBLEMINUS SEMI
+			| (ADesignDec) ArrayDesignator DOUBLEMINUS SEMI
 			| READ LPAREN SimpleDesignator RPAREN SEMI
 			| READ LPAREN ArrayDesignator RPAREN SEMI
 			| (PrintStmt) PRINT LPAREN Expr RPAREN SEMI

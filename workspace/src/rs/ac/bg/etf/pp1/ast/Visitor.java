@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 16:30:10
+// 30/0/2024 19:54:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -50,19 +50,19 @@ public interface Visitor {
     public void visit(TermExpr TermExpr);
     public void visit(NegExpr NegExpr);
     public void visit(AddExpr AddExpr);
-    public void visit(StatementDerived11 StatementDerived11);
+    public void visit(StatementDerived4 StatementDerived4);
     public void visit(PrintOnWith PrintOnWith);
     public void visit(PrintStmt PrintStmt);
-    public void visit(StatementDerived10 StatementDerived10);
-    public void visit(StatementDerived9 StatementDerived9);
-    public void visit(StatementDerived8 StatementDerived8);
-    public void visit(StatementDerived7 StatementDerived7);
-    public void visit(StatementDerived6 StatementDerived6);
-    public void visit(StatementDerived5 StatementDerived5);
-    public void visit(StatementDerived4 StatementDerived4);
     public void visit(StatementDerived3 StatementDerived3);
     public void visit(StatementDerived2 StatementDerived2);
+    public void visit(ADesignDec ADesignDec);
+    public void visit(SDesignDec SDesignDec);
+    public void visit(ADesignInc ADesignInc);
+    public void visit(SDesignInc SDesignInc);
     public void visit(StatementDerived1 StatementDerived1);
+    public void visit(ADesignAsign ADesignAsign);
+    public void visit(ArrayAlloc ArrayAlloc);
+    public void visit(SDesignAsign SDesignAsign);
     public void visit(StatementListDerived2 StatementListDerived2);
     public void visit(StatementListDerived1 StatementListDerived1);
     public void visit(MethName MethName);

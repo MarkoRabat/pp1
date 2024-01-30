@@ -77,6 +77,18 @@ public class SemanticPass extends VisitorAdaptor {
 			rezult = rezult && (type == Tab.intType);
 		return rezult;
 	}
+	public boolean checkAndReportIfNotInt(String op, SyntaxNode obj, Struct... types) {
+		try {
+			for (Struct opType : types)
+				if (!isIntType(opType))
+					throw new IllegalArgumentException();
+			return true;
+		}
+		catch (IllegalArgumentException e) {
+			spl.report_nonInt_operands(op, obj, types);
+			return false;
+		}
+	}
 	
 	public Obj insertIntoTab(int kind, String name, Struct type) throws NameAlreadyBoundException {
 		if (!isNoObj(Tab.find(name))) throw new NameAlreadyBoundException(name);
@@ -223,36 +235,50 @@ public class SemanticPass extends VisitorAdaptor {
 			methName.obj = Tab.noObj;
 		}
 	}
+	public void visit(SDesignInc sDesignInc) {
+		Struct opType =
+			sDesignInc.getSimpleDesignator().obj.getType();
+		checkAndReportIfNotInt("++", sDesignInc, opType);
+	}
+	
+	public void visit(ADesignInc aDesignInc) {
+		Struct opType =
+			aDesignInc.getArrayDesignator().obj.getType().getElemType();
+		checkAndReportIfNotInt("++", aDesignInc, opType);
+	}
+
+	public void visit(SDesignDec sDesignDec) {
+		Struct opType =
+			sDesignDec.getSimpleDesignator().obj.getType();
+		checkAndReportIfNotInt("--", sDesignDec, opType);
+	}
+	
+	public void visit(ADesignDec aDesignDec) {
+		Struct opType =
+			aDesignDec.getArrayDesignator().obj.getType().getElemType();
+		checkAndReportIfNotInt("--", aDesignDec, opType);
+	}
 
 	public void visit(PrintStmt printStmt) {
+		incPrintCallCount(); spl.info_print(); }
+
+	public void visit(PrintOnWith printStmt) {
 		incPrintCallCount(); spl.info_print(); }
 
 	public void visit(AddExpr addExpr) {
 		Struct leftOpType = addExpr.getExpr().struct;
 		Struct rightOpType = addExpr.getTerm().struct;
-		try {
-			if (!isIntType(leftOpType, rightOpType))
-				throw new IllegalArgumentException(
-					addExpr.getAddop().obj.getName());
+		String op = addExpr.getAddop().obj.getName();
+		if (checkAndReportIfNotInt(op, addExpr, leftOpType, rightOpType))
 			addExpr.struct = leftOpType;
-		}
-		catch (IllegalArgumentException e) {
-			spl.report_nonInt_operands(e.getMessage(), addExpr, leftOpType, rightOpType);
-			addExpr.struct = Tab.noType;
-		}
+		else addExpr.struct = Tab.noType;
 	}
 	
 	public void visit(NegExpr negExpr) {
 		Struct opType = negExpr.getTerm().struct;
-		try {
-			if (!isIntType(opType))
-				throw new IllegalArgumentException();
+		if (checkAndReportIfNotInt("-", negExpr, opType))
 			negExpr.struct = opType;
-		}
-		catch (IllegalArgumentException e) {
-			spl.report_nonInt_operands("-", negExpr, opType);
-			negExpr.struct = Tab.noType;
-		}
+		else negExpr.struct = Tab.noType;
 	}
 
 	public void visit(TermExpr termExpr) {
@@ -261,16 +287,10 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(MulTerm mulTerm) {
 		Struct leftOpType = mulTerm.getTerm().struct;
 		Struct rightOpType = mulTerm.getFactor().struct;
-		try {
-			if (!isIntType(leftOpType, rightOpType))
-				throw new IllegalArgumentException(
-					mulTerm.getMulop().obj.getName());
+		String op = mulTerm.getMulop().obj.getName();
+		if (checkAndReportIfNotInt(op, mulTerm, leftOpType, rightOpType))
 			mulTerm.struct = leftOpType;
-		}
-		catch (IllegalArgumentException e) {
-			spl.report_nonInt_operands(e.getMessage(), mulTerm, leftOpType, rightOpType);
-			mulTerm.struct = Tab.noType;
-		}
+		else mulTerm.struct = Tab.noType;
 	}
 
 	public void visit(FactorTerm factorTerm) {

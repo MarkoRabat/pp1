@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 16:30:9
+// 30/0/2024 19:54:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,10 @@ package rs.ac.bg.etf.pp1.ast;
 public class StatementDerived3 extends Statement {
 
     private ArrayDesignator ArrayDesignator;
-    private Expr Expr;
 
-    public StatementDerived3 (ArrayDesignator ArrayDesignator, Expr Expr) {
+    public StatementDerived3 (ArrayDesignator ArrayDesignator) {
         this.ArrayDesignator=ArrayDesignator;
         if(ArrayDesignator!=null) ArrayDesignator.setParent(this);
-        this.Expr=Expr;
-        if(Expr!=null) Expr.setParent(this);
     }
 
     public ArrayDesignator getArrayDesignator() {
@@ -25,32 +22,21 @@ public class StatementDerived3 extends Statement {
         this.ArrayDesignator=ArrayDesignator;
     }
 
-    public Expr getExpr() {
-        return Expr;
-    }
-
-    public void setExpr(Expr Expr) {
-        this.Expr=Expr;
-    }
-
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
         if(ArrayDesignator!=null) ArrayDesignator.accept(visitor);
-        if(Expr!=null) Expr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ArrayDesignator!=null) ArrayDesignator.traverseTopDown(visitor);
-        if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ArrayDesignator!=null) ArrayDesignator.traverseBottomUp(visitor);
-        if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -61,12 +47,6 @@ public class StatementDerived3 extends Statement {
 
         if(ArrayDesignator!=null)
             buffer.append(ArrayDesignator.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(Expr!=null)
-            buffer.append(Expr.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -1,10 +1,12 @@
 program Program
-int a = 3, b = 7, c[], d[];
-bool a1[], b1 = true, c1 = false, a2 = true;
-char t3[], b2 = 'a', c2 = 'b', d2 = 'c';
+int a1;
+int a, c[], b, d[];
 {
 	void main() {
-		a = 2 % 2;
-		a = -b1 + (2 % 2);
+		a++;
+		c[3]++;
+		b--;
+		d[7]--;
+		a = a + a;
 	}
 }

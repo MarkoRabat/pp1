@@ -32,18 +32,15 @@ public class SemanticPassLogger {
 		String opNames = " ";
 		int opCount = 0;
 		for (Struct op : operands) {
-			opNames += SemanticPass.getTypeName(op) + ", ";
-			++opCount;
-		}
+			opNames += SemanticPass.getTypeName(op) + ", "; ++opCount; }
 		opNames = opNames.substring(0, opNames.length() - 2);
-		report_error(
-				(opCount > 1 ? "tipovi operanada" : "tip operanda")
-				+ " operatora "
-				+ operator + " "
-				+ (opCount > 1 ? "moraju" : "mora")
-				+ " biti tipa int\n\ta ne " 
-				+ (opCount > 1 ? "tipova" : "tipa") + ":"
-				+ opNames, obj); }
+		report_error((opCount > 1 ? "tipovi operanada" : "tip operanda")
+			+ " operatora " + operator + " "
+			+ (opCount > 1 ? "moraju" : "mora")
+			+ " biti int\n\ta ne " 
+			+ (opCount > 1 ? "tipova" : "tipa") + ":"
+			+ opNames, obj);
+	}
 	public void report_incompatible_types_inInit(
 		String varType, String literalType, SyntaxNode obj) {
 		report_error("identifikator tipa " + varType

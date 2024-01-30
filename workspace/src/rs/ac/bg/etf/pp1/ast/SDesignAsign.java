@@ -1,17 +1,20 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 16:30:9
+// 30/0/2024 19:54:42
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class StatementDerived9 extends Statement {
+public class SDesignAsign extends Statement {
 
     private SimpleDesignator SimpleDesignator;
+    private Expr Expr;
 
-    public StatementDerived9 (SimpleDesignator SimpleDesignator) {
+    public SDesignAsign (SimpleDesignator SimpleDesignator, Expr Expr) {
         this.SimpleDesignator=SimpleDesignator;
         if(SimpleDesignator!=null) SimpleDesignator.setParent(this);
+        this.Expr=Expr;
+        if(Expr!=null) Expr.setParent(this);
     }
 
     public SimpleDesignator getSimpleDesignator() {
@@ -22,28 +25,39 @@ public class StatementDerived9 extends Statement {
         this.SimpleDesignator=SimpleDesignator;
     }
 
+    public Expr getExpr() {
+        return Expr;
+    }
+
+    public void setExpr(Expr Expr) {
+        this.Expr=Expr;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
         if(SimpleDesignator!=null) SimpleDesignator.accept(visitor);
+        if(Expr!=null) Expr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(SimpleDesignator!=null) SimpleDesignator.traverseTopDown(visitor);
+        if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(SimpleDesignator!=null) SimpleDesignator.traverseBottomUp(visitor);
+        if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("StatementDerived9(\n");
+        buffer.append("SDesignAsign(\n");
 
         if(SimpleDesignator!=null)
             buffer.append(SimpleDesignator.toString("  "+tab));
@@ -51,8 +65,14 @@ public class StatementDerived9 extends Statement {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
+        if(Expr!=null)
+            buffer.append(Expr.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
         buffer.append(tab);
-        buffer.append(") [StatementDerived9]");
+        buffer.append(") [SDesignAsign]");
         return buffer.toString();
     }
 }

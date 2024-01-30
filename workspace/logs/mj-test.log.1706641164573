@@ -1,0 +1,284 @@
+INFO  19:59:08,938 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  19:59:09,019 - #2 program
+INFO  19:59:09,019 - #23 Program
+INFO  19:59:09,019 - #23 int
+INFO  19:59:09,022 - #23 a
+INFO  19:59:09,023 - #8 =
+INFO  19:59:09,023 - #22 3
+INFO  19:59:09,024 - #14 ,
+INFO  19:59:09,025 - #23 b
+INFO  19:59:09,025 - #8 =
+INFO  19:59:09,026 - #22 7
+INFO  19:59:09,026 - #14 ,
+INFO  19:59:09,026 - #23 c
+INFO  19:59:09,026 - #18 [
+INFO  19:59:09,026 - #20 ]
+INFO  19:59:09,027 - #14 ,
+INFO  19:59:09,028 - #23 d
+INFO  19:59:09,029 - #18 [
+INFO  19:59:09,029 - #20 ]
+INFO  19:59:09,029 - #5 ;
+INFO  19:59:09,030 - #23 bool
+INFO  19:59:09,031 - #23 a1
+INFO  19:59:09,032 - #18 [
+INFO  19:59:09,032 - #20 ]
+INFO  19:59:09,034 - #14 ,
+INFO  19:59:09,034 - #23 b1
+INFO  19:59:09,034 - #8 =
+INFO  19:59:09,035 - #25 true
+INFO  19:59:09,035 - #14 ,
+INFO  19:59:09,035 - #23 c1
+INFO  19:59:09,035 - #8 =
+INFO  19:59:09,036 - #25 false
+INFO  19:59:09,036 - #14 ,
+INFO  19:59:09,036 - #23 a2
+INFO  19:59:09,036 - #8 =
+INFO  19:59:09,036 - #25 true
+INFO  19:59:09,036 - #5 ;
+INFO  19:59:09,036 - #23 char
+INFO  19:59:09,037 - #23 t3
+INFO  19:59:09,037 - #18 [
+INFO  19:59:09,037 - #20 ]
+INFO  19:59:09,037 - #14 ,
+INFO  19:59:09,037 - #23 b2
+INFO  19:59:09,037 - #8 =
+INFO  19:59:09,037 - #24 'a'
+INFO  19:59:09,038 - #14 ,
+INFO  19:59:09,038 - #23 c2
+INFO  19:59:09,038 - #8 =
+INFO  19:59:09,038 - #24 'b'
+INFO  19:59:09,039 - #14 ,
+INFO  19:59:09,039 - #23 d2
+INFO  19:59:09,039 - #8 =
+INFO  19:59:09,039 - #24 'c'
+INFO  19:59:09,039 - #5 ;
+INFO  19:59:09,039 - #3 {
+INFO  19:59:09,039 - #16 void
+INFO  19:59:09,041 - #23 main
+INFO  19:59:09,043 - #6 (
+INFO  19:59:09,043 - #7 )
+INFO  19:59:09,044 - #3 {
+INFO  19:59:09,046 - #23 a
+INFO  19:59:09,049 - #8 =
+INFO  19:59:09,050 - #22 2
+INFO  19:59:09,051 - #30 %
+INFO  19:59:09,053 - #22 2
+INFO  19:59:09,054 - #5 ;
+INFO  19:59:09,055 - #23 a
+INFO  19:59:09,056 - #8 =
+INFO  19:59:09,056 - #23 b1
+INFO  19:59:09,056 - #26 +
+INFO  19:59:09,057 - #6 (
+INFO  19:59:09,057 - #22 2
+INFO  19:59:09,057 - #30 %
+INFO  19:59:09,058 - #23 c
+INFO  19:59:09,058 - #18 [
+INFO  19:59:09,058 - #22 3
+INFO  19:59:09,059 - #20 ]
+INFO  19:59:09,059 - #7 )
+INFO  19:59:09,060 - #5 ;
+INFO  19:59:09,061 - #4 }
+INFO  19:59:09,061 - #4 }
+INFO  19:59:09,065 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived2(
+        ProgNameDeclListDerived3(
+        ) [ProgNameDeclListDerived3]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived1(
+            IIdentDecl(
+             a
+              NInit(
+               3
+              ) [NInit]
+            ) [IIdentDecl]
+            DeclListDerived1(
+              IIdentDecl(
+               b
+                NInit(
+                 7
+                ) [NInit]
+              ) [IIdentDecl]
+              DeclListDerived1(
+                AIdentDecl(
+                 c
+                ) [AIdentDecl]
+                DeclListDerived2(
+                  AIdentDecl(
+                   d
+                  ) [AIdentDecl]
+                ) [DeclListDerived2]
+              ) [DeclListDerived1]
+            ) [DeclListDerived1]
+          ) [DeclListDerived1]
+        ) [DeclListType]
+      ) [ProgNameDeclListDerived2]
+      DeclListType(
+        TypeAccess(
+         bool
+        ) [TypeAccess]
+        DeclListDerived1(
+          AIdentDecl(
+           a1
+          ) [AIdentDecl]
+          DeclListDerived1(
+            IIdentDecl(
+             b1
+              BInit(
+               true
+              ) [BInit]
+            ) [IIdentDecl]
+            DeclListDerived1(
+              IIdentDecl(
+               c1
+                BInit(
+                 false
+                ) [BInit]
+              ) [IIdentDecl]
+              DeclListDerived2(
+                IIdentDecl(
+                 a2
+                  BInit(
+                   true
+                  ) [BInit]
+                ) [IIdentDecl]
+              ) [DeclListDerived2]
+            ) [DeclListDerived1]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    DeclListType(
+      TypeAccess(
+       char
+      ) [TypeAccess]
+      DeclListDerived1(
+        AIdentDecl(
+         t3
+        ) [AIdentDecl]
+        DeclListDerived1(
+          IIdentDecl(
+           b2
+            CInit(
+             'a'
+            ) [CInit]
+          ) [IIdentDecl]
+          DeclListDerived1(
+            IIdentDecl(
+             c2
+              CInit(
+               'b'
+              ) [CInit]
+            ) [IIdentDecl]
+            DeclListDerived2(
+              IIdentDecl(
+               d2
+                CInit(
+                 'c'
+                ) [CInit]
+              ) [IIdentDecl]
+            ) [DeclListDerived2]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListDerived1]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          SDesignAsign(
+            Ident(
+             a
+            ) [Ident]
+            TermExpr(
+              MulTerm(
+                FactorTerm(
+                  NumberConst(
+                   2
+                  ) [NumberConst]
+                ) [FactorTerm]
+                Per(
+                 %
+                ) [Per]
+                NumberConst(
+                 2
+                ) [NumberConst]
+              ) [MulTerm]
+            ) [TermExpr]
+          ) [SDesignAsign]
+        ) [StatementListDerived1]
+        SDesignAsign(
+          Ident(
+           a
+          ) [Ident]
+          AddExpr(
+            TermExpr(
+              FactorTerm(
+                SFactorDesignator(
+                  Ident(
+                   b1
+                  ) [Ident]
+                ) [SFactorDesignator]
+              ) [FactorTerm]
+            ) [TermExpr]
+            Plus(
+             +
+            ) [Plus]
+            FactorTerm(
+              ParenExpr(
+                TermExpr(
+                  MulTerm(
+                    FactorTerm(
+                      NumberConst(
+                       2
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                    Per(
+                     %
+                    ) [Per]
+                    AFactorDesignator(
+                      ArrIdent(
+                       c
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             3
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [ArrIdent]
+                    ) [AFactorDesignator]
+                  ) [MulTerm]
+                ) [TermExpr]
+              ) [ParenExpr]
+            ) [FactorTerm]
+          ) [AddExpr]
+        ) [SDesignAsign]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  19:59:09,066 - ====================================
+ERROR 19:59:09,090 - Greska: tipovi operanada operatora + moraju biti tipa int
+	a ne tipova: bool, int
+	na liniji 8
+INFO  19:59:09,090 -  Broj print naredbi = 0
+INFO  19:59:09,090 -  Deklarisanih promenljivih ima = 12
+INFO  19:59:09,090 - ====================================

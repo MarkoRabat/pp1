@@ -1,0 +1,135 @@
+INFO  20:44:45,265 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  20:44:45,385 - #2 program
+INFO  20:44:45,386 - #23 Program
+INFO  20:44:45,387 - #23 int
+INFO  20:44:45,391 - #23 a1
+INFO  20:44:45,391 - #5 ;
+INFO  20:44:45,392 - #23 int
+INFO  20:44:45,394 - #23 a
+INFO  20:44:45,395 - #14 ,
+INFO  20:44:45,396 - #23 c
+INFO  20:44:45,396 - #18 [
+INFO  20:44:45,396 - #20 ]
+INFO  20:44:45,397 - #14 ,
+INFO  20:44:45,397 - #23 b
+INFO  20:44:45,398 - #14 ,
+INFO  20:44:45,398 - #23 d
+INFO  20:44:45,398 - #18 [
+INFO  20:44:45,399 - #20 ]
+INFO  20:44:45,399 - #5 ;
+INFO  20:44:45,400 - #3 {
+INFO  20:44:45,401 - #16 void
+INFO  20:44:45,403 - #23 main
+INFO  20:44:45,404 - #6 (
+INFO  20:44:45,404 - #7 )
+INFO  20:44:45,405 - #3 {
+INFO  20:44:45,407 - #23 a
+INFO  20:44:45,410 - #15 ++
+INFO  20:44:45,411 - #5 ;
+INFO  20:44:45,411 - #23 c
+INFO  20:44:45,412 - #18 [
+INFO  20:44:45,412 - #22 3
+INFO  20:44:45,413 - #20 ]
+INFO  20:44:45,414 - #15 ++
+INFO  20:44:45,415 - #5 ;
+INFO  20:44:45,416 - #23 b
+INFO  20:44:45,416 - #10 --
+INFO  20:44:45,417 - #23 d
+ERROR 20:44:45,417 - 
+Sintaksna greska na liniji 9
+INFO  20:44:45,418 - #18 [
+INFO  20:44:45,418 - #22 7
+INFO  20:44:45,418 - #20 ]
+INFO  20:44:45,420 - #15 ++
+INFO  20:44:45,420 - #5 ;
+INFO  20:44:45,420 - #4 }
+INFO  20:44:45,420 - #4 }
+ERROR 20:44:45,421 - Izvrsen oporavak do ; na liniji 8
+INFO  20:44:45,442 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived3(
+      ) [ProgNameDeclListDerived3]
+      DeclListType(
+        TypeAccess(
+         int
+        ) [TypeAccess]
+        DeclListDerived2(
+          SIdentDecl(
+           a1
+          ) [SIdentDecl]
+        ) [DeclListDerived2]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    DeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      DeclListDerived1(
+        SIdentDecl(
+         a
+        ) [SIdentDecl]
+        DeclListDerived1(
+          AIdentDecl(
+           c
+          ) [AIdentDecl]
+          DeclListDerived1(
+            SIdentDecl(
+             b
+            ) [SIdentDecl]
+            DeclListDerived2(
+              AIdentDecl(
+               d
+              ) [AIdentDecl]
+            ) [DeclListDerived2]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListDerived1]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived2(
+            ) [StatementListDerived2]
+            SDesignInc(
+              Ident(
+               a
+              ) [Ident]
+            ) [SDesignInc]
+          ) [StatementListDerived1]
+          ADesignInc(
+            ArrIdent(
+             c
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   3
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [ArrIdent]
+          ) [ADesignInc]
+        ) [StatementListDerived1]
+        StatementDerived1(
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  20:44:45,443 - ====================================
+INFO  20:44:45,472 -  Broj print naredbi = 0
+INFO  20:44:45,472 -  Deklarisanih promenljivih ima = 5
+INFO  20:44:45,472 - ====================================
