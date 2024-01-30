@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 22:23:54
+// 30/0/2024 22:40:29
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -13,6 +13,7 @@ public interface Visitor {
     public void visit(Mulop Mulop);
     public void visit(ConstIdentifier ConstIdentifier);
     public void visit(Expr Expr);
+    public void visit(NamespaceName NamespaceName);
     public void visit(Type Type);
     public void visit(VarDeclList VarDeclList);
     public void visit(SimpleDesignator SimpleDesignator);
@@ -88,6 +89,7 @@ public interface Visitor {
     public void visit(DeclListType DeclListType);
     public void visit(VarDeclListDerived2 VarDeclListDerived2);
     public void visit(VarDeclListDerived1 VarDeclListDerived1);
+    public void visit(NamespName NamespName);
     public void visit(NamespaceDeclDerived1 NamespaceDeclDerived1);
     public void visit(ProgNameDeclListDerived3 ProgNameDeclListDerived3);
     public void visit(ProgNameDeclListDerived2 ProgNameDeclListDerived2);

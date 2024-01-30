@@ -49,7 +49,7 @@ nonterminal Statement Statement;
 nonterminal DeclList DeclList;
 nonterminal ConstDeclList ConstDeclList;
 nonterminal ProgNameDeclList ProgNameDeclList;
-nonterminal NamespaceDecl NamespaceDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceDecl, NamespaceName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SimpleDesignator;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ArrayDesignator;
@@ -66,7 +66,9 @@ ProgNameDeclList ::= ProgNameDeclList:P1 NamespaceDecl:N2 {: RESULT=new ProgName
 					| ProgNameDeclList:P1 VarDecl:V2 {: RESULT=new ProgNameDeclListDerived2(P1, V2); RESULT.setLine(P1left); :}
 					| {: RESULT=new ProgNameDeclListDerived3(); :} /* epsilon */;
 
-NamespaceDecl ::= NAMESPACE IDENT:I1 LBRACE VarDeclList:V2 LBRACE RBRACE RBRACE {: RESULT=new NamespaceDeclDerived1(I1, V2); RESULT.setLine(I1left); :};
+NamespaceDecl ::= NAMESPACE NamespaceName:N1 LBRACE VarDeclList:V2 LBRACE RBRACE RBRACE {: RESULT=new NamespaceDeclDerived1(N1, V2); RESULT.setLine(N1left); :};
+
+NamespaceName ::= (NamespName) IDENT:i {: RESULT=new NamespName(i); RESULT.setLine(ileft); :};
 
 VarDeclList ::= VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclListDerived1(V1, V2); RESULT.setLine(V1left); :}
 			| {: RESULT=new VarDeclListDerived2(); :} /* epsilon */;

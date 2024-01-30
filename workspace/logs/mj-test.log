@@ -1,124 +1,135 @@
-INFO  22:33:37,957 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
-INFO  22:33:38,024 - #2 program
-INFO  22:33:38,024 - #23 Program
-INFO  22:33:38,025 - #23 int
-INFO  22:33:38,027 - #23 iden
-INFO  22:33:38,027 - #18 [
-INFO  22:33:38,027 - #20 ]
-INFO  22:33:38,027 - #5 ;
-INFO  22:33:38,028 - #23 int
-INFO  22:33:38,029 - #23 a
-INFO  22:33:38,029 - #5 ;
-INFO  22:33:38,029 - #23 char
-INFO  22:33:38,029 - #23 b
-INFO  22:33:38,029 - #5 ;
-INFO  22:33:38,030 - #23 bool
-INFO  22:33:38,030 - #23 c
-INFO  22:33:38,030 - #5 ;
-INFO  22:33:38,030 - #23 int
-INFO  22:33:38,030 - #23 a1
-INFO  22:33:38,030 - #18 [
-INFO  22:33:38,030 - #20 ]
-INFO  22:33:38,031 - #5 ;
-INFO  22:33:38,031 - #23 char
-INFO  22:33:38,031 - #23 b1
-INFO  22:33:38,031 - #18 [
-INFO  22:33:38,032 - #20 ]
-INFO  22:33:38,032 - #5 ;
-INFO  22:33:38,032 - #23 bool
-INFO  22:33:38,032 - #23 c1
-INFO  22:33:38,032 - #18 [
-INFO  22:33:38,032 - #20 ]
-INFO  22:33:38,032 - #5 ;
-INFO  22:33:38,033 - #3 {
-INFO  22:33:38,033 - #16 void
-INFO  22:33:38,034 - #23 main
-INFO  22:33:38,035 - #6 (
-INFO  22:33:38,035 - #7 )
-INFO  22:33:38,035 - #3 {
-INFO  22:33:38,038 - #23 a
-INFO  22:33:38,039 - #8 =
-INFO  22:33:38,040 - #13 new
-INFO  22:33:38,040 - #23 int
-INFO  22:33:38,040 - #18 [
-INFO  22:33:38,040 - #22 10
-INFO  22:33:38,040 - #20 ]
-INFO  22:33:38,041 - #5 ;
-INFO  22:33:38,041 - #23 b
-INFO  22:33:38,041 - #8 =
-INFO  22:33:38,042 - #13 new
-INFO  22:33:38,042 - #23 char
-INFO  22:33:38,042 - #18 [
-INFO  22:33:38,042 - #22 10
-INFO  22:33:38,042 - #20 ]
-INFO  22:33:38,042 - #5 ;
-INFO  22:33:38,042 - #23 c
-INFO  22:33:38,042 - #8 =
-INFO  22:33:38,042 - #13 new
-INFO  22:33:38,043 - #23 bool
-INFO  22:33:38,043 - #18 [
-INFO  22:33:38,043 - #22 10
-INFO  22:33:38,043 - #20 ]
-INFO  22:33:38,043 - #5 ;
-INFO  22:33:38,043 - #23 a
-INFO  22:33:38,043 - #8 =
-INFO  22:33:38,043 - #13 new
-INFO  22:33:38,043 - #23 char
-INFO  22:33:38,043 - #18 [
-INFO  22:33:38,044 - #22 10
-INFO  22:33:38,044 - #20 ]
-INFO  22:33:38,044 - #5 ;
-INFO  22:33:38,044 - #23 a
-INFO  22:33:38,044 - #8 =
-INFO  22:33:38,044 - #13 new
-INFO  22:33:38,044 - #23 bool
-INFO  22:33:38,044 - #18 [
-INFO  22:33:38,044 - #22 10
-INFO  22:33:38,044 - #20 ]
-INFO  22:33:38,044 - #5 ;
-INFO  22:33:38,044 - #23 iden
-INFO  22:33:38,044 - #8 =
-INFO  22:33:38,045 - #13 new
-INFO  22:33:38,045 - #23 int
-INFO  22:33:38,045 - #18 [
-INFO  22:33:38,045 - #22 10
-INFO  22:33:38,045 - #20 ]
-INFO  22:33:38,045 - #5 ;
-INFO  22:33:38,045 - #23 iden
-INFO  22:33:38,045 - #8 =
-INFO  22:33:38,045 - #13 new
-INFO  22:33:38,046 - #23 char
-INFO  22:33:38,046 - #18 [
-INFO  22:33:38,046 - #22 10
-INFO  22:33:38,046 - #20 ]
-INFO  22:33:38,046 - #5 ;
-INFO  22:33:38,046 - #23 iden
-INFO  22:33:38,046 - #8 =
-INFO  22:33:38,046 - #13 new
-INFO  22:33:38,046 - #23 bool
-INFO  22:33:38,047 - #18 [
-INFO  22:33:38,047 - #22 10
-INFO  22:33:38,047 - #20 ]
-INFO  22:33:38,047 - #5 ;
-INFO  22:33:38,047 - #23 iden
-INFO  22:33:38,047 - #8 =
-INFO  22:33:38,047 - #13 new
-INFO  22:33:38,047 - #23 int
-INFO  22:33:38,047 - #18 [
-INFO  22:33:38,047 - #24 'a'
-INFO  22:33:38,047 - #20 ]
-INFO  22:33:38,048 - #5 ;
-INFO  22:33:38,048 - #23 iden
-INFO  22:33:38,048 - #8 =
-INFO  22:33:38,048 - #13 new
-INFO  22:33:38,048 - #23 int
-INFO  22:33:38,048 - #18 [
-INFO  22:33:38,049 - #25 false
-INFO  22:33:38,049 - #20 ]
-INFO  22:33:38,049 - #5 ;
-INFO  22:33:38,049 - #4 }
-INFO  22:33:38,050 - #4 }
-INFO  22:33:38,054 - Prog(
+INFO  23:08:28,392 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  23:08:28,463 - #2 program
+INFO  23:08:28,463 - #23 Program
+INFO  23:08:28,463 - #23 bool
+INFO  23:08:28,467 - #23 iden
+INFO  23:08:28,467 - #18 [
+INFO  23:08:28,467 - #20 ]
+INFO  23:08:28,467 - #5 ;
+INFO  23:08:28,468 - #19 const
+INFO  23:08:28,468 - #23 int
+INFO  23:08:28,468 - #23 a
+INFO  23:08:28,469 - #8 =
+INFO  23:08:28,469 - #22 3
+INFO  23:08:28,469 - #5 ;
+INFO  23:08:28,470 - #23 char
+INFO  23:08:28,470 - #23 b
+INFO  23:08:28,470 - #5 ;
+INFO  23:08:28,470 - #23 bool
+INFO  23:08:28,471 - #23 c
+INFO  23:08:28,471 - #5 ;
+INFO  23:08:28,471 - #23 int
+INFO  23:08:28,471 - #23 a1
+INFO  23:08:28,472 - #18 [
+INFO  23:08:28,473 - #20 ]
+INFO  23:08:28,473 - #5 ;
+INFO  23:08:28,473 - #23 char
+INFO  23:08:28,475 - #23 b1
+INFO  23:08:28,475 - #18 [
+INFO  23:08:28,475 - #20 ]
+INFO  23:08:28,475 - #5 ;
+INFO  23:08:28,475 - #23 bool
+INFO  23:08:28,475 - #23 c1
+INFO  23:08:28,475 - #18 [
+INFO  23:08:28,475 - #20 ]
+INFO  23:08:28,475 - #5 ;
+INFO  23:08:28,475 - #3 {
+INFO  23:08:28,475 - #16 void
+INFO  23:08:28,476 - #23 main
+INFO  23:08:28,476 - #6 (
+INFO  23:08:28,477 - #7 )
+INFO  23:08:28,477 - #3 {
+INFO  23:08:28,478 - #23 a
+INFO  23:08:28,480 - #8 =
+INFO  23:08:28,480 - #22 5
+INFO  23:08:28,480 - #5 ;
+INFO  23:08:28,481 - #23 a
+INFO  23:08:28,481 - #8 =
+INFO  23:08:28,482 - #25 false
+INFO  23:08:28,482 - #5 ;
+INFO  23:08:28,482 - #23 a
+INFO  23:08:28,484 - #8 =
+INFO  23:08:28,484 - #13 new
+INFO  23:08:28,484 - #23 int
+INFO  23:08:28,484 - #18 [
+INFO  23:08:28,484 - #22 10
+INFO  23:08:28,484 - #20 ]
+INFO  23:08:28,484 - #5 ;
+INFO  23:08:28,484 - #23 b
+INFO  23:08:28,484 - #8 =
+INFO  23:08:28,486 - #13 new
+INFO  23:08:28,486 - #23 char
+INFO  23:08:28,486 - #18 [
+INFO  23:08:28,486 - #22 10
+INFO  23:08:28,486 - #20 ]
+INFO  23:08:28,486 - #5 ;
+INFO  23:08:28,487 - #23 c
+INFO  23:08:28,487 - #8 =
+INFO  23:08:28,487 - #13 new
+INFO  23:08:28,487 - #23 bool
+INFO  23:08:28,487 - #18 [
+INFO  23:08:28,487 - #22 10
+INFO  23:08:28,487 - #20 ]
+INFO  23:08:28,487 - #5 ;
+INFO  23:08:28,487 - #23 a
+INFO  23:08:28,487 - #8 =
+INFO  23:08:28,487 - #13 new
+INFO  23:08:28,487 - #23 char
+INFO  23:08:28,487 - #18 [
+INFO  23:08:28,487 - #22 10
+INFO  23:08:28,487 - #20 ]
+INFO  23:08:28,488 - #5 ;
+INFO  23:08:28,488 - #23 a
+INFO  23:08:28,488 - #8 =
+INFO  23:08:28,488 - #13 new
+INFO  23:08:28,488 - #23 bool
+INFO  23:08:28,488 - #18 [
+INFO  23:08:28,488 - #22 10
+INFO  23:08:28,488 - #20 ]
+INFO  23:08:28,489 - #5 ;
+INFO  23:08:28,489 - #23 iden
+INFO  23:08:28,489 - #8 =
+INFO  23:08:28,489 - #13 new
+INFO  23:08:28,489 - #23 int
+INFO  23:08:28,489 - #18 [
+INFO  23:08:28,489 - #22 10
+INFO  23:08:28,489 - #20 ]
+INFO  23:08:28,491 - #5 ;
+INFO  23:08:28,491 - #23 iden
+INFO  23:08:28,491 - #8 =
+INFO  23:08:28,491 - #13 new
+INFO  23:08:28,491 - #23 char
+INFO  23:08:28,491 - #18 [
+INFO  23:08:28,491 - #22 10
+INFO  23:08:28,491 - #20 ]
+INFO  23:08:28,491 - #5 ;
+INFO  23:08:28,491 - #23 iden
+INFO  23:08:28,491 - #8 =
+INFO  23:08:28,491 - #13 new
+INFO  23:08:28,491 - #23 bool
+INFO  23:08:28,491 - #18 [
+INFO  23:08:28,491 - #22 10
+INFO  23:08:28,491 - #20 ]
+INFO  23:08:28,491 - #5 ;
+INFO  23:08:28,492 - #23 iden
+INFO  23:08:28,492 - #8 =
+INFO  23:08:28,492 - #13 new
+INFO  23:08:28,492 - #23 int
+INFO  23:08:28,492 - #18 [
+INFO  23:08:28,492 - #24 'a'
+INFO  23:08:28,492 - #20 ]
+INFO  23:08:28,492 - #5 ;
+INFO  23:08:28,493 - #23 iden
+INFO  23:08:28,493 - #8 =
+INFO  23:08:28,493 - #13 new
+INFO  23:08:28,493 - #23 int
+INFO  23:08:28,493 - #18 [
+INFO  23:08:28,493 - #25 false
+INFO  23:08:28,493 - #20 ]
+INFO  23:08:28,494 - #5 ;
+INFO  23:08:28,494 - #4 }
+INFO  23:08:28,494 - #4 }
+INFO  23:08:28,498 - Prog(
   ProgName(
    Program
   ) [ProgName]
@@ -133,7 +144,7 @@ INFO  22:33:38,054 - Prog(
                 ) [ProgNameDeclListDerived3]
                 DeclListType(
                   TypeAccess(
-                   int
+                   bool
                   ) [TypeAccess]
                   DeclListDerived2(
                     AIdentDecl(
@@ -142,16 +153,19 @@ INFO  22:33:38,054 - Prog(
                   ) [DeclListDerived2]
                 ) [DeclListType]
               ) [ProgNameDeclListDerived2]
-              DeclListType(
+              ConstDeclListType(
                 TypeAccess(
                  int
                 ) [TypeAccess]
-                DeclListDerived2(
-                  SIdentDecl(
+                ConstDeclListDerived2(
+                  CIdentDecl(
                    a
-                  ) [SIdentDecl]
-                ) [DeclListDerived2]
-              ) [DeclListType]
+                    NInit(
+                     3
+                    ) [NInit]
+                  ) [CIdentDecl]
+                ) [ConstDeclListDerived2]
+              ) [ConstDeclListType]
             ) [ProgNameDeclListDerived2]
             DeclListType(
               TypeAccess(
@@ -227,8 +241,36 @@ INFO  22:33:38,054 - Prog(
                     StatementListDerived1(
                       StatementListDerived1(
                         StatementListDerived1(
-                          StatementListDerived2(
-                          ) [StatementListDerived2]
+                          StatementListDerived1(
+                            StatementListDerived1(
+                              StatementListDerived2(
+                              ) [StatementListDerived2]
+                              SDesignAsign(
+                                Ident(
+                                 a
+                                ) [Ident]
+                                TermExpr(
+                                  FactorTerm(
+                                    NumberConst(
+                                     5
+                                    ) [NumberConst]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                              ) [SDesignAsign]
+                            ) [StatementListDerived1]
+                            SDesignAsign(
+                              Ident(
+                               a
+                              ) [Ident]
+                              TermExpr(
+                                FactorTerm(
+                                  BooleanConst(
+                                   false
+                                  ) [BooleanConst]
+                                ) [FactorTerm]
+                              ) [TermExpr]
+                            ) [SDesignAsign]
+                          ) [StatementListDerived1]
                           ArrayAlloc(
                             Ident(
                              a
@@ -392,44 +434,63 @@ INFO  22:33:38,054 - Prog(
     ) [MethodDeclaration]
   ) [MethodDeclListDerived1]
 ) [Prog]
-INFO  22:33:38,055 - ====================================
-ERROR 22:33:38,093 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+INFO  23:08:28,499 - ====================================
+ERROR 23:08:28,543 - Greska: upis u simbolicku int konstantu nije dozvoljen
 	na liniji 7
-ERROR 22:33:38,093 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa int
+ERROR 23:08:28,543 - Greska: nedozvoljena dodela vrednosti tipa bool identifikatoru tipa int
+	( int = bool )
+	na liniji 8
+ERROR 23:08:28,543 - Greska: upis u simbolicku int konstantu nije dozvoljen
+	na liniji 8
+ERROR 23:08:28,544 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+	na liniji 9
+ERROR 23:08:28,544 - Greska: upis u simbolicku int konstantu nije dozvoljen
+	na liniji 9
+ERROR 23:08:28,544 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa int
 	( int = int array )
-	na liniji 7
-ERROR 22:33:38,093 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip char
-	na liniji 8
-ERROR 22:33:38,093 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa char
+	na liniji 9
+ERROR 23:08:28,544 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip char
+	na liniji 10
+ERROR 23:08:28,544 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa char
 	( char = char array )
-	na liniji 8
-ERROR 22:33:38,093 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip bool
-	na liniji 9
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa bool
+	na liniji 10
+ERROR 23:08:28,544 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip bool
+	na liniji 11
+ERROR 23:08:28,545 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa bool
 	( bool = bool array )
-	na liniji 9
-ERROR 22:33:38,094 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
-	na liniji 10
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa int
+	na liniji 11
+ERROR 23:08:28,545 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+	na liniji 12
+ERROR 23:08:28,545 - Greska: upis u simbolicku int konstantu nije dozvoljen
+	na liniji 12
+ERROR 23:08:28,545 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa int
 	( int = char array )
-	na liniji 10
-ERROR 22:33:38,094 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
-	na liniji 11
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa int
-	( int = bool array )
-	na liniji 11
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa int array
-	( int array = char array )
+	na liniji 12
+ERROR 23:08:28,545 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
 	na liniji 13
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa int array
-	( int array = bool array )
+ERROR 23:08:28,545 - Greska: upis u simbolicku int konstantu nije dozvoljen
+	na liniji 13
+ERROR 23:08:28,545 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa int
+	( int = bool array )
+	na liniji 13
+ERROR 23:08:28,545 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa bool array
+	( bool array = int array )
 	na liniji 14
-ERROR 22:33:38,095 - Greska: tip operanda operatora new type [] mora biti int
-	a ne tipa: char
+ERROR 23:08:28,545 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa bool array
+	( bool array = char array )
 	na liniji 15
-ERROR 22:33:38,095 - Greska: tip operanda operatora new type [] mora biti int
+ERROR 23:08:28,547 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa bool array
+	( bool array = int array )
+	na liniji 17
+ERROR 23:08:28,547 - Greska: tip operanda operatora new type [] mora biti int
+	a ne tipa: char
+	na liniji 17
+ERROR 23:08:28,547 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa bool array
+	( bool array = int array )
+	na liniji 18
+ERROR 23:08:28,547 - Greska: tip operanda operatora new type [] mora biti int
 	a ne tipa: bool
-	na liniji 16
-INFO  22:33:38,095 -  Broj print naredbi = 0
-INFO  22:33:38,095 -  Deklarisanih promenljivih ima = 7
-INFO  22:33:38,095 - ====================================
+	na liniji 18
+INFO  23:08:28,547 -  Broj print naredbi = 0
+INFO  23:08:28,547 -  Deklarisanih promenljivih ima = 6
+INFO  23:08:28,547 - ====================================

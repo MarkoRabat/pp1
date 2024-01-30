@@ -44,7 +44,7 @@ terminal String PLUS, MINUS, MUL, DIV, PER;
 nonterminal VarDeclList, MethodDeclList, VarDecl;
 nonterminal StatementList, Statement, DeclList;
 nonterminal ConstDeclList, ProgNameDeclList;
-nonterminal NamespaceDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NamespaceDecl, NamespaceName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, SimpleDesignator;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDecl, MethodName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ArrayDesignator;
@@ -61,7 +61,9 @@ ProgNameDeclList ::= ProgNameDeclList NamespaceDecl
 					| ProgNameDeclList VarDecl
 					| /* epsilon */;
 
-NamespaceDecl ::= NAMESPACE IDENT LBRACE VarDeclList LBRACE RBRACE RBRACE;
+NamespaceDecl ::= NAMESPACE NamespaceName LBRACE VarDeclList LBRACE RBRACE RBRACE;
+
+NamespaceName ::= (NamespName) IDENT:i;
 
 VarDeclList ::= VarDeclList VarDecl
 			| /* epsilon */;

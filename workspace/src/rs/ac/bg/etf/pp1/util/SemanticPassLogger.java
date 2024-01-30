@@ -61,6 +61,11 @@ public class SemanticPassLogger {
 			+ SemanticPass.getTypeName(identType) + " = "
 			+ SemanticPass.getTypeName(exprType) + " )", obj);
 	}
+	public void report_assignment_to_const(Struct identType, SyntaxNode sDesignAsign) {
+		report_error("upis u simbolicku "
+			+ SemanticPass.getTypeName(identType)
+			+ " konstantu nije dozvoljen", sDesignAsign);
+	}
 	public void report_array_allocTo_nonArray(SyntaxNode obj, Struct type) {
 		report_error(
 			"odrediste adrese alociranog niza ne moze biti primitivni tip "

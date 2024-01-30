@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 22:23:54
+// 30/0/2024 22:40:29
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,6 +10,8 @@ public abstract class NamespaceDecl implements SyntaxNode {
     private SyntaxNode parent;
 
     private int line;
+
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
     public SyntaxNode getParent() {
         return parent;

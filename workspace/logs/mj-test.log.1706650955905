@@ -1,0 +1,441 @@
+INFO  22:36:36,103 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  22:36:36,185 - #2 program
+INFO  22:36:36,185 - #23 Program
+INFO  22:36:36,186 - #23 bool
+INFO  22:36:36,188 - #23 iden
+INFO  22:36:36,188 - #18 [
+INFO  22:36:36,189 - #20 ]
+INFO  22:36:36,189 - #5 ;
+INFO  22:36:36,189 - #23 int
+INFO  22:36:36,190 - #23 a
+INFO  22:36:36,190 - #5 ;
+INFO  22:36:36,191 - #23 char
+INFO  22:36:36,191 - #23 b
+INFO  22:36:36,191 - #5 ;
+INFO  22:36:36,191 - #23 bool
+INFO  22:36:36,191 - #23 c
+INFO  22:36:36,192 - #5 ;
+INFO  22:36:36,192 - #23 int
+INFO  22:36:36,192 - #23 a1
+INFO  22:36:36,192 - #18 [
+INFO  22:36:36,192 - #20 ]
+INFO  22:36:36,192 - #5 ;
+INFO  22:36:36,193 - #23 char
+INFO  22:36:36,194 - #23 b1
+INFO  22:36:36,195 - #18 [
+INFO  22:36:36,195 - #20 ]
+INFO  22:36:36,195 - #5 ;
+INFO  22:36:36,195 - #23 bool
+INFO  22:36:36,195 - #23 c1
+INFO  22:36:36,195 - #18 [
+INFO  22:36:36,195 - #20 ]
+INFO  22:36:36,195 - #5 ;
+INFO  22:36:36,196 - #3 {
+INFO  22:36:36,196 - #16 void
+INFO  22:36:36,197 - #23 main
+INFO  22:36:36,197 - #6 (
+INFO  22:36:36,198 - #7 )
+INFO  22:36:36,198 - #3 {
+INFO  22:36:36,199 - #23 a
+INFO  22:36:36,201 - #8 =
+INFO  22:36:36,201 - #13 new
+INFO  22:36:36,201 - #23 int
+INFO  22:36:36,202 - #18 [
+INFO  22:36:36,202 - #22 10
+INFO  22:36:36,202 - #20 ]
+INFO  22:36:36,203 - #5 ;
+INFO  22:36:36,203 - #23 b
+INFO  22:36:36,204 - #8 =
+INFO  22:36:36,204 - #13 new
+INFO  22:36:36,204 - #23 char
+INFO  22:36:36,204 - #18 [
+INFO  22:36:36,204 - #22 10
+INFO  22:36:36,204 - #20 ]
+INFO  22:36:36,204 - #5 ;
+INFO  22:36:36,205 - #23 c
+INFO  22:36:36,205 - #8 =
+INFO  22:36:36,205 - #13 new
+INFO  22:36:36,205 - #23 bool
+INFO  22:36:36,205 - #18 [
+INFO  22:36:36,205 - #22 10
+INFO  22:36:36,205 - #20 ]
+INFO  22:36:36,205 - #5 ;
+INFO  22:36:36,206 - #23 a
+INFO  22:36:36,206 - #8 =
+INFO  22:36:36,206 - #13 new
+INFO  22:36:36,206 - #23 char
+INFO  22:36:36,206 - #18 [
+INFO  22:36:36,206 - #22 10
+INFO  22:36:36,207 - #20 ]
+INFO  22:36:36,207 - #5 ;
+INFO  22:36:36,207 - #23 a
+INFO  22:36:36,207 - #8 =
+INFO  22:36:36,207 - #13 new
+INFO  22:36:36,207 - #23 bool
+INFO  22:36:36,207 - #18 [
+INFO  22:36:36,207 - #22 10
+INFO  22:36:36,207 - #20 ]
+INFO  22:36:36,208 - #5 ;
+INFO  22:36:36,208 - #23 iden
+INFO  22:36:36,208 - #8 =
+INFO  22:36:36,208 - #13 new
+INFO  22:36:36,208 - #23 int
+INFO  22:36:36,208 - #18 [
+INFO  22:36:36,208 - #22 10
+INFO  22:36:36,209 - #20 ]
+INFO  22:36:36,209 - #5 ;
+INFO  22:36:36,209 - #23 iden
+INFO  22:36:36,209 - #8 =
+INFO  22:36:36,210 - #13 new
+INFO  22:36:36,210 - #23 char
+INFO  22:36:36,210 - #18 [
+INFO  22:36:36,210 - #22 10
+INFO  22:36:36,210 - #20 ]
+INFO  22:36:36,211 - #5 ;
+INFO  22:36:36,211 - #23 iden
+INFO  22:36:36,211 - #8 =
+INFO  22:36:36,211 - #13 new
+INFO  22:36:36,211 - #23 bool
+INFO  22:36:36,211 - #18 [
+INFO  22:36:36,211 - #22 10
+INFO  22:36:36,212 - #20 ]
+INFO  22:36:36,212 - #5 ;
+INFO  22:36:36,212 - #23 iden
+INFO  22:36:36,212 - #8 =
+INFO  22:36:36,212 - #13 new
+INFO  22:36:36,212 - #23 int
+INFO  22:36:36,213 - #18 [
+INFO  22:36:36,213 - #24 'a'
+INFO  22:36:36,213 - #20 ]
+INFO  22:36:36,213 - #5 ;
+INFO  22:36:36,214 - #23 iden
+INFO  22:36:36,214 - #8 =
+INFO  22:36:36,214 - #13 new
+INFO  22:36:36,214 - #23 int
+INFO  22:36:36,214 - #18 [
+INFO  22:36:36,215 - #25 false
+INFO  22:36:36,215 - #20 ]
+INFO  22:36:36,215 - #5 ;
+INFO  22:36:36,215 - #4 }
+INFO  22:36:36,216 - #4 }
+INFO  22:36:36,219 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived2(
+        ProgNameDeclListDerived2(
+          ProgNameDeclListDerived2(
+            ProgNameDeclListDerived2(
+              ProgNameDeclListDerived2(
+                ProgNameDeclListDerived3(
+                ) [ProgNameDeclListDerived3]
+                DeclListType(
+                  TypeAccess(
+                   bool
+                  ) [TypeAccess]
+                  DeclListDerived2(
+                    AIdentDecl(
+                     iden
+                    ) [AIdentDecl]
+                  ) [DeclListDerived2]
+                ) [DeclListType]
+              ) [ProgNameDeclListDerived2]
+              DeclListType(
+                TypeAccess(
+                 int
+                ) [TypeAccess]
+                DeclListDerived2(
+                  SIdentDecl(
+                   a
+                  ) [SIdentDecl]
+                ) [DeclListDerived2]
+              ) [DeclListType]
+            ) [ProgNameDeclListDerived2]
+            DeclListType(
+              TypeAccess(
+               char
+              ) [TypeAccess]
+              DeclListDerived2(
+                SIdentDecl(
+                 b
+                ) [SIdentDecl]
+              ) [DeclListDerived2]
+            ) [DeclListType]
+          ) [ProgNameDeclListDerived2]
+          DeclListType(
+            TypeAccess(
+             bool
+            ) [TypeAccess]
+            DeclListDerived2(
+              SIdentDecl(
+               c
+              ) [SIdentDecl]
+            ) [DeclListDerived2]
+          ) [DeclListType]
+        ) [ProgNameDeclListDerived2]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived2(
+            AIdentDecl(
+             a1
+            ) [AIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListType]
+      ) [ProgNameDeclListDerived2]
+      DeclListType(
+        TypeAccess(
+         char
+        ) [TypeAccess]
+        DeclListDerived2(
+          AIdentDecl(
+           b1
+          ) [AIdentDecl]
+        ) [DeclListDerived2]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    DeclListType(
+      TypeAccess(
+       bool
+      ) [TypeAccess]
+      DeclListDerived2(
+        AIdentDecl(
+         c1
+        ) [AIdentDecl]
+      ) [DeclListDerived2]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived1(
+                    StatementListDerived1(
+                      StatementListDerived1(
+                        StatementListDerived1(
+                          StatementListDerived2(
+                          ) [StatementListDerived2]
+                          ArrayAlloc(
+                            Ident(
+                             a
+                            ) [Ident]
+                            TypeAccess(
+                             int
+                            ) [TypeAccess]
+                            TermExpr(
+                              FactorTerm(
+                                NumberConst(
+                                 10
+                                ) [NumberConst]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [ArrayAlloc]
+                        ) [StatementListDerived1]
+                        ArrayAlloc(
+                          Ident(
+                           b
+                          ) [Ident]
+                          TypeAccess(
+                           char
+                          ) [TypeAccess]
+                          TermExpr(
+                            FactorTerm(
+                              NumberConst(
+                               10
+                              ) [NumberConst]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [ArrayAlloc]
+                      ) [StatementListDerived1]
+                      ArrayAlloc(
+                        Ident(
+                         c
+                        ) [Ident]
+                        TypeAccess(
+                         bool
+                        ) [TypeAccess]
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             10
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [ArrayAlloc]
+                    ) [StatementListDerived1]
+                    ArrayAlloc(
+                      Ident(
+                       a
+                      ) [Ident]
+                      TypeAccess(
+                       char
+                      ) [TypeAccess]
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           10
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [ArrayAlloc]
+                  ) [StatementListDerived1]
+                  ArrayAlloc(
+                    Ident(
+                     a
+                    ) [Ident]
+                    TypeAccess(
+                     bool
+                    ) [TypeAccess]
+                    TermExpr(
+                      FactorTerm(
+                        NumberConst(
+                         10
+                        ) [NumberConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [ArrayAlloc]
+                ) [StatementListDerived1]
+                ArrayAlloc(
+                  Ident(
+                   iden
+                  ) [Ident]
+                  TypeAccess(
+                   int
+                  ) [TypeAccess]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       10
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [ArrayAlloc]
+              ) [StatementListDerived1]
+              ArrayAlloc(
+                Ident(
+                 iden
+                ) [Ident]
+                TypeAccess(
+                 char
+                ) [TypeAccess]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     10
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [ArrayAlloc]
+            ) [StatementListDerived1]
+            ArrayAlloc(
+              Ident(
+               iden
+              ) [Ident]
+              TypeAccess(
+               bool
+              ) [TypeAccess]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   10
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [ArrayAlloc]
+          ) [StatementListDerived1]
+          ArrayAlloc(
+            Ident(
+             iden
+            ) [Ident]
+            TypeAccess(
+             int
+            ) [TypeAccess]
+            TermExpr(
+              FactorTerm(
+                CharacterConst(
+                 'a'
+                ) [CharacterConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ArrayAlloc]
+        ) [StatementListDerived1]
+        ArrayAlloc(
+          Ident(
+           iden
+          ) [Ident]
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          TermExpr(
+            FactorTerm(
+              BooleanConst(
+               false
+              ) [BooleanConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ArrayAlloc]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  22:36:36,221 - ====================================
+ERROR 22:36:36,246 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+	na liniji 7
+ERROR 22:36:36,246 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa int
+	( int = int array )
+	na liniji 7
+ERROR 22:36:36,247 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip char
+	na liniji 8
+ERROR 22:36:36,247 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa char
+	( char = char array )
+	na liniji 8
+ERROR 22:36:36,247 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip bool
+	na liniji 9
+ERROR 22:36:36,247 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa bool
+	( bool = bool array )
+	na liniji 9
+ERROR 22:36:36,248 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+	na liniji 10
+ERROR 22:36:36,248 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa int
+	( int = char array )
+	na liniji 10
+ERROR 22:36:36,248 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+	na liniji 11
+ERROR 22:36:36,248 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa int
+	( int = bool array )
+	na liniji 11
+ERROR 22:36:36,248 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa bool array
+	( bool array = int array )
+	na liniji 12
+ERROR 22:36:36,248 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa bool array
+	( bool array = char array )
+	na liniji 13
+ERROR 22:36:36,249 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa bool array
+	( bool array = int array )
+	na liniji 15
+ERROR 22:36:36,249 - Greska: tip operanda operatora new type [] mora biti int
+	a ne tipa: char
+	na liniji 15
+ERROR 22:36:36,249 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa bool array
+	( bool array = int array )
+	na liniji 16
+ERROR 22:36:36,249 - Greska: tip operanda operatora new type [] mora biti int
+	a ne tipa: bool
+	na liniji 16
+INFO  22:36:36,250 -  Broj print naredbi = 0
+INFO  22:36:36,250 -  Deklarisanih promenljivih ima = 7
+INFO  22:36:36,250 - ====================================

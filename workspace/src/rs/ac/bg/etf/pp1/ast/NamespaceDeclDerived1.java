@@ -1,27 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 22:23:54
+// 30/0/2024 22:40:29
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class NamespaceDeclDerived1 extends NamespaceDecl {
 
-    private String I1;
+    private NamespaceName NamespaceName;
     private VarDeclList VarDeclList;
 
-    public NamespaceDeclDerived1 (String I1, VarDeclList VarDeclList) {
-        this.I1=I1;
+    public NamespaceDeclDerived1 (NamespaceName NamespaceName, VarDeclList VarDeclList) {
+        this.NamespaceName=NamespaceName;
+        if(NamespaceName!=null) NamespaceName.setParent(this);
         this.VarDeclList=VarDeclList;
         if(VarDeclList!=null) VarDeclList.setParent(this);
     }
 
-    public String getI1() {
-        return I1;
+    public NamespaceName getNamespaceName() {
+        return NamespaceName;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setNamespaceName(NamespaceName NamespaceName) {
+        this.NamespaceName=NamespaceName;
     }
 
     public VarDeclList getVarDeclList() {
@@ -37,15 +38,18 @@ public class NamespaceDeclDerived1 extends NamespaceDecl {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(NamespaceName!=null) NamespaceName.accept(visitor);
         if(VarDeclList!=null) VarDeclList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(NamespaceName!=null) NamespaceName.traverseTopDown(visitor);
         if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(NamespaceName!=null) NamespaceName.traverseBottomUp(visitor);
         if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -55,7 +59,10 @@ public class NamespaceDeclDerived1 extends NamespaceDecl {
         buffer.append(tab);
         buffer.append("NamespaceDeclDerived1(\n");
 
-        buffer.append(" "+tab+I1);
+        if(NamespaceName!=null)
+            buffer.append(NamespaceName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(VarDeclList!=null)

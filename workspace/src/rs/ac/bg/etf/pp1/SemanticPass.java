@@ -29,13 +29,10 @@ public class SemanticPass extends VisitorAdaptor {
 		boolArray.setElementType(boolType);
 	}
 	
-	public void setPrintCallCount(int newPrintCallCount) { printCallCount = newPrintCallCount; }
 	public int getPrintCallCount() { return printCallCount; } 
 	public void incPrintCallCount() { ++printCallCount; }
-	public void setVarDeclCount(int newVarDeclCount) { varDeclCount = newVarDeclCount; }
 	public int getVarDeclCount() { return varDeclCount; } 
 	public void incVarDeclCount() { ++varDeclCount; }
-	public void setConDeclCount(int newConDeclCount) { conDeclCount = newConDeclCount; }
 	public int getConDeclCount() { return conDeclCount; } 
 	public void incConDeclCount() { ++conDeclCount; }
 	public void setCurrDeclLType(Struct type) { currDeclListType = type; }
@@ -254,6 +251,8 @@ public class SemanticPass extends VisitorAdaptor {
 		Struct exprType = sDesignAsign.getExpr().struct;
 		if (identType != exprType)
 			spl.report_unallowed_assignment(identType, exprType, sDesignAsign);
+		if (sDesignAsign.getSimpleDesignator().obj.getKind() == Obj.Con)
+			spl.report_assignment_to_const(identType, sDesignAsign);
 	}
 	
 	public void visit(ADesignAsign aDesignAsign) {
@@ -267,6 +266,8 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(ArrayAlloc arrayAlloc) {
 		Struct designType = arrayAlloc.getSimpleDesignator().obj.getType();
 		checkAndReportIfNotArray(arrayAlloc, designType);
+		if (arrayAlloc.getSimpleDesignator().obj.getKind() == Obj.Con)
+			spl.report_assignment_to_const(designType, arrayAlloc);
 		Struct newArrayType = getArrayTypeOf(arrayAlloc.getType().struct);
 		if (designType != newArrayType)
 			spl.report_unallowed_assignment(designType, newArrayType, arrayAlloc);

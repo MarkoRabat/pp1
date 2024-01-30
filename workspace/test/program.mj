@@ -1,9 +1,11 @@
 program Program
-int iden[];
-int a; char b; bool c;
+bool iden[];
+const int a = 3; char b; bool c;
 int a1[]; char b1[]; bool c1[];
 {
 	void main() {
+		a = 5;
+		a = false;
 		a = new int [10];
 		b = new char [10];
 		c = new bool [10];
