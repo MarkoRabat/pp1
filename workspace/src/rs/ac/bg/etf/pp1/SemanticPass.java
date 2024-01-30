@@ -43,7 +43,7 @@ public class SemanticPass extends VisitorAdaptor {
 	public void setCurrentMethod(Obj currMethod) { currentMethod = currMethod; }
 	public void setCurrentMethodToNull() { currentMethod = null; }
 	public Obj getCurrentMethod() { return currentMethod; }
-	public Struct getArrayType(Struct primitiveType) {
+	public Struct getArrayTypeOf(Struct primitiveType) {
 		switch(primitiveType.getKind()) {
 		case Struct.Int: return intArray;
 		case Struct.Char: return charArray;
@@ -118,7 +118,7 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(AIdentDecl newVar) {
 		try {
-			Struct arrayType = getArrayType(getCurrDeclLType());
+			Struct arrayType = getArrayTypeOf(getCurrDeclLType());
 			newVar.obj = insertIntoTab(Obj.Var, newVar.getI1(), arrayType);
 		}
 		catch (NameAlreadyBoundException e) {
@@ -239,9 +239,37 @@ public class SemanticPass extends VisitorAdaptor {
 
 	public void visit(TermExpr termExpr) {
 		termExpr.struct = termExpr.getTerm().struct; }
+	
+	public void visit(MulTerm mulTerm) {
+		
+		
+		
+		
+		
+		
+		
+	}
 
 	public void visit(FactorTerm factorTerm) {
 		factorTerm.struct = factorTerm.getFactor().struct; }
+	
+	public void visit(NumberConst numberConst) {
+		numberConst.struct = Tab.intType; }
+
+	public void visit(CharacterConst characterConst) {
+		characterConst.struct = Tab.charType; }
+
+	public void visit(BooleanConst booleanConst) {
+		booleanConst.struct = boolType; }
+	
+	public void visit(SFactorDesignator sFactorDesignator) {
+		sFactorDesignator.struct
+			= sFactorDesignator.getSimpleDesignator().obj.getType(); }
+	
+	public void visit(AFactorDesignator aFactorDesignator) {
+		aFactorDesignator.struct
+			= aFactorDesignator.getArrayDesignator().obj.getType().getElemType();
+	}
 
 	public void visit(Ident ident) {
 		try { ident.obj = findInTab(ident.getName()); }
@@ -256,23 +284,21 @@ public class SemanticPass extends VisitorAdaptor {
 			arrIdent.obj = findInTab(arrIdent.getName());
 			if (arrIdent.obj.getType().getKind() != Struct.Array)
 				throw new IllegalArgumentException(arrIdent.obj.getName());
+			if (arrIdent.getExpr().struct != Tab.intType)
+				 throw new IllegalArgumentException(
+				     getTypeName(arrIdent.getExpr().struct));
 		}
 		catch (NameNotFoundException e) {
 			spl.report_name_isNot_defined(e.getMessage(), arrIdent);
 			arrIdent.obj = Tab.noObj;
 		}
 		catch (IllegalArgumentException e) {
-			spl.report_indexing_nonArray(e.getMessage(), arrIdent);
+			if (getTypeName(arrIdent.getExpr().struct).equals(e.getMessage()))
+				spl.report_index_nonInt_type(e.getMessage(), arrIdent);
+			else spl.report_indexing_nonArray(e.getMessage(), arrIdent);
 			arrIdent.obj = Tab.noObj;
 		}
 	}
-	
-	public void visit(NumberConst numberConst) {
-		numberConst.struct = Tab.intType; }
-	
-	public void visit(SFactorDesignator sFactorDesignator) {
-		sFactorDesignator.struct
-			= sFactorDesignator.getSimpleDesignator().obj.getType(); }
 	
 	public void visit(Mul mul) {
 		mul.obj = new Obj(Obj.NO_VALUE, mul.getM1(), Tab.noType); }

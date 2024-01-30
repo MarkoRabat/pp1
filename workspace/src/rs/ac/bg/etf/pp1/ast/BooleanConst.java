@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 13:52:38
+// 30/0/2024 15:15:35
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class FactorDerived2 extends Factor {
+public class BooleanConst extends Factor {
 
     private String B1;
 
-    public FactorDerived2 (String B1) {
+    public BooleanConst (String B1) {
         this.B1=B1;
     }
 
@@ -39,13 +39,13 @@ public class FactorDerived2 extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("FactorDerived2(\n");
+        buffer.append("BooleanConst(\n");
 
         buffer.append(" "+tab+B1);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [FactorDerived2]");
+        buffer.append(") [BooleanConst]");
         return buffer.toString();
     }
 }

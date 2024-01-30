@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2024 13:52:38
+// 30/0/2024 15:15:35
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class FactorDerived4 extends Factor {
+public class AFactorDesignator extends Factor {
 
     private ArrayDesignator ArrayDesignator;
 
-    public FactorDerived4 (ArrayDesignator ArrayDesignator) {
+    public AFactorDesignator (ArrayDesignator ArrayDesignator) {
         this.ArrayDesignator=ArrayDesignator;
         if(ArrayDesignator!=null) ArrayDesignator.setParent(this);
     }
@@ -43,7 +43,7 @@ public class FactorDerived4 extends Factor {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("FactorDerived4(\n");
+        buffer.append("AFactorDesignator(\n");
 
         if(ArrayDesignator!=null)
             buffer.append(ArrayDesignator.toString("  "+tab));
@@ -52,7 +52,7 @@ public class FactorDerived4 extends Factor {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [FactorDerived4]");
+        buffer.append(") [AFactorDesignator]");
         return buffer.toString();
     }
 }

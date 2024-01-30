@@ -5,20 +5,20 @@
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Ident extends SimpleDesignator {
+public class CharacterConst extends Factor {
 
-    private String name;
+    private String C1;
 
-    public Ident (String name) {
-        this.name=name;
+    public CharacterConst (String C1) {
+        this.C1=C1;
     }
 
-    public String getName() {
-        return name;
+    public String getC1() {
+        return C1;
     }
 
-    public void setName(String name) {
-        this.name=name;
+    public void setC1(String C1) {
+        this.C1=C1;
     }
 
     public void accept(Visitor visitor) {
@@ -39,13 +39,13 @@ public class Ident extends SimpleDesignator {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Ident(\n");
+        buffer.append("CharacterConst(\n");
 
-        buffer.append(" "+tab+name);
+        buffer.append(" "+tab+C1);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [Ident]");
+        buffer.append(") [CharacterConst]");
         return buffer.toString();
     }
 }

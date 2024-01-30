@@ -33,7 +33,11 @@ public class SemanticPassLogger {
 		report_error("identifikator tipa " + varType
 				+ " inicijalizovan literalom tipa " + literalType, obj); }
 	public void report_indexing_nonArray(String ident, SyntaxNode obj) {
-		report_error("indeksiranje ne nizovskog identifikatora " + ident, obj);
+		report_error("indeksiranje ne nizovskog identifikatora tipa " + ident, obj);
+	}
+	public void report_index_nonInt_type(String type, SyntaxNode obj) {
+		report_error("index niza ne sme biti tipa "
+			+ type + " vec mora biti tipa int", obj);
 	}
 	public void info_print() { log.info("Prepoznata naredba print"); }
 }

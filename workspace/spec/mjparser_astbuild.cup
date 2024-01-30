@@ -148,11 +148,11 @@ Term ::= (MulTerm) Term:t Mulop:M1 Factor:te {: RESULT=new MulTerm(t, M1, te); R
 		| (FactorTerm) Factor:t {: RESULT=new FactorTerm(t); RESULT.setLine(tleft); :};
 
 Factor ::= (NumberConst) NUMBER:N1 {: RESULT=new NumberConst(N1); RESULT.setLine(N1left); :}
-		| CHARACTER:C1 {: RESULT=new FactorDerived1(C1); RESULT.setLine(C1left); :}
-		| BOOLEAN:B1 {: RESULT=new FactorDerived2(B1); RESULT.setLine(B1left); :}
-		| LPAREN Expr:E1 RPAREN {: RESULT=new FactorDerived3(E1); RESULT.setLine(E1left); :}
+		| (CharacterConst) CHARACTER:C1 {: RESULT=new CharacterConst(C1); RESULT.setLine(C1left); :}
+		| (BooleanConst) BOOLEAN:B1 {: RESULT=new BooleanConst(B1); RESULT.setLine(B1left); :}
+		| LPAREN Expr:E1 RPAREN {: RESULT=new FactorDerived1(E1); RESULT.setLine(E1left); :}
 		| (SFactorDesignator) SimpleDesignator:d {: RESULT=new SFactorDesignator(d); RESULT.setLine(dleft); :}
-		| ArrayDesignator:d {: RESULT=new FactorDerived4(d); RESULT.setLine(dleft); :};
+		| (AFactorDesignator) ArrayDesignator:d {: RESULT=new AFactorDesignator(d); RESULT.setLine(dleft); :};
 
 SimpleDesignator ::= (Ident) IDENT:name {: RESULT=new Ident(name); RESULT.setLine(nameleft); :}
 					| (NsIdent) IDENT:namesp DOUBLECOLON IDENT:name {: RESULT=new NsIdent(namesp, name); RESULT.setLine(namespleft); :};

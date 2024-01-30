@@ -143,11 +143,11 @@ Term ::= (MulTerm) Term:t Mulop Factor:te
 		| (FactorTerm) Factor:t;
 
 Factor ::= (NumberConst) NUMBER
-		| CHARACTER
-		| BOOLEAN
+		| (CharacterConst) CHARACTER
+		| (BooleanConst) BOOLEAN
 		| LPAREN Expr RPAREN
 		| (SFactorDesignator) SimpleDesignator:d
-		| ArrayDesignator:d;
+		| (AFactorDesignator) ArrayDesignator:d;
 
 SimpleDesignator ::= (Ident) IDENT:name
 					| (NsIdent) IDENT:namesp DOUBLECOLON IDENT:name;
