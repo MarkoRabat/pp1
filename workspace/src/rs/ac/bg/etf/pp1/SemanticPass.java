@@ -70,8 +70,13 @@ public class SemanticPass extends VisitorAdaptor {
 	public boolean isCurrentMethodNull() { return currentMethod == null; }
 	public boolean isNoObj(Obj obj) { return obj == Tab.noObj; }
 	public boolean isNotTypeObj(Obj obj) { return obj.getKind() != Obj.Type; }
-	public boolean isIntType(Struct type) { return type == Tab.intType; }
 	public boolean isInTab(String name) { return !isNoObj(Tab.find(name)); }
+	public boolean isIntType(Struct... types) { 
+		boolean rezult = true;
+		for (Struct type : types)
+			rezult = rezult && (type == Tab.intType);
+		return rezult;
+	}
 	
 	public Obj insertIntoTab(int kind, String name, Struct type) throws NameAlreadyBoundException {
 		if (!isNoObj(Tab.find(name))) throw new NameAlreadyBoundException(name);
@@ -226,13 +231,13 @@ public class SemanticPass extends VisitorAdaptor {
 		try {
 			Struct leftOpType = addExpr.getExpr().struct;
 			Struct rightOpType = addExpr.getTerm().struct;
-			if (!isIntType(rightOpType) || !isIntType(leftOpType))
-				throw new IllegalArgumentException();
+			if (!isIntType(leftOpType, rightOpType))
+				throw new IllegalArgumentException(
+					addExpr.getAddop().obj.getName());
 			addExpr.struct = leftOpType;
 		}
 		catch (IllegalArgumentException e) {
-			String op = addExpr.getAddop().obj.getName();
-			spl.report_nonInt_operands(op, addExpr);
+			spl.report_nonInt_operands(e.getMessage(), addExpr);
 			addExpr.struct = Tab.noType;
 		}
 	}
@@ -241,13 +246,18 @@ public class SemanticPass extends VisitorAdaptor {
 		termExpr.struct = termExpr.getTerm().struct; }
 	
 	public void visit(MulTerm mulTerm) {
-		
-		
-		
-		
-		
-		
-		
+		try {
+			Struct leftOpType = mulTerm.getTerm().struct;
+			Struct rightOpType = mulTerm.getFactor().struct;
+			if (!isIntType(leftOpType, rightOpType))
+				throw new IllegalArgumentException(
+					mulTerm.getMulop().obj.getName());
+			mulTerm.struct = leftOpType;
+		}
+		catch (IllegalArgumentException e) {
+			spl.report_nonInt_operands(e.getMessage(), mulTerm);
+			mulTerm.struct = Tab.noType;
+		}
 	}
 
 	public void visit(FactorTerm factorTerm) {

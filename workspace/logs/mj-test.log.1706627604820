@@ -1,206 +1,206 @@
-INFO  16:15:51,561 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
-INFO  16:15:51,625 - #2 program
-INFO  16:15:51,625 - #23 Program
-INFO  16:15:51,626 - #23 int
-INFO  16:15:51,628 - #23 a
-INFO  16:15:51,628 - #8 =
-INFO  16:15:51,628 - #22 3
-INFO  16:15:51,628 - #14 ,
-INFO  16:15:51,629 - #23 b
-INFO  16:15:51,629 - #8 =
-INFO  16:15:51,629 - #22 7
-INFO  16:15:51,629 - #14 ,
-INFO  16:15:51,629 - #23 c
-INFO  16:15:51,630 - #18 [
-INFO  16:15:51,630 - #20 ]
-INFO  16:15:51,630 - #14 ,
-INFO  16:15:51,630 - #23 d
-INFO  16:15:51,630 - #18 [
-INFO  16:15:51,630 - #20 ]
-INFO  16:15:51,630 - #5 ;
-INFO  16:15:51,631 - #23 bool
-INFO  16:15:51,631 - #23 a1
-INFO  16:15:51,631 - #18 [
-INFO  16:15:51,631 - #20 ]
-INFO  16:15:51,632 - #14 ,
-INFO  16:15:51,632 - #23 b1
-INFO  16:15:51,632 - #8 =
-INFO  16:15:51,632 - #25 true
-INFO  16:15:51,632 - #14 ,
-INFO  16:15:51,633 - #23 c1
-INFO  16:15:51,633 - #8 =
-INFO  16:15:51,633 - #25 false
-INFO  16:15:51,633 - #14 ,
-INFO  16:15:51,633 - #23 a2
-INFO  16:15:51,633 - #8 =
-INFO  16:15:51,633 - #25 true
-INFO  16:15:51,633 - #5 ;
-INFO  16:15:51,634 - #23 char
-INFO  16:15:51,634 - #23 t3
-INFO  16:15:51,634 - #18 [
-INFO  16:15:51,634 - #20 ]
-INFO  16:15:51,634 - #14 ,
-INFO  16:15:51,634 - #23 b2
-INFO  16:15:51,634 - #8 =
-INFO  16:15:51,634 - #24 'a'
-INFO  16:15:51,635 - #14 ,
-INFO  16:15:51,635 - #23 c2
-INFO  16:15:51,635 - #8 =
-INFO  16:15:51,635 - #24 'b'
-INFO  16:15:51,635 - #14 ,
-INFO  16:15:51,635 - #23 d2
-INFO  16:15:51,635 - #8 =
-INFO  16:15:51,636 - #24 'c'
-INFO  16:15:51,636 - #5 ;
-INFO  16:15:51,636 - #3 {
-INFO  16:15:51,636 - #16 void
-INFO  16:15:51,637 - #23 main
-INFO  16:15:51,637 - #6 (
-INFO  16:15:51,637 - #7 )
-INFO  16:15:51,638 - #3 {
-INFO  16:15:51,639 - #23 a
-INFO  16:15:51,640 - #8 =
-INFO  16:15:51,641 - #22 2
-INFO  16:15:51,641 - #30 %
-INFO  16:15:51,641 - #22 2
-INFO  16:15:51,642 - #5 ;
-INFO  16:15:51,642 - #23 a1
-INFO  16:15:51,643 - #18 [
-INFO  16:15:51,643 - #23 b1
-INFO  16:15:51,643 - #20 ]
-INFO  16:15:51,643 - #8 =
-INFO  16:15:51,644 - #25 true
-INFO  16:15:51,644 - #5 ;
-INFO  16:15:51,644 - #23 a1
-INFO  16:15:51,644 - #18 [
-INFO  16:15:51,645 - #23 c
-INFO  16:15:51,645 - #18 [
-INFO  16:15:51,645 - #22 7
-INFO  16:15:51,645 - #20 ]
-INFO  16:15:51,645 - #20 ]
-INFO  16:15:51,645 - #8 =
-INFO  16:15:51,646 - #25 true
-INFO  16:15:51,646 - #5 ;
-INFO  16:15:51,646 - #23 a1
-INFO  16:15:51,646 - #18 [
-INFO  16:15:51,646 - #23 t3
-INFO  16:15:51,646 - #18 [
-INFO  16:15:51,646 - #22 3
-INFO  16:15:51,646 - #20 ]
-INFO  16:15:51,646 - #20 ]
-INFO  16:15:51,647 - #8 =
-INFO  16:15:51,647 - #25 false
-INFO  16:15:51,647 - #5 ;
-INFO  16:15:51,647 - #23 a1
-INFO  16:15:51,647 - #18 [
-INFO  16:15:51,647 - #23 a1
-INFO  16:15:51,647 - #18 [
-INFO  16:15:51,647 - #22 2
-INFO  16:15:51,647 - #20 ]
-INFO  16:15:51,648 - #20 ]
-INFO  16:15:51,648 - #8 =
-INFO  16:15:51,648 - #25 true
-INFO  16:15:51,648 - #5 ;
-INFO  16:15:51,648 - #23 a1
-INFO  16:15:51,648 - #18 [
-INFO  16:15:51,648 - #23 a2
-INFO  16:15:51,648 - #20 ]
-INFO  16:15:51,648 - #8 =
-INFO  16:15:51,649 - #25 false
-INFO  16:15:51,649 - #5 ;
-INFO  16:15:51,649 - #23 a1
-INFO  16:15:51,649 - #18 [
-INFO  16:15:51,649 - #22 7
-INFO  16:15:51,649 - #20 ]
-INFO  16:15:51,649 - #8 =
-INFO  16:15:51,649 - #25 true
-INFO  16:15:51,649 - #5 ;
-INFO  16:15:51,650 - #23 a1
-INFO  16:15:51,650 - #18 [
-INFO  16:15:51,650 - #24 'a'
-INFO  16:15:51,650 - #20 ]
-INFO  16:15:51,650 - #8 =
-INFO  16:15:51,650 - #25 true
-INFO  16:15:51,650 - #5 ;
-INFO  16:15:51,651 - #23 a1
-INFO  16:15:51,651 - #18 [
-INFO  16:15:51,651 - #25 false
-INFO  16:15:51,651 - #20 ]
-INFO  16:15:51,651 - #8 =
-INFO  16:15:51,651 - #25 true
-INFO  16:15:51,651 - #5 ;
-INFO  16:15:51,651 - #23 a1
-INFO  16:15:51,652 - #18 [
-INFO  16:15:51,652 - #23 a1
-INFO  16:15:51,652 - #20 ]
-INFO  16:15:51,652 - #8 =
-INFO  16:15:51,652 - #25 true
-INFO  16:15:51,652 - #5 ;
-INFO  16:15:51,652 - #23 a
-INFO  16:15:51,652 - #8 =
-INFO  16:15:51,652 - #25 false
-INFO  16:15:51,652 - #30 %
-INFO  16:15:51,653 - #22 2
-INFO  16:15:51,653 - #5 ;
-INFO  16:15:51,653 - #23 a
-INFO  16:15:51,653 - #8 =
-INFO  16:15:51,653 - #22 2
-INFO  16:15:51,653 - #30 %
-INFO  16:15:51,653 - #25 false
-INFO  16:15:51,653 - #5 ;
-INFO  16:15:51,654 - #23 a
-INFO  16:15:51,654 - #8 =
-INFO  16:15:51,654 - #25 false
-INFO  16:15:51,654 - #30 %
-INFO  16:15:51,654 - #25 false
-INFO  16:15:51,654 - #5 ;
-INFO  16:15:51,654 - #23 a
-INFO  16:15:51,654 - #8 =
-INFO  16:15:51,654 - #24 'a'
-INFO  16:15:51,654 - #30 %
-INFO  16:15:51,655 - #22 2
-INFO  16:15:51,655 - #5 ;
-INFO  16:15:51,655 - #23 a
-INFO  16:15:51,655 - #8 =
-INFO  16:15:51,655 - #22 2
-INFO  16:15:51,655 - #30 %
-INFO  16:15:51,655 - #24 'a'
-INFO  16:15:51,656 - #5 ;
-INFO  16:15:51,656 - #23 a
-INFO  16:15:51,656 - #8 =
-INFO  16:15:51,656 - #24 'a'
-INFO  16:15:51,656 - #30 %
-INFO  16:15:51,656 - #24 'a'
-INFO  16:15:51,656 - #30 %
-INFO  16:15:51,656 - #22 2
-INFO  16:15:51,656 - #5 ;
-INFO  16:15:51,657 - #23 a
-INFO  16:15:51,657 - #8 =
-INFO  16:15:51,657 - #24 'a'
-INFO  16:15:51,657 - #30 %
-INFO  16:15:51,657 - #24 'a'
-INFO  16:15:51,657 - #5 ;
-INFO  16:15:51,657 - #23 a
-INFO  16:15:51,657 - #8 =
-INFO  16:15:51,657 - #25 true
-INFO  16:15:51,658 - #30 %
-INFO  16:15:51,658 - #22 2
-INFO  16:15:51,658 - #5 ;
-INFO  16:15:51,658 - #23 a
-INFO  16:15:51,658 - #8 =
-INFO  16:15:51,658 - #22 2
-INFO  16:15:51,658 - #30 %
-INFO  16:15:51,658 - #25 true
-INFO  16:15:51,659 - #5 ;
-INFO  16:15:51,659 - #23 a
-INFO  16:15:51,659 - #8 =
-INFO  16:15:51,659 - #25 true
-INFO  16:15:51,659 - #30 %
-INFO  16:15:51,659 - #25 true
-INFO  16:15:51,659 - #5 ;
-INFO  16:15:51,659 - #4 }
-INFO  16:15:51,659 - #4 }
-INFO  16:15:51,665 - Prog(
+INFO  16:13:05,452 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  16:13:05,494 - #2 program
+INFO  16:13:05,494 - #23 Program
+INFO  16:13:05,494 - #23 int
+INFO  16:13:05,497 - #23 a
+INFO  16:13:05,497 - #8 =
+INFO  16:13:05,497 - #22 3
+INFO  16:13:05,497 - #14 ,
+INFO  16:13:05,498 - #23 b
+INFO  16:13:05,498 - #8 =
+INFO  16:13:05,498 - #22 7
+INFO  16:13:05,498 - #14 ,
+INFO  16:13:05,498 - #23 c
+INFO  16:13:05,498 - #18 [
+INFO  16:13:05,499 - #20 ]
+INFO  16:13:05,499 - #14 ,
+INFO  16:13:05,499 - #23 d
+INFO  16:13:05,499 - #18 [
+INFO  16:13:05,499 - #20 ]
+INFO  16:13:05,499 - #5 ;
+INFO  16:13:05,500 - #23 bool
+INFO  16:13:05,500 - #23 a1
+INFO  16:13:05,501 - #18 [
+INFO  16:13:05,501 - #20 ]
+INFO  16:13:05,502 - #14 ,
+INFO  16:13:05,502 - #23 b1
+INFO  16:13:05,502 - #8 =
+INFO  16:13:05,502 - #25 true
+INFO  16:13:05,502 - #14 ,
+INFO  16:13:05,503 - #23 c1
+INFO  16:13:05,503 - #8 =
+INFO  16:13:05,503 - #25 false
+INFO  16:13:05,503 - #14 ,
+INFO  16:13:05,503 - #23 a2
+INFO  16:13:05,503 - #8 =
+INFO  16:13:05,503 - #25 true
+INFO  16:13:05,503 - #5 ;
+INFO  16:13:05,503 - #23 char
+INFO  16:13:05,504 - #23 t3
+INFO  16:13:05,504 - #18 [
+INFO  16:13:05,504 - #20 ]
+INFO  16:13:05,504 - #14 ,
+INFO  16:13:05,504 - #23 b2
+INFO  16:13:05,504 - #8 =
+INFO  16:13:05,504 - #24 'a'
+INFO  16:13:05,505 - #14 ,
+INFO  16:13:05,505 - #23 c2
+INFO  16:13:05,505 - #8 =
+INFO  16:13:05,505 - #24 'b'
+INFO  16:13:05,505 - #14 ,
+INFO  16:13:05,505 - #23 d2
+INFO  16:13:05,505 - #8 =
+INFO  16:13:05,505 - #24 'c'
+INFO  16:13:05,506 - #5 ;
+INFO  16:13:05,506 - #3 {
+INFO  16:13:05,506 - #16 void
+INFO  16:13:05,507 - #23 main
+INFO  16:13:05,507 - #6 (
+INFO  16:13:05,507 - #7 )
+INFO  16:13:05,507 - #3 {
+INFO  16:13:05,509 - #23 a1
+INFO  16:13:05,510 - #18 [
+INFO  16:13:05,510 - #23 b1
+INFO  16:13:05,510 - #20 ]
+INFO  16:13:05,512 - #8 =
+INFO  16:13:05,512 - #25 true
+INFO  16:13:05,512 - #5 ;
+INFO  16:13:05,512 - #23 a1
+INFO  16:13:05,513 - #18 [
+INFO  16:13:05,513 - #23 c
+INFO  16:13:05,513 - #18 [
+INFO  16:13:05,513 - #22 7
+INFO  16:13:05,513 - #20 ]
+INFO  16:13:05,514 - #20 ]
+INFO  16:13:05,514 - #8 =
+INFO  16:13:05,514 - #25 true
+INFO  16:13:05,514 - #5 ;
+INFO  16:13:05,514 - #23 a1
+INFO  16:13:05,514 - #18 [
+INFO  16:13:05,514 - #23 t3
+INFO  16:13:05,514 - #18 [
+INFO  16:13:05,515 - #22 3
+INFO  16:13:05,515 - #20 ]
+INFO  16:13:05,515 - #20 ]
+INFO  16:13:05,515 - #8 =
+INFO  16:13:05,515 - #25 false
+INFO  16:13:05,515 - #5 ;
+INFO  16:13:05,515 - #23 a1
+INFO  16:13:05,515 - #18 [
+INFO  16:13:05,515 - #23 a1
+INFO  16:13:05,515 - #18 [
+INFO  16:13:05,516 - #22 2
+INFO  16:13:05,516 - #20 ]
+INFO  16:13:05,516 - #20 ]
+INFO  16:13:05,516 - #8 =
+INFO  16:13:05,516 - #25 true
+INFO  16:13:05,516 - #5 ;
+INFO  16:13:05,516 - #23 a1
+INFO  16:13:05,517 - #18 [
+INFO  16:13:05,517 - #23 a2
+INFO  16:13:05,517 - #20 ]
+INFO  16:13:05,517 - #8 =
+INFO  16:13:05,517 - #25 false
+INFO  16:13:05,517 - #5 ;
+INFO  16:13:05,517 - #23 a1
+INFO  16:13:05,517 - #18 [
+INFO  16:13:05,518 - #22 7
+INFO  16:13:05,518 - #20 ]
+INFO  16:13:05,518 - #8 =
+INFO  16:13:05,518 - #25 true
+INFO  16:13:05,518 - #5 ;
+INFO  16:13:05,518 - #23 a1
+INFO  16:13:05,518 - #18 [
+INFO  16:13:05,518 - #24 'a'
+INFO  16:13:05,518 - #20 ]
+INFO  16:13:05,519 - #8 =
+INFO  16:13:05,519 - #25 true
+INFO  16:13:05,519 - #5 ;
+INFO  16:13:05,519 - #23 a1
+INFO  16:13:05,519 - #18 [
+INFO  16:13:05,519 - #25 false
+INFO  16:13:05,519 - #20 ]
+INFO  16:13:05,520 - #8 =
+INFO  16:13:05,520 - #25 true
+INFO  16:13:05,520 - #5 ;
+INFO  16:13:05,520 - #23 a1
+INFO  16:13:05,520 - #18 [
+INFO  16:13:05,520 - #23 a1
+INFO  16:13:05,520 - #20 ]
+INFO  16:13:05,520 - #8 =
+INFO  16:13:05,520 - #25 true
+INFO  16:13:05,520 - #5 ;
+INFO  16:13:05,520 - #23 a
+INFO  16:13:05,521 - #8 =
+INFO  16:13:05,521 - #25 false
+INFO  16:13:05,521 - #26 +
+INFO  16:13:05,521 - #22 2
+INFO  16:13:05,521 - #5 ;
+INFO  16:13:05,522 - #23 a
+INFO  16:13:05,522 - #8 =
+INFO  16:13:05,522 - #22 2
+INFO  16:13:05,522 - #26 +
+INFO  16:13:05,522 - #25 false
+INFO  16:13:05,522 - #5 ;
+INFO  16:13:05,523 - #23 a
+INFO  16:13:05,523 - #8 =
+INFO  16:13:05,523 - #25 false
+INFO  16:13:05,523 - #26 +
+INFO  16:13:05,523 - #25 false
+INFO  16:13:05,523 - #5 ;
+INFO  16:13:05,523 - #23 a
+INFO  16:13:05,523 - #8 =
+INFO  16:13:05,523 - #22 2
+INFO  16:13:05,523 - #26 +
+INFO  16:13:05,523 - #22 2
+INFO  16:13:05,523 - #5 ;
+INFO  16:13:05,524 - #23 a
+INFO  16:13:05,524 - #8 =
+INFO  16:13:05,524 - #24 'a'
+INFO  16:13:05,524 - #26 +
+INFO  16:13:05,524 - #22 2
+INFO  16:13:05,524 - #5 ;
+INFO  16:13:05,524 - #23 a
+INFO  16:13:05,524 - #8 =
+INFO  16:13:05,524 - #22 2
+INFO  16:13:05,524 - #26 +
+INFO  16:13:05,525 - #24 'a'
+INFO  16:13:05,525 - #5 ;
+INFO  16:13:05,525 - #23 a
+INFO  16:13:05,525 - #8 =
+INFO  16:13:05,525 - #24 'a'
+INFO  16:13:05,525 - #26 +
+INFO  16:13:05,525 - #24 'a'
+INFO  16:13:05,525 - #26 +
+INFO  16:13:05,526 - #22 2
+INFO  16:13:05,526 - #5 ;
+INFO  16:13:05,526 - #23 a
+INFO  16:13:05,526 - #8 =
+INFO  16:13:05,526 - #24 'a'
+INFO  16:13:05,526 - #26 +
+INFO  16:13:05,526 - #24 'a'
+INFO  16:13:05,526 - #5 ;
+INFO  16:13:05,526 - #23 a
+INFO  16:13:05,526 - #8 =
+INFO  16:13:05,527 - #25 true
+INFO  16:13:05,527 - #26 +
+INFO  16:13:05,527 - #22 2
+INFO  16:13:05,527 - #5 ;
+INFO  16:13:05,527 - #23 a
+INFO  16:13:05,527 - #8 =
+INFO  16:13:05,527 - #22 2
+INFO  16:13:05,527 - #26 +
+INFO  16:13:05,527 - #25 true
+INFO  16:13:05,528 - #5 ;
+INFO  16:13:05,528 - #23 a
+INFO  16:13:05,528 - #8 =
+INFO  16:13:05,528 - #25 true
+INFO  16:13:05,528 - #26 +
+INFO  16:13:05,528 - #25 true
+INFO  16:13:05,528 - #5 ;
+INFO  16:13:05,528 - #4 }
+INFO  16:13:05,529 - #4 }
+INFO  16:13:05,533 - Prog(
   ProgName(
    Program
   ) [ProgName]
@@ -342,37 +342,45 @@ INFO  16:15:51,665 - Prog(
                                             StatementListDerived1(
                                               StatementListDerived2(
                                               ) [StatementListDerived2]
-                                              StatementDerived1(
-                                                Ident(
-                                                 a
-                                                ) [Ident]
-                                                TermExpr(
-                                                  MulTerm(
+                                              StatementDerived3(
+                                                ArrIdent(
+                                                 a1
+                                                  TermExpr(
                                                     FactorTerm(
-                                                      NumberConst(
-                                                       2
-                                                      ) [NumberConst]
+                                                      SFactorDesignator(
+                                                        Ident(
+                                                         b1
+                                                        ) [Ident]
+                                                      ) [SFactorDesignator]
                                                     ) [FactorTerm]
-                                                    Per(
-                                                     %
-                                                    ) [Per]
-                                                    NumberConst(
-                                                     2
-                                                    ) [NumberConst]
-                                                  ) [MulTerm]
+                                                  ) [TermExpr]
+                                                ) [ArrIdent]
+                                                TermExpr(
+                                                  FactorTerm(
+                                                    BooleanConst(
+                                                     true
+                                                    ) [BooleanConst]
+                                                  ) [FactorTerm]
                                                 ) [TermExpr]
-                                              ) [StatementDerived1]
+                                              ) [StatementDerived3]
                                             ) [StatementListDerived1]
                                             StatementDerived3(
                                               ArrIdent(
                                                a1
                                                 TermExpr(
                                                   FactorTerm(
-                                                    SFactorDesignator(
-                                                      Ident(
-                                                       b1
-                                                      ) [Ident]
-                                                    ) [SFactorDesignator]
+                                                    AFactorDesignator(
+                                                      ArrIdent(
+                                                       c
+                                                        TermExpr(
+                                                          FactorTerm(
+                                                            NumberConst(
+                                                             7
+                                                            ) [NumberConst]
+                                                          ) [FactorTerm]
+                                                        ) [TermExpr]
+                                                      ) [ArrIdent]
+                                                    ) [AFactorDesignator]
                                                   ) [FactorTerm]
                                                 ) [TermExpr]
                                               ) [ArrIdent]
@@ -392,11 +400,11 @@ INFO  16:15:51,665 - Prog(
                                                 FactorTerm(
                                                   AFactorDesignator(
                                                     ArrIdent(
-                                                     c
+                                                     t3
                                                       TermExpr(
                                                         FactorTerm(
                                                           NumberConst(
-                                                           7
+                                                           3
                                                           ) [NumberConst]
                                                         ) [FactorTerm]
                                                       ) [TermExpr]
@@ -408,7 +416,7 @@ INFO  16:15:51,665 - Prog(
                                             TermExpr(
                                               FactorTerm(
                                                 BooleanConst(
-                                                 true
+                                                 false
                                                 ) [BooleanConst]
                                               ) [FactorTerm]
                                             ) [TermExpr]
@@ -421,11 +429,11 @@ INFO  16:15:51,665 - Prog(
                                               FactorTerm(
                                                 AFactorDesignator(
                                                   ArrIdent(
-                                                   t3
+                                                   a1
                                                     TermExpr(
                                                       FactorTerm(
                                                         NumberConst(
-                                                         3
+                                                         2
                                                         ) [NumberConst]
                                                       ) [FactorTerm]
                                                     ) [TermExpr]
@@ -437,7 +445,7 @@ INFO  16:15:51,665 - Prog(
                                           TermExpr(
                                             FactorTerm(
                                               BooleanConst(
-                                               false
+                                               true
                                               ) [BooleanConst]
                                             ) [FactorTerm]
                                           ) [TermExpr]
@@ -448,25 +456,18 @@ INFO  16:15:51,665 - Prog(
                                          a1
                                           TermExpr(
                                             FactorTerm(
-                                              AFactorDesignator(
-                                                ArrIdent(
-                                                 a1
-                                                  TermExpr(
-                                                    FactorTerm(
-                                                      NumberConst(
-                                                       2
-                                                      ) [NumberConst]
-                                                    ) [FactorTerm]
-                                                  ) [TermExpr]
-                                                ) [ArrIdent]
-                                              ) [AFactorDesignator]
+                                              SFactorDesignator(
+                                                Ident(
+                                                 a2
+                                                ) [Ident]
+                                              ) [SFactorDesignator]
                                             ) [FactorTerm]
                                           ) [TermExpr]
                                         ) [ArrIdent]
                                         TermExpr(
                                           FactorTerm(
                                             BooleanConst(
-                                             true
+                                             false
                                             ) [BooleanConst]
                                           ) [FactorTerm]
                                         ) [TermExpr]
@@ -477,18 +478,16 @@ INFO  16:15:51,665 - Prog(
                                        a1
                                         TermExpr(
                                           FactorTerm(
-                                            SFactorDesignator(
-                                              Ident(
-                                               a2
-                                              ) [Ident]
-                                            ) [SFactorDesignator]
+                                            NumberConst(
+                                             7
+                                            ) [NumberConst]
                                           ) [FactorTerm]
                                         ) [TermExpr]
                                       ) [ArrIdent]
                                       TermExpr(
                                         FactorTerm(
                                           BooleanConst(
-                                           false
+                                           true
                                           ) [BooleanConst]
                                         ) [FactorTerm]
                                       ) [TermExpr]
@@ -499,9 +498,9 @@ INFO  16:15:51,665 - Prog(
                                      a1
                                       TermExpr(
                                         FactorTerm(
-                                          NumberConst(
-                                           7
-                                          ) [NumberConst]
+                                          CharacterConst(
+                                           'a'
+                                          ) [CharacterConst]
                                         ) [FactorTerm]
                                       ) [TermExpr]
                                     ) [ArrIdent]
@@ -519,9 +518,9 @@ INFO  16:15:51,665 - Prog(
                                    a1
                                     TermExpr(
                                       FactorTerm(
-                                        CharacterConst(
-                                         'a'
-                                        ) [CharacterConst]
+                                        BooleanConst(
+                                         false
+                                        ) [BooleanConst]
                                       ) [FactorTerm]
                                     ) [TermExpr]
                                   ) [ArrIdent]
@@ -539,9 +538,11 @@ INFO  16:15:51,665 - Prog(
                                  a1
                                   TermExpr(
                                     FactorTerm(
-                                      BooleanConst(
-                                       false
-                                      ) [BooleanConst]
+                                      SFactorDesignator(
+                                        Ident(
+                                         a1
+                                        ) [Ident]
+                                      ) [SFactorDesignator]
                                     ) [FactorTerm]
                                   ) [TermExpr]
                                 ) [ArrIdent]
@@ -554,286 +555,309 @@ INFO  16:15:51,665 - Prog(
                                 ) [TermExpr]
                               ) [StatementDerived3]
                             ) [StatementListDerived1]
-                            StatementDerived3(
-                              ArrIdent(
-                               a1
+                            StatementDerived1(
+                              Ident(
+                               a
+                              ) [Ident]
+                              AddExpr(
                                 TermExpr(
                                   FactorTerm(
-                                    SFactorDesignator(
-                                      Ident(
-                                       a1
-                                      ) [Ident]
-                                    ) [SFactorDesignator]
+                                    BooleanConst(
+                                     false
+                                    ) [BooleanConst]
                                   ) [FactorTerm]
                                 ) [TermExpr]
-                              ) [ArrIdent]
-                              TermExpr(
+                                Plus(
+                                 +
+                                ) [Plus]
                                 FactorTerm(
-                                  BooleanConst(
-                                   true
-                                  ) [BooleanConst]
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
                                 ) [FactorTerm]
-                              ) [TermExpr]
-                            ) [StatementDerived3]
+                              ) [AddExpr]
+                            ) [StatementDerived1]
                           ) [StatementListDerived1]
                           StatementDerived1(
                             Ident(
                              a
                             ) [Ident]
-                            TermExpr(
-                              MulTerm(
+                            AddExpr(
+                              TermExpr(
                                 FactorTerm(
-                                  BooleanConst(
-                                   false
-                                  ) [BooleanConst]
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
                                 ) [FactorTerm]
-                                Per(
-                                 %
-                                ) [Per]
-                                NumberConst(
-                                 2
-                                ) [NumberConst]
-                              ) [MulTerm]
-                            ) [TermExpr]
+                              ) [TermExpr]
+                              Plus(
+                               +
+                              ) [Plus]
+                              FactorTerm(
+                                BooleanConst(
+                                 false
+                                ) [BooleanConst]
+                              ) [FactorTerm]
+                            ) [AddExpr]
                           ) [StatementDerived1]
                         ) [StatementListDerived1]
                         StatementDerived1(
                           Ident(
                            a
                           ) [Ident]
-                          TermExpr(
-                            MulTerm(
+                          AddExpr(
+                            TermExpr(
                               FactorTerm(
-                                NumberConst(
-                                 2
-                                ) [NumberConst]
+                                BooleanConst(
+                                 false
+                                ) [BooleanConst]
                               ) [FactorTerm]
-                              Per(
-                               %
-                              ) [Per]
+                            ) [TermExpr]
+                            Plus(
+                             +
+                            ) [Plus]
+                            FactorTerm(
                               BooleanConst(
                                false
                               ) [BooleanConst]
-                            ) [MulTerm]
-                          ) [TermExpr]
+                            ) [FactorTerm]
+                          ) [AddExpr]
                         ) [StatementDerived1]
                       ) [StatementListDerived1]
                       StatementDerived1(
                         Ident(
                          a
                         ) [Ident]
-                        TermExpr(
-                          MulTerm(
+                        AddExpr(
+                          TermExpr(
                             FactorTerm(
-                              BooleanConst(
-                               false
-                              ) [BooleanConst]
+                              NumberConst(
+                               2
+                              ) [NumberConst]
                             ) [FactorTerm]
-                            Per(
-                             %
-                            ) [Per]
-                            BooleanConst(
-                             false
-                            ) [BooleanConst]
-                          ) [MulTerm]
-                        ) [TermExpr]
+                          ) [TermExpr]
+                          Plus(
+                           +
+                          ) [Plus]
+                          FactorTerm(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [AddExpr]
                       ) [StatementDerived1]
                     ) [StatementListDerived1]
                     StatementDerived1(
                       Ident(
                        a
                       ) [Ident]
-                      TermExpr(
-                        MulTerm(
+                      AddExpr(
+                        TermExpr(
                           FactorTerm(
                             CharacterConst(
                              'a'
                             ) [CharacterConst]
                           ) [FactorTerm]
-                          Per(
-                           %
-                          ) [Per]
+                        ) [TermExpr]
+                        Plus(
+                         +
+                        ) [Plus]
+                        FactorTerm(
                           NumberConst(
                            2
                           ) [NumberConst]
-                        ) [MulTerm]
-                      ) [TermExpr]
+                        ) [FactorTerm]
+                      ) [AddExpr]
                     ) [StatementDerived1]
                   ) [StatementListDerived1]
                   StatementDerived1(
                     Ident(
                      a
                     ) [Ident]
-                    TermExpr(
-                      MulTerm(
+                    AddExpr(
+                      TermExpr(
                         FactorTerm(
                           NumberConst(
                            2
                           ) [NumberConst]
                         ) [FactorTerm]
-                        Per(
-                         %
-                        ) [Per]
+                      ) [TermExpr]
+                      Plus(
+                       +
+                      ) [Plus]
+                      FactorTerm(
                         CharacterConst(
                          'a'
                         ) [CharacterConst]
-                      ) [MulTerm]
-                    ) [TermExpr]
+                      ) [FactorTerm]
+                    ) [AddExpr]
                   ) [StatementDerived1]
                 ) [StatementListDerived1]
                 StatementDerived1(
                   Ident(
                    a
                   ) [Ident]
-                  TermExpr(
-                    MulTerm(
-                      MulTerm(
+                  AddExpr(
+                    AddExpr(
+                      TermExpr(
                         FactorTerm(
                           CharacterConst(
                            'a'
                           ) [CharacterConst]
                         ) [FactorTerm]
-                        Per(
-                         %
-                        ) [Per]
+                      ) [TermExpr]
+                      Plus(
+                       +
+                      ) [Plus]
+                      FactorTerm(
                         CharacterConst(
                          'a'
                         ) [CharacterConst]
-                      ) [MulTerm]
-                      Per(
-                       %
-                      ) [Per]
+                      ) [FactorTerm]
+                    ) [AddExpr]
+                    Plus(
+                     +
+                    ) [Plus]
+                    FactorTerm(
                       NumberConst(
                        2
                       ) [NumberConst]
-                    ) [MulTerm]
-                  ) [TermExpr]
+                    ) [FactorTerm]
+                  ) [AddExpr]
                 ) [StatementDerived1]
               ) [StatementListDerived1]
               StatementDerived1(
                 Ident(
                  a
                 ) [Ident]
-                TermExpr(
-                  MulTerm(
+                AddExpr(
+                  TermExpr(
                     FactorTerm(
                       CharacterConst(
                        'a'
                       ) [CharacterConst]
                     ) [FactorTerm]
-                    Per(
-                     %
-                    ) [Per]
+                  ) [TermExpr]
+                  Plus(
+                   +
+                  ) [Plus]
+                  FactorTerm(
                     CharacterConst(
                      'a'
                     ) [CharacterConst]
-                  ) [MulTerm]
-                ) [TermExpr]
+                  ) [FactorTerm]
+                ) [AddExpr]
               ) [StatementDerived1]
             ) [StatementListDerived1]
             StatementDerived1(
               Ident(
                a
               ) [Ident]
-              TermExpr(
-                MulTerm(
+              AddExpr(
+                TermExpr(
                   FactorTerm(
                     BooleanConst(
                      true
                     ) [BooleanConst]
                   ) [FactorTerm]
-                  Per(
-                   %
-                  ) [Per]
+                ) [TermExpr]
+                Plus(
+                 +
+                ) [Plus]
+                FactorTerm(
                   NumberConst(
                    2
                   ) [NumberConst]
-                ) [MulTerm]
-              ) [TermExpr]
+                ) [FactorTerm]
+              ) [AddExpr]
             ) [StatementDerived1]
           ) [StatementListDerived1]
           StatementDerived1(
             Ident(
              a
             ) [Ident]
-            TermExpr(
-              MulTerm(
+            AddExpr(
+              TermExpr(
                 FactorTerm(
                   NumberConst(
                    2
                   ) [NumberConst]
                 ) [FactorTerm]
-                Per(
-                 %
-                ) [Per]
+              ) [TermExpr]
+              Plus(
+               +
+              ) [Plus]
+              FactorTerm(
                 BooleanConst(
                  true
                 ) [BooleanConst]
-              ) [MulTerm]
-            ) [TermExpr]
+              ) [FactorTerm]
+            ) [AddExpr]
           ) [StatementDerived1]
         ) [StatementListDerived1]
         StatementDerived1(
           Ident(
            a
           ) [Ident]
-          TermExpr(
-            MulTerm(
+          AddExpr(
+            TermExpr(
               FactorTerm(
                 BooleanConst(
                  true
                 ) [BooleanConst]
               ) [FactorTerm]
-              Per(
-               %
-              ) [Per]
+            ) [TermExpr]
+            Plus(
+             +
+            ) [Plus]
+            FactorTerm(
               BooleanConst(
                true
               ) [BooleanConst]
-            ) [MulTerm]
-          ) [TermExpr]
+            ) [FactorTerm]
+          ) [AddExpr]
         ) [StatementDerived1]
       ) [StatementListDerived1]
     ) [MethodDeclaration]
   ) [MethodDeclListDerived1]
 ) [Prog]
-INFO  16:15:51,667 - ====================================
-ERROR 16:15:51,689 - Greska: index niza ne sme biti tipa bool vec mora biti tipa int
-	na liniji 8
-ERROR 16:15:51,690 - Greska: index niza ne sme biti tipa char vec mora biti tipa int
+INFO  16:13:05,534 - ====================================
+ERROR 16:13:05,556 - Greska: index niza ne sme biti tipa bool vec mora biti tipa int
+	na liniji 7
+ERROR 16:13:05,557 - Greska: index niza ne sme biti tipa char vec mora biti tipa int
+	na liniji 9
+ERROR 16:13:05,557 - Greska: index niza ne sme biti tipa bool vec mora biti tipa int
 	na liniji 10
-ERROR 16:15:51,690 - Greska: index niza ne sme biti tipa bool vec mora biti tipa int
+ERROR 16:13:05,557 - Greska: index niza ne sme biti tipa bool vec mora biti tipa int
 	na liniji 11
-ERROR 16:15:51,690 - Greska: index niza ne sme biti tipa bool vec mora biti tipa int
-	na liniji 12
-ERROR 16:15:51,690 - Greska: index niza ne sme biti tipa char vec mora biti tipa int
+ERROR 16:13:05,557 - Greska: index niza ne sme biti tipa char vec mora biti tipa int
+	na liniji 13
+ERROR 16:13:05,557 - Greska: index niza ne sme biti tipa bool vec mora biti tipa int
 	na liniji 14
-ERROR 16:15:51,690 - Greska: index niza ne sme biti tipa bool vec mora biti tipa int
+ERROR 16:13:05,557 - Greska: index niza ne sme biti tipa bool array vec mora biti tipa int
 	na liniji 15
-ERROR 16:15:51,690 - Greska: index niza ne sme biti tipa bool array vec mora biti tipa int
+ERROR 16:13:05,557 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 16
-ERROR 16:15:51,690 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,557 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 17
-ERROR 16:15:51,690 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,557 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 18
-ERROR 16:15:51,691 - Greska: tipovi operanada operatora % moraju biti tipa int
-	na liniji 19
-ERROR 16:15:51,691 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,558 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 20
-ERROR 16:15:51,691 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,558 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 21
-ERROR 16:15:51,691 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,558 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 22
-ERROR 16:15:51,691 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,558 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 22
-ERROR 16:15:51,691 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,558 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 23
-ERROR 16:15:51,691 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,558 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 24
-ERROR 16:15:51,691 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,558 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 25
-ERROR 16:15:51,692 - Greska: tipovi operanada operatora % moraju biti tipa int
+ERROR 16:13:05,558 - Greska: tipovi operanada operatora + moraju biti tipa int
 	na liniji 26
-INFO  16:15:51,692 -  Broj print naredbi = 0
-INFO  16:15:51,692 -  Deklarisanih promenljivih ima = 12
-INFO  16:15:51,692 - ====================================
+INFO  16:13:05,558 -  Broj print naredbi = 0
+INFO  16:13:05,558 -  Deklarisanih promenljivih ima = 12
+INFO  16:13:05,558 - ====================================
