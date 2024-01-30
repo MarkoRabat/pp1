@@ -52,5 +52,14 @@ public class SemanticPassLogger {
 		report_error("index niza ne sme biti tipa "
 			+ type + " vec mora biti tipa int", obj);
 	}
+	public void report_unallowed_assignment(
+		Struct identType, Struct exprType, SyntaxNode obj) {
+		report_error("nedozvoljena dodela vrednosti tipa "
+			+ SemanticPass.getTypeName(exprType)
+			+ " identifikatoru tipa "
+			+ SemanticPass.getTypeName(identType) + "\n\t( "
+			+ SemanticPass.getTypeName(identType) + " = "
+			+ SemanticPass.getTypeName(exprType) + " )", obj);
+	}
 	public void info_print() { log.info("Prepoznata naredba print"); }
 }

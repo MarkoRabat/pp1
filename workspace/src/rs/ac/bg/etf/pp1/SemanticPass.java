@@ -235,6 +235,26 @@ public class SemanticPass extends VisitorAdaptor {
 			methName.obj = Tab.noObj;
 		}
 	}
+	
+	public void visit(SDesignAsign sDesignAsign) {
+		Struct identType = sDesignAsign.getSimpleDesignator().obj.getType();
+		Struct exprType = sDesignAsign.getExpr().struct;
+		if (identType != exprType)
+			spl.report_unallowed_assignment(identType, exprType, sDesignAsign);
+	}
+	
+	public void visit(ADesignAsign aDesignAsign) {
+		Struct arrayElemType =
+			aDesignAsign.getArrayDesignator().obj.getType().getElemType();
+		Struct exprType = aDesignAsign.getExpr().struct;
+		if (arrayElemType != exprType)
+			spl.report_unallowed_assignment(arrayElemType, exprType, aDesignAsign);
+	}
+	
+	public void visit(ArrayAlloc arrayAlloc) {
+		
+	}
+
 	public void visit(SDesignInc sDesignInc) {
 		Struct opType =
 			sDesignInc.getSimpleDesignator().obj.getType();

@@ -117,8 +117,8 @@ StatementList ::= StatementList Statement
 				| /* epsilon */;
 
 Statement ::= (SDesignAsign) SimpleDesignator EQUAL Expr:e SEMI
-			| (ArrayAlloc) SimpleDesignator EQUAL NEW Type LBRACKET Expr RBRACKET SEMI
 			| (ADesignAsign) ArrayDesignator EQUAL Expr:e SEMI
+			| (ArrayAlloc) SimpleDesignator EQUAL NEW Type LBRACKET Expr RBRACKET SEMI
 			| error SEMI:l
 			{:
 				parser.report_error(

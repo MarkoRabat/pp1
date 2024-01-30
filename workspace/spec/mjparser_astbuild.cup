@@ -122,8 +122,8 @@ StatementList ::= StatementList:S1 Statement:S2 {: RESULT=new StatementListDeriv
 				| {: RESULT=new StatementListDerived2(); :} /* epsilon */;
 
 Statement ::= (SDesignAsign) SimpleDesignator:S1 EQUAL Expr:e SEMI {: RESULT=new SDesignAsign(S1, e); RESULT.setLine(S1left); :}
-			| (ArrayAlloc) SimpleDesignator:S1 EQUAL NEW Type:T2 LBRACKET Expr:E3 RBRACKET SEMI {: RESULT=new ArrayAlloc(S1, T2, E3); RESULT.setLine(S1left); :}
 			| (ADesignAsign) ArrayDesignator:A1 EQUAL Expr:e SEMI {: RESULT=new ADesignAsign(A1, e); RESULT.setLine(A1left); :}
+			| (ArrayAlloc) SimpleDesignator:S1 EQUAL NEW Type:T2 LBRACKET Expr:E3 RBRACKET SEMI {: RESULT=new ArrayAlloc(S1, T2, E3); RESULT.setLine(S1left); :}
 			| error SEMI:l
 			{:
 				parser.report_error(

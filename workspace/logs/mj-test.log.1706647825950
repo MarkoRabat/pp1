@@ -1,0 +1,537 @@
+INFO  21:50:05,284 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  21:50:05,357 - #2 program
+INFO  21:50:05,358 - #23 Program
+INFO  21:50:05,358 - #23 int
+INFO  21:50:05,361 - #23 iden
+INFO  21:50:05,361 - #18 [
+INFO  21:50:05,361 - #20 ]
+INFO  21:50:05,362 - #5 ;
+INFO  21:50:05,362 - #23 int
+INFO  21:50:05,363 - #23 a
+INFO  21:50:05,363 - #5 ;
+INFO  21:50:05,363 - #23 char
+INFO  21:50:05,363 - #23 b
+INFO  21:50:05,364 - #5 ;
+INFO  21:50:05,364 - #23 bool
+INFO  21:50:05,364 - #23 c
+INFO  21:50:05,364 - #5 ;
+INFO  21:50:05,364 - #23 int
+INFO  21:50:05,364 - #23 a1
+INFO  21:50:05,365 - #18 [
+INFO  21:50:05,365 - #20 ]
+INFO  21:50:05,365 - #5 ;
+INFO  21:50:05,365 - #23 char
+INFO  21:50:05,366 - #23 b1
+INFO  21:50:05,366 - #18 [
+INFO  21:50:05,367 - #20 ]
+INFO  21:50:05,367 - #5 ;
+INFO  21:50:05,367 - #23 bool
+INFO  21:50:05,367 - #23 c1
+INFO  21:50:05,367 - #18 [
+INFO  21:50:05,367 - #20 ]
+INFO  21:50:05,367 - #5 ;
+INFO  21:50:05,368 - #3 {
+INFO  21:50:05,368 - #16 void
+INFO  21:50:05,369 - #23 main
+INFO  21:50:05,369 - #6 (
+INFO  21:50:05,370 - #7 )
+INFO  21:50:05,370 - #3 {
+INFO  21:50:05,372 - #23 iden
+INFO  21:50:05,373 - #18 [
+INFO  21:50:05,373 - #22 2
+INFO  21:50:05,374 - #20 ]
+INFO  21:50:05,374 - #8 =
+INFO  21:50:05,375 - #23 a
+INFO  21:50:05,375 - #5 ;
+INFO  21:50:05,376 - #23 iden
+INFO  21:50:05,376 - #18 [
+INFO  21:50:05,376 - #22 2
+INFO  21:50:05,376 - #20 ]
+INFO  21:50:05,377 - #8 =
+INFO  21:50:05,377 - #22 5
+INFO  21:50:05,377 - #5 ;
+INFO  21:50:05,377 - #23 iden
+INFO  21:50:05,377 - #18 [
+INFO  21:50:05,378 - #22 2
+INFO  21:50:05,378 - #20 ]
+INFO  21:50:05,378 - #8 =
+INFO  21:50:05,378 - #23 a1
+INFO  21:50:05,378 - #18 [
+INFO  21:50:05,379 - #22 3
+INFO  21:50:05,379 - #20 ]
+INFO  21:50:05,379 - #5 ;
+INFO  21:50:05,379 - #23 iden
+INFO  21:50:05,380 - #18 [
+INFO  21:50:05,380 - #22 2
+INFO  21:50:05,380 - #20 ]
+INFO  21:50:05,380 - #8 =
+INFO  21:50:05,380 - #23 b
+INFO  21:50:05,380 - #5 ;
+INFO  21:50:05,381 - #23 iden
+INFO  21:50:05,381 - #18 [
+INFO  21:50:05,381 - #22 2
+INFO  21:50:05,381 - #20 ]
+INFO  21:50:05,381 - #8 =
+INFO  21:50:05,381 - #24 'a'
+INFO  21:50:05,381 - #5 ;
+INFO  21:50:05,381 - #23 iden
+INFO  21:50:05,381 - #18 [
+INFO  21:50:05,382 - #22 2
+INFO  21:50:05,382 - #20 ]
+INFO  21:50:05,382 - #8 =
+INFO  21:50:05,382 - #23 b1
+INFO  21:50:05,382 - #18 [
+INFO  21:50:05,382 - #22 3
+INFO  21:50:05,382 - #20 ]
+INFO  21:50:05,382 - #5 ;
+INFO  21:50:05,383 - #23 iden
+INFO  21:50:05,383 - #18 [
+INFO  21:50:05,383 - #22 2
+INFO  21:50:05,383 - #20 ]
+INFO  21:50:05,383 - #8 =
+INFO  21:50:05,383 - #23 c
+INFO  21:50:05,383 - #5 ;
+INFO  21:50:05,384 - #23 iden
+INFO  21:50:05,384 - #18 [
+INFO  21:50:05,384 - #22 2
+INFO  21:50:05,384 - #20 ]
+INFO  21:50:05,384 - #8 =
+INFO  21:50:05,384 - #25 true
+INFO  21:50:05,384 - #5 ;
+INFO  21:50:05,385 - #23 iden
+INFO  21:50:05,385 - #18 [
+INFO  21:50:05,385 - #22 2
+INFO  21:50:05,385 - #20 ]
+INFO  21:50:05,385 - #8 =
+INFO  21:50:05,385 - #23 c1
+INFO  21:50:05,385 - #18 [
+INFO  21:50:05,385 - #22 3
+INFO  21:50:05,386 - #20 ]
+INFO  21:50:05,386 - #5 ;
+INFO  21:50:05,386 - #23 iden
+INFO  21:50:05,386 - #18 [
+INFO  21:50:05,386 - #22 2
+INFO  21:50:05,386 - #20 ]
+INFO  21:50:05,386 - #8 =
+INFO  21:50:05,387 - #23 null
+INFO  21:50:05,387 - #5 ;
+INFO  21:50:05,387 - #23 iden
+INFO  21:50:05,387 - #18 [
+INFO  21:50:05,387 - #22 2
+INFO  21:50:05,387 - #20 ]
+INFO  21:50:05,388 - #8 =
+INFO  21:50:05,388 - #22 2
+INFO  21:50:05,388 - #30 %
+INFO  21:50:05,388 - #25 true
+INFO  21:50:05,389 - #5 ;
+INFO  21:50:05,389 - #4 }
+INFO  21:50:05,390 - #4 }
+INFO  21:50:05,394 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived2(
+        ProgNameDeclListDerived2(
+          ProgNameDeclListDerived2(
+            ProgNameDeclListDerived2(
+              ProgNameDeclListDerived2(
+                ProgNameDeclListDerived3(
+                ) [ProgNameDeclListDerived3]
+                DeclListType(
+                  TypeAccess(
+                   int
+                  ) [TypeAccess]
+                  DeclListDerived2(
+                    AIdentDecl(
+                     iden
+                    ) [AIdentDecl]
+                  ) [DeclListDerived2]
+                ) [DeclListType]
+              ) [ProgNameDeclListDerived2]
+              DeclListType(
+                TypeAccess(
+                 int
+                ) [TypeAccess]
+                DeclListDerived2(
+                  SIdentDecl(
+                   a
+                  ) [SIdentDecl]
+                ) [DeclListDerived2]
+              ) [DeclListType]
+            ) [ProgNameDeclListDerived2]
+            DeclListType(
+              TypeAccess(
+               char
+              ) [TypeAccess]
+              DeclListDerived2(
+                SIdentDecl(
+                 b
+                ) [SIdentDecl]
+              ) [DeclListDerived2]
+            ) [DeclListType]
+          ) [ProgNameDeclListDerived2]
+          DeclListType(
+            TypeAccess(
+             bool
+            ) [TypeAccess]
+            DeclListDerived2(
+              SIdentDecl(
+               c
+              ) [SIdentDecl]
+            ) [DeclListDerived2]
+          ) [DeclListType]
+        ) [ProgNameDeclListDerived2]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived2(
+            AIdentDecl(
+             a1
+            ) [AIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListType]
+      ) [ProgNameDeclListDerived2]
+      DeclListType(
+        TypeAccess(
+         char
+        ) [TypeAccess]
+        DeclListDerived2(
+          AIdentDecl(
+           b1
+          ) [AIdentDecl]
+        ) [DeclListDerived2]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    DeclListType(
+      TypeAccess(
+       bool
+      ) [TypeAccess]
+      DeclListDerived2(
+        AIdentDecl(
+         c1
+        ) [AIdentDecl]
+      ) [DeclListDerived2]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived1(
+                    StatementListDerived1(
+                      StatementListDerived1(
+                        StatementListDerived1(
+                          StatementListDerived1(
+                            StatementListDerived2(
+                            ) [StatementListDerived2]
+                            ADesignAsign(
+                              ArrIdent(
+                               iden
+                                TermExpr(
+                                  FactorTerm(
+                                    NumberConst(
+                                     2
+                                    ) [NumberConst]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                              ) [ArrIdent]
+                              TermExpr(
+                                FactorTerm(
+                                  SFactorDesignator(
+                                    Ident(
+                                     a
+                                    ) [Ident]
+                                  ) [SFactorDesignator]
+                                ) [FactorTerm]
+                              ) [TermExpr]
+                            ) [ADesignAsign]
+                          ) [StatementListDerived1]
+                          ADesignAsign(
+                            ArrIdent(
+                             iden
+                              TermExpr(
+                                FactorTerm(
+                                  NumberConst(
+                                   2
+                                  ) [NumberConst]
+                                ) [FactorTerm]
+                              ) [TermExpr]
+                            ) [ArrIdent]
+                            TermExpr(
+                              FactorTerm(
+                                NumberConst(
+                                 5
+                                ) [NumberConst]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [ADesignAsign]
+                        ) [StatementListDerived1]
+                        ADesignAsign(
+                          ArrIdent(
+                           iden
+                            TermExpr(
+                              FactorTerm(
+                                NumberConst(
+                                 2
+                                ) [NumberConst]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [ArrIdent]
+                          TermExpr(
+                            FactorTerm(
+                              AFactorDesignator(
+                                ArrIdent(
+                                 a1
+                                  TermExpr(
+                                    FactorTerm(
+                                      NumberConst(
+                                       3
+                                      ) [NumberConst]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [ArrIdent]
+                              ) [AFactorDesignator]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [ADesignAsign]
+                      ) [StatementListDerived1]
+                      ADesignAsign(
+                        ArrIdent(
+                         iden
+                          TermExpr(
+                            FactorTerm(
+                              NumberConst(
+                               2
+                              ) [NumberConst]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [ArrIdent]
+                        TermExpr(
+                          FactorTerm(
+                            SFactorDesignator(
+                              Ident(
+                               b
+                              ) [Ident]
+                            ) [SFactorDesignator]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [ADesignAsign]
+                    ) [StatementListDerived1]
+                    ADesignAsign(
+                      ArrIdent(
+                       iden
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [ArrIdent]
+                      TermExpr(
+                        FactorTerm(
+                          CharacterConst(
+                           'a'
+                          ) [CharacterConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [ADesignAsign]
+                  ) [StatementListDerived1]
+                  ADesignAsign(
+                    ArrIdent(
+                     iden
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           2
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [ArrIdent]
+                    TermExpr(
+                      FactorTerm(
+                        AFactorDesignator(
+                          ArrIdent(
+                           b1
+                            TermExpr(
+                              FactorTerm(
+                                NumberConst(
+                                 3
+                                ) [NumberConst]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [ArrIdent]
+                        ) [AFactorDesignator]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [ADesignAsign]
+                ) [StatementListDerived1]
+                ADesignAsign(
+                  ArrIdent(
+                   iden
+                    TermExpr(
+                      FactorTerm(
+                        NumberConst(
+                         2
+                        ) [NumberConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [ArrIdent]
+                  TermExpr(
+                    FactorTerm(
+                      SFactorDesignator(
+                        Ident(
+                         c
+                        ) [Ident]
+                      ) [SFactorDesignator]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [ADesignAsign]
+              ) [StatementListDerived1]
+              ADesignAsign(
+                ArrIdent(
+                 iden
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       2
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [ArrIdent]
+                TermExpr(
+                  FactorTerm(
+                    BooleanConst(
+                     true
+                    ) [BooleanConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [ADesignAsign]
+            ) [StatementListDerived1]
+            ADesignAsign(
+              ArrIdent(
+               iden
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     2
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [ArrIdent]
+              TermExpr(
+                FactorTerm(
+                  AFactorDesignator(
+                    ArrIdent(
+                     c1
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           3
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [ArrIdent]
+                  ) [AFactorDesignator]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [ADesignAsign]
+          ) [StatementListDerived1]
+          ADesignAsign(
+            ArrIdent(
+             iden
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   2
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [ArrIdent]
+            TermExpr(
+              FactorTerm(
+                SFactorDesignator(
+                  Ident(
+                   null
+                  ) [Ident]
+                ) [SFactorDesignator]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ADesignAsign]
+        ) [StatementListDerived1]
+        ADesignAsign(
+          ArrIdent(
+           iden
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 2
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ArrIdent]
+          TermExpr(
+            MulTerm(
+              FactorTerm(
+                NumberConst(
+                 2
+                ) [NumberConst]
+              ) [FactorTerm]
+              Per(
+               %
+              ) [Per]
+              BooleanConst(
+               true
+              ) [BooleanConst]
+            ) [MulTerm]
+          ) [TermExpr]
+        ) [ADesignAsign]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  21:50:05,396 - ====================================
+ERROR 21:50:05,424 - Greska: nedozvoljena dodela vrednosti tipa char identifikatoru tipa int
+	( int = char )
+	na liniji 10
+ERROR 21:50:05,425 - Greska: nedozvoljena dodela vrednosti tipa char identifikatoru tipa int
+	( int = char )
+	na liniji 11
+ERROR 21:50:05,425 - Greska: nedozvoljena dodela vrednosti tipa char identifikatoru tipa int
+	( int = char )
+	na liniji 12
+ERROR 21:50:05,425 - Greska: nedozvoljena dodela vrednosti tipa bool identifikatoru tipa int
+	( int = bool )
+	na liniji 13
+ERROR 21:50:05,425 - Greska: nedozvoljena dodela vrednosti tipa bool identifikatoru tipa int
+	( int = bool )
+	na liniji 14
+ERROR 21:50:05,425 - Greska: nedozvoljena dodela vrednosti tipa bool identifikatoru tipa int
+	( int = bool )
+	na liniji 15
+ERROR 21:50:05,425 - Greska: nedozvoljena dodela vrednosti tipa nepostojeci_tip identifikatoru tipa int
+	( int = nepostojeci_tip )
+	na liniji 16
+ERROR 21:50:05,425 - Greska: tipovi operanada operatora % moraju biti int
+	a ne tipova: int, bool
+	na liniji 17
+ERROR 21:50:05,426 - Greska: nedozvoljena dodela vrednosti tipa nepostojeci_tip identifikatoru tipa int
+	( int = nepostojeci_tip )
+	na liniji 17
+INFO  21:50:05,426 -  Broj print naredbi = 0
+INFO  21:50:05,426 -  Deklarisanih promenljivih ima = 7
+INFO  21:50:05,426 - ====================================

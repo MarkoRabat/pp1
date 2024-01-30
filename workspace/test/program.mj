@@ -1,12 +1,19 @@
 program Program
-int a1;
-int a, c[], b, d[];
+bool iden[];
+int a; char b; bool c;
+int a1[]; char b1[]; bool c1[];
 {
 	void main() {
-		a++;
-		c[3]++;
-		b--;
-		d[7]--;
-		a = a + a;
+		iden[2] = a;
+		iden[2] = 5;
+		iden[2] = a1[3];
+		iden[2] = b;
+		iden[2] = 'a';
+		iden[2] = b1[3];
+		iden[2] = c;
+		iden[2] = true;
+		iden[2] = c1[3];
+		iden[2] = null;
+		iden[2] = 2 % true;
 	}
 }
