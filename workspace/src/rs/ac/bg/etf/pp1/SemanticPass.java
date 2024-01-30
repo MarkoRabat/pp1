@@ -89,6 +89,19 @@ public class SemanticPass extends VisitorAdaptor {
 			return false;
 		}
 	}
+	public static boolean isArray(Struct type) { 
+		return type == intArray || type == charArray || type == boolArray; }
+	public boolean checkAndReportIfNotArray(SyntaxNode obj, Struct type) {
+		try {
+			if (!isArray(type))
+				throw new IllegalArgumentException();
+			return true;
+		}
+		catch (IllegalArgumentException e) {
+			spl.report_array_allocTo_nonArray(obj, type);
+			return false;
+		}
+	}
 	
 	public Obj insertIntoTab(int kind, String name, Struct type) throws NameAlreadyBoundException {
 		if (!isNoObj(Tab.find(name))) throw new NameAlreadyBoundException(name);
@@ -252,7 +265,13 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	public void visit(ArrayAlloc arrayAlloc) {
-		
+		Struct designType = arrayAlloc.getSimpleDesignator().obj.getType();
+		checkAndReportIfNotArray(arrayAlloc, designType);
+		Struct newArrayType = getArrayTypeOf(arrayAlloc.getType().struct);
+		if (designType != newArrayType)
+			spl.report_unallowed_assignment(designType, newArrayType, arrayAlloc);
+		Struct exprType = arrayAlloc.getExpr().struct;
+		checkAndReportIfNotInt("new type []", arrayAlloc, exprType);
 	}
 
 	public void visit(SDesignInc sDesignInc) {

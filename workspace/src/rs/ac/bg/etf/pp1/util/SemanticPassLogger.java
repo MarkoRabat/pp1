@@ -61,5 +61,10 @@ public class SemanticPassLogger {
 			+ SemanticPass.getTypeName(identType) + " = "
 			+ SemanticPass.getTypeName(exprType) + " )", obj);
 	}
+	public void report_array_allocTo_nonArray(SyntaxNode obj, Struct type) {
+		report_error(
+			"odrediste adrese alociranog niza ne moze biti primitivni tip "
+			+ SemanticPass.getTypeName(type), obj);
+	}
 	public void info_print() { log.info("Prepoznata naredba print"); }
 }

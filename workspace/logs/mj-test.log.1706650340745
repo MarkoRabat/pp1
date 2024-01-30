@@ -1,124 +1,124 @@
-INFO  22:33:37,957 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
-INFO  22:33:38,024 - #2 program
-INFO  22:33:38,024 - #23 Program
-INFO  22:33:38,025 - #23 int
-INFO  22:33:38,027 - #23 iden
-INFO  22:33:38,027 - #18 [
-INFO  22:33:38,027 - #20 ]
-INFO  22:33:38,027 - #5 ;
-INFO  22:33:38,028 - #23 int
-INFO  22:33:38,029 - #23 a
-INFO  22:33:38,029 - #5 ;
-INFO  22:33:38,029 - #23 char
-INFO  22:33:38,029 - #23 b
-INFO  22:33:38,029 - #5 ;
-INFO  22:33:38,030 - #23 bool
-INFO  22:33:38,030 - #23 c
-INFO  22:33:38,030 - #5 ;
-INFO  22:33:38,030 - #23 int
-INFO  22:33:38,030 - #23 a1
-INFO  22:33:38,030 - #18 [
-INFO  22:33:38,030 - #20 ]
-INFO  22:33:38,031 - #5 ;
-INFO  22:33:38,031 - #23 char
-INFO  22:33:38,031 - #23 b1
-INFO  22:33:38,031 - #18 [
-INFO  22:33:38,032 - #20 ]
-INFO  22:33:38,032 - #5 ;
-INFO  22:33:38,032 - #23 bool
-INFO  22:33:38,032 - #23 c1
-INFO  22:33:38,032 - #18 [
-INFO  22:33:38,032 - #20 ]
-INFO  22:33:38,032 - #5 ;
-INFO  22:33:38,033 - #3 {
-INFO  22:33:38,033 - #16 void
-INFO  22:33:38,034 - #23 main
-INFO  22:33:38,035 - #6 (
-INFO  22:33:38,035 - #7 )
-INFO  22:33:38,035 - #3 {
-INFO  22:33:38,038 - #23 a
-INFO  22:33:38,039 - #8 =
-INFO  22:33:38,040 - #13 new
-INFO  22:33:38,040 - #23 int
-INFO  22:33:38,040 - #18 [
-INFO  22:33:38,040 - #22 10
-INFO  22:33:38,040 - #20 ]
-INFO  22:33:38,041 - #5 ;
-INFO  22:33:38,041 - #23 b
-INFO  22:33:38,041 - #8 =
-INFO  22:33:38,042 - #13 new
-INFO  22:33:38,042 - #23 char
-INFO  22:33:38,042 - #18 [
-INFO  22:33:38,042 - #22 10
-INFO  22:33:38,042 - #20 ]
-INFO  22:33:38,042 - #5 ;
-INFO  22:33:38,042 - #23 c
-INFO  22:33:38,042 - #8 =
-INFO  22:33:38,042 - #13 new
-INFO  22:33:38,043 - #23 bool
-INFO  22:33:38,043 - #18 [
-INFO  22:33:38,043 - #22 10
-INFO  22:33:38,043 - #20 ]
-INFO  22:33:38,043 - #5 ;
-INFO  22:33:38,043 - #23 a
-INFO  22:33:38,043 - #8 =
-INFO  22:33:38,043 - #13 new
-INFO  22:33:38,043 - #23 char
-INFO  22:33:38,043 - #18 [
-INFO  22:33:38,044 - #22 10
-INFO  22:33:38,044 - #20 ]
-INFO  22:33:38,044 - #5 ;
-INFO  22:33:38,044 - #23 a
-INFO  22:33:38,044 - #8 =
-INFO  22:33:38,044 - #13 new
-INFO  22:33:38,044 - #23 bool
-INFO  22:33:38,044 - #18 [
-INFO  22:33:38,044 - #22 10
-INFO  22:33:38,044 - #20 ]
-INFO  22:33:38,044 - #5 ;
-INFO  22:33:38,044 - #23 iden
-INFO  22:33:38,044 - #8 =
-INFO  22:33:38,045 - #13 new
-INFO  22:33:38,045 - #23 int
-INFO  22:33:38,045 - #18 [
-INFO  22:33:38,045 - #22 10
-INFO  22:33:38,045 - #20 ]
-INFO  22:33:38,045 - #5 ;
-INFO  22:33:38,045 - #23 iden
-INFO  22:33:38,045 - #8 =
-INFO  22:33:38,045 - #13 new
-INFO  22:33:38,046 - #23 char
-INFO  22:33:38,046 - #18 [
-INFO  22:33:38,046 - #22 10
-INFO  22:33:38,046 - #20 ]
-INFO  22:33:38,046 - #5 ;
-INFO  22:33:38,046 - #23 iden
-INFO  22:33:38,046 - #8 =
-INFO  22:33:38,046 - #13 new
-INFO  22:33:38,046 - #23 bool
-INFO  22:33:38,047 - #18 [
-INFO  22:33:38,047 - #22 10
-INFO  22:33:38,047 - #20 ]
-INFO  22:33:38,047 - #5 ;
-INFO  22:33:38,047 - #23 iden
-INFO  22:33:38,047 - #8 =
-INFO  22:33:38,047 - #13 new
-INFO  22:33:38,047 - #23 int
-INFO  22:33:38,047 - #18 [
-INFO  22:33:38,047 - #24 'a'
-INFO  22:33:38,047 - #20 ]
-INFO  22:33:38,048 - #5 ;
-INFO  22:33:38,048 - #23 iden
-INFO  22:33:38,048 - #8 =
-INFO  22:33:38,048 - #13 new
-INFO  22:33:38,048 - #23 int
-INFO  22:33:38,048 - #18 [
-INFO  22:33:38,049 - #25 false
-INFO  22:33:38,049 - #20 ]
-INFO  22:33:38,049 - #5 ;
-INFO  22:33:38,049 - #4 }
-INFO  22:33:38,050 - #4 }
-INFO  22:33:38,054 - Prog(
+INFO  22:28:29,236 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  22:28:30,043 - #2 program
+INFO  22:28:30,043 - #23 Program
+INFO  22:28:30,043 - #23 int
+INFO  22:28:30,061 - #23 iden
+INFO  22:28:30,062 - #18 [
+INFO  22:28:30,062 - #20 ]
+INFO  22:28:30,062 - #5 ;
+INFO  22:28:30,063 - #23 int
+INFO  22:28:30,063 - #23 a
+INFO  22:28:30,064 - #5 ;
+INFO  22:28:30,064 - #23 char
+INFO  22:28:30,064 - #23 b
+INFO  22:28:30,064 - #5 ;
+INFO  22:28:30,064 - #23 bool
+INFO  22:28:30,064 - #23 c
+INFO  22:28:30,064 - #5 ;
+INFO  22:28:30,065 - #23 int
+INFO  22:28:30,065 - #23 a1
+INFO  22:28:30,065 - #18 [
+INFO  22:28:30,065 - #20 ]
+INFO  22:28:30,065 - #5 ;
+INFO  22:28:30,065 - #23 char
+INFO  22:28:30,067 - #23 b1
+INFO  22:28:30,067 - #18 [
+INFO  22:28:30,067 - #20 ]
+INFO  22:28:30,067 - #5 ;
+INFO  22:28:30,067 - #23 bool
+INFO  22:28:30,067 - #23 c1
+INFO  22:28:30,067 - #18 [
+INFO  22:28:30,068 - #20 ]
+INFO  22:28:30,068 - #5 ;
+INFO  22:28:30,068 - #3 {
+INFO  22:28:30,068 - #16 void
+INFO  22:28:30,079 - #23 main
+INFO  22:28:30,079 - #6 (
+INFO  22:28:30,079 - #7 )
+INFO  22:28:30,080 - #3 {
+INFO  22:28:30,088 - #23 a
+INFO  22:28:30,100 - #8 =
+INFO  22:28:30,100 - #13 new
+INFO  22:28:30,100 - #23 int
+INFO  22:28:30,101 - #18 [
+INFO  22:28:30,101 - #22 10
+INFO  22:28:30,101 - #20 ]
+INFO  22:28:30,102 - #5 ;
+INFO  22:28:30,102 - #23 b
+INFO  22:28:30,103 - #8 =
+INFO  22:28:30,103 - #13 new
+INFO  22:28:30,103 - #23 char
+INFO  22:28:30,103 - #18 [
+INFO  22:28:30,103 - #22 10
+INFO  22:28:30,103 - #20 ]
+INFO  22:28:30,104 - #5 ;
+INFO  22:28:30,104 - #23 c
+INFO  22:28:30,104 - #8 =
+INFO  22:28:30,104 - #13 new
+INFO  22:28:30,104 - #23 bool
+INFO  22:28:30,105 - #18 [
+INFO  22:28:30,105 - #22 10
+INFO  22:28:30,105 - #20 ]
+INFO  22:28:30,105 - #5 ;
+INFO  22:28:30,105 - #23 a
+INFO  22:28:30,105 - #8 =
+INFO  22:28:30,106 - #13 new
+INFO  22:28:30,106 - #23 char
+INFO  22:28:30,106 - #18 [
+INFO  22:28:30,106 - #22 10
+INFO  22:28:30,106 - #20 ]
+INFO  22:28:30,106 - #5 ;
+INFO  22:28:30,106 - #23 a
+INFO  22:28:30,107 - #8 =
+INFO  22:28:30,107 - #13 new
+INFO  22:28:30,107 - #23 bool
+INFO  22:28:30,107 - #18 [
+INFO  22:28:30,107 - #22 10
+INFO  22:28:30,107 - #20 ]
+INFO  22:28:30,107 - #5 ;
+INFO  22:28:30,107 - #23 iden
+INFO  22:28:30,108 - #8 =
+INFO  22:28:30,108 - #13 new
+INFO  22:28:30,108 - #23 int
+INFO  22:28:30,108 - #18 [
+INFO  22:28:30,108 - #22 10
+INFO  22:28:30,109 - #20 ]
+INFO  22:28:30,109 - #5 ;
+INFO  22:28:30,109 - #23 iden
+INFO  22:28:30,109 - #8 =
+INFO  22:28:30,109 - #13 new
+INFO  22:28:30,109 - #23 char
+INFO  22:28:30,110 - #18 [
+INFO  22:28:30,110 - #22 10
+INFO  22:28:30,110 - #20 ]
+INFO  22:28:30,110 - #5 ;
+INFO  22:28:30,110 - #23 iden
+INFO  22:28:30,110 - #8 =
+INFO  22:28:30,110 - #13 new
+INFO  22:28:30,111 - #23 bool
+INFO  22:28:30,111 - #18 [
+INFO  22:28:30,111 - #22 10
+INFO  22:28:30,111 - #20 ]
+INFO  22:28:30,111 - #5 ;
+INFO  22:28:30,111 - #23 iden
+INFO  22:28:30,111 - #8 =
+INFO  22:28:30,111 - #13 new
+INFO  22:28:30,112 - #23 int
+INFO  22:28:30,112 - #18 [
+INFO  22:28:30,112 - #24 'a'
+INFO  22:28:30,112 - #20 ]
+INFO  22:28:30,112 - #5 ;
+INFO  22:28:30,112 - #23 iden
+INFO  22:28:30,113 - #8 =
+INFO  22:28:30,113 - #13 new
+INFO  22:28:30,113 - #23 int
+INFO  22:28:30,113 - #18 [
+INFO  22:28:30,113 - #25 false
+INFO  22:28:30,113 - #20 ]
+INFO  22:28:30,114 - #5 ;
+INFO  22:28:30,114 - #4 }
+INFO  22:28:30,114 - #4 }
+INFO  22:28:30,117 - Prog(
   ProgName(
    Program
   ) [ProgName]
@@ -392,44 +392,44 @@ INFO  22:33:38,054 - Prog(
     ) [MethodDeclaration]
   ) [MethodDeclListDerived1]
 ) [Prog]
-INFO  22:33:38,055 - ====================================
-ERROR 22:33:38,093 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+INFO  22:28:30,118 - ====================================
+ERROR 22:28:30,168 - Greska: nedozvoljena dodela vrednosti nizovnog tipa tipu int
 	na liniji 7
-ERROR 22:33:38,093 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa int
+ERROR 22:28:30,168 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa int
 	( int = int array )
 	na liniji 7
-ERROR 22:33:38,093 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip char
+ERROR 22:28:30,168 - Greska: nedozvoljena dodela vrednosti nizovnog tipa tipu char
 	na liniji 8
-ERROR 22:33:38,093 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa char
+ERROR 22:28:30,168 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa char
 	( char = char array )
 	na liniji 8
-ERROR 22:33:38,093 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip bool
+ERROR 22:28:30,169 - Greska: nedozvoljena dodela vrednosti nizovnog tipa tipu bool
 	na liniji 9
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa bool
+ERROR 22:28:30,169 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa bool
 	( bool = bool array )
 	na liniji 9
-ERROR 22:33:38,094 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+ERROR 22:28:30,169 - Greska: nedozvoljena dodela vrednosti nizovnog tipa tipu int
 	na liniji 10
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa int
+ERROR 22:28:30,169 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa int
 	( int = char array )
 	na liniji 10
-ERROR 22:33:38,094 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+ERROR 22:28:30,169 - Greska: nedozvoljena dodela vrednosti nizovnog tipa tipu int
 	na liniji 11
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa int
+ERROR 22:28:30,169 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa int
 	( int = bool array )
 	na liniji 11
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa int array
+ERROR 22:28:30,170 - Greska: nedozvoljena dodela vrednosti tipa char array identifikatoru tipa int array
 	( int array = char array )
 	na liniji 13
-ERROR 22:33:38,094 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa int array
+ERROR 22:28:30,170 - Greska: nedozvoljena dodela vrednosti tipa bool array identifikatoru tipa int array
 	( int array = bool array )
 	na liniji 14
-ERROR 22:33:38,095 - Greska: tip operanda operatora new type [] mora biti int
+ERROR 22:28:30,170 - Greska: tip operanda operatora new mora biti int
 	a ne tipa: char
 	na liniji 15
-ERROR 22:33:38,095 - Greska: tip operanda operatora new type [] mora biti int
+ERROR 22:28:30,170 - Greska: tip operanda operatora new mora biti int
 	a ne tipa: bool
 	na liniji 16
-INFO  22:33:38,095 -  Broj print naredbi = 0
-INFO  22:33:38,095 -  Deklarisanih promenljivih ima = 7
-INFO  22:33:38,095 - ====================================
+INFO  22:28:30,170 -  Broj print naredbi = 0
+INFO  22:28:30,171 -  Deklarisanih promenljivih ima = 7
+INFO  22:28:30,171 - ====================================
