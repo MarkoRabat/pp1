@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 31/0/2024 19:59:23
+// 31/0/2024 21:45:40
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class StatementDerived4 extends Statement {
+public class Return extends Statement {
 
-    public StatementDerived4 () {
+    public Return () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class StatementDerived4 extends Statement {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("StatementDerived4(\n");
+        buffer.append("Return(\n");
 
         buffer.append(tab);
-        buffer.append(") [StatementDerived4]");
+        buffer.append(") [Return]");
         return buffer.toString();
     }
 }

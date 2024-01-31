@@ -1,0 +1,332 @@
+INFO  22:19:25,642 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  22:19:25,684 - #2 program
+INFO  22:19:25,684 - #23 Program
+INFO  22:19:25,685 - #19 const
+INFO  22:19:25,687 - #23 int
+INFO  22:19:25,688 - #23 x
+INFO  22:19:25,688 - #8 =
+INFO  22:19:25,688 - #22 3
+INFO  22:19:25,688 - #5 ;
+INFO  22:19:25,689 - #19 const
+INFO  22:19:25,689 - #23 int
+INFO  22:19:25,689 - #23 y
+INFO  22:19:25,689 - #8 =
+INFO  22:19:25,690 - #22 4
+INFO  22:19:25,690 - #5 ;
+INFO  22:19:25,690 - #3 {
+INFO  22:19:25,690 - #16 void
+INFO  22:19:25,691 - #23 main
+INFO  22:19:25,691 - #6 (
+INFO  22:19:25,691 - #7 )
+INFO  22:19:25,691 - #23 int
+INFO  22:19:25,693 - #23 a
+INFO  22:19:25,693 - #5 ;
+INFO  22:19:25,694 - #3 {
+INFO  22:19:25,694 - #17 print
+INFO  22:19:25,695 - #6 (
+INFO  22:19:25,695 - #23 x
+INFO  22:19:25,695 - #26 +
+INFO  22:19:25,695 - #23 y
+INFO  22:19:25,696 - #7 )
+INFO  22:19:25,696 - #5 ;
+INFO  22:19:25,696 - #17 print
+INFO  22:19:25,696 - #6 (
+INFO  22:19:25,697 - #23 x
+INFO  22:19:25,697 - #27 -
+INFO  22:19:25,697 - #23 y
+INFO  22:19:25,697 - #7 )
+INFO  22:19:25,697 - #5 ;
+INFO  22:19:25,697 - #17 print
+INFO  22:19:25,697 - #6 (
+INFO  22:19:25,697 - #23 x
+INFO  22:19:25,697 - #28 *
+INFO  22:19:25,697 - #23 y
+INFO  22:19:25,698 - #7 )
+INFO  22:19:25,698 - #5 ;
+INFO  22:19:25,698 - #17 print
+INFO  22:19:25,698 - #6 (
+INFO  22:19:25,698 - #23 x
+INFO  22:19:25,698 - #29 /
+INFO  22:19:25,699 - #23 y
+INFO  22:19:25,699 - #7 )
+INFO  22:19:25,699 - #5 ;
+INFO  22:19:25,699 - #17 print
+INFO  22:19:25,699 - #6 (
+INFO  22:19:25,699 - #23 x
+INFO  22:19:25,700 - #30 %
+INFO  22:19:25,700 - #23 y
+INFO  22:19:25,700 - #7 )
+INFO  22:19:25,700 - #5 ;
+INFO  22:19:25,700 - #23 a
+INFO  22:19:25,700 - #8 =
+INFO  22:19:25,700 - #23 x
+INFO  22:19:25,700 - #28 *
+INFO  22:19:25,701 - #23 x
+INFO  22:19:25,701 - #26 +
+INFO  22:19:25,701 - #23 y
+INFO  22:19:25,701 - #5 ;
+INFO  22:19:25,701 - #17 print
+INFO  22:19:25,701 - #6 (
+INFO  22:19:25,701 - #23 a
+INFO  22:19:25,701 - #26 +
+INFO  22:19:25,701 - #23 a
+INFO  22:19:25,702 - #7 )
+INFO  22:19:25,702 - #5 ;
+INFO  22:19:25,702 - #4 }
+INFO  22:19:25,702 - #4 }
+INFO  22:19:25,706 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived3(
+      ) [ProgNameDeclListDerived3]
+      ConstDeclListType(
+        TypeAccess(
+         int
+        ) [TypeAccess]
+        ConstDeclListDerived2(
+          CIdentDecl(
+           x
+            NInit(
+             3
+            ) [NInit]
+          ) [CIdentDecl]
+        ) [ConstDeclListDerived2]
+      ) [ConstDeclListType]
+    ) [ProgNameDeclListDerived2]
+    ConstDeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      ConstDeclListDerived2(
+        CIdentDecl(
+         y
+          NInit(
+           4
+          ) [NInit]
+        ) [CIdentDecl]
+      ) [ConstDeclListDerived2]
+    ) [ConstDeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived1(
+        VarDeclListDerived2(
+        ) [VarDeclListDerived2]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived2(
+            SIdentDecl(
+             a
+            ) [SIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListType]
+      ) [VarDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived1(
+                    StatementListDerived2(
+                    ) [StatementListDerived2]
+                    PrintStmt(
+                      AddExpr(
+                        TermExpr(
+                          FactorTerm(
+                            SFactorDesignator(
+                              Ident(
+                               x
+                              ) [Ident]
+                            ) [SFactorDesignator]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                        Plus(
+                         +
+                        ) [Plus]
+                        FactorTerm(
+                          SFactorDesignator(
+                            Ident(
+                             y
+                            ) [Ident]
+                          ) [SFactorDesignator]
+                        ) [FactorTerm]
+                      ) [AddExpr]
+                    ) [PrintStmt]
+                  ) [StatementListDerived1]
+                  PrintStmt(
+                    AddExpr(
+                      TermExpr(
+                        FactorTerm(
+                          SFactorDesignator(
+                            Ident(
+                             x
+                            ) [Ident]
+                          ) [SFactorDesignator]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                      Minus(
+                       -
+                      ) [Minus]
+                      FactorTerm(
+                        SFactorDesignator(
+                          Ident(
+                           y
+                          ) [Ident]
+                        ) [SFactorDesignator]
+                      ) [FactorTerm]
+                    ) [AddExpr]
+                  ) [PrintStmt]
+                ) [StatementListDerived1]
+                PrintStmt(
+                  TermExpr(
+                    MulTerm(
+                      FactorTerm(
+                        SFactorDesignator(
+                          Ident(
+                           x
+                          ) [Ident]
+                        ) [SFactorDesignator]
+                      ) [FactorTerm]
+                      Mul(
+                       *
+                      ) [Mul]
+                      SFactorDesignator(
+                        Ident(
+                         y
+                        ) [Ident]
+                      ) [SFactorDesignator]
+                    ) [MulTerm]
+                  ) [TermExpr]
+                ) [PrintStmt]
+              ) [StatementListDerived1]
+              PrintStmt(
+                TermExpr(
+                  MulTerm(
+                    FactorTerm(
+                      SFactorDesignator(
+                        Ident(
+                         x
+                        ) [Ident]
+                      ) [SFactorDesignator]
+                    ) [FactorTerm]
+                    Div(
+                     /
+                    ) [Div]
+                    SFactorDesignator(
+                      Ident(
+                       y
+                      ) [Ident]
+                    ) [SFactorDesignator]
+                  ) [MulTerm]
+                ) [TermExpr]
+              ) [PrintStmt]
+            ) [StatementListDerived1]
+            PrintStmt(
+              TermExpr(
+                MulTerm(
+                  FactorTerm(
+                    SFactorDesignator(
+                      Ident(
+                       x
+                      ) [Ident]
+                    ) [SFactorDesignator]
+                  ) [FactorTerm]
+                  Per(
+                   %
+                  ) [Per]
+                  SFactorDesignator(
+                    Ident(
+                     y
+                    ) [Ident]
+                  ) [SFactorDesignator]
+                ) [MulTerm]
+              ) [TermExpr]
+            ) [PrintStmt]
+          ) [StatementListDerived1]
+          SDesignAsign(
+            Ident(
+             a
+            ) [Ident]
+            AddExpr(
+              TermExpr(
+                MulTerm(
+                  FactorTerm(
+                    SFactorDesignator(
+                      Ident(
+                       x
+                      ) [Ident]
+                    ) [SFactorDesignator]
+                  ) [FactorTerm]
+                  Mul(
+                   *
+                  ) [Mul]
+                  SFactorDesignator(
+                    Ident(
+                     x
+                    ) [Ident]
+                  ) [SFactorDesignator]
+                ) [MulTerm]
+              ) [TermExpr]
+              Plus(
+               +
+              ) [Plus]
+              FactorTerm(
+                SFactorDesignator(
+                  Ident(
+                   y
+                  ) [Ident]
+                ) [SFactorDesignator]
+              ) [FactorTerm]
+            ) [AddExpr]
+          ) [SDesignAsign]
+        ) [StatementListDerived1]
+        PrintStmt(
+          AddExpr(
+            TermExpr(
+              FactorTerm(
+                SFactorDesignator(
+                  Ident(
+                   a
+                  ) [Ident]
+                ) [SFactorDesignator]
+              ) [FactorTerm]
+            ) [TermExpr]
+            Plus(
+             +
+            ) [Plus]
+            FactorTerm(
+              SFactorDesignator(
+                Ident(
+                 a
+                ) [Ident]
+              ) [SFactorDesignator]
+            ) [FactorTerm]
+          ) [AddExpr]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  22:19:25,706 - ====================================
+INFO  22:19:25,729 - Prepoznata naredba print
+INFO  22:19:25,729 - Prepoznata naredba print
+INFO  22:19:25,729 - Prepoznata naredba print
+INFO  22:19:25,729 - Prepoznata naredba print
+INFO  22:19:25,730 - Prepoznata naredba print
+INFO  22:19:25,730 - Prepoznata naredba print
+INFO  22:19:25,730 -  Broj print naredbi = 6
+INFO  22:19:25,730 -  Deklarisanih promenljivih ima = 1
+INFO  22:19:25,730 -  Deklarisanih simbolickih konstanti ima = 2
+INFO  22:19:25,730 - ====================================
+INFO  22:19:25,745 - Prevodjenje uspesno zavrseno

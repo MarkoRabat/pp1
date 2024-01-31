@@ -22,6 +22,9 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(countLocals.getCount());
 	}
 	
+	public void visit(SDesignAsign sDesignAsign) {
+		Code.store(sDesignAsign.getSimpleDesignator().obj); }
+	
 	public void visit(PrintStmt pritnStmt) {
 		Struct exprType = pritnStmt.getExpr().struct;
 		if (exprType == Tab.charType) {
@@ -29,9 +32,42 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.loadConst(5); Code.put(Code.print);
 	}
 	
+	public void visit(PrintOnWith printOnWith) {
+		Code.loadConst(printOnWith.getN2());
+		Struct exprType = printOnWith.getExpr().struct;
+		if (exprType == Tab.charType)
+			 Code.put(Code.bprint);
+		else Code.put(Code.print);
+	}
+	
+	public void visit(Return ret) {
+		Code.put(Code.exit); Code.put(Code.return_); }
+	
+	public void visit(AddExpr addExpr) {
+		switch(addExpr.getAddop().obj.getName()) {
+		case "+": Code.put(Code.add); break;
+		case "-": Code.put(Code.sub); break;
+		default: break;
+		}
+	}
+	
+	public void visit(MulTerm mulTerm) {
+		switch(mulTerm.getMulop().obj.getName()) {
+		case "*": Code.put(Code.mul); break;
+		case "/": Code.put(Code.div); break;
+		case "%": Code.put(Code.rem); break;
+		default: break;
+		}
+	}
+	
 	public void visit(NumberConst numberConst) {
 		Obj con = Tab.insert(Obj.Con, "$", numberConst.struct);
 		con.setLevel(0); con.setAdr(numberConst.getN1()); Code.load(con);
+	}
+	
+	public void visit(Ident ident) {
+		if (ident.getParent().getClass() == SDesignAsign.class) return;
+		Code.load(ident.obj);
 	}
 
 }

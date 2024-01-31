@@ -1,9 +1,19 @@
 program Program
-	int m, n;
+	const int x = 3;
+	const int y = 4;
 {
 	void main() int a; {
-		print(1);
-
-		print(2);
+		print(x + y, 0);	// 7
+		print(eol);
+		print(x - y, 1);	// -1
+		print(eol);
+		print(x * y, 2);	// 12
+		print(eol);
+		print(x / y, 3);	// 0
+		print(eol);
+		print(x % y, 4);	// 3
+		print(eol);
+		a = x * x + y;
+		print(a + a, 5);	// 26
 	}
 }

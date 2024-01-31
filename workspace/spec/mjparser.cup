@@ -144,7 +144,7 @@ Statement ::= (SDesignAsign) SimpleDesignator EQUAL Expr:e SEMI
 			| READ LPAREN ArrayDesignator RPAREN SEMI
 			| (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 			| (PrintOnWith) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI
-			| RETURN SEMI;
+			| (Return) RETURN SEMI;
 
 Expr ::= (AddExpr) Expr Addop Term
 		| (NegExpr) MINUS Term

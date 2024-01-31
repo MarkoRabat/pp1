@@ -1,0 +1,108 @@
+INFO  20:00:18,882 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  20:00:18,936 - #2 program
+INFO  20:00:18,936 - #23 Program
+INFO  20:00:18,936 - #23 int
+INFO  20:00:18,939 - #23 m
+INFO  20:00:18,939 - #14 ,
+INFO  20:00:18,939 - #23 n
+INFO  20:00:18,940 - #5 ;
+INFO  20:00:18,940 - #3 {
+INFO  20:00:18,941 - #16 void
+INFO  20:00:18,942 - #23 main
+INFO  20:00:18,942 - #6 (
+INFO  20:00:18,943 - #7 )
+INFO  20:00:18,943 - #23 int
+INFO  20:00:18,944 - #23 a
+INFO  20:00:18,944 - #5 ;
+INFO  20:00:18,944 - #3 {
+INFO  20:00:18,944 - #17 print
+INFO  20:00:18,945 - #6 (
+INFO  20:00:18,945 - #22 1
+INFO  20:00:18,945 - #7 )
+INFO  20:00:18,947 - #5 ;
+INFO  20:00:18,947 - #17 print
+INFO  20:00:18,947 - #6 (
+INFO  20:00:18,948 - #22 2
+INFO  20:00:18,948 - #7 )
+INFO  20:00:18,948 - #5 ;
+INFO  20:00:18,948 - #4 }
+INFO  20:00:18,949 - #4 }
+INFO  20:00:18,950 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived3(
+    ) [ProgNameDeclListDerived3]
+    DeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      DeclListDerived1(
+        SIdentDecl(
+         m
+        ) [SIdentDecl]
+        DeclListDerived2(
+          SIdentDecl(
+           n
+          ) [SIdentDecl]
+        ) [DeclListDerived2]
+      ) [DeclListDerived1]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived1(
+        VarDeclListDerived2(
+        ) [VarDeclListDerived2]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived2(
+            SIdentDecl(
+             a
+            ) [SIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListType]
+      ) [VarDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          PrintStmt(
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 1
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               2
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  20:00:18,950 - ====================================
+INFO  20:00:18,968 - Prepoznata naredba print
+INFO  20:00:18,968 - Prepoznata naredba print
+INFO  20:00:18,968 -  Broj print naredbi = 2
+INFO  20:00:18,968 -  Deklarisanih promenljivih ima = 3
+INFO  20:00:18,968 -  Deklarisanih simbolickih konstanti ima = 0
+INFO  20:00:18,969 - ====================================
+INFO  20:00:18,972 - Prevodjenje uspesno zavrseno

@@ -1,0 +1,172 @@
+INFO  21:48:03,575 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  21:48:03,618 - #2 program
+INFO  21:48:03,618 - #23 Program
+INFO  21:48:03,618 - #23 cosnt
+INFO  21:48:03,623 - #23 int
+INFO  21:48:03,624 - #23 x
+ERROR 21:48:03,624 - 
+Sintaksna greska na liniji 2
+INFO  21:48:03,624 - #8 =
+INFO  21:48:03,624 - #22 3
+INFO  21:48:03,625 - #5 ;
+INFO  21:48:03,626 - #3 {
+INFO  21:48:03,626 - #16 void
+INFO  21:48:03,626 - #23 main
+ERROR 21:48:03,627 - Izvrsen oporavak do ,(|;) u deklaraciji promenljivih
+INFO  21:48:03,638 - #6 (
+INFO  21:48:03,639 - #7 )
+INFO  21:48:03,639 - #23 int
+INFO  21:48:03,640 - #23 a
+INFO  21:48:03,640 - #5 ;
+INFO  21:48:03,640 - #3 {
+INFO  21:48:03,641 - #17 print
+INFO  21:48:03,643 - #6 (
+INFO  21:48:03,643 - #23 x
+INFO  21:48:03,643 - #7 )
+INFO  21:48:03,644 - #5 ;
+INFO  21:48:03,644 - #23 a
+INFO  21:48:03,645 - #8 =
+INFO  21:48:03,645 - #22 7
+INFO  21:48:03,645 - #5 ;
+INFO  21:48:03,645 - #17 print
+INFO  21:48:03,646 - #6 (
+INFO  21:48:03,646 - #23 a
+INFO  21:48:03,646 - #7 )
+INFO  21:48:03,646 - #5 ;
+INFO  21:48:03,646 - #9 return
+INFO  21:48:03,646 - #5 ;
+INFO  21:48:03,647 - #17 print
+INFO  21:48:03,648 - #6 (
+INFO  21:48:03,648 - #22 1
+INFO  21:48:03,648 - #7 )
+INFO  21:48:03,648 - #5 ;
+INFO  21:48:03,648 - #17 print
+INFO  21:48:03,648 - #6 (
+INFO  21:48:03,649 - #22 2
+INFO  21:48:03,649 - #7 )
+INFO  21:48:03,649 - #5 ;
+INFO  21:48:03,649 - #4 }
+INFO  21:48:03,649 - #4 }
+INFO  21:48:03,651 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived3(
+    ) [ProgNameDeclListDerived3]
+    DeclListType(
+      TypeAccess(
+       cosnt
+      ) [TypeAccess]
+      DeclListDerived2(
+        IdentifierDerived1(
+        ) [IdentifierDerived1]
+      ) [DeclListDerived2]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived1(
+        VarDeclListDerived2(
+        ) [VarDeclListDerived2]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived2(
+            SIdentDecl(
+             a
+            ) [SIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListType]
+      ) [VarDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived2(
+                  ) [StatementListDerived2]
+                  PrintStmt(
+                    TermExpr(
+                      FactorTerm(
+                        SFactorDesignator(
+                          Ident(
+                           x
+                          ) [Ident]
+                        ) [SFactorDesignator]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [PrintStmt]
+                ) [StatementListDerived1]
+                SDesignAsign(
+                  Ident(
+                   a
+                  ) [Ident]
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       7
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [SDesignAsign]
+              ) [StatementListDerived1]
+              PrintStmt(
+                TermExpr(
+                  FactorTerm(
+                    SFactorDesignator(
+                      Ident(
+                       a
+                      ) [Ident]
+                    ) [SFactorDesignator]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [PrintStmt]
+            ) [StatementListDerived1]
+            Return(
+            ) [Return]
+          ) [StatementListDerived1]
+          PrintStmt(
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 1
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               2
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  21:48:03,652 - ====================================
+ERROR 21:48:03,671 - Greska: nepostojeci tip cosnt
+	na liniji 2
+ERROR 21:48:03,672 - Greska: ime x nije definisano
+	na liniji 5
+INFO  21:48:03,672 - Prepoznata naredba print
+INFO  21:48:03,672 - Prepoznata naredba print
+INFO  21:48:03,672 - Prepoznata naredba print
+INFO  21:48:03,672 - Prepoznata naredba print
+INFO  21:48:03,672 -  Broj print naredbi = 4
+INFO  21:48:03,672 -  Deklarisanih promenljivih ima = 1
+INFO  21:48:03,673 -  Deklarisanih simbolickih konstanti ima = 0
+INFO  21:48:03,673 - ====================================
+ERROR 21:48:03,674 - Prevodjenje NIJE uspesno zavrseno

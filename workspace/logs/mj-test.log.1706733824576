@@ -1,0 +1,175 @@
+INFO  21:35:22,681 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  21:35:22,726 - #2 program
+INFO  21:35:22,726 - #23 Program
+INFO  21:35:22,726 - #23 int
+INFO  21:35:22,729 - #23 x
+INFO  21:35:22,729 - #5 ;
+INFO  21:35:22,730 - #3 {
+INFO  21:35:22,730 - #16 void
+INFO  21:35:22,731 - #23 main
+INFO  21:35:22,731 - #6 (
+INFO  21:35:22,731 - #7 )
+INFO  21:35:22,731 - #23 int
+INFO  21:35:22,732 - #23 a
+INFO  21:35:22,732 - #5 ;
+INFO  21:35:22,733 - #3 {
+INFO  21:35:22,733 - #23 x
+INFO  21:35:22,734 - #8 =
+INFO  21:35:22,734 - #22 3
+INFO  21:35:22,734 - #5 ;
+INFO  21:35:22,735 - #17 print
+INFO  21:35:22,735 - #6 (
+INFO  21:35:22,735 - #23 x
+INFO  21:35:22,735 - #7 )
+INFO  21:35:22,736 - #5 ;
+INFO  21:35:22,737 - #23 a
+INFO  21:35:22,737 - #8 =
+INFO  21:35:22,737 - #22 7
+INFO  21:35:22,737 - #5 ;
+INFO  21:35:22,737 - #17 print
+INFO  21:35:22,737 - #6 (
+INFO  21:35:22,737 - #23 a
+INFO  21:35:22,737 - #7 )
+INFO  21:35:22,738 - #5 ;
+INFO  21:35:22,738 - #17 print
+INFO  21:35:22,738 - #6 (
+INFO  21:35:22,738 - #22 1
+INFO  21:35:22,738 - #7 )
+INFO  21:35:22,738 - #5 ;
+INFO  21:35:22,738 - #17 print
+INFO  21:35:22,739 - #6 (
+INFO  21:35:22,739 - #22 2
+INFO  21:35:22,739 - #7 )
+INFO  21:35:22,739 - #5 ;
+INFO  21:35:22,739 - #4 }
+INFO  21:35:22,739 - #4 }
+INFO  21:35:22,741 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived3(
+    ) [ProgNameDeclListDerived3]
+    DeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      DeclListDerived2(
+        SIdentDecl(
+         x
+        ) [SIdentDecl]
+      ) [DeclListDerived2]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived1(
+        VarDeclListDerived2(
+        ) [VarDeclListDerived2]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived2(
+            SIdentDecl(
+             a
+            ) [SIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListType]
+      ) [VarDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived2(
+                  ) [StatementListDerived2]
+                  SDesignAsign(
+                    Ident(
+                     x
+                    ) [Ident]
+                    TermExpr(
+                      FactorTerm(
+                        NumberConst(
+                         3
+                        ) [NumberConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [SDesignAsign]
+                ) [StatementListDerived1]
+                PrintStmt(
+                  TermExpr(
+                    FactorTerm(
+                      SFactorDesignator(
+                        Ident(
+                         x
+                        ) [Ident]
+                      ) [SFactorDesignator]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [PrintStmt]
+              ) [StatementListDerived1]
+              SDesignAsign(
+                Ident(
+                 a
+                ) [Ident]
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     7
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [SDesignAsign]
+            ) [StatementListDerived1]
+            PrintStmt(
+              TermExpr(
+                FactorTerm(
+                  SFactorDesignator(
+                    Ident(
+                     a
+                    ) [Ident]
+                  ) [SFactorDesignator]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [PrintStmt]
+          ) [StatementListDerived1]
+          PrintStmt(
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 1
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               2
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  21:35:22,742 - ====================================
+INFO  21:35:22,760 - Prepoznata naredba print
+INFO  21:35:22,760 - Prepoznata naredba print
+INFO  21:35:22,760 - Prepoznata naredba print
+INFO  21:35:22,760 - Prepoznata naredba print
+INFO  21:35:22,760 -  Broj print naredbi = 4
+INFO  21:35:22,760 -  Deklarisanih promenljivih ima = 2
+INFO  21:35:22,760 -  Deklarisanih simbolickih konstanti ima = 0
+INFO  21:35:22,760 - ====================================
+INFO  21:35:22,772 - Prevodjenje uspesno zavrseno

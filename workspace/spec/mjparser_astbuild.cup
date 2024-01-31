@@ -149,7 +149,7 @@ Statement ::= (SDesignAsign) SimpleDesignator:S1 EQUAL Expr:e SEMI {: RESULT=new
 			| READ LPAREN ArrayDesignator:A1 RPAREN SEMI {: RESULT=new StatementDerived3(A1); RESULT.setLine(A1left); :}
 			| (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
 			| (PrintOnWith) PRINT LPAREN Expr:E1 COMMA NUMBER:N2 RPAREN SEMI {: RESULT=new PrintOnWith(E1, N2); RESULT.setLine(E1left); :}
-			| RETURN SEMI {: RESULT=new StatementDerived4(); :};
+			| (Return) RETURN SEMI {: RESULT=new Return(); :};
 
 Expr ::= (AddExpr) Expr:E1 Addop:A2 Term:T3 {: RESULT=new AddExpr(E1, A2, T3); RESULT.setLine(E1left); :}
 		| (NegExpr) MINUS:M1 Term:T2 {: RESULT=new NegExpr(M1, T2); RESULT.setLine(M1left); :}
