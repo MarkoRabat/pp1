@@ -54,6 +54,7 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	public static String getTypeName(Struct type) {
+		if (type == null) return "nepostojeci_tip";
 		switch(type.getKind()) {
 		case Struct.Int: return "int";
 		case Struct.Char: return "char";
@@ -422,24 +423,33 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 
 	public void visit(ArrIdent arrIdent) {
-		try {
-			arrIdent.obj = findInTab(arrIdent.getName());
-			if (arrIdent.obj.getType().getKind() != Struct.Array)
-				throw new IllegalArgumentException(arrIdent.obj.getName());
-			if (arrIdent.getExpr().struct != Tab.intType)
-				 throw new IllegalArgumentException(
-				     getTypeName(arrIdent.getExpr().struct));
-		}
+		try { arrIdent.obj = findInTab(arrIdent.getName()); }
 		catch (NameNotFoundException e) {
 			spl.report_name_isNot_defined(e.getMessage(), arrIdent);
 			arrIdent.obj = Tab.noObj;
 		}
-		catch (IllegalArgumentException e) {
-			if (getTypeName(arrIdent.getExpr().struct).equals(e.getMessage()))
-				spl.report_index_nonInt_type(e.getMessage(), arrIdent);
-			else spl.report_indexing_nonArray(e.getMessage(), arrIdent);
-			arrIdent.obj = Tab.noObj;
+		if (!checkAndReportIfNotArray(arrIdent, arrIdent.obj.getType())) {
+			arrIdent.obj = Tab.noObj; return; }
+		if (!checkAndReportIfNotInt("[]", arrIdent, arrIdent.getExpr().struct)) {
+			arrIdent.obj = Tab.noObj; return; }
+	}
+
+	public void visit(NsArrIdent nsArrIdent) {
+		String namespace = nsArrIdent.getNamesp();
+		try { findInTab(namespace); }
+		catch (NameNotFoundException e) {
+			spl.report_name_isNot_defined(e.getMessage(), nsArrIdent);
+			nsArrIdent.obj = Tab.noObj; return; }
+		String identName = nsArrIdent.getName();
+		try { nsArrIdent.obj = findInTab(":" + namespace + "|" + identName); }
+		catch (NameNotFoundException e) {
+			spl.report_name_isNot_defined(e.getMessage(), nsArrIdent);
+			nsArrIdent.obj = Tab.noObj;
 		}
+		if (!checkAndReportIfNotArray(nsArrIdent, nsArrIdent.obj.getType())) {
+			nsArrIdent.obj = Tab.noObj; return; }
+		if (!checkAndReportIfNotInt("[]", nsArrIdent, nsArrIdent.getExpr().struct)) {
+			nsArrIdent.obj = Tab.noObj; return; }
 	}
 	
 	public void visit(Mul mul) {

@@ -1,0 +1,162 @@
+INFO  03:24:05,505 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  03:24:05,563 - #2 program
+INFO  03:24:05,563 - #23 Program
+INFO  03:24:05,563 - #23 int
+INFO  03:24:05,567 - #23 a
+INFO  03:24:05,567 - #14 ,
+INFO  03:24:05,567 - #23 c
+INFO  03:24:05,568 - #18 [
+INFO  03:24:05,568 - #20 ]
+INFO  03:24:05,568 - #14 ,
+INFO  03:24:05,568 - #23 d
+INFO  03:24:05,568 - #18 [
+INFO  03:24:05,569 - #20 ]
+INFO  03:24:05,569 - #14 ,
+INFO  03:24:05,569 - #23 r
+INFO  03:24:05,569 - #18 [
+INFO  03:24:05,569 - #20 ]
+INFO  03:24:05,569 - #5 ;
+INFO  03:24:05,570 - #19 const
+INFO  03:24:05,571 - #23 int
+INFO  03:24:05,571 - #23 a1
+INFO  03:24:05,571 - #8 =
+INFO  03:24:05,571 - #22 17
+INFO  03:24:05,571 - #14 ,
+INFO  03:24:05,573 - #23 b1
+INFO  03:24:05,573 - #8 =
+INFO  03:24:05,573 - #22 3
+INFO  03:24:05,573 - #14 ,
+INFO  03:24:05,574 - #23 c1
+INFO  03:24:05,574 - #8 =
+INFO  03:24:05,574 - #22 13
+INFO  03:24:05,574 - #5 ;
+INFO  03:24:05,575 - #3 {
+INFO  03:24:05,575 - #16 void
+INFO  03:24:05,576 - #23 main
+INFO  03:24:05,576 - #6 (
+INFO  03:24:05,577 - #7 )
+INFO  03:24:05,577 - #3 {
+INFO  03:24:05,579 - #23 c
+INFO  03:24:05,580 - #18 [
+INFO  03:24:05,580 - #22 3
+INFO  03:24:05,580 - #20 ]
+INFO  03:24:05,581 - #8 =
+INFO  03:24:05,582 - #23 d
+INFO  03:24:05,582 - #18 [
+INFO  03:24:05,582 - #25 true
+INFO  03:24:05,582 - #20 ]
+INFO  03:24:05,583 - #5 ;
+INFO  03:24:05,583 - #4 }
+INFO  03:24:05,584 - #4 }
+INFO  03:24:05,585 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived3(
+      ) [ProgNameDeclListDerived3]
+      DeclListType(
+        TypeAccess(
+         int
+        ) [TypeAccess]
+        DeclListDerived1(
+          SIdentDecl(
+           a
+          ) [SIdentDecl]
+          DeclListDerived1(
+            AIdentDecl(
+             c
+            ) [AIdentDecl]
+            DeclListDerived1(
+              AIdentDecl(
+               d
+              ) [AIdentDecl]
+              DeclListDerived2(
+                AIdentDecl(
+                 r
+                ) [AIdentDecl]
+              ) [DeclListDerived2]
+            ) [DeclListDerived1]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    ConstDeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      ConstDeclListDerived1(
+        CIdentDecl(
+         a1
+          NInit(
+           17
+          ) [NInit]
+        ) [CIdentDecl]
+        ConstDeclListDerived1(
+          CIdentDecl(
+           b1
+            NInit(
+             3
+            ) [NInit]
+          ) [CIdentDecl]
+          ConstDeclListDerived2(
+            CIdentDecl(
+             c1
+              NInit(
+               13
+              ) [NInit]
+            ) [CIdentDecl]
+          ) [ConstDeclListDerived2]
+        ) [ConstDeclListDerived1]
+      ) [ConstDeclListDerived1]
+    ) [ConstDeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        ADesignAsign(
+          ArrIdent(
+           c
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 3
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ArrIdent]
+          TermExpr(
+            FactorTerm(
+              AFactorDesignator(
+                ArrIdent(
+                 d
+                  TermExpr(
+                    FactorTerm(
+                      BooleanConst(
+                       true
+                      ) [BooleanConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [ArrIdent]
+              ) [AFactorDesignator]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ADesignAsign]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  03:24:05,586 - ====================================
+ERROR 03:24:05,615 - Greska: tip operanda operatora [] mora biti int
+	a ne tipa: bool
+	na liniji 6

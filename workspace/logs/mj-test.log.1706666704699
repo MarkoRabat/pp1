@@ -1,0 +1,123 @@
+INFO  03:04:06,338 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  03:04:06,381 - #2 program
+INFO  03:04:06,381 - #23 Program
+INFO  03:04:06,381 - #23 int
+INFO  03:04:06,383 - #23 a
+INFO  03:04:06,383 - #14 ,
+INFO  03:04:06,383 - #23 c
+INFO  03:04:06,383 - #18 [
+INFO  03:04:06,383 - #20 ]
+INFO  03:04:06,384 - #5 ;
+INFO  03:04:06,384 - #3 {
+INFO  03:04:06,384 - #16 void
+INFO  03:04:06,385 - #23 main
+INFO  03:04:06,385 - #6 (
+INFO  03:04:06,386 - #7 )
+INFO  03:04:06,386 - #3 {
+INFO  03:04:06,387 - #23 a
+INFO  03:04:06,387 - #18 [
+INFO  03:04:06,387 - #22 3
+INFO  03:04:06,388 - #20 ]
+INFO  03:04:06,388 - #8 =
+INFO  03:04:06,389 - #22 2
+INFO  03:04:06,389 - #5 ;
+INFO  03:04:06,389 - #23 a
+INFO  03:04:06,390 - #8 =
+INFO  03:04:06,390 - #23 c
+INFO  03:04:06,390 - #18 [
+INFO  03:04:06,390 - #24 'g'
+INFO  03:04:06,390 - #20 ]
+INFO  03:04:06,391 - #5 ;
+INFO  03:04:06,391 - #4 }
+INFO  03:04:06,391 - #4 }
+INFO  03:04:06,392 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived3(
+    ) [ProgNameDeclListDerived3]
+    DeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      DeclListDerived1(
+        SIdentDecl(
+         a
+        ) [SIdentDecl]
+        DeclListDerived2(
+          AIdentDecl(
+           c
+          ) [AIdentDecl]
+        ) [DeclListDerived2]
+      ) [DeclListDerived1]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          ADesignAsign(
+            ArrIdent(
+             a
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   3
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [ArrIdent]
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 2
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ADesignAsign]
+        ) [StatementListDerived1]
+        SDesignAsign(
+          Ident(
+           a
+          ) [Ident]
+          TermExpr(
+            FactorTerm(
+              AFactorDesignator(
+                ArrIdent(
+                 c
+                  TermExpr(
+                    FactorTerm(
+                      CharacterConst(
+                       'g'
+                      ) [CharacterConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [ArrIdent]
+              ) [AFactorDesignator]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [SDesignAsign]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  03:04:06,393 - ====================================
+ERROR 03:04:06,422 - Greska: indeksiran identifikator primitivnog tipa
+	na liniji 5
+ERROR 03:04:06,423 - Greska: tip operanda operatora [] mora biti int
+	a ne tipa: char
+	na liniji 6
+INFO  03:04:06,423 -  Broj print naredbi = 0
+INFO  03:04:06,423 -  Deklarisanih promenljivih ima = 2
+INFO  03:04:06,423 -  Deklarisanih simbolickih konstanti ima = 0
+INFO  03:04:06,423 - ====================================

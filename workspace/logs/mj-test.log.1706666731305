@@ -1,0 +1,165 @@
+INFO  03:05:04,706 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  03:05:04,752 - #2 program
+INFO  03:05:04,753 - #23 Program
+INFO  03:05:04,753 - #23 int
+INFO  03:05:04,755 - #23 a
+INFO  03:05:04,756 - #14 ,
+INFO  03:05:04,756 - #23 c
+INFO  03:05:04,756 - #18 [
+INFO  03:05:04,756 - #20 ]
+INFO  03:05:04,756 - #5 ;
+INFO  03:05:04,757 - #3 {
+INFO  03:05:04,758 - #16 void
+INFO  03:05:04,759 - #23 main
+INFO  03:05:04,759 - #6 (
+INFO  03:05:04,759 - #7 )
+INFO  03:05:04,759 - #3 {
+INFO  03:05:04,760 - #23 a
+INFO  03:05:04,761 - #18 [
+INFO  03:05:04,761 - #22 3
+INFO  03:05:04,761 - #20 ]
+INFO  03:05:04,762 - #8 =
+INFO  03:05:04,762 - #22 2
+INFO  03:05:04,762 - #5 ;
+INFO  03:05:04,762 - #23 a
+INFO  03:05:04,764 - #8 =
+INFO  03:05:04,764 - #23 c
+INFO  03:05:04,764 - #18 [
+INFO  03:05:04,764 - #24 'g'
+INFO  03:05:04,764 - #20 ]
+INFO  03:05:04,765 - #5 ;
+INFO  03:05:04,765 - #23 a
+INFO  03:05:04,765 - #8 =
+INFO  03:05:04,765 - #23 a
+INFO  03:05:04,765 - #26 +
+INFO  03:05:04,766 - #22 5
+INFO  03:05:04,766 - #30 %
+INFO  03:05:04,766 - #22 2
+INFO  03:05:04,766 - #5 ;
+INFO  03:05:04,767 - #4 }
+INFO  03:05:04,767 - #4 }
+INFO  03:05:04,769 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived3(
+    ) [ProgNameDeclListDerived3]
+    DeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      DeclListDerived1(
+        SIdentDecl(
+         a
+        ) [SIdentDecl]
+        DeclListDerived2(
+          AIdentDecl(
+           c
+          ) [AIdentDecl]
+        ) [DeclListDerived2]
+      ) [DeclListDerived1]
+    ) [DeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived2(
+            ) [StatementListDerived2]
+            ADesignAsign(
+              ArrIdent(
+               a
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     3
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [ArrIdent]
+              TermExpr(
+                FactorTerm(
+                  NumberConst(
+                   2
+                  ) [NumberConst]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [ADesignAsign]
+          ) [StatementListDerived1]
+          SDesignAsign(
+            Ident(
+             a
+            ) [Ident]
+            TermExpr(
+              FactorTerm(
+                AFactorDesignator(
+                  ArrIdent(
+                   c
+                    TermExpr(
+                      FactorTerm(
+                        CharacterConst(
+                         'g'
+                        ) [CharacterConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [ArrIdent]
+                ) [AFactorDesignator]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [SDesignAsign]
+        ) [StatementListDerived1]
+        SDesignAsign(
+          Ident(
+           a
+          ) [Ident]
+          AddExpr(
+            TermExpr(
+              FactorTerm(
+                SFactorDesignator(
+                  Ident(
+                   a
+                  ) [Ident]
+                ) [SFactorDesignator]
+              ) [FactorTerm]
+            ) [TermExpr]
+            Plus(
+             +
+            ) [Plus]
+            MulTerm(
+              FactorTerm(
+                NumberConst(
+                 5
+                ) [NumberConst]
+              ) [FactorTerm]
+              Per(
+               %
+              ) [Per]
+              NumberConst(
+               2
+              ) [NumberConst]
+            ) [MulTerm]
+          ) [AddExpr]
+        ) [SDesignAsign]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  03:05:04,769 - ====================================
+ERROR 03:05:04,790 - Greska: indeksiran identifikator primitivnog tipa
+	na liniji 5
+ERROR 03:05:04,790 - Greska: tip operanda operatora [] mora biti int
+	a ne tipa: char
+	na liniji 6
+INFO  03:05:04,791 -  Broj print naredbi = 0
+INFO  03:05:04,791 -  Deklarisanih promenljivih ima = 2
+INFO  03:05:04,791 -  Deklarisanih simbolickih konstanti ima = 0
+INFO  03:05:04,791 - ====================================

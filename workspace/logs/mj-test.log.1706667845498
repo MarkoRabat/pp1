@@ -1,0 +1,159 @@
+INFO  03:23:21,831 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  03:23:21,880 - #2 program
+INFO  03:23:21,881 - #23 Program
+INFO  03:23:21,881 - #23 int
+INFO  03:23:21,883 - #23 a
+INFO  03:23:21,883 - #14 ,
+INFO  03:23:21,884 - #23 c
+INFO  03:23:21,884 - #18 [
+INFO  03:23:21,884 - #20 ]
+INFO  03:23:21,885 - #14 ,
+INFO  03:23:21,885 - #23 d
+INFO  03:23:21,885 - #18 [
+INFO  03:23:21,885 - #20 ]
+INFO  03:23:21,885 - #14 ,
+INFO  03:23:21,885 - #23 r
+INFO  03:23:21,886 - #18 [
+INFO  03:23:21,886 - #20 ]
+INFO  03:23:21,886 - #5 ;
+INFO  03:23:21,886 - #19 const
+INFO  03:23:21,887 - #23 int
+INFO  03:23:21,887 - #23 a1
+INFO  03:23:21,887 - #8 =
+INFO  03:23:21,887 - #22 17
+INFO  03:23:21,888 - #14 ,
+INFO  03:23:21,889 - #23 b1
+INFO  03:23:21,889 - #8 =
+INFO  03:23:21,889 - #22 3
+INFO  03:23:21,889 - #14 ,
+INFO  03:23:21,889 - #23 c1
+INFO  03:23:21,889 - #8 =
+INFO  03:23:21,890 - #22 13
+INFO  03:23:21,890 - #5 ;
+INFO  03:23:21,890 - #3 {
+INFO  03:23:21,890 - #16 void
+INFO  03:23:21,891 - #23 main
+INFO  03:23:21,892 - #6 (
+INFO  03:23:21,892 - #7 )
+INFO  03:23:21,892 - #3 {
+INFO  03:23:21,894 - #23 c
+INFO  03:23:21,895 - #18 [
+INFO  03:23:21,895 - #22 3
+INFO  03:23:21,895 - #20 ]
+INFO  03:23:21,897 - #8 =
+INFO  03:23:21,897 - #23 d
+INFO  03:23:21,897 - #18 [
+INFO  03:23:21,897 - #25 true
+INFO  03:23:21,897 - #20 ]
+INFO  03:23:21,898 - #5 ;
+INFO  03:23:21,898 - #4 }
+INFO  03:23:21,899 - #4 }
+INFO  03:23:21,900 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived3(
+      ) [ProgNameDeclListDerived3]
+      DeclListType(
+        TypeAccess(
+         int
+        ) [TypeAccess]
+        DeclListDerived1(
+          SIdentDecl(
+           a
+          ) [SIdentDecl]
+          DeclListDerived1(
+            AIdentDecl(
+             c
+            ) [AIdentDecl]
+            DeclListDerived1(
+              AIdentDecl(
+               d
+              ) [AIdentDecl]
+              DeclListDerived2(
+                AIdentDecl(
+                 r
+                ) [AIdentDecl]
+              ) [DeclListDerived2]
+            ) [DeclListDerived1]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    ConstDeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      ConstDeclListDerived1(
+        CIdentDecl(
+         a1
+          NInit(
+           17
+          ) [NInit]
+        ) [CIdentDecl]
+        ConstDeclListDerived1(
+          CIdentDecl(
+           b1
+            NInit(
+             3
+            ) [NInit]
+          ) [CIdentDecl]
+          ConstDeclListDerived2(
+            CIdentDecl(
+             c1
+              NInit(
+               13
+              ) [NInit]
+            ) [CIdentDecl]
+          ) [ConstDeclListDerived2]
+        ) [ConstDeclListDerived1]
+      ) [ConstDeclListDerived1]
+    ) [ConstDeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        ADesignAsign(
+          ArrIdent(
+           c
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 3
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ArrIdent]
+          TermExpr(
+            FactorTerm(
+              AFactorDesignator(
+                ArrIdent(
+                 d
+                  TermExpr(
+                    FactorTerm(
+                      BooleanConst(
+                       true
+                      ) [BooleanConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [ArrIdent]
+              ) [AFactorDesignator]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ADesignAsign]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  03:23:21,901 - ====================================

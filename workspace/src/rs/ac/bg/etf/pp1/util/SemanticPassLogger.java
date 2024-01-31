@@ -3,6 +3,7 @@ package rs.ac.bg.etf.pp1.util;
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.SemanticPass;
+import rs.ac.bg.etf.pp1.ast.ArrIdent;
 import rs.ac.bg.etf.pp1.ast.SyntaxNode;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
@@ -67,6 +68,10 @@ public class SemanticPassLogger {
 			+ " konstantu nije dozvoljen", sDesignAsign);
 	}
 	public void report_array_allocTo_nonArray(SyntaxNode obj, Struct type) {
+		if (obj instanceof ArrIdent) {
+			
+			return;
+		}
 		report_error(
 			"odrediste adrese alociranog niza ne moze biti primitivni tip "
 			+ SemanticPass.getTypeName(type), obj);
