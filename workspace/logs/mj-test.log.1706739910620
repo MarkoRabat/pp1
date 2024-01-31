@@ -1,196 +1,196 @@
-INFO  23:30:07,409 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
-INFO  23:30:07,518 - #2 program
-INFO  23:30:07,519 - #23 Program
-INFO  23:30:07,519 - #21 namespace
-INFO  23:30:07,526 - #23 ns1
-INFO  23:30:07,527 - #3 {
-INFO  23:30:07,529 - #23 int
-INFO  23:30:07,531 - #23 x
-INFO  23:30:07,532 - #8 =
-INFO  23:30:07,532 - #22 3
-INFO  23:30:07,532 - #5 ;
-INFO  23:30:07,533 - #23 int
-INFO  23:30:07,534 - #23 y
-INFO  23:30:07,534 - #8 =
-INFO  23:30:07,534 - #22 4
-INFO  23:30:07,534 - #5 ;
-INFO  23:30:07,534 - #23 int
-INFO  23:30:07,535 - #23 a
-INFO  23:30:07,535 - #5 ;
-INFO  23:30:07,535 - #3 {
-INFO  23:30:07,536 - #4 }
-INFO  23:30:07,536 - #4 }
-INFO  23:30:07,536 - #23 int
-INFO  23:30:07,537 - #23 x
-INFO  23:30:07,538 - #8 =
-INFO  23:30:07,538 - #22 30
-INFO  23:30:07,538 - #5 ;
-INFO  23:30:07,538 - #23 int
-INFO  23:30:07,539 - #23 y
-INFO  23:30:07,539 - #8 =
-INFO  23:30:07,539 - #22 40
-INFO  23:30:07,539 - #5 ;
-INFO  23:30:07,539 - #3 {
-INFO  23:30:07,539 - #16 void
-INFO  23:30:07,541 - #23 main
-INFO  23:30:07,541 - #6 (
-INFO  23:30:07,541 - #7 )
-INFO  23:30:07,542 - #3 {
-INFO  23:30:07,542 - #17 print
-INFO  23:30:07,543 - #6 (
-INFO  23:30:07,543 - #23 x
-INFO  23:30:07,544 - #26 +
-INFO  23:30:07,545 - #23 y
-INFO  23:30:07,546 - #14 ,
-INFO  23:30:07,546 - #22 5
-INFO  23:30:07,546 - #7 )
-INFO  23:30:07,546 - #5 ;
-INFO  23:30:07,546 - #17 print
-INFO  23:30:07,547 - #6 (
-INFO  23:30:07,548 - #23 eol
-INFO  23:30:07,548 - #7 )
-INFO  23:30:07,548 - #5 ;
-INFO  23:30:07,548 - #17 print
-INFO  23:30:07,549 - #6 (
-INFO  23:30:07,549 - #23 ns1
-INFO  23:30:07,549 - #11 ::
-INFO  23:30:07,549 - #23 x
-INFO  23:30:07,549 - #27 -
-INFO  23:30:07,550 - #23 ns1
-INFO  23:30:07,550 - #11 ::
-INFO  23:30:07,550 - #23 y
-INFO  23:30:07,551 - #14 ,
-INFO  23:30:07,551 - #22 5
-INFO  23:30:07,551 - #7 )
-INFO  23:30:07,551 - #5 ;
-INFO  23:30:07,552 - #17 print
-INFO  23:30:07,552 - #6 (
-INFO  23:30:07,552 - #23 eol
-INFO  23:30:07,552 - #7 )
-INFO  23:30:07,552 - #5 ;
-INFO  23:30:07,552 - #17 print
-INFO  23:30:07,553 - #6 (
-INFO  23:30:07,553 - #23 ns1
-INFO  23:30:07,553 - #11 ::
-INFO  23:30:07,553 - #23 x
-INFO  23:30:07,553 - #28 *
-INFO  23:30:07,553 - #23 ns1
-INFO  23:30:07,554 - #11 ::
-INFO  23:30:07,554 - #23 y
-INFO  23:30:07,554 - #14 ,
-INFO  23:30:07,555 - #22 5
-INFO  23:30:07,555 - #7 )
-INFO  23:30:07,555 - #5 ;
-INFO  23:30:07,555 - #17 print
-INFO  23:30:07,555 - #6 (
-INFO  23:30:07,555 - #23 eol
-INFO  23:30:07,555 - #7 )
-INFO  23:30:07,556 - #5 ;
-INFO  23:30:07,556 - #17 print
-INFO  23:30:07,556 - #6 (
-INFO  23:30:07,556 - #23 ns1
-INFO  23:30:07,556 - #11 ::
-INFO  23:30:07,556 - #23 x
-INFO  23:30:07,556 - #29 /
-INFO  23:30:07,556 - #23 ns1
-INFO  23:30:07,556 - #11 ::
-INFO  23:30:07,557 - #23 y
-INFO  23:30:07,557 - #14 ,
-INFO  23:30:07,557 - #22 5
-INFO  23:30:07,557 - #7 )
-INFO  23:30:07,557 - #5 ;
-INFO  23:30:07,557 - #17 print
-INFO  23:30:07,558 - #6 (
-INFO  23:30:07,558 - #23 eol
-INFO  23:30:07,558 - #7 )
-INFO  23:30:07,558 - #5 ;
-INFO  23:30:07,558 - #17 print
-INFO  23:30:07,558 - #6 (
-INFO  23:30:07,558 - #23 ns1
-INFO  23:30:07,558 - #11 ::
-INFO  23:30:07,558 - #23 x
-INFO  23:30:07,558 - #30 %
-INFO  23:30:07,558 - #23 ns1
-INFO  23:30:07,559 - #11 ::
-INFO  23:30:07,559 - #23 y
-INFO  23:30:07,559 - #14 ,
-INFO  23:30:07,559 - #22 5
-INFO  23:30:07,559 - #7 )
-INFO  23:30:07,559 - #5 ;
-INFO  23:30:07,559 - #17 print
-INFO  23:30:07,559 - #6 (
-INFO  23:30:07,560 - #23 eol
-INFO  23:30:07,560 - #7 )
-INFO  23:30:07,560 - #5 ;
-INFO  23:30:07,560 - #23 ns1
-INFO  23:30:07,560 - #11 ::
-INFO  23:30:07,560 - #23 a
-INFO  23:30:07,560 - #8 =
-INFO  23:30:07,560 - #23 ns1
-INFO  23:30:07,561 - #11 ::
-INFO  23:30:07,561 - #23 x
-INFO  23:30:07,561 - #28 *
-INFO  23:30:07,561 - #23 ns1
-INFO  23:30:07,561 - #11 ::
-INFO  23:30:07,561 - #23 x
-INFO  23:30:07,561 - #26 +
-INFO  23:30:07,561 - #23 ns1
-INFO  23:30:07,562 - #11 ::
-INFO  23:30:07,562 - #23 y
-INFO  23:30:07,562 - #5 ;
-INFO  23:30:07,562 - #17 print
-INFO  23:30:07,562 - #6 (
-INFO  23:30:07,563 - #23 ns1
-INFO  23:30:07,563 - #11 ::
-INFO  23:30:07,563 - #23 a
-INFO  23:30:07,563 - #26 +
-INFO  23:30:07,563 - #23 ns1
-INFO  23:30:07,563 - #11 ::
-INFO  23:30:07,564 - #23 a
-INFO  23:30:07,564 - #26 +
-INFO  23:30:07,564 - #22 17
-INFO  23:30:07,564 - #14 ,
-INFO  23:30:07,565 - #22 5
-INFO  23:30:07,565 - #7 )
-INFO  23:30:07,565 - #5 ;
-INFO  23:30:07,565 - #17 print
-INFO  23:30:07,565 - #6 (
-INFO  23:30:07,565 - #24 'a'
-INFO  23:30:07,565 - #7 )
-INFO  23:30:07,566 - #5 ;
-INFO  23:30:07,566 - #17 print
-INFO  23:30:07,566 - #6 (
-INFO  23:30:07,566 - #24 'b'
-INFO  23:30:07,566 - #7 )
-INFO  23:30:07,566 - #5 ;
-INFO  23:30:07,567 - #17 print
-INFO  23:30:07,567 - #6 (
-INFO  23:30:07,568 - #24 'c'
-INFO  23:30:07,568 - #7 )
-INFO  23:30:07,568 - #5 ;
-INFO  23:30:07,568 - #17 print
-INFO  23:30:07,568 - #6 (
-INFO  23:30:07,568 - #23 eol
-INFO  23:30:07,568 - #7 )
-INFO  23:30:07,569 - #5 ;
-INFO  23:30:07,569 - #17 print
-INFO  23:30:07,569 - #6 (
-INFO  23:30:07,569 - #25 true
-INFO  23:30:07,569 - #7 )
-INFO  23:30:07,570 - #5 ;
-INFO  23:30:07,570 - #17 print
-INFO  23:30:07,570 - #6 (
-INFO  23:30:07,571 - #23 eol
-INFO  23:30:07,571 - #7 )
-INFO  23:30:07,571 - #5 ;
-INFO  23:30:07,571 - #17 print
-INFO  23:30:07,571 - #6 (
-INFO  23:30:07,571 - #25 false
-INFO  23:30:07,571 - #7 )
-INFO  23:30:07,571 - #5 ;
-INFO  23:30:07,572 - #4 }
-INFO  23:30:07,572 - #4 }
-INFO  23:30:07,579 - Prog(
+INFO  23:22:57,053 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  23:22:57,202 - #2 program
+INFO  23:22:57,202 - #23 Program
+INFO  23:22:57,203 - #21 namespace
+INFO  23:22:57,207 - #23 ns1
+INFO  23:22:57,207 - #3 {
+INFO  23:22:57,208 - #23 int
+INFO  23:22:57,211 - #23 x
+INFO  23:22:57,212 - #8 =
+INFO  23:22:57,212 - #22 3
+INFO  23:22:57,213 - #5 ;
+INFO  23:22:57,213 - #23 int
+INFO  23:22:57,214 - #23 y
+INFO  23:22:57,214 - #8 =
+INFO  23:22:57,214 - #22 4
+INFO  23:22:57,214 - #5 ;
+INFO  23:22:57,214 - #23 int
+INFO  23:22:57,215 - #23 a
+INFO  23:22:57,215 - #5 ;
+INFO  23:22:57,216 - #3 {
+INFO  23:22:57,221 - #4 }
+INFO  23:22:57,222 - #4 }
+INFO  23:22:57,223 - #23 int
+INFO  23:22:57,224 - #23 x
+INFO  23:22:57,226 - #8 =
+INFO  23:22:57,226 - #22 30
+INFO  23:22:57,226 - #5 ;
+INFO  23:22:57,226 - #23 int
+INFO  23:22:57,226 - #23 y
+INFO  23:22:57,226 - #8 =
+INFO  23:22:57,227 - #22 40
+INFO  23:22:57,227 - #5 ;
+INFO  23:22:57,227 - #3 {
+INFO  23:22:57,227 - #16 void
+INFO  23:22:57,229 - #23 main
+INFO  23:22:57,229 - #6 (
+INFO  23:22:57,230 - #7 )
+INFO  23:22:57,231 - #3 {
+INFO  23:22:57,232 - #17 print
+INFO  23:22:57,233 - #6 (
+INFO  23:22:57,233 - #23 x
+INFO  23:22:57,234 - #26 +
+INFO  23:22:57,236 - #23 y
+INFO  23:22:57,237 - #14 ,
+INFO  23:22:57,238 - #22 5
+INFO  23:22:57,238 - #7 )
+INFO  23:22:57,238 - #5 ;
+INFO  23:22:57,238 - #17 print
+INFO  23:22:57,239 - #6 (
+INFO  23:22:57,239 - #23 eol
+INFO  23:22:57,239 - #7 )
+INFO  23:22:57,240 - #5 ;
+INFO  23:22:57,240 - #17 print
+INFO  23:22:57,240 - #6 (
+INFO  23:22:57,241 - #23 ns1
+INFO  23:22:57,241 - #11 ::
+INFO  23:22:57,241 - #23 x
+INFO  23:22:57,241 - #27 -
+INFO  23:22:57,242 - #23 ns1
+INFO  23:22:57,242 - #11 ::
+INFO  23:22:57,242 - #23 y
+INFO  23:22:57,242 - #14 ,
+INFO  23:22:57,242 - #22 5
+INFO  23:22:57,243 - #7 )
+INFO  23:22:57,243 - #5 ;
+INFO  23:22:57,243 - #17 print
+INFO  23:22:57,243 - #6 (
+INFO  23:22:57,244 - #23 eol
+INFO  23:22:57,244 - #7 )
+INFO  23:22:57,244 - #5 ;
+INFO  23:22:57,244 - #17 print
+INFO  23:22:57,245 - #6 (
+INFO  23:22:57,245 - #23 ns1
+INFO  23:22:57,245 - #11 ::
+INFO  23:22:57,245 - #23 x
+INFO  23:22:57,246 - #28 *
+INFO  23:22:57,246 - #23 ns1
+INFO  23:22:57,246 - #11 ::
+INFO  23:22:57,247 - #23 y
+INFO  23:22:57,247 - #14 ,
+INFO  23:22:57,247 - #22 5
+INFO  23:22:57,248 - #7 )
+INFO  23:22:57,248 - #5 ;
+INFO  23:22:57,248 - #17 print
+INFO  23:22:57,248 - #6 (
+INFO  23:22:57,249 - #23 eol
+INFO  23:22:57,249 - #7 )
+INFO  23:22:57,249 - #5 ;
+INFO  23:22:57,249 - #17 print
+INFO  23:22:57,249 - #6 (
+INFO  23:22:57,249 - #23 ns1
+INFO  23:22:57,249 - #11 ::
+INFO  23:22:57,250 - #23 x
+INFO  23:22:57,250 - #29 /
+INFO  23:22:57,250 - #23 ns1
+INFO  23:22:57,252 - #11 ::
+INFO  23:22:57,252 - #23 y
+INFO  23:22:57,252 - #14 ,
+INFO  23:22:57,252 - #22 5
+INFO  23:22:57,252 - #7 )
+INFO  23:22:57,252 - #5 ;
+INFO  23:22:57,253 - #17 print
+INFO  23:22:57,253 - #6 (
+INFO  23:22:57,253 - #23 eol
+INFO  23:22:57,253 - #7 )
+INFO  23:22:57,253 - #5 ;
+INFO  23:22:57,253 - #17 print
+INFO  23:22:57,253 - #6 (
+INFO  23:22:57,253 - #23 ns1
+INFO  23:22:57,253 - #11 ::
+INFO  23:22:57,254 - #23 x
+INFO  23:22:57,254 - #30 %
+INFO  23:22:57,254 - #23 ns1
+INFO  23:22:57,254 - #11 ::
+INFO  23:22:57,254 - #23 y
+INFO  23:22:57,255 - #14 ,
+INFO  23:22:57,255 - #22 5
+INFO  23:22:57,255 - #7 )
+INFO  23:22:57,255 - #5 ;
+INFO  23:22:57,255 - #17 print
+INFO  23:22:57,255 - #6 (
+INFO  23:22:57,256 - #23 eol
+INFO  23:22:57,257 - #7 )
+INFO  23:22:57,258 - #5 ;
+INFO  23:22:57,259 - #23 ns1
+INFO  23:22:57,259 - #11 ::
+INFO  23:22:57,259 - #23 a
+INFO  23:22:57,259 - #8 =
+INFO  23:22:57,259 - #23 ns1
+INFO  23:22:57,260 - #11 ::
+INFO  23:22:57,260 - #23 x
+INFO  23:22:57,260 - #28 *
+INFO  23:22:57,260 - #23 ns1
+INFO  23:22:57,260 - #11 ::
+INFO  23:22:57,260 - #23 x
+INFO  23:22:57,260 - #26 +
+INFO  23:22:57,261 - #23 ns1
+INFO  23:22:57,261 - #11 ::
+INFO  23:22:57,261 - #23 y
+INFO  23:22:57,261 - #5 ;
+INFO  23:22:57,261 - #17 print
+INFO  23:22:57,262 - #6 (
+INFO  23:22:57,263 - #23 ns1
+INFO  23:22:57,263 - #11 ::
+INFO  23:22:57,263 - #23 a
+INFO  23:22:57,263 - #26 +
+INFO  23:22:57,264 - #23 ns1
+INFO  23:22:57,264 - #11 ::
+INFO  23:22:57,264 - #23 a
+INFO  23:22:57,264 - #26 +
+INFO  23:22:57,264 - #22 17
+INFO  23:22:57,264 - #14 ,
+INFO  23:22:57,265 - #22 5
+INFO  23:22:57,265 - #7 )
+INFO  23:22:57,265 - #5 ;
+INFO  23:22:57,266 - #17 print
+INFO  23:22:57,266 - #6 (
+INFO  23:22:57,266 - #24 'a'
+INFO  23:22:57,266 - #7 )
+INFO  23:22:57,272 - #5 ;
+INFO  23:22:57,275 - #17 print
+INFO  23:22:57,275 - #6 (
+INFO  23:22:57,277 - #24 'b'
+INFO  23:22:57,278 - #7 )
+INFO  23:22:57,280 - #5 ;
+INFO  23:22:57,280 - #17 print
+INFO  23:22:57,281 - #6 (
+INFO  23:22:57,282 - #24 'c'
+INFO  23:22:57,282 - #7 )
+INFO  23:22:57,283 - #5 ;
+INFO  23:22:57,284 - #17 print
+INFO  23:22:57,285 - #6 (
+INFO  23:22:57,285 - #23 eol
+INFO  23:22:57,285 - #7 )
+INFO  23:22:57,286 - #5 ;
+INFO  23:22:57,287 - #17 print
+INFO  23:22:57,287 - #6 (
+INFO  23:22:57,287 - #25 true
+INFO  23:22:57,287 - #7 )
+INFO  23:22:57,290 - #5 ;
+INFO  23:22:57,294 - #17 print
+INFO  23:22:57,296 - #6 (
+INFO  23:22:57,297 - #23 eol
+INFO  23:22:57,297 - #7 )
+INFO  23:22:57,297 - #5 ;
+INFO  23:22:57,300 - #17 print
+INFO  23:22:57,305 - #6 (
+INFO  23:22:57,305 - #25 false
+INFO  23:22:57,305 - #7 )
+INFO  23:22:57,305 - #5 ;
+INFO  23:22:57,306 - #4 }
+INFO  23:22:57,306 - #4 }
+INFO  23:22:57,325 - Prog(
   ProgName(
    Program
   ) [ProgName]
@@ -649,27 +649,27 @@ INFO  23:30:07,579 - Prog(
     ) [MethodDeclaration]
   ) [MethodDeclListDerived1]
 ) [Prog]
-INFO  23:30:07,582 - ====================================
-INFO  23:30:07,615 - Prepoznata naredba print
-INFO  23:30:07,615 - Prepoznata naredba print
-INFO  23:30:07,616 - Prepoznata naredba print
-INFO  23:30:07,617 - Prepoznata naredba print
-INFO  23:30:07,618 - Prepoznata naredba print
-INFO  23:30:07,618 - Prepoznata naredba print
-INFO  23:30:07,618 - Prepoznata naredba print
-INFO  23:30:07,618 - Prepoznata naredba print
-INFO  23:30:07,618 - Prepoznata naredba print
-INFO  23:30:07,618 - Prepoznata naredba print
-INFO  23:30:07,619 - Prepoznata naredba print
-INFO  23:30:07,619 - Prepoznata naredba print
-INFO  23:30:07,619 - Prepoznata naredba print
-INFO  23:30:07,619 - Prepoznata naredba print
-INFO  23:30:07,619 - Prepoznata naredba print
-INFO  23:30:07,619 - Prepoznata naredba print
-INFO  23:30:07,619 - Prepoznata naredba print
-INFO  23:30:07,619 - Prepoznata naredba print
-INFO  23:30:07,619 -  Broj print naredbi = 18
-INFO  23:30:07,619 -  Deklarisanih promenljivih ima = 5
-INFO  23:30:07,620 -  Deklarisanih simbolickih konstanti ima = 0
-INFO  23:30:07,620 - ====================================
-INFO  23:30:07,634 - Prevodjenje uspesno zavrseno
+INFO  23:22:57,330 - ====================================
+INFO  23:22:57,380 - Prepoznata naredba print
+INFO  23:22:57,380 - Prepoznata naredba print
+INFO  23:22:57,381 - Prepoznata naredba print
+INFO  23:22:57,381 - Prepoznata naredba print
+INFO  23:22:57,382 - Prepoznata naredba print
+INFO  23:22:57,382 - Prepoznata naredba print
+INFO  23:22:57,383 - Prepoznata naredba print
+INFO  23:22:57,383 - Prepoznata naredba print
+INFO  23:22:57,383 - Prepoznata naredba print
+INFO  23:22:57,383 - Prepoznata naredba print
+INFO  23:22:57,383 - Prepoznata naredba print
+INFO  23:22:57,383 - Prepoznata naredba print
+INFO  23:22:57,383 - Prepoznata naredba print
+INFO  23:22:57,384 - Prepoznata naredba print
+INFO  23:22:57,384 - Prepoznata naredba print
+INFO  23:22:57,384 - Prepoznata naredba print
+INFO  23:22:57,384 - Prepoznata naredba print
+INFO  23:22:57,384 - Prepoznata naredba print
+INFO  23:22:57,384 -  Broj print naredbi = 18
+INFO  23:22:57,386 -  Deklarisanih promenljivih ima = 5
+INFO  23:22:57,386 -  Deklarisanih simbolickih konstanti ima = 0
+INFO  23:22:57,386 - ====================================
+INFO  23:22:57,405 - Prevodjenje uspesno zavrseno

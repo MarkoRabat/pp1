@@ -1,19 +1,29 @@
 program Program
-	const int x = 3;
-	const int y = 4;
+namespace ns1 {
+	int x = 3;
+	int y = 4;
+	int a;
+{}}
+int x = 30;
+int y = 40;
 {
-	void main() int a; {
-		print(x + y, 0);	// 7
+	void main() {
+		print(x + y, 5);	// 7
 		print(eol);
-		print(x - y, 1);	// -1
+		print(ns1::x - ns1::y, 5);	// -1
 		print(eol);
-		print(x * y, 2);	// 12
+		print(ns1::x * ns1::y, 5);	// 12
 		print(eol);
-		print(x / y, 3);	// 0
+		print(ns1::x / ns1::y, 5);	// 0
 		print(eol);
-		print(x % y, 4);	// 3
+		print(ns1::x % ns1::y, 5);	// 3
 		print(eol);
-		a = x * x + y;
-		print(a + a, 5);	// 26
+		ns1::a = ns1::x * ns1::x + ns1::y;
+		print(ns1::a + ns1::a + 17, 5);	// 43
+		
+		
+		print('a'); print('b'); print('c'); print(eol);
+		// vratiti bool na 1 i 0 (umesto 100 i -100)
+		print(true); print(eol); print(false);
 	}
 }
