@@ -1,222 +1,182 @@
-INFO  01:47:36,595 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
-INFO  01:47:36,635 - #2 program
-INFO  01:47:36,635 - #23 Program
-INFO  01:47:36,635 - #23 int
-INFO  01:47:36,639 - #23 a2
-INFO  01:47:36,640 - #14 ,
-INFO  01:47:36,641 - #23 b2
-INFO  01:47:36,641 - #14 ,
-INFO  01:47:36,641 - #23 c2
-INFO  01:47:36,641 - #5 ;
-INFO  01:47:36,642 - #19 const
-INFO  01:47:36,642 - #23 int
-INFO  01:47:36,642 - #23 a3
-INFO  01:47:36,643 - #8 =
-INFO  01:47:36,643 - #22 1
-INFO  01:47:36,643 - #14 ,
-INFO  01:47:36,644 - #23 b3
-INFO  01:47:36,644 - #8 =
-INFO  01:47:36,644 - #22 1
-INFO  01:47:36,644 - #14 ,
-INFO  01:47:36,644 - #23 c3
-INFO  01:47:36,644 - #8 =
-INFO  01:47:36,644 - #22 1
-INFO  01:47:36,644 - #5 ;
-INFO  01:47:36,645 - #21 namespace
-INFO  01:47:36,645 - #23 nsp1
-INFO  01:47:36,645 - #3 {
-INFO  01:47:36,646 - #23 int
-INFO  01:47:36,647 - #23 a
-INFO  01:47:36,647 - #14 ,
-INFO  01:47:36,647 - #23 b
-INFO  01:47:36,647 - #8 =
-INFO  01:47:36,647 - #22 3
-INFO  01:47:36,647 - #14 ,
-INFO  01:47:36,648 - #23 c
-INFO  01:47:36,648 - #18 [
-INFO  01:47:36,648 - #20 ]
-INFO  01:47:36,648 - #5 ;
-INFO  01:47:36,648 - #19 const
-INFO  01:47:36,649 - #23 int
-INFO  01:47:36,649 - #23 a1
-INFO  01:47:36,649 - #8 =
-INFO  01:47:36,649 - #22 17
-INFO  01:47:36,649 - #14 ,
-INFO  01:47:36,649 - #23 b1
-INFO  01:47:36,649 - #8 =
-INFO  01:47:36,649 - #22 3
-INFO  01:47:36,650 - #14 ,
-INFO  01:47:36,650 - #23 c1
-INFO  01:47:36,650 - #8 =
-INFO  01:47:36,650 - #22 13
-INFO  01:47:36,650 - #5 ;
-INFO  01:47:36,650 - #23 int
-INFO  01:47:36,650 - #23 a4
-INFO  01:47:36,650 - #14 ,
-INFO  01:47:36,650 - #23 b4
-INFO  01:47:36,650 - #14 ,
-INFO  01:47:36,650 - #23 c4
-INFO  01:47:36,650 - #5 ;
-INFO  01:47:36,651 - #19 const
-INFO  01:47:36,651 - #23 int
-INFO  01:47:36,651 - #23 a5
-INFO  01:47:36,651 - #8 =
-INFO  01:47:36,651 - #22 1
-INFO  01:47:36,651 - #14 ,
-INFO  01:47:36,651 - #23 b5
-INFO  01:47:36,651 - #8 =
-INFO  01:47:36,651 - #22 1
-INFO  01:47:36,651 - #14 ,
-INFO  01:47:36,651 - #23 c5
-INFO  01:47:36,651 - #8 =
-INFO  01:47:36,652 - #22 1
-INFO  01:47:36,652 - #5 ;
-INFO  01:47:36,652 - #3 {
-INFO  01:47:36,652 - #4 }
-INFO  01:47:36,652 - #4 }
-INFO  01:47:36,652 - #21 namespace
-INFO  01:47:36,653 - #23 nsp2
-INFO  01:47:36,653 - #3 {
-INFO  01:47:36,653 - #23 int
-INFO  01:47:36,653 - #23 a
-INFO  01:47:36,653 - #14 ,
-INFO  01:47:36,653 - #23 b
-INFO  01:47:36,653 - #8 =
-INFO  01:47:36,653 - #22 3
-INFO  01:47:36,653 - #14 ,
-INFO  01:47:36,653 - #23 c
-INFO  01:47:36,653 - #18 [
-INFO  01:47:36,654 - #20 ]
-INFO  01:47:36,654 - #5 ;
-INFO  01:47:36,654 - #19 const
-INFO  01:47:36,654 - #23 int
-INFO  01:47:36,654 - #23 a1
-INFO  01:47:36,654 - #8 =
-INFO  01:47:36,654 - #22 17
-INFO  01:47:36,654 - #14 ,
-INFO  01:47:36,654 - #23 b1
-INFO  01:47:36,654 - #8 =
-INFO  01:47:36,654 - #22 3
-INFO  01:47:36,654 - #14 ,
-INFO  01:47:36,655 - #23 c1
-INFO  01:47:36,655 - #8 =
-INFO  01:47:36,655 - #22 13
-INFO  01:47:36,655 - #5 ;
-INFO  01:47:36,655 - #23 int
-INFO  01:47:36,655 - #23 a4
-INFO  01:47:36,655 - #14 ,
-INFO  01:47:36,655 - #23 b4
-INFO  01:47:36,655 - #14 ,
-INFO  01:47:36,655 - #23 c4
-INFO  01:47:36,655 - #5 ;
-INFO  01:47:36,655 - #19 const
-INFO  01:47:36,656 - #23 int
-INFO  01:47:36,656 - #23 a5
-INFO  01:47:36,656 - #8 =
-INFO  01:47:36,656 - #22 1
-INFO  01:47:36,656 - #14 ,
-INFO  01:47:36,656 - #23 b5
-INFO  01:47:36,656 - #8 =
-INFO  01:47:36,656 - #22 1
-INFO  01:47:36,656 - #14 ,
-INFO  01:47:36,656 - #23 c5
-INFO  01:47:36,656 - #8 =
-INFO  01:47:36,656 - #22 1
-INFO  01:47:36,657 - #5 ;
-INFO  01:47:36,657 - #23 int
-INFO  01:47:36,657 - #23 a
-INFO  01:47:36,657 - #5 ;
-INFO  01:47:36,657 - #19 const
-INFO  01:47:36,657 - #23 int
-INFO  01:47:36,657 - #23 a5
-INFO  01:47:36,657 - #8 =
-INFO  01:47:36,657 - #22 1
-INFO  01:47:36,657 - #5 ;
-INFO  01:47:36,657 - #23 int
-INFO  01:47:36,658 - #23 c
-INFO  01:47:36,658 - #18 [
-INFO  01:47:36,658 - #20 ]
-INFO  01:47:36,658 - #5 ;
-INFO  01:47:36,658 - #3 {
-INFO  01:47:36,658 - #4 }
-INFO  01:47:36,658 - #4 }
-INFO  01:47:36,658 - #23 int
-INFO  01:47:36,658 - #23 b
-INFO  01:47:36,658 - #5 ;
-INFO  01:47:36,658 - #23 int
-INFO  01:47:36,659 - #23 a
-INFO  01:47:36,659 - #14 ,
-INFO  01:47:36,659 - #23 b
-INFO  01:47:36,659 - #8 =
-INFO  01:47:36,659 - #22 3
-INFO  01:47:36,659 - #14 ,
-INFO  01:47:36,659 - #23 c
-INFO  01:47:36,659 - #18 [
-INFO  01:47:36,659 - #20 ]
-INFO  01:47:36,659 - #5 ;
-INFO  01:47:36,660 - #19 const
-INFO  01:47:36,660 - #23 int
-INFO  01:47:36,660 - #23 a1
-INFO  01:47:36,660 - #8 =
-INFO  01:47:36,660 - #22 17
-INFO  01:47:36,660 - #14 ,
-INFO  01:47:36,660 - #23 b1
-INFO  01:47:36,660 - #8 =
-INFO  01:47:36,660 - #22 3
-INFO  01:47:36,660 - #14 ,
-INFO  01:47:36,660 - #23 c1
-INFO  01:47:36,661 - #8 =
-INFO  01:47:36,661 - #22 13
-INFO  01:47:36,661 - #5 ;
-INFO  01:47:36,661 - #3 {
-INFO  01:47:36,661 - #16 void
-INFO  01:47:36,663 - #23 main
-INFO  01:47:36,663 - #6 (
-INFO  01:47:36,664 - #7 )
-INFO  01:47:36,664 - #3 {
-INFO  01:47:36,664 - #23 nsp2
-INFO  01:47:36,667 - #11 ::
-INFO  01:47:36,667 - #23 a
-INFO  01:47:36,667 - #8 =
-INFO  01:47:36,667 - #23 nsp1
-INFO  01:47:36,667 - #11 ::
-INFO  01:47:36,667 - #23 a
-INFO  01:47:36,668 - #26 +
-INFO  01:47:36,670 - #23 a
-INFO  01:47:36,670 - #5 ;
-INFO  01:47:36,671 - #23 a
-INFO  01:47:36,672 - #8 =
-INFO  01:47:36,672 - #23 nsp1
-INFO  01:47:36,672 - #11 ::
-INFO  01:47:36,672 - #23 a
-INFO  01:47:36,672 - #26 +
-INFO  01:47:36,672 - #23 a3
-INFO  01:47:36,672 - #5 ;
-INFO  01:47:36,672 - #23 a
-INFO  01:47:36,672 - #8 =
-INFO  01:47:36,672 - #23 nsp1
-INFO  01:47:36,673 - #11 ::
-INFO  01:47:36,673 - #23 a
-INFO  01:47:36,673 - #26 +
-INFO  01:47:36,673 - #25 true
-INFO  01:47:36,673 - #5 ;
-INFO  01:47:36,673 - #23 nsp2
-INFO  01:47:36,673 - #11 ::
-INFO  01:47:36,673 - #23 a
-INFO  01:47:36,673 - #8 =
-INFO  01:47:36,673 - #23 nsp1
-INFO  01:47:36,673 - #11 ::
-INFO  01:47:36,673 - #23 a
-INFO  01:47:36,674 - #26 +
-INFO  01:47:36,674 - #23 nsp1
-INFO  01:47:36,674 - #11 ::
-INFO  01:47:36,674 - #23 b5
-INFO  01:47:36,674 - #26 +
-INFO  01:47:36,674 - #25 false
-INFO  01:47:36,674 - #5 ;
-INFO  01:47:36,674 - #4 }
-INFO  01:47:36,674 - #4 }
-INFO  01:47:36,677 - Prog(
+INFO  01:33:56,969 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  01:33:57,013 - #2 program
+INFO  01:33:57,013 - #23 Program
+INFO  01:33:57,013 - #23 int
+INFO  01:33:57,018 - #23 a2
+INFO  01:33:57,018 - #14 ,
+INFO  01:33:57,019 - #23 b2
+INFO  01:33:57,019 - #14 ,
+INFO  01:33:57,019 - #23 c2
+INFO  01:33:57,019 - #5 ;
+INFO  01:33:57,019 - #19 const
+INFO  01:33:57,020 - #23 int
+INFO  01:33:57,020 - #23 a3
+INFO  01:33:57,020 - #8 =
+INFO  01:33:57,020 - #22 1
+INFO  01:33:57,020 - #14 ,
+INFO  01:33:57,021 - #23 b3
+INFO  01:33:57,021 - #8 =
+INFO  01:33:57,021 - #22 1
+INFO  01:33:57,021 - #14 ,
+INFO  01:33:57,021 - #23 c3
+INFO  01:33:57,021 - #8 =
+INFO  01:33:57,022 - #22 1
+INFO  01:33:57,022 - #5 ;
+INFO  01:33:57,023 - #21 namespace
+INFO  01:33:57,023 - #23 nsp1
+INFO  01:33:57,023 - #3 {
+INFO  01:33:57,024 - #23 int
+INFO  01:33:57,025 - #23 a
+INFO  01:33:57,025 - #14 ,
+INFO  01:33:57,025 - #23 b
+INFO  01:33:57,025 - #8 =
+INFO  01:33:57,025 - #22 3
+INFO  01:33:57,025 - #14 ,
+INFO  01:33:57,026 - #23 c
+INFO  01:33:57,026 - #18 [
+INFO  01:33:57,026 - #20 ]
+INFO  01:33:57,026 - #5 ;
+INFO  01:33:57,026 - #19 const
+INFO  01:33:57,027 - #23 int
+INFO  01:33:57,027 - #23 a1
+INFO  01:33:57,027 - #8 =
+INFO  01:33:57,027 - #22 17
+INFO  01:33:57,028 - #14 ,
+INFO  01:33:57,028 - #23 b1
+INFO  01:33:57,028 - #8 =
+INFO  01:33:57,028 - #22 3
+INFO  01:33:57,028 - #14 ,
+INFO  01:33:57,028 - #23 c1
+INFO  01:33:57,028 - #8 =
+INFO  01:33:57,029 - #22 13
+INFO  01:33:57,029 - #5 ;
+INFO  01:33:57,029 - #23 int
+INFO  01:33:57,029 - #23 a4
+INFO  01:33:57,029 - #14 ,
+INFO  01:33:57,029 - #23 b4
+INFO  01:33:57,029 - #14 ,
+INFO  01:33:57,029 - #23 c4
+INFO  01:33:57,029 - #5 ;
+INFO  01:33:57,030 - #19 const
+INFO  01:33:57,030 - #23 int
+INFO  01:33:57,030 - #23 a5
+INFO  01:33:57,030 - #8 =
+INFO  01:33:57,030 - #22 1
+INFO  01:33:57,030 - #14 ,
+INFO  01:33:57,030 - #23 b5
+INFO  01:33:57,030 - #8 =
+INFO  01:33:57,031 - #22 1
+INFO  01:33:57,031 - #14 ,
+INFO  01:33:57,031 - #23 c5
+INFO  01:33:57,031 - #8 =
+INFO  01:33:57,031 - #22 1
+INFO  01:33:57,031 - #5 ;
+INFO  01:33:57,031 - #3 {
+INFO  01:33:57,032 - #4 }
+INFO  01:33:57,032 - #4 }
+INFO  01:33:57,032 - #21 namespace
+INFO  01:33:57,032 - #23 nsp2
+INFO  01:33:57,032 - #3 {
+INFO  01:33:57,032 - #23 int
+INFO  01:33:57,032 - #23 a
+INFO  01:33:57,033 - #14 ,
+INFO  01:33:57,033 - #23 b
+INFO  01:33:57,033 - #8 =
+INFO  01:33:57,033 - #22 3
+INFO  01:33:57,033 - #14 ,
+INFO  01:33:57,033 - #23 c
+INFO  01:33:57,033 - #18 [
+INFO  01:33:57,033 - #20 ]
+INFO  01:33:57,033 - #5 ;
+INFO  01:33:57,033 - #19 const
+INFO  01:33:57,033 - #23 int
+INFO  01:33:57,033 - #23 a1
+INFO  01:33:57,034 - #8 =
+INFO  01:33:57,034 - #22 17
+INFO  01:33:57,034 - #14 ,
+INFO  01:33:57,034 - #23 b1
+INFO  01:33:57,034 - #8 =
+INFO  01:33:57,034 - #22 3
+INFO  01:33:57,034 - #14 ,
+INFO  01:33:57,034 - #23 c1
+INFO  01:33:57,034 - #8 =
+INFO  01:33:57,034 - #22 13
+INFO  01:33:57,034 - #5 ;
+INFO  01:33:57,035 - #23 int
+INFO  01:33:57,035 - #23 a4
+INFO  01:33:57,035 - #14 ,
+INFO  01:33:57,035 - #23 b4
+INFO  01:33:57,035 - #14 ,
+INFO  01:33:57,035 - #23 c4
+INFO  01:33:57,035 - #5 ;
+INFO  01:33:57,035 - #19 const
+INFO  01:33:57,035 - #23 int
+INFO  01:33:57,035 - #23 a5
+INFO  01:33:57,036 - #8 =
+INFO  01:33:57,036 - #22 1
+INFO  01:33:57,036 - #14 ,
+INFO  01:33:57,036 - #23 b5
+INFO  01:33:57,036 - #8 =
+INFO  01:33:57,036 - #22 1
+INFO  01:33:57,036 - #14 ,
+INFO  01:33:57,036 - #23 c5
+INFO  01:33:57,036 - #8 =
+INFO  01:33:57,037 - #22 1
+INFO  01:33:57,037 - #5 ;
+INFO  01:33:57,037 - #23 int
+INFO  01:33:57,037 - #23 a
+INFO  01:33:57,037 - #5 ;
+INFO  01:33:57,037 - #19 const
+INFO  01:33:57,037 - #23 int
+INFO  01:33:57,037 - #23 a5
+INFO  01:33:57,037 - #8 =
+INFO  01:33:57,038 - #22 1
+INFO  01:33:57,038 - #5 ;
+INFO  01:33:57,038 - #23 int
+INFO  01:33:57,038 - #23 c
+INFO  01:33:57,038 - #18 [
+INFO  01:33:57,038 - #20 ]
+INFO  01:33:57,038 - #5 ;
+INFO  01:33:57,038 - #3 {
+INFO  01:33:57,038 - #4 }
+INFO  01:33:57,038 - #4 }
+INFO  01:33:57,038 - #23 int
+INFO  01:33:57,038 - #23 b
+INFO  01:33:57,039 - #5 ;
+INFO  01:33:57,039 - #23 int
+INFO  01:33:57,039 - #23 a
+INFO  01:33:57,039 - #14 ,
+INFO  01:33:57,039 - #23 b
+INFO  01:33:57,039 - #8 =
+INFO  01:33:57,039 - #22 3
+INFO  01:33:57,039 - #14 ,
+INFO  01:33:57,039 - #23 c
+INFO  01:33:57,039 - #18 [
+INFO  01:33:57,039 - #20 ]
+INFO  01:33:57,039 - #5 ;
+INFO  01:33:57,039 - #19 const
+INFO  01:33:57,040 - #23 int
+INFO  01:33:57,040 - #23 a1
+INFO  01:33:57,040 - #8 =
+INFO  01:33:57,040 - #22 17
+INFO  01:33:57,040 - #14 ,
+INFO  01:33:57,040 - #23 b1
+INFO  01:33:57,040 - #8 =
+INFO  01:33:57,040 - #22 3
+INFO  01:33:57,040 - #14 ,
+INFO  01:33:57,040 - #23 c1
+INFO  01:33:57,041 - #8 =
+INFO  01:33:57,041 - #22 13
+INFO  01:33:57,041 - #5 ;
+INFO  01:33:57,041 - #3 {
+INFO  01:33:57,041 - #16 void
+INFO  01:33:57,043 - #23 abrakada
+INFO  01:33:57,043 - #6 (
+INFO  01:33:57,043 - #7 )
+INFO  01:33:57,043 - #3 {
+INFO  01:33:57,043 - #4 }
+INFO  01:33:57,046 - #4 }
+INFO  01:33:57,048 - Prog(
   ProgName(
    Program
   ) [ProgName]
@@ -623,164 +583,27 @@ INFO  01:47:36,677 - Prog(
     ) [MethodDeclListDerived2]
     MethodDeclaration(
       MethName(
-       main
+       abrakada
       ) [MethName]
       VarDeclListDerived2(
       ) [VarDeclListDerived2]
-      StatementListDerived1(
-        StatementListDerived1(
-          StatementListDerived1(
-            StatementListDerived1(
-              StatementListDerived2(
-              ) [StatementListDerived2]
-              SDesignAsign(
-                NsIdent(
-                 nsp2
-                 a
-                ) [NsIdent]
-                AddExpr(
-                  TermExpr(
-                    FactorTerm(
-                      SFactorDesignator(
-                        NsIdent(
-                         nsp1
-                         a
-                        ) [NsIdent]
-                      ) [SFactorDesignator]
-                    ) [FactorTerm]
-                  ) [TermExpr]
-                  Plus(
-                   +
-                  ) [Plus]
-                  FactorTerm(
-                    SFactorDesignator(
-                      Ident(
-                       a
-                      ) [Ident]
-                    ) [SFactorDesignator]
-                  ) [FactorTerm]
-                ) [AddExpr]
-              ) [SDesignAsign]
-            ) [StatementListDerived1]
-            SDesignAsign(
-              Ident(
-               a
-              ) [Ident]
-              AddExpr(
-                TermExpr(
-                  FactorTerm(
-                    SFactorDesignator(
-                      NsIdent(
-                       nsp1
-                       a
-                      ) [NsIdent]
-                    ) [SFactorDesignator]
-                  ) [FactorTerm]
-                ) [TermExpr]
-                Plus(
-                 +
-                ) [Plus]
-                FactorTerm(
-                  SFactorDesignator(
-                    Ident(
-                     a3
-                    ) [Ident]
-                  ) [SFactorDesignator]
-                ) [FactorTerm]
-              ) [AddExpr]
-            ) [SDesignAsign]
-          ) [StatementListDerived1]
-          SDesignAsign(
-            Ident(
-             a
-            ) [Ident]
-            AddExpr(
-              TermExpr(
-                FactorTerm(
-                  SFactorDesignator(
-                    NsIdent(
-                     nsp1
-                     a
-                    ) [NsIdent]
-                  ) [SFactorDesignator]
-                ) [FactorTerm]
-              ) [TermExpr]
-              Plus(
-               +
-              ) [Plus]
-              FactorTerm(
-                BooleanConst(
-                 true
-                ) [BooleanConst]
-              ) [FactorTerm]
-            ) [AddExpr]
-          ) [SDesignAsign]
-        ) [StatementListDerived1]
-        SDesignAsign(
-          NsIdent(
-           nsp2
-           a
-          ) [NsIdent]
-          AddExpr(
-            AddExpr(
-              TermExpr(
-                FactorTerm(
-                  SFactorDesignator(
-                    NsIdent(
-                     nsp1
-                     a
-                    ) [NsIdent]
-                  ) [SFactorDesignator]
-                ) [FactorTerm]
-              ) [TermExpr]
-              Plus(
-               +
-              ) [Plus]
-              FactorTerm(
-                SFactorDesignator(
-                  NsIdent(
-                   nsp1
-                   b5
-                  ) [NsIdent]
-                ) [SFactorDesignator]
-              ) [FactorTerm]
-            ) [AddExpr]
-            Plus(
-             +
-            ) [Plus]
-            FactorTerm(
-              BooleanConst(
-               false
-              ) [BooleanConst]
-            ) [FactorTerm]
-          ) [AddExpr]
-        ) [SDesignAsign]
-      ) [StatementListDerived1]
+      StatementListDerived2(
+      ) [StatementListDerived2]
     ) [MethodDeclaration]
   ) [MethodDeclListDerived1]
 ) [Prog]
-INFO  01:47:36,678 - ====================================
-ERROR 01:47:36,699 - Greska: ime :nsp2|a je vec definisano
+INFO  01:33:57,049 - ====================================
+ERROR 01:33:57,068 - Greska: ime :nsp2|a je vec definisano
 	na liniji 20
-ERROR 01:47:36,699 - Greska: ime :nsp2|a5 je vec definisano
+ERROR 01:33:57,068 - Greska: ime :nsp2|a5 je vec definisano
 	na liniji 21
-ERROR 01:47:36,699 - Greska: ime :nsp2|c je vec definisano
+ERROR 01:33:57,069 - Greska: ime :nsp2|c je vec definisano
 	na liniji 22
-ERROR 01:47:36,699 - Greska: ime b je vec definisano
+ERROR 01:33:57,069 - Greska: ime b je vec definisano
 	na liniji 28
-ERROR 01:47:36,700 - Greska: tipovi operanada operatora + moraju biti int
-	a ne tipova: int, bool
-	na liniji 34
-ERROR 01:47:36,700 - Greska: nedozvoljena dodela vrednosti tipa nepostojeci_tip identifikatoru tipa int
-	( int = nepostojeci_tip )
-	na liniji 34
-ERROR 01:47:36,700 - Greska: tipovi operanada operatora + moraju biti int
-	a ne tipova: int, bool
-	na liniji 35
-ERROR 01:47:36,700 - Greska: nedozvoljena dodela vrednosti tipa nepostojeci_tip identifikatoru tipa int
-	( int = nepostojeci_tip )
-	na liniji 35
-INFO  01:47:36,700 -  Broj print naredbi = 0
-INFO  01:47:36,700 -  Deklarisanih promenljivih ima = 18
-INFO  01:47:36,700 -  Deklarisanih simbolickih konstanti ima = 18
-INFO  01:47:36,700 - ====================================
+ERROR 01:33:57,069 - Greska: main function not found
+	na liniji 1
+INFO  01:33:57,069 -  Broj print naredbi = 0
+INFO  01:33:57,069 -  Deklarisanih promenljivih ima = 18
+INFO  01:33:57,069 -  Deklarisanih simbolickih konstanti ima = 18
+INFO  01:33:57,069 - ====================================

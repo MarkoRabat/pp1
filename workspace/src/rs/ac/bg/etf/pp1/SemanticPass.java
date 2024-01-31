@@ -406,6 +406,20 @@ public class SemanticPass extends VisitorAdaptor {
 			ident.obj = Tab.noObj;
 		}
 	}
+	
+	public void visit(NsIdent nsIdent) {
+		String namespace = nsIdent.getNamesp();
+		try { findInTab(namespace); }
+		catch (NameNotFoundException e) {
+			spl.report_name_isNot_defined(e.getMessage(), nsIdent);
+			nsIdent.obj = Tab.noObj; return; }
+		String identName = nsIdent.getName();
+		try { nsIdent.obj = findInTab(":" + namespace + "|" + identName); }
+		catch (NameNotFoundException e) {
+			spl.report_name_isNot_defined(e.getMessage(), nsIdent);
+			nsIdent.obj = Tab.noObj;
+		}
+	}
 
 	public void visit(ArrIdent arrIdent) {
 		try {

@@ -28,7 +28,10 @@ int b;
 int a, b = 3, c[];
 const int a1 = 17, b1 = 3, c1 = 13;
 {
-	void abrakada() {
-		
+	void main() {
+		nsp2::a = nsp1::a + a;
+		a = nsp1::a + a3;
+		a = nsp1::a + true;
+		nsp2::a = nsp1::a + nsp1::b5 + false;
 	}
 }
