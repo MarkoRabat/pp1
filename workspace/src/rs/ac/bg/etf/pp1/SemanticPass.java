@@ -14,6 +14,7 @@ public class SemanticPass extends VisitorAdaptor {
 	private int printCallCount = 0;
 	private int varDeclCount = 0;
 	private int conDeclCount = 0;
+	private int nVars = 0;
 	private Obj currentMethod = null;
 	private Obj currentNamespace = null;
 	private Struct currDeclListType = null;
@@ -125,6 +126,7 @@ public class SemanticPass extends VisitorAdaptor {
 			spl.report_main_not_found(prog); }
 		try {
 			Obj programObj = findInTab(prog.getProgName().obj.getName());
+			nVars = Tab.currentScope.getnVars();
 			Tab.chainLocalSymbols(programObj); Tab.closeScope();
 		}
 		catch (NameNotFoundException e) {}
