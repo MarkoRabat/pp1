@@ -1,14 +1,21 @@
 package rs.ac.bg.etf.pp1.util;
 
+import javax.naming.NameNotFoundException;
+
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.SemanticPass;
 import rs.ac.bg.etf.pp1.ast.ArrIdent;
 import rs.ac.bg.etf.pp1.ast.SyntaxNode;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class SemanticPassLogger {
+	private boolean errorDetected = false;
 	private Logger log = Logger.getLogger(getClass());
+	public boolean noSemanticErrors() { return !errorDetected; }
+
 	public StringBuilder build_msg(String message, SyntaxNode info) {
 		StringBuilder msg = new StringBuilder(message);
 		int line = (info == null) ? 0 : info.getLine();
@@ -16,6 +23,7 @@ public class SemanticPassLogger {
 		return msg;
 	}
 	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
 		StringBuilder msg = build_msg(message, info);
 		msg.insert(0, "Greska: "); log.error(msg.toString());
 	}
@@ -67,9 +75,26 @@ public class SemanticPassLogger {
 			+ SemanticPass.getTypeName(identType)
 			+ " konstantu nije dozvoljen", sDesignAsign);
 	}
-	public void report_array_allocTo_nonArray(SyntaxNode obj, Struct type) {
+	public void report_array_error(SyntaxNode obj, Struct type) {
 		if (obj instanceof ArrIdent) {
-			
+			ArrIdent arrIdent = (ArrIdent) obj;
+			Obj ident = null;
+			try {
+				ident = Tab.find(arrIdent.getName());
+				if (ident == Tab.noObj)
+					throw new NameNotFoundException(arrIdent.getName());
+			}
+			catch (NameNotFoundException e) {
+				report_error("nepostojeci identifikator "
+					+ arrIdent.getName(), arrIdent);
+			}
+			catch (Exception e) {}
+			report_error(
+				"indeksirani identifikator "
+				+ arrIdent.getName()
+				+ " nije nizovskog tipa, vec tipa "
+				+ (ident != null ?
+				SemanticPass.getTypeName(ident.getType()) : ""), obj);
 			return;
 		}
 		report_error(

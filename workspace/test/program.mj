@@ -29,11 +29,8 @@ int a, b = 3, c[], d[], r[];
 const int a1 = 17, b1 = 3, c1 = 13;
 {
 	void main() {
-		nsp2::a = nsp1::a + a;
-		a = nsp1::a + a3;
-		a = nsp1::a + true;
-		a = nsp1::a + nsp2::c[7];
-		nsp2::a = nsp1::a + nsp1::b5 + false;
-		c[2] = d[3];
+		a[3] = a;
+		a = new int [5];
+		a = a[3];
 	}
 }

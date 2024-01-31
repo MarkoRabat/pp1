@@ -1,0 +1,726 @@
+INFO  18:24:25,723 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  18:24:26,228 - #2 program
+INFO  18:24:26,229 - #23 Program
+INFO  18:24:26,229 - #23 int
+INFO  18:24:26,243 - #23 a2
+INFO  18:24:26,244 - #14 ,
+INFO  18:24:26,244 - #23 b2
+INFO  18:24:26,244 - #14 ,
+INFO  18:24:26,244 - #23 c2
+INFO  18:24:26,244 - #5 ;
+INFO  18:24:26,245 - #19 const
+INFO  18:24:26,245 - #23 int
+INFO  18:24:26,245 - #23 a3
+INFO  18:24:26,246 - #8 =
+INFO  18:24:26,246 - #22 1
+INFO  18:24:26,246 - #14 ,
+INFO  18:24:26,246 - #23 b3
+INFO  18:24:26,247 - #8 =
+INFO  18:24:26,247 - #22 1
+INFO  18:24:26,247 - #14 ,
+INFO  18:24:26,247 - #23 c3
+INFO  18:24:26,247 - #8 =
+INFO  18:24:26,247 - #22 1
+INFO  18:24:26,247 - #5 ;
+INFO  18:24:26,249 - #21 namespace
+INFO  18:24:26,249 - #23 nsp1
+INFO  18:24:26,249 - #3 {
+INFO  18:24:26,250 - #23 int
+INFO  18:24:26,257 - #23 a
+INFO  18:24:26,257 - #14 ,
+INFO  18:24:26,257 - #23 b
+INFO  18:24:26,257 - #8 =
+INFO  18:24:26,258 - #22 3
+INFO  18:24:26,258 - #14 ,
+INFO  18:24:26,258 - #23 c
+INFO  18:24:26,258 - #18 [
+INFO  18:24:26,258 - #20 ]
+INFO  18:24:26,258 - #5 ;
+INFO  18:24:26,259 - #19 const
+INFO  18:24:26,259 - #23 int
+INFO  18:24:26,260 - #23 a1
+INFO  18:24:26,260 - #8 =
+INFO  18:24:26,260 - #22 17
+INFO  18:24:26,260 - #14 ,
+INFO  18:24:26,260 - #23 b1
+INFO  18:24:26,261 - #8 =
+INFO  18:24:26,261 - #22 3
+INFO  18:24:26,261 - #14 ,
+INFO  18:24:26,261 - #23 c1
+INFO  18:24:26,261 - #8 =
+INFO  18:24:26,261 - #22 13
+INFO  18:24:26,261 - #5 ;
+INFO  18:24:26,262 - #23 int
+INFO  18:24:26,262 - #23 a4
+INFO  18:24:26,262 - #14 ,
+INFO  18:24:26,263 - #23 b4
+INFO  18:24:26,263 - #14 ,
+INFO  18:24:26,263 - #23 c4
+INFO  18:24:26,263 - #5 ;
+INFO  18:24:26,263 - #19 const
+INFO  18:24:26,263 - #23 int
+INFO  18:24:26,263 - #23 a5
+INFO  18:24:26,264 - #8 =
+INFO  18:24:26,264 - #22 1
+INFO  18:24:26,264 - #14 ,
+INFO  18:24:26,264 - #23 b5
+INFO  18:24:26,264 - #8 =
+INFO  18:24:26,264 - #22 1
+INFO  18:24:26,264 - #14 ,
+INFO  18:24:26,264 - #23 c5
+INFO  18:24:26,265 - #8 =
+INFO  18:24:26,265 - #22 1
+INFO  18:24:26,265 - #5 ;
+INFO  18:24:26,265 - #3 {
+INFO  18:24:26,265 - #4 }
+INFO  18:24:26,265 - #4 }
+INFO  18:24:26,265 - #21 namespace
+INFO  18:24:26,266 - #23 nsp2
+INFO  18:24:26,266 - #3 {
+INFO  18:24:26,266 - #23 int
+INFO  18:24:26,266 - #23 a
+INFO  18:24:26,267 - #14 ,
+INFO  18:24:26,267 - #23 b
+INFO  18:24:26,267 - #8 =
+INFO  18:24:26,267 - #22 3
+INFO  18:24:26,267 - #14 ,
+INFO  18:24:26,267 - #23 c
+INFO  18:24:26,267 - #18 [
+INFO  18:24:26,268 - #20 ]
+INFO  18:24:26,268 - #5 ;
+INFO  18:24:26,268 - #19 const
+INFO  18:24:26,268 - #23 int
+INFO  18:24:26,268 - #23 a1
+INFO  18:24:26,268 - #8 =
+INFO  18:24:26,268 - #22 17
+INFO  18:24:26,268 - #14 ,
+INFO  18:24:26,269 - #23 b1
+INFO  18:24:26,269 - #8 =
+INFO  18:24:26,269 - #22 3
+INFO  18:24:26,269 - #14 ,
+INFO  18:24:26,269 - #23 c1
+INFO  18:24:26,269 - #8 =
+INFO  18:24:26,269 - #22 13
+INFO  18:24:26,270 - #5 ;
+INFO  18:24:26,270 - #23 int
+INFO  18:24:26,270 - #23 a4
+INFO  18:24:26,270 - #14 ,
+INFO  18:24:26,270 - #23 b4
+INFO  18:24:26,270 - #14 ,
+INFO  18:24:26,270 - #23 c4
+INFO  18:24:26,271 - #5 ;
+INFO  18:24:26,271 - #19 const
+INFO  18:24:26,271 - #23 int
+INFO  18:24:26,271 - #23 a5
+INFO  18:24:26,271 - #8 =
+INFO  18:24:26,271 - #22 1
+INFO  18:24:26,271 - #14 ,
+INFO  18:24:26,272 - #23 b5
+INFO  18:24:26,272 - #8 =
+INFO  18:24:26,272 - #22 1
+INFO  18:24:26,272 - #14 ,
+INFO  18:24:26,272 - #23 c5
+INFO  18:24:26,272 - #8 =
+INFO  18:24:26,272 - #22 1
+INFO  18:24:26,272 - #5 ;
+INFO  18:24:26,273 - #23 int
+INFO  18:24:26,273 - #23 a
+INFO  18:24:26,273 - #5 ;
+INFO  18:24:26,273 - #19 const
+INFO  18:24:26,273 - #23 int
+INFO  18:24:26,273 - #23 a5
+INFO  18:24:26,273 - #8 =
+INFO  18:24:26,273 - #22 1
+INFO  18:24:26,273 - #5 ;
+INFO  18:24:26,274 - #23 int
+INFO  18:24:26,274 - #23 c
+INFO  18:24:26,274 - #18 [
+INFO  18:24:26,274 - #20 ]
+INFO  18:24:26,274 - #5 ;
+INFO  18:24:26,274 - #3 {
+INFO  18:24:26,275 - #4 }
+INFO  18:24:26,275 - #4 }
+INFO  18:24:26,275 - #23 int
+INFO  18:24:26,275 - #23 b
+INFO  18:24:26,275 - #5 ;
+INFO  18:24:26,275 - #23 int
+INFO  18:24:26,275 - #23 a
+INFO  18:24:26,276 - #14 ,
+INFO  18:24:26,276 - #23 b
+INFO  18:24:26,276 - #8 =
+INFO  18:24:26,276 - #22 3
+INFO  18:24:26,276 - #14 ,
+INFO  18:24:26,276 - #23 c
+INFO  18:24:26,276 - #18 [
+INFO  18:24:26,276 - #20 ]
+INFO  18:24:26,276 - #14 ,
+INFO  18:24:26,277 - #23 d
+INFO  18:24:26,277 - #18 [
+INFO  18:24:26,277 - #20 ]
+INFO  18:24:26,277 - #14 ,
+INFO  18:24:26,277 - #23 r
+INFO  18:24:26,277 - #18 [
+INFO  18:24:26,277 - #20 ]
+INFO  18:24:26,277 - #5 ;
+INFO  18:24:26,277 - #19 const
+INFO  18:24:26,278 - #23 int
+INFO  18:24:26,278 - #23 a1
+INFO  18:24:26,278 - #8 =
+INFO  18:24:26,278 - #22 17
+INFO  18:24:26,278 - #14 ,
+INFO  18:24:26,278 - #23 b1
+INFO  18:24:26,278 - #8 =
+INFO  18:24:26,278 - #22 3
+INFO  18:24:26,278 - #14 ,
+INFO  18:24:26,279 - #23 c1
+INFO  18:24:26,279 - #8 =
+INFO  18:24:26,279 - #22 13
+INFO  18:24:26,279 - #5 ;
+INFO  18:24:26,279 - #3 {
+INFO  18:24:26,279 - #16 void
+INFO  18:24:26,288 - #23 main
+INFO  18:24:26,288 - #6 (
+INFO  18:24:26,288 - #7 )
+INFO  18:24:26,288 - #3 {
+INFO  18:24:26,289 - #23 a
+INFO  18:24:26,296 - #18 [
+INFO  18:24:26,296 - #22 3
+INFO  18:24:26,296 - #20 ]
+INFO  18:24:26,297 - #8 =
+INFO  18:24:26,298 - #23 a
+INFO  18:24:26,298 - #5 ;
+INFO  18:24:26,298 - #23 a
+INFO  18:24:26,299 - #8 =
+INFO  18:24:26,299 - #13 new
+INFO  18:24:26,299 - #23 int
+INFO  18:24:26,299 - #18 [
+INFO  18:24:26,299 - #22 5
+INFO  18:24:26,299 - #20 ]
+INFO  18:24:26,299 - #5 ;
+INFO  18:24:26,299 - #23 a
+INFO  18:24:26,300 - #8 =
+INFO  18:24:26,300 - #23 a
+INFO  18:24:26,300 - #18 [
+INFO  18:24:26,300 - #22 3
+INFO  18:24:26,300 - #20 ]
+INFO  18:24:26,300 - #5 ;
+INFO  18:24:26,301 - #4 }
+INFO  18:24:26,301 - #4 }
+INFO  18:24:26,305 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived2(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived2(
+        ProgNameDeclListDerived1(
+          ProgNameDeclListDerived1(
+            ProgNameDeclListDerived2(
+              ProgNameDeclListDerived2(
+                ProgNameDeclListDerived3(
+                ) [ProgNameDeclListDerived3]
+                DeclListType(
+                  TypeAccess(
+                   int
+                  ) [TypeAccess]
+                  DeclListDerived1(
+                    SIdentDecl(
+                     a2
+                    ) [SIdentDecl]
+                    DeclListDerived1(
+                      SIdentDecl(
+                       b2
+                      ) [SIdentDecl]
+                      DeclListDerived2(
+                        SIdentDecl(
+                         c2
+                        ) [SIdentDecl]
+                      ) [DeclListDerived2]
+                    ) [DeclListDerived1]
+                  ) [DeclListDerived1]
+                ) [DeclListType]
+              ) [ProgNameDeclListDerived2]
+              ConstDeclListType(
+                TypeAccess(
+                 int
+                ) [TypeAccess]
+                ConstDeclListDerived1(
+                  CIdentDecl(
+                   a3
+                    NInit(
+                     1
+                    ) [NInit]
+                  ) [CIdentDecl]
+                  ConstDeclListDerived1(
+                    CIdentDecl(
+                     b3
+                      NInit(
+                       1
+                      ) [NInit]
+                    ) [CIdentDecl]
+                    ConstDeclListDerived2(
+                      CIdentDecl(
+                       c3
+                        NInit(
+                         1
+                        ) [NInit]
+                      ) [CIdentDecl]
+                    ) [ConstDeclListDerived2]
+                  ) [ConstDeclListDerived1]
+                ) [ConstDeclListDerived1]
+              ) [ConstDeclListType]
+            ) [ProgNameDeclListDerived2]
+            NamespDecl(
+              NamespName(
+               nsp1
+              ) [NamespName]
+              VarDeclListDerived1(
+                VarDeclListDerived1(
+                  VarDeclListDerived1(
+                    VarDeclListDerived1(
+                      VarDeclListDerived2(
+                      ) [VarDeclListDerived2]
+                      DeclListType(
+                        TypeAccess(
+                         int
+                        ) [TypeAccess]
+                        DeclListDerived1(
+                          SIdentDecl(
+                           a
+                          ) [SIdentDecl]
+                          DeclListDerived1(
+                            IIdentDecl(
+                             b
+                              NInit(
+                               3
+                              ) [NInit]
+                            ) [IIdentDecl]
+                            DeclListDerived2(
+                              AIdentDecl(
+                               c
+                              ) [AIdentDecl]
+                            ) [DeclListDerived2]
+                          ) [DeclListDerived1]
+                        ) [DeclListDerived1]
+                      ) [DeclListType]
+                    ) [VarDeclListDerived1]
+                    ConstDeclListType(
+                      TypeAccess(
+                       int
+                      ) [TypeAccess]
+                      ConstDeclListDerived1(
+                        CIdentDecl(
+                         a1
+                          NInit(
+                           17
+                          ) [NInit]
+                        ) [CIdentDecl]
+                        ConstDeclListDerived1(
+                          CIdentDecl(
+                           b1
+                            NInit(
+                             3
+                            ) [NInit]
+                          ) [CIdentDecl]
+                          ConstDeclListDerived2(
+                            CIdentDecl(
+                             c1
+                              NInit(
+                               13
+                              ) [NInit]
+                            ) [CIdentDecl]
+                          ) [ConstDeclListDerived2]
+                        ) [ConstDeclListDerived1]
+                      ) [ConstDeclListDerived1]
+                    ) [ConstDeclListType]
+                  ) [VarDeclListDerived1]
+                  DeclListType(
+                    TypeAccess(
+                     int
+                    ) [TypeAccess]
+                    DeclListDerived1(
+                      SIdentDecl(
+                       a4
+                      ) [SIdentDecl]
+                      DeclListDerived1(
+                        SIdentDecl(
+                         b4
+                        ) [SIdentDecl]
+                        DeclListDerived2(
+                          SIdentDecl(
+                           c4
+                          ) [SIdentDecl]
+                        ) [DeclListDerived2]
+                      ) [DeclListDerived1]
+                    ) [DeclListDerived1]
+                  ) [DeclListType]
+                ) [VarDeclListDerived1]
+                ConstDeclListType(
+                  TypeAccess(
+                   int
+                  ) [TypeAccess]
+                  ConstDeclListDerived1(
+                    CIdentDecl(
+                     a5
+                      NInit(
+                       1
+                      ) [NInit]
+                    ) [CIdentDecl]
+                    ConstDeclListDerived1(
+                      CIdentDecl(
+                       b5
+                        NInit(
+                         1
+                        ) [NInit]
+                      ) [CIdentDecl]
+                      ConstDeclListDerived2(
+                        CIdentDecl(
+                         c5
+                          NInit(
+                           1
+                          ) [NInit]
+                        ) [CIdentDecl]
+                      ) [ConstDeclListDerived2]
+                    ) [ConstDeclListDerived1]
+                  ) [ConstDeclListDerived1]
+                ) [ConstDeclListType]
+              ) [VarDeclListDerived1]
+            ) [NamespDecl]
+          ) [ProgNameDeclListDerived1]
+          NamespDecl(
+            NamespName(
+             nsp2
+            ) [NamespName]
+            VarDeclListDerived1(
+              VarDeclListDerived1(
+                VarDeclListDerived1(
+                  VarDeclListDerived1(
+                    VarDeclListDerived1(
+                      VarDeclListDerived1(
+                        VarDeclListDerived1(
+                          VarDeclListDerived2(
+                          ) [VarDeclListDerived2]
+                          DeclListType(
+                            TypeAccess(
+                             int
+                            ) [TypeAccess]
+                            DeclListDerived1(
+                              SIdentDecl(
+                               a
+                              ) [SIdentDecl]
+                              DeclListDerived1(
+                                IIdentDecl(
+                                 b
+                                  NInit(
+                                   3
+                                  ) [NInit]
+                                ) [IIdentDecl]
+                                DeclListDerived2(
+                                  AIdentDecl(
+                                   c
+                                  ) [AIdentDecl]
+                                ) [DeclListDerived2]
+                              ) [DeclListDerived1]
+                            ) [DeclListDerived1]
+                          ) [DeclListType]
+                        ) [VarDeclListDerived1]
+                        ConstDeclListType(
+                          TypeAccess(
+                           int
+                          ) [TypeAccess]
+                          ConstDeclListDerived1(
+                            CIdentDecl(
+                             a1
+                              NInit(
+                               17
+                              ) [NInit]
+                            ) [CIdentDecl]
+                            ConstDeclListDerived1(
+                              CIdentDecl(
+                               b1
+                                NInit(
+                                 3
+                                ) [NInit]
+                              ) [CIdentDecl]
+                              ConstDeclListDerived2(
+                                CIdentDecl(
+                                 c1
+                                  NInit(
+                                   13
+                                  ) [NInit]
+                                ) [CIdentDecl]
+                              ) [ConstDeclListDerived2]
+                            ) [ConstDeclListDerived1]
+                          ) [ConstDeclListDerived1]
+                        ) [ConstDeclListType]
+                      ) [VarDeclListDerived1]
+                      DeclListType(
+                        TypeAccess(
+                         int
+                        ) [TypeAccess]
+                        DeclListDerived1(
+                          SIdentDecl(
+                           a4
+                          ) [SIdentDecl]
+                          DeclListDerived1(
+                            SIdentDecl(
+                             b4
+                            ) [SIdentDecl]
+                            DeclListDerived2(
+                              SIdentDecl(
+                               c4
+                              ) [SIdentDecl]
+                            ) [DeclListDerived2]
+                          ) [DeclListDerived1]
+                        ) [DeclListDerived1]
+                      ) [DeclListType]
+                    ) [VarDeclListDerived1]
+                    ConstDeclListType(
+                      TypeAccess(
+                       int
+                      ) [TypeAccess]
+                      ConstDeclListDerived1(
+                        CIdentDecl(
+                         a5
+                          NInit(
+                           1
+                          ) [NInit]
+                        ) [CIdentDecl]
+                        ConstDeclListDerived1(
+                          CIdentDecl(
+                           b5
+                            NInit(
+                             1
+                            ) [NInit]
+                          ) [CIdentDecl]
+                          ConstDeclListDerived2(
+                            CIdentDecl(
+                             c5
+                              NInit(
+                               1
+                              ) [NInit]
+                            ) [CIdentDecl]
+                          ) [ConstDeclListDerived2]
+                        ) [ConstDeclListDerived1]
+                      ) [ConstDeclListDerived1]
+                    ) [ConstDeclListType]
+                  ) [VarDeclListDerived1]
+                  DeclListType(
+                    TypeAccess(
+                     int
+                    ) [TypeAccess]
+                    DeclListDerived2(
+                      SIdentDecl(
+                       a
+                      ) [SIdentDecl]
+                    ) [DeclListDerived2]
+                  ) [DeclListType]
+                ) [VarDeclListDerived1]
+                ConstDeclListType(
+                  TypeAccess(
+                   int
+                  ) [TypeAccess]
+                  ConstDeclListDerived2(
+                    CIdentDecl(
+                     a5
+                      NInit(
+                       1
+                      ) [NInit]
+                    ) [CIdentDecl]
+                  ) [ConstDeclListDerived2]
+                ) [ConstDeclListType]
+              ) [VarDeclListDerived1]
+              DeclListType(
+                TypeAccess(
+                 int
+                ) [TypeAccess]
+                DeclListDerived2(
+                  AIdentDecl(
+                   c
+                  ) [AIdentDecl]
+                ) [DeclListDerived2]
+              ) [DeclListType]
+            ) [VarDeclListDerived1]
+          ) [NamespDecl]
+        ) [ProgNameDeclListDerived1]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived2(
+            SIdentDecl(
+             b
+            ) [SIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListType]
+      ) [ProgNameDeclListDerived2]
+      DeclListType(
+        TypeAccess(
+         int
+        ) [TypeAccess]
+        DeclListDerived1(
+          SIdentDecl(
+           a
+          ) [SIdentDecl]
+          DeclListDerived1(
+            IIdentDecl(
+             b
+              NInit(
+               3
+              ) [NInit]
+            ) [IIdentDecl]
+            DeclListDerived1(
+              AIdentDecl(
+               c
+              ) [AIdentDecl]
+              DeclListDerived1(
+                AIdentDecl(
+                 d
+                ) [AIdentDecl]
+                DeclListDerived2(
+                  AIdentDecl(
+                   r
+                  ) [AIdentDecl]
+                ) [DeclListDerived2]
+              ) [DeclListDerived1]
+            ) [DeclListDerived1]
+          ) [DeclListDerived1]
+        ) [DeclListDerived1]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    ConstDeclListType(
+      TypeAccess(
+       int
+      ) [TypeAccess]
+      ConstDeclListDerived1(
+        CIdentDecl(
+         a1
+          NInit(
+           17
+          ) [NInit]
+        ) [CIdentDecl]
+        ConstDeclListDerived1(
+          CIdentDecl(
+           b1
+            NInit(
+             3
+            ) [NInit]
+          ) [CIdentDecl]
+          ConstDeclListDerived2(
+            CIdentDecl(
+             c1
+              NInit(
+               13
+              ) [NInit]
+            ) [CIdentDecl]
+          ) [ConstDeclListDerived2]
+        ) [ConstDeclListDerived1]
+      ) [ConstDeclListDerived1]
+    ) [ConstDeclListType]
+  ) [ProgNameDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived2(
+            ) [StatementListDerived2]
+            ADesignAsign(
+              ArrIdent(
+               a
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     3
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [ArrIdent]
+              TermExpr(
+                FactorTerm(
+                  SFactorDesignator(
+                    Ident(
+                     a
+                    ) [Ident]
+                  ) [SFactorDesignator]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [ADesignAsign]
+          ) [StatementListDerived1]
+          ArrayAlloc(
+            Ident(
+             a
+            ) [Ident]
+            TypeAccess(
+             int
+            ) [TypeAccess]
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 5
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ArrayAlloc]
+        ) [StatementListDerived1]
+        SDesignAsign(
+          Ident(
+           a
+          ) [Ident]
+          TermExpr(
+            FactorTerm(
+              AFactorDesignator(
+                ArrIdent(
+                 a
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       3
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [ArrIdent]
+              ) [AFactorDesignator]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [SDesignAsign]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  18:24:26,306 - ====================================
+ERROR 18:24:26,341 - Greska: ime :nsp2|a je vec definisano
+	na liniji 20
+ERROR 18:24:26,342 - Greska: ime :nsp2|a5 je vec definisano
+	na liniji 21
+ERROR 18:24:26,342 - Greska: ime :nsp2|c je vec definisano
+	na liniji 22
+ERROR 18:24:26,342 - Greska: ime b je vec definisano
+	na liniji 28
+ERROR 18:24:26,342 - Greska: indeksirani identifikator a nije nizovskog tipa, vec tipa int
+	na liniji 32
+ERROR 18:24:26,342 - Greska: nedozvoljena dodela vrednosti tipa int identifikatoru tipa nepostojeci_tip
+	( nepostojeci_tip = int )
+	na liniji 32
+ERROR 18:24:26,342 - Greska: odrediste adrese alociranog niza ne moze biti primitivni tip int
+	na liniji 33
+ERROR 18:24:26,342 - Greska: nedozvoljena dodela vrednosti tipa int array identifikatoru tipa int
+	( int = int array )
+	na liniji 33
+ERROR 18:24:26,342 - Greska: indeksirani identifikator a nije nizovskog tipa, vec tipa int
+	na liniji 34
+ERROR 18:24:26,343 - Greska: nedozvoljena dodela vrednosti tipa nepostojeci_tip identifikatoru tipa int
+	( int = nepostojeci_tip )
+	na liniji 34
+INFO  18:24:26,343 -  Broj print naredbi = 0
+INFO  18:24:26,343 -  Deklarisanih promenljivih ima = 20
+INFO  18:24:26,343 -  Deklarisanih simbolickih konstanti ima = 18
+INFO  18:24:26,343 - ====================================
+ERROR 18:24:26,343 - Prevodjenje NIJE uspesno zavrseno

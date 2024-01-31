@@ -35,6 +35,9 @@ public class MJParserTest {
 			log.info(" Deklarisanih promenljivih ima = " + v.getVarDeclCount());
 			log.info(" Deklarisanih simbolickih konstanti ima = " + v.getConDeclCount());
 			log.info("===================================="); Tab.dump();
+			if (p.noSyntaxicalErrors() && v.noSemanticErrors())
+				log.info("Prevodjenje uspesno zavrseno");
+			else log.error("Prevodjenje NIJE uspesno zavrseno");
 		}
 		finally {
 			if (br != null) try { br.close(); }

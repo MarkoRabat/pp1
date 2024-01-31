@@ -30,6 +30,7 @@ public class SemanticPass extends VisitorAdaptor {
 		boolArray.setElementType(boolType);
 	}
 	
+	public boolean noSemanticErrors() { return spl.noSemanticErrors(); }
 	public int getPrintCallCount() { return printCallCount; } 
 	public void incPrintCallCount() { ++printCallCount; }
 	public int getVarDeclCount() { return varDeclCount; } 
@@ -100,7 +101,7 @@ public class SemanticPass extends VisitorAdaptor {
 			return true;
 		}
 		catch (IllegalArgumentException e) {
-			spl.report_array_allocTo_nonArray(obj, type);
+			spl.report_array_error(obj, type);
 			return false;
 		}
 	}
