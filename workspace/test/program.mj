@@ -28,7 +28,7 @@ int b;
 int a, b = 3, c[];
 const int a1 = 17, b1 = 3, c1 = 13;
 {
-	void main() {
+	void abrakada() {
 		
 	}
 }

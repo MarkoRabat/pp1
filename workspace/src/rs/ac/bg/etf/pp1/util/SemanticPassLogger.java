@@ -71,5 +71,7 @@ public class SemanticPassLogger {
 			"odrediste adrese alociranog niza ne moze biti primitivni tip "
 			+ SemanticPass.getTypeName(type), obj);
 	}
+	public void report_main_not_found(SyntaxNode obj) {
+		report_error("main function not found", obj); }
 	public void info_print() { log.info("Prepoznata naredba print"); }
 }

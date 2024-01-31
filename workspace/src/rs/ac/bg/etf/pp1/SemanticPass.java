@@ -118,6 +118,9 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 
 	public void visit(Prog prog) {
+		try { Obj mainFunction = findInTab("main"); }
+		catch(NameNotFoundException e) {
+			spl.report_main_not_found(prog); }
 		try {
 			Obj programObj = findInTab(prog.getProgName().obj.getName());
 			Tab.chainLocalSymbols(programObj); Tab.closeScope();
@@ -147,6 +150,7 @@ public class SemanticPass extends VisitorAdaptor {
 		catch (NameAlreadyBoundException e) {
 			spl.report_name_isAlready_defined(e.getMessage(), namespName);
 			namespName.obj = Tab.noObj;
+			setCurrentNamespaceToNull();
 		}
 	}
 
@@ -291,6 +295,7 @@ public class SemanticPass extends VisitorAdaptor {
 		if (sDesignAsign.getSimpleDesignator().obj.getKind() == Obj.Con)
 			spl.report_assignment_to_const(identType, sDesignAsign);
 	}
+	
 	
 	public void visit(ADesignAsign aDesignAsign) {
 		Struct arrayElemType =
