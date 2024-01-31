@@ -32,6 +32,7 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	public boolean noSemanticErrors() { return spl.noSemanticErrors(); }
+	public int getNVars() { return nVars; }
 	public int getPrintCallCount() { return printCallCount; } 
 	public void incPrintCallCount() { ++printCallCount; }
 	public int getVarDeclCount() { return varDeclCount; } 

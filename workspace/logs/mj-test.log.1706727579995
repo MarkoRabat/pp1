@@ -1,0 +1,71 @@
+INFO  19:53:18,976 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  19:53:19,548 - #2 program
+INFO  19:53:19,549 - #23 Program
+INFO  19:53:19,549 - #3 {
+INFO  19:53:19,562 - #16 void
+INFO  19:53:19,569 - #23 main
+INFO  19:53:19,570 - #6 (
+INFO  19:53:19,570 - #7 )
+INFO  19:53:19,571 - #3 {
+INFO  19:53:19,577 - #17 print
+INFO  19:53:19,587 - #6 (
+INFO  19:53:19,587 - #22 1
+INFO  19:53:19,587 - #7 )
+INFO  19:53:19,588 - #5 ;
+INFO  19:53:19,588 - #17 print
+INFO  19:53:19,589 - #6 (
+INFO  19:53:19,589 - #22 2
+INFO  19:53:19,589 - #7 )
+INFO  19:53:19,589 - #5 ;
+INFO  19:53:19,590 - #4 }
+INFO  19:53:19,590 - #4 }
+INFO  19:53:19,591 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived3(
+  ) [ProgNameDeclListDerived3]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          PrintStmt(
+            TermExpr(
+              FactorTerm(
+                NumberConst(
+                 1
+                ) [NumberConst]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            FactorTerm(
+              NumberConst(
+               2
+              ) [NumberConst]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  19:53:19,592 - ====================================
+INFO  19:53:19,630 - Prepoznata naredba print
+INFO  19:53:19,631 - Prepoznata naredba print
+INFO  19:53:19,631 -  Broj print naredbi = 2
+INFO  19:53:19,631 -  Deklarisanih promenljivih ima = 0
+INFO  19:53:19,631 -  Deklarisanih simbolickih konstanti ima = 0
+INFO  19:53:19,631 - ====================================
+INFO  19:53:19,647 - Prevodjenje uspesno zavrseno

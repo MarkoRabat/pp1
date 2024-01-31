@@ -1,36 +1,9 @@
 program Program
-
-int a2, b2, c2;
-const int a3 = 1, b3 = 1, c3 = 1;
-
-namespace nsp1 {
-	int a, b = 3, c[];
-	const int a1 = 17, b1 = 3, c1 = 13;
-	int a4, b4, c4;
-	const int a5 = 1, b5 = 1, c5 = 1;
-
-	{}
-}
-
-namespace nsp2 {
-	int a, b = 3, c[];
-	const int a1 = 17, b1 = 3, c1 = 13;
-	int a4, b4, c4;
-	const int a5 = 1, b5 = 1, c5 = 1;
-	int a;
-	const int a5 = 1;
-	int c[];
-
-	{}
-}
-int b;
-
-int a, b = 3, c[], d[], r[];
-const int a1 = 17, b1 = 3, c1 = 13;
+	int m, n;
 {
-	void main() {
-		a[3] = a;
-		a = new int [5];
-		a = a[3];
+	void main() int a; {
+		print(1);
+
+		print(2);
 	}
 }

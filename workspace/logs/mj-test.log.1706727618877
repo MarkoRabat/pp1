@@ -1,0 +1,32 @@
+INFO  20:00:08,575 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  20:00:08,626 - #2 program
+INFO  20:00:08,626 - #23 Program
+INFO  20:00:08,627 - #3 {
+INFO  20:00:08,630 - #23 int
+ERROR 20:00:08,630 - 
+Sintaksna greska na liniji 3
+INFO  20:00:08,630 - #23 m
+INFO  20:00:08,631 - #14 ,
+INFO  20:00:08,631 - #23 n
+INFO  20:00:08,632 - #5 ;
+INFO  20:00:08,632 - #16 void
+INFO  20:00:08,632 - #23 main
+INFO  20:00:08,632 - #6 (
+INFO  20:00:08,632 - #7 )
+INFO  20:00:08,632 - #23 int
+INFO  20:00:08,633 - #23 a
+INFO  20:00:08,633 - #5 ;
+INFO  20:00:08,633 - #3 {
+INFO  20:00:08,633 - #17 print
+INFO  20:00:08,633 - #6 (
+INFO  20:00:08,633 - #22 1
+INFO  20:00:08,634 - #7 )
+INFO  20:00:08,634 - #5 ;
+INFO  20:00:08,635 - #17 print
+INFO  20:00:08,635 - #6 (
+INFO  20:00:08,635 - #22 2
+INFO  20:00:08,635 - #7 )
+INFO  20:00:08,635 - #5 ;
+INFO  20:00:08,635 - #4 }
+INFO  20:00:08,635 - #4 }
+ERROR 20:00:08,636 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9
