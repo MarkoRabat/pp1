@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 31/0/2024 21:45:40
+// 1/1/2024 1:3:53
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class StatementDerived2 extends Statement {
+public class ReadSDesign extends Statement {
 
     private SimpleDesignator SimpleDesignator;
 
-    public StatementDerived2 (SimpleDesignator SimpleDesignator) {
+    public ReadSDesign (SimpleDesignator SimpleDesignator) {
         this.SimpleDesignator=SimpleDesignator;
         if(SimpleDesignator!=null) SimpleDesignator.setParent(this);
     }
@@ -43,7 +43,7 @@ public class StatementDerived2 extends Statement {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("StatementDerived2(\n");
+        buffer.append("ReadSDesign(\n");
 
         if(SimpleDesignator!=null)
             buffer.append(SimpleDesignator.toString("  "+tab));
@@ -52,7 +52,7 @@ public class StatementDerived2 extends Statement {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [StatementDerived2]");
+        buffer.append(") [ReadSDesign]");
         return buffer.toString();
     }
 }

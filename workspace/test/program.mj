@@ -1,29 +1,46 @@
 program Program
-namespace ns1 {
-	int x = 3;
-	int y = 4;
-	int a;
-{}}
-int x = 30;
-int y = 40;
+bool a[];
+int b[];
+char c[];
+int m;
 {
 	void main() {
-		print(x + y, 5);	// 7
+		m = 2;
+		m++;
+		print(m);
+		a = new bool[3];
+		a[0] = true;
+		a[1] = false;
+		a[2] = true;
 		print(eol);
-		print(ns1::x - ns1::y, 5);	// -1
+		print(a[0]);
+		print(a[1]);
+		print(a[2]);
+		c = new char [11];
+		c[0] = 'h';
+		c[1] = 'e';
+		c[2] = 'l';
+		c[3] = 'l';
+		c[4] = 'o';
+		c[5] = '_';
+		c[6] = 'w';
+		c[7] = 'o';
+		c[8] = 'r';
+		c[9] = 'l';
+		c[10] = 'd';
 		print(eol);
-		print(ns1::x * ns1::y, 5);	// 12
+		print(c[0]);
+		print(c[1]);
+		print(c[2]);
+		print(c[3]);
+		print(c[4]);
+		print(c[5]);
+		print(c[6]);
+		print(c[7]);
+		print(c[8]);
+		print(c[9]);
+		print(c[10]);
 		print(eol);
-		print(ns1::x / ns1::y, 5);	// 0
-		print(eol);
-		print(ns1::x % ns1::y, 5);	// 3
-		print(eol);
-		ns1::a = ns1::x * ns1::x + ns1::y;
-		print(ns1::a + ns1::a + 17, 5);	// 43
-		
-		
-		print('a'); print('b'); print('c'); print(eol);
-		// vratiti bool na 1 i 0 (umesto 100 i -100)
-		print(true); print(eol); print(false);
+
 	}
 }

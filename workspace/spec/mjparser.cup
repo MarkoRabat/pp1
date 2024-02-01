@@ -140,8 +140,8 @@ Statement ::= (SDesignAsign) SimpleDesignator EQUAL Expr:e SEMI
 			| (ADesignInc) ArrayDesignator DOUBLEPLUS SEMI
 			| (SDesignDec) SimpleDesignator DOUBLEMINUS SEMI
 			| (ADesignDec) ArrayDesignator DOUBLEMINUS SEMI
-			| READ LPAREN SimpleDesignator RPAREN SEMI
-			| READ LPAREN ArrayDesignator RPAREN SEMI
+			| (ReadSDesign) READ LPAREN SimpleDesignator RPAREN SEMI
+			| (ReadADesign) READ LPAREN ArrayDesignator RPAREN SEMI
 			| (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 			| (PrintOnWith) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI
 			| (Return) RETURN SEMI;

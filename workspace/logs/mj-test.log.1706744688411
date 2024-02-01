@@ -1,0 +1,703 @@
+INFO  00:44:17,531 - Compiling source file: D:\PP1Projekat\pp1\workspace\test\program.mj
+INFO  00:44:17,714 - #2 program
+INFO  00:44:17,714 - #23 Program
+INFO  00:44:17,715 - #23 int
+INFO  00:44:17,719 - #23 arr1
+INFO  00:44:17,719 - #18 [
+INFO  00:44:17,719 - #20 ]
+INFO  00:44:17,720 - #14 ,
+INFO  00:44:17,720 - #23 arr2
+INFO  00:44:17,721 - #18 [
+INFO  00:44:17,722 - #20 ]
+INFO  00:44:17,722 - #5 ;
+INFO  00:44:17,723 - #23 int
+INFO  00:44:17,724 - #23 a
+INFO  00:44:17,725 - #14 ,
+INFO  00:44:17,726 - #23 b
+INFO  00:44:17,726 - #5 ;
+INFO  00:44:17,727 - #21 namespace
+INFO  00:44:17,728 - #23 ns1
+INFO  00:44:17,728 - #3 {
+INFO  00:44:17,731 - #23 int
+INFO  00:44:17,736 - #23 arr1
+INFO  00:44:17,739 - #18 [
+INFO  00:44:17,741 - #20 ]
+INFO  00:44:17,741 - #14 ,
+INFO  00:44:17,741 - #23 arr2
+INFO  00:44:17,742 - #18 [
+INFO  00:44:17,742 - #20 ]
+INFO  00:44:17,742 - #5 ;
+INFO  00:44:17,742 - #23 int
+INFO  00:44:17,743 - #23 a
+INFO  00:44:17,743 - #14 ,
+INFO  00:44:17,743 - #23 b
+INFO  00:44:17,744 - #5 ;
+INFO  00:44:17,744 - #3 {
+INFO  00:44:17,744 - #4 }
+INFO  00:44:17,745 - #4 }
+INFO  00:44:17,746 - #3 {
+INFO  00:44:17,747 - #16 void
+INFO  00:44:17,750 - #23 main
+INFO  00:44:17,750 - #6 (
+INFO  00:44:17,751 - #7 )
+INFO  00:44:17,752 - #3 {
+INFO  00:44:17,752 - #23 ns1
+INFO  00:44:17,755 - #11 ::
+INFO  00:44:17,756 - #23 arr1
+INFO  00:44:17,756 - #8 =
+INFO  00:44:17,757 - #13 new
+INFO  00:44:17,758 - #23 int
+INFO  00:44:17,758 - #18 [
+INFO  00:44:17,758 - #22 4
+INFO  00:44:17,759 - #20 ]
+INFO  00:44:17,760 - #5 ;
+INFO  00:44:17,760 - #23 ns1
+INFO  00:44:17,762 - #11 ::
+INFO  00:44:17,762 - #23 arr2
+INFO  00:44:17,762 - #8 =
+INFO  00:44:17,762 - #13 new
+INFO  00:44:17,763 - #23 int
+INFO  00:44:17,763 - #18 [
+INFO  00:44:17,763 - #22 4
+INFO  00:44:17,763 - #20 ]
+INFO  00:44:17,763 - #5 ;
+INFO  00:44:17,763 - #23 arr1
+INFO  00:44:17,764 - #8 =
+INFO  00:44:17,764 - #13 new
+INFO  00:44:17,764 - #23 int
+INFO  00:44:17,764 - #18 [
+INFO  00:44:17,764 - #22 4
+INFO  00:44:17,765 - #20 ]
+INFO  00:44:17,765 - #5 ;
+INFO  00:44:17,765 - #23 arr2
+INFO  00:44:17,765 - #8 =
+INFO  00:44:17,765 - #13 new
+INFO  00:44:17,765 - #23 int
+INFO  00:44:17,766 - #18 [
+INFO  00:44:17,766 - #22 4
+INFO  00:44:17,766 - #20 ]
+INFO  00:44:17,766 - #5 ;
+INFO  00:44:17,766 - #23 ns1
+INFO  00:44:17,766 - #11 ::
+INFO  00:44:17,770 - #23 arr1
+INFO  00:44:17,772 - #18 [
+INFO  00:44:17,773 - #22 2
+INFO  00:44:17,776 - #20 ]
+INFO  00:44:17,777 - #8 =
+INFO  00:44:17,778 - #22 1
+INFO  00:44:17,778 - #5 ;
+INFO  00:44:17,779 - #17 print
+INFO  00:44:17,780 - #6 (
+INFO  00:44:17,781 - #23 ns1
+INFO  00:44:17,781 - #11 ::
+INFO  00:44:17,781 - #23 arr1
+INFO  00:44:17,782 - #18 [
+INFO  00:44:17,782 - #22 2
+INFO  00:44:17,782 - #20 ]
+INFO  00:44:17,783 - #28 *
+INFO  00:44:17,783 - #22 2
+INFO  00:44:17,784 - #7 )
+INFO  00:44:17,785 - #5 ;
+INFO  00:44:17,785 - #23 ns1
+INFO  00:44:17,786 - #11 ::
+INFO  00:44:17,787 - #23 arr2
+INFO  00:44:17,787 - #18 [
+INFO  00:44:17,788 - #22 2
+INFO  00:44:17,788 - #20 ]
+INFO  00:44:17,789 - #8 =
+INFO  00:44:17,789 - #22 3
+INFO  00:44:17,789 - #5 ;
+INFO  00:44:17,789 - #17 print
+INFO  00:44:17,789 - #6 (
+INFO  00:44:17,790 - #23 ns1
+INFO  00:44:17,790 - #11 ::
+INFO  00:44:17,790 - #23 arr2
+INFO  00:44:17,791 - #18 [
+INFO  00:44:17,791 - #22 2
+INFO  00:44:17,792 - #20 ]
+INFO  00:44:17,792 - #30 %
+INFO  00:44:17,792 - #22 2
+INFO  00:44:17,794 - #7 )
+INFO  00:44:17,794 - #5 ;
+INFO  00:44:17,795 - #23 arr1
+INFO  00:44:17,797 - #18 [
+INFO  00:44:17,797 - #22 2
+INFO  00:44:17,797 - #20 ]
+INFO  00:44:17,797 - #8 =
+INFO  00:44:17,798 - #22 3
+INFO  00:44:17,799 - #5 ;
+INFO  00:44:17,799 - #17 print
+INFO  00:44:17,800 - #6 (
+INFO  00:44:17,800 - #23 arr1
+INFO  00:44:17,800 - #18 [
+INFO  00:44:17,800 - #22 2
+INFO  00:44:17,800 - #20 ]
+INFO  00:44:17,800 - #26 +
+INFO  00:44:17,801 - #23 ns1
+INFO  00:44:17,802 - #11 ::
+INFO  00:44:17,802 - #23 arr2
+INFO  00:44:17,802 - #18 [
+INFO  00:44:17,802 - #22 2
+INFO  00:44:17,802 - #20 ]
+INFO  00:44:17,803 - #7 )
+INFO  00:44:17,804 - #5 ;
+INFO  00:44:17,804 - #23 arr2
+INFO  00:44:17,804 - #18 [
+INFO  00:44:17,804 - #22 2
+INFO  00:44:17,804 - #20 ]
+INFO  00:44:17,805 - #8 =
+INFO  00:44:17,805 - #22 4
+INFO  00:44:17,805 - #5 ;
+INFO  00:44:17,805 - #23 arr2
+INFO  00:44:17,805 - #18 [
+INFO  00:44:17,805 - #22 2
+INFO  00:44:17,806 - #20 ]
+INFO  00:44:17,806 - #15 ++
+INFO  00:44:17,806 - #5 ;
+INFO  00:44:17,806 - #23 arr2
+INFO  00:44:17,808 - #18 [
+INFO  00:44:17,808 - #22 2
+INFO  00:44:17,808 - #20 ]
+INFO  00:44:17,809 - #15 ++
+INFO  00:44:17,809 - #5 ;
+INFO  00:44:17,811 - #17 print
+INFO  00:44:17,811 - #6 (
+INFO  00:44:17,812 - #23 arr2
+INFO  00:44:17,812 - #18 [
+INFO  00:44:17,812 - #22 2
+INFO  00:44:17,812 - #20 ]
+INFO  00:44:17,812 - #7 )
+INFO  00:44:17,813 - #5 ;
+INFO  00:44:17,813 - #23 ns1
+INFO  00:44:17,813 - #11 ::
+INFO  00:44:17,813 - #23 arr1
+INFO  00:44:17,813 - #18 [
+INFO  00:44:17,813 - #22 3
+INFO  00:44:17,813 - #20 ]
+INFO  00:44:17,814 - #8 =
+INFO  00:44:17,814 - #23 ns1
+INFO  00:44:17,822 - #11 ::
+INFO  00:44:17,823 - #23 arr1
+INFO  00:44:17,824 - #18 [
+INFO  00:44:17,824 - #22 2
+INFO  00:44:17,824 - #20 ]
+INFO  00:44:17,824 - #26 +
+INFO  00:44:17,824 - #23 arr1
+INFO  00:44:17,824 - #18 [
+INFO  00:44:17,824 - #22 2
+INFO  00:44:17,824 - #20 ]
+INFO  00:44:17,825 - #5 ;
+INFO  00:44:17,825 - #23 arr2
+INFO  00:44:17,825 - #8 =
+INFO  00:44:17,825 - #23 ns1
+INFO  00:44:17,825 - #11 ::
+INFO  00:44:17,825 - #23 arr1
+INFO  00:44:17,825 - #5 ;
+INFO  00:44:17,826 - #17 print
+INFO  00:44:17,827 - #6 (
+INFO  00:44:17,827 - #23 arr2
+INFO  00:44:17,827 - #18 [
+INFO  00:44:17,828 - #22 3
+INFO  00:44:17,828 - #20 ]
+INFO  00:44:17,828 - #7 )
+INFO  00:44:17,828 - #5 ;
+INFO  00:44:17,828 - #4 }
+INFO  00:44:17,828 - #4 }
+INFO  00:44:17,841 - Prog(
+  ProgName(
+   Program
+  ) [ProgName]
+  ProgNameDeclListDerived1(
+    ProgNameDeclListDerived2(
+      ProgNameDeclListDerived2(
+        ProgNameDeclListDerived3(
+        ) [ProgNameDeclListDerived3]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived1(
+            AIdentDecl(
+             arr1
+            ) [AIdentDecl]
+            DeclListDerived2(
+              AIdentDecl(
+               arr2
+              ) [AIdentDecl]
+            ) [DeclListDerived2]
+          ) [DeclListDerived1]
+        ) [DeclListType]
+      ) [ProgNameDeclListDerived2]
+      DeclListType(
+        TypeAccess(
+         int
+        ) [TypeAccess]
+        DeclListDerived1(
+          SIdentDecl(
+           a
+          ) [SIdentDecl]
+          DeclListDerived2(
+            SIdentDecl(
+             b
+            ) [SIdentDecl]
+          ) [DeclListDerived2]
+        ) [DeclListDerived1]
+      ) [DeclListType]
+    ) [ProgNameDeclListDerived2]
+    NamespDecl(
+      NamespName(
+       ns1
+      ) [NamespName]
+      VarDeclListDerived1(
+        VarDeclListDerived1(
+          VarDeclListDerived2(
+          ) [VarDeclListDerived2]
+          DeclListType(
+            TypeAccess(
+             int
+            ) [TypeAccess]
+            DeclListDerived1(
+              AIdentDecl(
+               arr1
+              ) [AIdentDecl]
+              DeclListDerived2(
+                AIdentDecl(
+                 arr2
+                ) [AIdentDecl]
+              ) [DeclListDerived2]
+            ) [DeclListDerived1]
+          ) [DeclListType]
+        ) [VarDeclListDerived1]
+        DeclListType(
+          TypeAccess(
+           int
+          ) [TypeAccess]
+          DeclListDerived1(
+            SIdentDecl(
+             a
+            ) [SIdentDecl]
+            DeclListDerived2(
+              SIdentDecl(
+               b
+              ) [SIdentDecl]
+            ) [DeclListDerived2]
+          ) [DeclListDerived1]
+        ) [DeclListType]
+      ) [VarDeclListDerived1]
+    ) [NamespDecl]
+  ) [ProgNameDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclaration(
+      MethName(
+       main
+      ) [MethName]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived1(
+                    StatementListDerived1(
+                      StatementListDerived1(
+                        StatementListDerived1(
+                          StatementListDerived1(
+                            StatementListDerived1(
+                              StatementListDerived1(
+                                StatementListDerived1(
+                                  StatementListDerived1(
+                                    StatementListDerived1(
+                                      StatementListDerived1(
+                                        StatementListDerived2(
+                                        ) [StatementListDerived2]
+                                        ArrayAlloc(
+                                          NsIdent(
+                                           ns1
+                                           arr1
+                                          ) [NsIdent]
+                                          TypeAccess(
+                                           int
+                                          ) [TypeAccess]
+                                          TermExpr(
+                                            FactorTerm(
+                                              NumberConst(
+                                               4
+                                              ) [NumberConst]
+                                            ) [FactorTerm]
+                                          ) [TermExpr]
+                                        ) [ArrayAlloc]
+                                      ) [StatementListDerived1]
+                                      ArrayAlloc(
+                                        NsIdent(
+                                         ns1
+                                         arr2
+                                        ) [NsIdent]
+                                        TypeAccess(
+                                         int
+                                        ) [TypeAccess]
+                                        TermExpr(
+                                          FactorTerm(
+                                            NumberConst(
+                                             4
+                                            ) [NumberConst]
+                                          ) [FactorTerm]
+                                        ) [TermExpr]
+                                      ) [ArrayAlloc]
+                                    ) [StatementListDerived1]
+                                    ArrayAlloc(
+                                      Ident(
+                                       arr1
+                                      ) [Ident]
+                                      TypeAccess(
+                                       int
+                                      ) [TypeAccess]
+                                      TermExpr(
+                                        FactorTerm(
+                                          NumberConst(
+                                           4
+                                          ) [NumberConst]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [ArrayAlloc]
+                                  ) [StatementListDerived1]
+                                  ArrayAlloc(
+                                    Ident(
+                                     arr2
+                                    ) [Ident]
+                                    TypeAccess(
+                                     int
+                                    ) [TypeAccess]
+                                    TermExpr(
+                                      FactorTerm(
+                                        NumberConst(
+                                         4
+                                        ) [NumberConst]
+                                      ) [FactorTerm]
+                                    ) [TermExpr]
+                                  ) [ArrayAlloc]
+                                ) [StatementListDerived1]
+                                ADesignAsign(
+                                  NsArrIdent(
+                                   ns1
+                                   arr1
+                                    TermExpr(
+                                      FactorTerm(
+                                        NumberConst(
+                                         2
+                                        ) [NumberConst]
+                                      ) [FactorTerm]
+                                    ) [TermExpr]
+                                  ) [NsArrIdent]
+                                  TermExpr(
+                                    FactorTerm(
+                                      NumberConst(
+                                       1
+                                      ) [NumberConst]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [ADesignAsign]
+                              ) [StatementListDerived1]
+                              PrintStmt(
+                                TermExpr(
+                                  MulTerm(
+                                    FactorTerm(
+                                      AFactorDesignator(
+                                        NsArrIdent(
+                                         ns1
+                                         arr1
+                                          TermExpr(
+                                            FactorTerm(
+                                              NumberConst(
+                                               2
+                                              ) [NumberConst]
+                                            ) [FactorTerm]
+                                          ) [TermExpr]
+                                        ) [NsArrIdent]
+                                      ) [AFactorDesignator]
+                                    ) [FactorTerm]
+                                    Mul(
+                                     *
+                                    ) [Mul]
+                                    NumberConst(
+                                     2
+                                    ) [NumberConst]
+                                  ) [MulTerm]
+                                ) [TermExpr]
+                              ) [PrintStmt]
+                            ) [StatementListDerived1]
+                            ADesignAsign(
+                              NsArrIdent(
+                               ns1
+                               arr2
+                                TermExpr(
+                                  FactorTerm(
+                                    NumberConst(
+                                     2
+                                    ) [NumberConst]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                              ) [NsArrIdent]
+                              TermExpr(
+                                FactorTerm(
+                                  NumberConst(
+                                   3
+                                  ) [NumberConst]
+                                ) [FactorTerm]
+                              ) [TermExpr]
+                            ) [ADesignAsign]
+                          ) [StatementListDerived1]
+                          PrintStmt(
+                            TermExpr(
+                              MulTerm(
+                                FactorTerm(
+                                  AFactorDesignator(
+                                    NsArrIdent(
+                                     ns1
+                                     arr2
+                                      TermExpr(
+                                        FactorTerm(
+                                          NumberConst(
+                                           2
+                                          ) [NumberConst]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [NsArrIdent]
+                                  ) [AFactorDesignator]
+                                ) [FactorTerm]
+                                Per(
+                                 %
+                                ) [Per]
+                                NumberConst(
+                                 2
+                                ) [NumberConst]
+                              ) [MulTerm]
+                            ) [TermExpr]
+                          ) [PrintStmt]
+                        ) [StatementListDerived1]
+                        ADesignAsign(
+                          ArrIdent(
+                           arr1
+                            TermExpr(
+                              FactorTerm(
+                                NumberConst(
+                                 2
+                                ) [NumberConst]
+                              ) [FactorTerm]
+                            ) [TermExpr]
+                          ) [ArrIdent]
+                          TermExpr(
+                            FactorTerm(
+                              NumberConst(
+                               3
+                              ) [NumberConst]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [ADesignAsign]
+                      ) [StatementListDerived1]
+                      PrintStmt(
+                        AddExpr(
+                          TermExpr(
+                            FactorTerm(
+                              AFactorDesignator(
+                                ArrIdent(
+                                 arr1
+                                  TermExpr(
+                                    FactorTerm(
+                                      NumberConst(
+                                       2
+                                      ) [NumberConst]
+                                    ) [FactorTerm]
+                                  ) [TermExpr]
+                                ) [ArrIdent]
+                              ) [AFactorDesignator]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                          Plus(
+                           +
+                          ) [Plus]
+                          FactorTerm(
+                            AFactorDesignator(
+                              NsArrIdent(
+                               ns1
+                               arr2
+                                TermExpr(
+                                  FactorTerm(
+                                    NumberConst(
+                                     2
+                                    ) [NumberConst]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                              ) [NsArrIdent]
+                            ) [AFactorDesignator]
+                          ) [FactorTerm]
+                        ) [AddExpr]
+                      ) [PrintStmt]
+                    ) [StatementListDerived1]
+                    ADesignAsign(
+                      ArrIdent(
+                       arr2
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [ArrIdent]
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           4
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [ADesignAsign]
+                  ) [StatementListDerived1]
+                  ADesignInc(
+                    ArrIdent(
+                     arr2
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           2
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [ArrIdent]
+                  ) [ADesignInc]
+                ) [StatementListDerived1]
+                ADesignInc(
+                  ArrIdent(
+                   arr2
+                    TermExpr(
+                      FactorTerm(
+                        NumberConst(
+                         2
+                        ) [NumberConst]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [ArrIdent]
+                ) [ADesignInc]
+              ) [StatementListDerived1]
+              PrintStmt(
+                TermExpr(
+                  FactorTerm(
+                    AFactorDesignator(
+                      ArrIdent(
+                       arr2
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [ArrIdent]
+                    ) [AFactorDesignator]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [PrintStmt]
+            ) [StatementListDerived1]
+            ADesignAsign(
+              NsArrIdent(
+               ns1
+               arr1
+                TermExpr(
+                  FactorTerm(
+                    NumberConst(
+                     3
+                    ) [NumberConst]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [NsArrIdent]
+              AddExpr(
+                TermExpr(
+                  FactorTerm(
+                    AFactorDesignator(
+                      NsArrIdent(
+                       ns1
+                       arr1
+                        TermExpr(
+                          FactorTerm(
+                            NumberConst(
+                             2
+                            ) [NumberConst]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [NsArrIdent]
+                    ) [AFactorDesignator]
+                  ) [FactorTerm]
+                ) [TermExpr]
+                Plus(
+                 +
+                ) [Plus]
+                FactorTerm(
+                  AFactorDesignator(
+                    ArrIdent(
+                     arr1
+                      TermExpr(
+                        FactorTerm(
+                          NumberConst(
+                           2
+                          ) [NumberConst]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [ArrIdent]
+                  ) [AFactorDesignator]
+                ) [FactorTerm]
+              ) [AddExpr]
+            ) [ADesignAsign]
+          ) [StatementListDerived1]
+          SDesignAsign(
+            Ident(
+             arr2
+            ) [Ident]
+            TermExpr(
+              FactorTerm(
+                SFactorDesignator(
+                  NsIdent(
+                   ns1
+                   arr1
+                  ) [NsIdent]
+                ) [SFactorDesignator]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [SDesignAsign]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            FactorTerm(
+              AFactorDesignator(
+                ArrIdent(
+                 arr2
+                  TermExpr(
+                    FactorTerm(
+                      NumberConst(
+                       3
+                      ) [NumberConst]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [ArrIdent]
+              ) [AFactorDesignator]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDeclaration]
+  ) [MethodDeclListDerived1]
+) [Prog]
+INFO  00:44:17,843 - ====================================
+INFO  00:44:17,887 - Prepoznata naredba print
+INFO  00:44:17,888 - Prepoznata naredba print
+INFO  00:44:17,888 - Prepoznata naredba print
+INFO  00:44:17,889 - Prepoznata naredba print
+INFO  00:44:17,889 - Prepoznata naredba print
+INFO  00:44:17,889 -  Broj print naredbi = 5
+INFO  00:44:17,889 -  Deklarisanih promenljivih ima = 8
+INFO  00:44:17,889 -  Deklarisanih simbolickih konstanti ima = 0
+INFO  00:44:17,889 - ====================================
+INFO  00:44:17,942 - Prevodjenje uspesno zavrseno

@@ -47,7 +47,71 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(SDesignAsign sDesignAsign) {
 		Code.store(sDesignAsign.getSimpleDesignator().obj); }
+
+	public void visit(ADesignAsign aDesignAsign) {
+		if (aDesignAsign.getArrayDesignator().obj.getType().getElemType() == Tab.charType)
+			Code.put(Code.bastore);
+		else Code.put(Code.astore);
+	}
+
+	public void visit(ArrayAlloc arrayAlloc) {
+		Code.put(Code.newarray);
+		if (arrayAlloc.getSimpleDesignator().obj.getType().getElemType() == Tab.charType)
+			Code.put(1);
+		else Code.put(0);
+		Code.store(arrayAlloc.getSimpleDesignator().obj);
+	}
 	
+	public void visit(SDesignInc sDesignInc) {
+		Code.put(Code.const_1);
+		Code.put(Code.add);
+		Code.store(sDesignInc.getSimpleDesignator().obj);
+	}
+
+	public void visit(SDesignDec sDesignDec) {
+		Code.put(Code.const_1);
+		Code.put(Code.sub);
+		Code.store(sDesignDec.getSimpleDesignator().obj);
+	}
+	
+	public void visit(ADesignInc aDesignInc) {
+		Code.put(Code.const_1);
+		Code.put(Code.add);
+		if (aDesignInc.getArrayDesignator().obj
+			.getType().getElemType() == Tab.charType)
+			Code.put(Code.bastore);
+		else Code.put(Code.astore);
+	}
+
+	public void visit(ADesignDec aDesignDec) {
+		Code.put(Code.const_1);
+		Code.put(Code.sub);
+		if (aDesignDec.getArrayDesignator().obj
+			.getType().getElemType() == Tab.charType)
+			Code.put(Code.bastore);
+		else Code.put(Code.astore);
+	}
+	
+	public void visit(ReadSDesign readSDesign) {
+		if (readSDesign.getSimpleDesignator().obj.getType() == Tab.charType)
+			Code.put(Code.bread);
+		else Code.put(Code.read);
+		Code.store(readSDesign.getSimpleDesignator().obj);
+	}
+
+	public void visit(ReadADesign readADesign) {
+		if (readADesign.getArrayDesignator()
+			.obj.getType().getElemType() == Tab.charType) {
+			Code.put(Code.bread);
+			Code.put(Code.bastore);
+		}
+		else {
+			Code.put(Code.read);
+			Code.put(Code.astore);
+		}
+	}
+	
+
 	public void visit(PrintStmt pritnStmt) {
 		Struct exprType = pritnStmt.getExpr().struct;
 		if (exprType == Tab.charType) {
@@ -74,6 +138,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	
+	public void visit(NegExpr negExpr) { Code.put(Code.neg); }
+	
 	public void visit(MulTerm mulTerm) {
 		switch(mulTerm.getMulop().obj.getName()) {
 		case "*": Code.put(Code.mul); break;
@@ -98,17 +164,51 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(BooleanConst booleanConst) {
 		Obj con = Tab.insert(Obj.Con, "$", booleanConst.struct);
 		con.setLevel(0);
+		System.out.println("booleanConst:");
+		System.out.println(booleanConst.getB1());
 		con.setAdr((booleanConst.getB1().equals("true") ? 1 : 0));
+		System.out.println(con.getAdr());
 		Code.load(con);
 	}
 	
 	public void visit(Ident ident) {
 		if (ident.getParent().getClass() == SDesignAsign.class) return;
+		if (ident.getParent().getClass() == ArrayAlloc.class) return;
+		if (ident.getParent().getClass() == ReadSDesign.class) return;
 		Code.load(ident.obj);
 	}
 
-	public void visit(NsIdent nsIdent) {
-		if (nsIdent.getParent().getClass() == SDesignAsign.class) return;
-		Code.load(nsIdent.obj);
+	public void visit(NsIdent ident) {
+		if (ident.getParent().getClass() == SDesignAsign.class) return;
+		if (ident.getParent().getClass() == ArrayAlloc.class) return;
+		if (ident.getParent().getClass() == ReadSDesign.class) return;
+		Code.load(ident.obj);
+	}
+	
+	public void visit(ArrIdent arrIdent) {
+		Code.load(arrIdent.obj);
+		Code.put(Code.dup_x1);
+		Code.put(Code.pop);
+		if (arrIdent.getParent().getClass() == ADesignInc.class
+			|| arrIdent.getParent().getClass() == ADesignDec.class)
+			Code.put(Code.dup2);
+		if (arrIdent.getParent().getClass() == ADesignAsign.class) return;
+		if (arrIdent.getParent().getClass() == ReadADesign.class) return;
+		if (arrIdent.obj.getType().getElemType() == Tab.charType)
+			Code.put(Code.baload);
+		else Code.put(Code.aload);
+	}
+	
+	public void visit(NsArrIdent arrIdent) {
+		Code.load(arrIdent.obj);
+		Code.put(Code.dup_x1);
+		Code.put(Code.pop);
+		if (arrIdent.getParent().getClass() == ADesignInc.class
+			|| arrIdent.getParent().getClass() == ADesignDec.class)
+			Code.put(Code.dup2);
+		if (arrIdent.getParent().getClass() == ADesignAsign.class) return;
+		if (arrIdent.obj.getType().getElemType() == Tab.charType)
+			Code.put(Code.baload);
+		else Code.put(Code.aload);
 	}
 }
